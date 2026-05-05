@@ -56,17 +56,22 @@ def _benchmark_for(stock: Stock, benchmarks: dict[str, Any]) -> Any:
     return benchmarks.get("US" if stock.country == "US" else "KR")
 
 
-def build_daily_report(
+def assemble_daily_context(
     universe: Universe | None = None,
     settings: dict[str, Any] | None = None,
-    output_dir: Path | None = None,
     today: datetime | None = None,
-) -> Path:
+    output_dir: Path | None = None,
+) -> dict[str, Any]:
+    """Run the full pipeline and return a dict ready for any renderer.
+
+    Used by both the Markdown report (`build_daily_report`) and the HTML site
+    (`ai_stock.report.web.build_site`). Doing the data fetch + scoring + LLM
+    narratives once and rendering N times saves cost.
+    """
     universe = universe or load_universe()
     settings = settings or load_settings()
     today = today or datetime.utcnow()
     output_dir = output_dir or (REPO_ROOT / "reports" / "daily")
-    output_dir.mkdir(parents=True, exist_ok=True)
 
     cache = DiskCache(settings["cache"]["dir"], ttl_hours=settings["cache"]["ttl_hours"])
 
@@ -78,7 +83,6 @@ def build_daily_report(
     kr_bench = fetch_prices(Stock(ticker="^KS11", country="US", tier="bench", name="KOSPI"), cache=cache)
     benchmarks = {"US": us_bench, "KR": kr_bench}
 
-    # Per-stock pipeline
     all_stocks = universe.all_stocks()
     log.info("Processing %d stocks", len(all_stocks))
 
@@ -100,8 +104,6 @@ def build_daily_report(
         if sm:
             momentum_by_theme[stock.theme].append(sm)
 
-        # Narrative — relevant news only
-        news_for_stock: list[dict[str, Any]] = []  # filled after global news fetch
         metrics = latest_metrics(prices)
         results.append(StockResult(
             stock=stock,
@@ -130,18 +132,16 @@ def build_daily_report(
     matched_news = [n for n in news_items if n.matched_tickers]
     top_news = matched_news[: settings["news"]["top_n_in_report"]]
 
-    # Map ticker → news subset
     news_by_ticker: dict[str, list[NewsItem]] = {}
     for n in matched_news:
         for t in n.matched_tickers:
             news_by_ticker.setdefault(t, []).append(n)
 
-    # Generate narratives for top focus stocks (Top N by composite score)
+    # Narratives for top focus stocks
     focus_n = settings["report"]["top_n_focus_stocks"]
     focus_results = sorted(results, key=lambda r: r.composite.composite_score, reverse=True)[:focus_n]
     log.info("Generating narratives for top %d focus stocks", len(focus_results))
     for r in focus_results:
-        # Re-fetch what generate_narrative needs
         prices = fetch_prices(r.stock, cache=cache)
         fundamentals = fetch_fundamentals(r.stock, cache=cache)
         short = short_term_signal(prices, settings["signals"]["short_term"]["weights"])
@@ -156,10 +156,47 @@ def build_daily_report(
         )
         r.label_emoji = label_with_emoji(r.narrative.label).split()[0]
 
-    # Position review: compare against yesterday's report (best-effort, parses table)
+    # Position review
     label_changes = _compute_label_changes(results, output_dir)
 
-    # Render
+    us_count = sum(1 for s in all_stocks if s.country == "US")
+    kr_count = len(all_stocks) - us_count
+
+    return {
+        "date": today.strftime("%Y-%m-%d"),
+        "generated_at": today.strftime("%Y-%m-%d %H:%M UTC"),
+        "version": __version__,
+        "universe_size": len(all_stocks),
+        "us_count": us_count,
+        "kr_count": kr_count,
+        "macro": macro,
+        "theme_rankings": theme_rankings,
+        "verdicts": sorted(results, key=lambda r: r.composite.composite_score, reverse=True),
+        "focus": focus_results,
+        "top_news": [n.to_dict() for n in top_news],
+        "label_changes": label_changes,
+        "_today": today,
+    }
+
+
+def build_daily_report(
+    universe: Universe | None = None,
+    settings: dict[str, Any] | None = None,
+    output_dir: Path | None = None,
+    today: datetime | None = None,
+    context: dict[str, Any] | None = None,
+) -> Path:
+    """Render the daily Markdown report.
+
+    Pass `context` from `assemble_daily_context()` to skip re-running the pipeline.
+    """
+    output_dir = output_dir or (REPO_ROOT / "reports" / "daily")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if context is None:
+        context = assemble_daily_context(universe=universe, settings=settings,
+                                         today=today, output_dir=output_dir)
+
     env = Environment(
         loader=FileSystemLoader(Path(__file__).parent / "templates"),
         autoescape=select_autoescape(disabled_extensions=("md", "j2")),
@@ -167,26 +204,9 @@ def build_daily_report(
         lstrip_blocks=True,
     )
     template = env.get_template("daily.md.j2")
+    rendered = template.render(**context)
 
-    us_count = sum(1 for s in all_stocks if s.country == "US")
-    kr_count = len(all_stocks) - us_count
-
-    rendered = template.render(
-        date=today.strftime("%Y-%m-%d"),
-        generated_at=today.strftime("%Y-%m-%d %H:%M UTC"),
-        version=__version__,
-        universe_size=len(all_stocks),
-        us_count=us_count,
-        kr_count=kr_count,
-        macro=macro,
-        theme_rankings=theme_rankings,
-        verdicts=sorted(results, key=lambda r: r.composite.composite_score, reverse=True),
-        focus=focus_results,
-        top_news=[n.to_dict() for n in top_news],
-        label_changes=label_changes,
-    )
-
-    out_path = output_dir / f"{today.strftime('%Y-%m-%d')}.md"
+    out_path = output_dir / f"{context['date']}.md"
     out_path.write_text(rendered, encoding="utf-8")
     log.info("Wrote report → %s", out_path)
     return out_path

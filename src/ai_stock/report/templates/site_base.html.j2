@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0d12">
+<title>{% block title %}AI 투자 일일 리포트{% endblock %}</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0d12'/%3E%3Ctext x='50' y='62' font-size='52' text-anchor='middle' fill='%23a3e635' font-family='system-ui'%3EAI%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0d12'/%3E%3Ctext x='50' y='62' font-size='52' text-anchor='middle' fill='%23a3e635' font-family='system-ui'%3EAI%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+          mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+  body { font-feature-settings: 'tnum'; }
+  .label-strong_buy { background-color: rgb(34 197 94 / 0.15); color: rgb(74 222 128); border-color: rgb(74 222 128 / 0.4); }
+  .label-accumulate { background-color: rgb(234 179 8 / 0.15); color: rgb(250 204 21); border-color: rgb(250 204 21 / 0.4); }
+  .label-hold       { background-color: rgb(148 163 184 / 0.15); color: rgb(203 213 225); border-color: rgb(203 213 225 / 0.4); }
+  .label-trim       { background-color: rgb(249 115 22 / 0.15); color: rgb(251 146 60); border-color: rgb(251 146 60 / 0.4); }
+  .label-avoid      { background-color: rgb(239 68 68 / 0.15); color: rgb(248 113 113); border-color: rgb(248 113 113 / 0.4); }
+  .score-bar { background: linear-gradient(90deg, rgb(74 222 128) 0%, rgb(250 204 21) 50%, rgb(248 113 113) 100%); }
+  .score-fill { background-color: rgb(56 189 248); }
+  table.sortable th { cursor: pointer; user-select: none; }
+  table.sortable th:hover { background-color: rgb(255 255 255 / 0.04); }
+  table.sortable th.sorted-asc::after { content: ' ↑'; color: rgb(56 189 248); }
+  table.sortable th.sorted-desc::after { content: ' ↓'; color: rgb(56 189 248); }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased min-h-screen">
+
+<header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="./index.html" class="flex items-center gap-2">
+      <span class="font-bold text-lg text-lime-400">AI</span>
+      <span class="text-slate-400 hidden sm:inline">투자 일일 리포트</span>
+    </a>
+    <nav class="flex items-center gap-3 text-sm">
+      <a href="./index.html" class="text-slate-300 hover:text-white">최신</a>
+      <a href="./archive.html" class="text-slate-300 hover:text-white">기록</a>
+      <button id="theme-toggle" class="text-slate-400 hover:text-white" title="테마 변경">
+        <span class="dark:hidden">🌙</span>
+        <span class="hidden dark:inline">☀️</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-6 space-y-8">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="border-t border-slate-800 mt-12">
+  <div class="max-w-6xl mx-auto px-4 py-6 text-xs text-slate-500 flex flex-wrap items-center justify-between gap-2">
+    <span>ai-stock v{{ version }} · 생성 {{ generated_at }}</span>
+    <span>
+      <a href="https://github.com/homiepark/ai-stock" class="hover:text-slate-300">GitHub</a> ·
+      <span title="이 시스템은 의사결정 보조 도구입니다">참고용</span>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // 테마 토글 (다크 ↔ 라이트)
+  const root = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') root.classList.remove('dark');
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    root.classList.toggle('dark');
+    localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+  });
+
+  // 정렬 가능한 표
+  document.querySelectorAll('table.sortable').forEach((table) => {
+    const headers = table.querySelectorAll('th');
+    headers.forEach((th, idx) => {
+      th.addEventListener('click', () => {
+        const tbody = table.tBodies[0];
+        const rows = Array.from(tbody.rows);
+        const asc = !th.classList.contains('sorted-asc');
+        headers.forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
+        th.classList.add(asc ? 'sorted-asc' : 'sorted-desc');
+        rows.sort((a, b) => {
+          const av = a.cells[idx].dataset.sort ?? a.cells[idx].textContent.trim();
+          const bv = b.cells[idx].dataset.sort ?? b.cells[idx].textContent.trim();
+          const an = parseFloat(av), bn = parseFloat(bv);
+          if (!Number.isNaN(an) && !Number.isNaN(bn)) return asc ? an - bn : bn - an;
+          return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  });
+</script>
+</body>
+</html>

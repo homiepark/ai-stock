@@ -12,3 +12,6 @@ build/
 .DS_Store
 .uv/
 uv.lock
+site/
+reports/sample_site/
+reports/samples/

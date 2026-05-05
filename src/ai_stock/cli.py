@@ -27,12 +27,21 @@ def main(verbose: bool) -> None:
 
 @main.command()
 @click.option("--output-dir", type=click.Path(path_type=Path), default=None,
-              help="리포트 출력 디렉토리. 기본: reports/daily/")
-def daily(output_dir: Path | None) -> None:
-    """일일 리포트 생성. reports/daily/YYYY-MM-DD.md 로 저장."""
-    from ai_stock.report.daily import build_daily_report
-    path = build_daily_report(output_dir=output_dir)
-    click.echo(f"리포트 생성 완료: {path}")
+              help="Markdown 리포트 출력 디렉토리. 기본: reports/daily/")
+@click.option("--site-dir", type=click.Path(path_type=Path), default=None,
+              help="HTML 사이트 출력 디렉토리. 기본: site/")
+@click.option("--no-site", is_flag=True, help="HTML 사이트 빌드 생략 (Markdown만)")
+def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool) -> None:
+    """일일 리포트 생성. Markdown은 reports/daily/YYYY-MM-DD.md, HTML 사이트는 site/index.html 로 저장."""
+    from ai_stock.report.daily import assemble_daily_context, build_daily_report
+    from ai_stock.report.web import build_site
+
+    context = assemble_daily_context(output_dir=output_dir)
+    md_path = build_daily_report(output_dir=output_dir, context=context)
+    click.echo(f"Markdown 리포트: {md_path}")
+    if not no_site:
+        site_path = build_site(context, site_dir=site_dir)
+        click.echo(f"HTML 사이트: {site_path / 'index.html'}")
 
 
 @main.command()

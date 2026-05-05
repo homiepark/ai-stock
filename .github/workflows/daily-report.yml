@@ -6,9 +6,22 @@ on:
     # 화~토 (UTC) = 미국장 월~금 마감
     - cron: '30 21 * * 1-5'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - claude/ai-investment-analysis-083bm
+    paths:
+      - '.github/workflows/daily-report.yml'
+      - 'src/ai_stock/report/templates/site_*.html.j2'
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -24,12 +37,12 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Generate daily report
+      - name: Generate daily report + site
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: uv run ai-stock daily
 
-      - name: Commit & push report
+      - name: Commit & push markdown report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -40,3 +53,19 @@ jobs:
             git commit -m "daily report $(date +%F)"
             git push
           fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
