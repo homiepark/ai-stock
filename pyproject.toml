@@ -24,8 +24,8 @@ dependencies = [
 [project.scripts]
 ai-stock = "ai_stock.cli:main"
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "pytest>=8.0.0",
     "pytest-mock>=3.12.0",
 ]
