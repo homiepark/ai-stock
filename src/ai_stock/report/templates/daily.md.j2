@@ -1,0 +1,65 @@
+# AI 투자 일일 리포트 — {{ date }}
+
+> 워치리스트 {{ universe_size }}종목 (미국 {{ us_count }} / 한국 {{ kr_count }}). 4대 자산 계층(전력·반도체·하이퍼스케일러·운영자) + Embodied AI 추적.
+
+## 1. 매크로 스냅샷
+
+| 지표 | 값 | 일간 변동 |
+|---|---:|---:|
+{% for key, m in macro.items() -%}
+| {{ m.name }} | {{ "%.2f"|format(m.value) }} | {{ "%+.2f%%"|format(m.change * 100) }} |
+{% endfor %}
+
+## 2. 테마 랭킹 — 오늘의 자금 흐름
+
+| 순위 | 테마 | 1주 | 1개월 | 3개월 | 시총 대장 | 모멘텀 대장 |
+|---:|---|---:|---:|---:|---|---|
+{% for r in theme_rankings -%}
+| {{ loop.index }} | {{ r.theme_name }} | {{ "%+.1f%%"|format(r.avg_return_1w * 100) }} | {{ "%+.1f%%"|format(r.avg_return_1m * 100) }} | {{ "%+.1f%%"|format(r.avg_return_3m * 100) }} | {{ r.cap_leader.name if r.cap_leader else "-" }} | {{ r.momentum_leader.name if r.momentum_leader else "-" }} |
+{% endfor %}
+
+## 3. 종합 판정 매트릭스
+
+| 종목 | 테마 | 단기 | 중기 | 장기 | 종합 | 라벨 |
+|---|---|---:|---:|---:|---:|:---:|
+{% for v in verdicts -%}
+| **{{ v.stock.name }}** ({{ v.stock.ticker }}) | {{ v.theme_short }} | {{ "%.0f"|format(v.composite.short_score) }} | {{ "%.0f"|format(v.composite.mid_score) }} | {{ "%.0f"|format(v.composite.long_score) }} | {{ "%.0f"|format(v.composite.composite_score) }} | {{ v.label_emoji }} |
+{% endfor %}
+
+## 4. 오늘의 주목 종목 Top {{ focus|length }}
+
+{% for f in focus %}
+### {{ f.label_emoji }} {{ f.stock.name }} ({{ f.stock.ticker }}) — {{ f.narrative.label }}
+
+**[정량 점수]** 단기 {{ "%.0f"|format(f.composite.short_score) }} / 중기 {{ "%.0f"|format(f.composite.mid_score) }} / 장기 {{ "%.0f"|format(f.composite.long_score) }} → 종합 **{{ "%.0f"|format(f.composite.composite_score) }}**
+
+**판단:** {{ f.narrative.summary }}
+
+- **진입 가이드:** {{ f.narrative.entry_guide }}
+- **리스크:** {{ f.narrative.risks }}
+- **다음 트리거:** {{ f.narrative.next_trigger }}
+
+{% endfor %}
+
+## 5. 뉴스 다이제스트
+
+{% if top_news %}
+{% for n in top_news -%}
+- **[{{ n.matched_names|join(", ") if n.matched_names else "general" }}]** {{ n.title }} _{{ n.source }}_
+{% endfor %}
+{% else -%}
+_워치리스트 종목 관련 뉴스가 수집되지 않았습니다._
+{% endif %}
+
+## 6. 포지션 리뷰 — 어제 대비 라벨 변경
+
+{% if label_changes %}
+{% for c in label_changes -%}
+- **{{ c.stock.name }} ({{ c.stock.ticker }})**: {{ c.old_label }} → {{ c.new_label }}
+{% endfor %}
+{% else -%}
+_라벨 변경 없음 (또는 어제 리포트 미존재)._
+{% endif %}
+
+---
+_생성: ai-stock v{{ version }} · {{ generated_at }}_
