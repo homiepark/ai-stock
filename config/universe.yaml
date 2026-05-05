@@ -1,0 +1,85 @@
+# AI 투자 워치리스트 — "철도 = AI" 4대 자산 계층
+# 미국 70% / 한국 30% 비중
+# tier: leader = 시총·점유율 대장 / momentum = 모멘텀 대장 / supporting = 하위
+# country: US (yfinance ticker) / KR (pykrx 6자리 코드)
+
+themes:
+  power_grid:
+    name: "전력·그리드 (AI의 '땅')"
+    thesis: "AI 학습·추론의 진짜 병목은 GPU가 아니라 전력. 미국 변압기 리드타임 100주+, 데이터센터 전력 수요 2030까지 2~3배. 사이클 초·중반."
+    stocks:
+      - { ticker: GEV, country: US, tier: leader, name: "GE Vernova", note: "전력기기·가스터빈 글로벌 리더" }
+      - { ticker: VRT, country: US, tier: leader, name: "Vertiv", note: "데이터센터 전력·냉각 인프라" }
+      - { ticker: ETN, country: US, tier: supporting, name: "Eaton", note: "전력관리·배전" }
+      - { ticker: PWR, country: US, tier: supporting, name: "Quanta Services", note: "전력 EPC" }
+      - { ticker: CEG, country: US, tier: leader, name: "Constellation Energy", note: "원자력·MSFT PPA 수혜" }
+      - { ticker: VST, country: US, tier: supporting, name: "Vistra", note: "원자력·가스 발전" }
+      - { ticker: TLN, country: US, tier: supporting, name: "Talen Energy", note: "원자력·AMZN 데이터센터 PPA" }
+      - { ticker: OKLO, country: US, tier: momentum, name: "Oklo", note: "SMR 옵션 가치, Sam Altman 후원" }
+      - { ticker: SMR, country: US, tier: momentum, name: "NuScale Power", note: "SMR 선두주자" }
+      - { ticker: "267260", country: KR, tier: leader, name: "HD현대일렉트릭", note: "송배전 변압기, 미국 수출 사이클" }
+      - { ticker: "298040", country: KR, tier: supporting, name: "효성중공업", note: "변압기·차단기" }
+      - { ticker: "010120", country: KR, tier: supporting, name: "LS ELECTRIC", note: "전력기기·자동화" }
+      - { ticker: "034020", country: KR, tier: momentum, name: "두산에너빌리티", note: "SMR·원자력 메인콘트랙터" }
+
+  semiconductors:
+    name: "반도체·HBM·패키징 (AI의 '강철')"
+    thesis: "HBM4→HBM5 사이클 2027까지 가시성. 광 인터커넥트(CPO), 첨단 패키징(CoWoS) 캐파 부족 지속. 카네기급 부 형성 영역."
+    stocks:
+      - { ticker: NVDA, country: US, tier: leader, name: "NVIDIA", note: "AI 가속기 압도적 점유" }
+      - { ticker: AVGO, country: US, tier: leader, name: "Broadcom", note: "ASIC·네트워킹·VMware" }
+      - { ticker: TSM, country: US, tier: leader, name: "TSMC", note: "첨단 노드·CoWoS 독점적" }
+      - { ticker: ASML, country: US, tier: leader, name: "ASML", note: "EUV 독점" }
+      - { ticker: MU, country: US, tier: supporting, name: "Micron", note: "HBM3E·HBM4 진입" }
+      - { ticker: MRVL, country: US, tier: momentum, name: "Marvell", note: "맞춤형 ASIC·광인터커넥트" }
+      - { ticker: ALAB, country: US, tier: momentum, name: "Astera Labs", note: "PCIe 리타이머·CXL 스위치" }
+      - { ticker: ARM, country: US, tier: supporting, name: "ARM Holdings", note: "데이터센터 CPU IP 침투" }
+      - { ticker: AMAT, country: US, tier: supporting, name: "Applied Materials", note: "반도체 장비" }
+      - { ticker: KLAC, country: US, tier: supporting, name: "KLA", note: "검사·계측" }
+      - { ticker: "005930", country: KR, tier: leader, name: "삼성전자", note: "HBM3E 엔비디아 진입 여부 핵심" }
+      - { ticker: "000660", country: KR, tier: leader, name: "SK하이닉스", note: "HBM3E·HBM4 선두" }
+      - { ticker: "042700", country: KR, tier: leader, name: "한미반도체", note: "TC본더 사실상 독점" }
+      - { ticker: "007660", country: KR, tier: momentum, name: "이수페타시스", note: "AI 가속기용 고다층 MLB" }
+      - { ticker: "058470", country: KR, tier: supporting, name: "리노공업", note: "반도체 검사 핀·소켓" }
+
+  hyperscalers:
+    name: "하이퍼스케일러·AI 클라우드 (AI의 'JP모건')"
+    thesis: "Capex 사이클의 자금중개자. MSFT·GOOG·META·AMZN의 Capex 합계 2026년 $400B+ 예상. 수직통합 가속."
+    stocks:
+      - { ticker: MSFT, country: US, tier: leader, name: "Microsoft", note: "OpenAI 파트너·Azure AI" }
+      - { ticker: GOOGL, country: US, tier: leader, name: "Alphabet", note: "Gemini·TPU 수직통합" }
+      - { ticker: META, country: US, tier: leader, name: "Meta", note: "Llama·자체 ASIC·광고 ROI 회수" }
+      - { ticker: AMZN, country: US, tier: leader, name: "Amazon", note: "AWS·Bedrock·Anthropic 투자" }
+      - { ticker: ORCL, country: US, tier: momentum, name: "Oracle", note: "AI 클라우드 RPO 폭증" }
+      - { ticker: CRWV, country: US, tier: momentum, name: "CoreWeave", note: "AI 전용 GPU 클라우드 IPO 종목" }
+      - { ticker: NBIS, country: US, tier: momentum, name: "Nebius", note: "유럽 AI 클라우드" }
+
+  vertical_ai:
+    name: "버티컬 AI / 운영자 (AI의 '밴더빌트')"
+    thesis: "AI를 기존 워크플로우에 박아넣어 매출로 환원하는 운영자들. 진짜 텐베거 후보가 여기서 다수 출현."
+    stocks:
+      - { ticker: PLTR, country: US, tier: leader, name: "Palantir", note: "정부+엔터프라이즈 AI OS, AIP" }
+      - { ticker: NOW, country: US, tier: leader, name: "ServiceNow", note: "엔터프라이즈 워크플로우 AI" }
+      - { ticker: APP, country: US, tier: momentum, name: "AppLovin", note: "AI 광고 ROI의 정점" }
+      - { ticker: CRM, country: US, tier: supporting, name: "Salesforce", note: "Agentforce" }
+      - { ticker: SNOW, country: US, tier: supporting, name: "Snowflake", note: "데이터·AI 플랫폼" }
+      - { ticker: DDOG, country: US, tier: supporting, name: "Datadog", note: "AI 워크로드 옵저버빌리티" }
+      - { ticker: "018260", country: KR, tier: leader, name: "삼성SDS", note: "그룹 IT·AI 솔루션" }
+      - { ticker: "108860", country: KR, tier: momentum, name: "셀바스AI", note: "한국어 LLM·음성 AI" }
+
+  embodied_ai:
+    name: "로보틱스·Embodied AI (다음 게임체인저)"
+    thesis: "인지노동 다음은 물리노동. 휴머노이드·자율주행·수술로봇이 2027~2030 진정한 텐베거 가능 영역."
+    stocks:
+      - { ticker: TSLA, country: US, tier: leader, name: "Tesla", note: "Optimus·FSD·로보택시 옵션밸류" }
+      - { ticker: ISRG, country: US, tier: leader, name: "Intuitive Surgical", note: "다빈치 수술로봇 독점" }
+      - { ticker: RBOT, country: US, tier: momentum, name: "Vicarious Surgical", note: "수술로봇 신생" }
+      - { ticker: SYM, country: US, tier: momentum, name: "Symbotic", note: "물류 자동화" }
+      - { ticker: "277810", country: KR, tier: leader, name: "레인보우로보틱스", note: "삼성 자회사화, 휴머노이드" }
+
+# 매크로 지표 (FRED 시리즈)
+macro:
+  - { id: DGS10, name: "US 10Y Treasury Yield" }
+  - { id: DTWEXBGS, name: "US Dollar Index" }
+  - { id: VIXCLS, name: "VIX" }
+  - { id: NASDAQCOM, name: "NASDAQ Composite" }

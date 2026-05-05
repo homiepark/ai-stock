@@ -1,0 +1,197 @@
+{% extends "site_base.html.j2" %}
+{% block title %}AI 투자 일일 리포트 — {{ date }}{% endblock %}
+
+{% block content %}
+
+{# Hero #}
+<section class="space-y-2">
+  <div class="text-sm text-slate-400">{{ date }}</div>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">AI 투자 일일 리포트</h1>
+  <p class="text-sm text-slate-400">
+    워치리스트 {{ universe_size }}종목 · 미국 {{ us_count }} / 한국 {{ kr_count }} ·
+    4대 자산 계층 + Embodied AI 추적
+  </p>
+</section>
+
+{# 매크로 스냅샷 #}
+{% if macro %}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3">📊 매크로 스냅샷</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+    {% for key, m in macro.items() %}
+    <div class="bg-slate-900 border border-slate-800 rounded-lg p-3">
+      <div class="text-xs text-slate-400 truncate">{{ m.name }}</div>
+      <div class="text-lg font-mono font-semibold text-white tabular-nums">{{ "%.2f"|format(m.value) }}</div>
+      <div class="text-xs font-mono tabular-nums {% if m.change > 0 %}text-emerald-400{% elif m.change < 0 %}text-rose-400{% else %}text-slate-500{% endif %}">
+        {{ "%+.2f%%"|format(m.change * 100) }}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# 테마 랭킹 #}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3">🚀 테마 랭킹 — 오늘의 자금 흐름</h2>
+  <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden">
+    {% set max_abs = namespace(v=0.0001) %}
+    {% for r in theme_rankings %}
+      {% if (r.composite_return|abs) > max_abs.v %}{% set max_abs.v = r.composite_return|abs %}{% endif %}
+    {% endfor %}
+    {% for r in theme_rankings %}
+    <div class="px-4 py-3 {% if not loop.last %}border-b border-slate-800{% endif %}">
+      <div class="flex items-center justify-between mb-1.5">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="text-xs text-slate-500 font-mono">#{{ loop.index }}</span>
+          <span class="font-medium text-white truncate">{{ r.theme_name }}</span>
+        </div>
+        <div class="text-sm font-mono tabular-nums {% if r.composite_return > 0 %}text-emerald-400{% else %}text-rose-400{% endif %} flex-shrink-0 ml-2">
+          {{ "%+.2f%%"|format(r.composite_return * 100) }}
+        </div>
+      </div>
+      <div class="relative h-1.5 bg-slate-800 rounded-full overflow-hidden">
+        {% set pct = (r.composite_return / max_abs.v * 50)|round(1) %}
+        {% if r.composite_return >= 0 %}
+        <div class="absolute left-1/2 top-0 bottom-0 bg-emerald-500" style="width: {{ pct }}%;"></div>
+        {% else %}
+        <div class="absolute right-1/2 top-0 bottom-0 bg-rose-500" style="width: {{ -pct }}%;"></div>
+        {% endif %}
+        <div class="absolute left-1/2 top-0 bottom-0 w-px bg-slate-600"></div>
+      </div>
+      <div class="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-400">
+        <span>1주 <span class="font-mono tabular-nums {% if r.avg_return_1w > 0 %}text-emerald-400{% else %}text-rose-400{% endif %}">{{ "%+.1f%%"|format(r.avg_return_1w * 100) }}</span></span>
+        <span>1개월 <span class="font-mono tabular-nums {% if r.avg_return_1m > 0 %}text-emerald-400{% else %}text-rose-400{% endif %}">{{ "%+.1f%%"|format(r.avg_return_1m * 100) }}</span></span>
+        <span>3개월 <span class="font-mono tabular-nums {% if r.avg_return_3m > 0 %}text-emerald-400{% else %}text-rose-400{% endif %}">{{ "%+.1f%%"|format(r.avg_return_3m * 100) }}</span></span>
+        {% if r.cap_leader %}<span>시총: <span class="text-slate-200">{{ r.cap_leader.name }}</span></span>{% endif %}
+        {% if r.momentum_leader and r.momentum_leader.ticker != (r.cap_leader.ticker if r.cap_leader else '') %}<span>모멘텀: <span class="text-sky-400">{{ r.momentum_leader.name }}</span></span>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# 오늘의 주목 종목 Top N #}
+{% if focus %}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3">⭐ 오늘의 주목 종목 Top {{ focus|length }}</h2>
+  <div class="grid gap-4 md:grid-cols-2">
+  {% for f in focus %}
+    <div class="bg-slate-900 border border-slate-800 rounded-lg p-4 space-y-3">
+      <div class="flex items-start justify-between gap-2">
+        <div class="min-w-0">
+          <div class="text-xs text-slate-500 mb-0.5">{{ f.theme_short }}</div>
+          <div class="font-semibold text-white truncate">{{ f.stock.name }} <span class="text-slate-500 font-mono text-sm">{{ f.stock.ticker }}</span></div>
+        </div>
+        <span class="px-2 py-1 text-xs font-semibold rounded border label-{{ f.narrative.label|lower }} flex-shrink-0">
+          {{ f.label_emoji }} {{ f.narrative.label }}
+        </span>
+      </div>
+
+      <div class="grid grid-cols-4 gap-2 text-center">
+        <div class="bg-slate-950 rounded p-2"><div class="text-xs text-slate-500">단기</div><div class="font-mono text-sm text-white tabular-nums">{{ "%.0f"|format(f.composite.short_score) }}</div></div>
+        <div class="bg-slate-950 rounded p-2"><div class="text-xs text-slate-500">중기</div><div class="font-mono text-sm text-white tabular-nums">{{ "%.0f"|format(f.composite.mid_score) }}</div></div>
+        <div class="bg-slate-950 rounded p-2"><div class="text-xs text-slate-500">장기</div><div class="font-mono text-sm text-white tabular-nums">{{ "%.0f"|format(f.composite.long_score) }}</div></div>
+        <div class="bg-sky-950 rounded p-2 ring-1 ring-sky-800"><div class="text-xs text-sky-300">종합</div><div class="font-mono text-sm font-semibold text-sky-300 tabular-nums">{{ "%.0f"|format(f.composite.composite_score) }}</div></div>
+      </div>
+
+      {% if f.narrative.summary %}
+      <p class="text-sm text-slate-300 leading-relaxed">{{ f.narrative.summary }}</p>
+      {% endif %}
+
+      <div class="space-y-1.5 text-xs">
+        {% if f.narrative.entry_guide %}<div><span class="text-emerald-400">진입</span> <span class="text-slate-300">{{ f.narrative.entry_guide }}</span></div>{% endif %}
+        {% if f.narrative.risks %}<div><span class="text-rose-400">리스크</span> <span class="text-slate-300">{{ f.narrative.risks }}</span></div>{% endif %}
+        {% if f.narrative.next_trigger %}<div><span class="text-sky-400">트리거</span> <span class="text-slate-300">{{ f.narrative.next_trigger }}</span></div>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# 종합 판정 매트릭스 #}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3">🎯 종합 판정 매트릭스 <span class="text-xs font-normal text-slate-500">— 컬럼 헤더 클릭하면 정렬</span></h2>
+  <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-x-auto">
+    <table class="sortable w-full text-sm">
+      <thead class="bg-slate-950 text-slate-400 text-xs uppercase tracking-wider">
+        <tr>
+          <th class="text-left px-3 py-2 sticky left-0 bg-slate-950">종목</th>
+          <th class="text-left px-3 py-2">테마</th>
+          <th class="text-right px-3 py-2">단기</th>
+          <th class="text-right px-3 py-2">중기</th>
+          <th class="text-right px-3 py-2">장기</th>
+          <th class="text-right px-3 py-2 sorted-desc">종합</th>
+          <th class="text-center px-3 py-2">라벨</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-800">
+        {% for v in verdicts %}
+        <tr class="hover:bg-slate-800/30">
+          <td class="px-3 py-2 sticky left-0 bg-slate-900 hover:bg-slate-800/30">
+            <div class="font-medium text-white">{{ v.stock.name }}</div>
+            <div class="text-xs text-slate-500 font-mono">{{ v.stock.ticker }} · {{ v.stock.country }}</div>
+          </td>
+          <td class="px-3 py-2 text-slate-400 text-xs whitespace-nowrap">{{ v.theme_short }}</td>
+          <td class="px-3 py-2 text-right font-mono text-slate-300 tabular-nums" data-sort="{{ v.composite.short_score }}">{{ "%.0f"|format(v.composite.short_score) }}</td>
+          <td class="px-3 py-2 text-right font-mono text-slate-300 tabular-nums" data-sort="{{ v.composite.mid_score }}">{{ "%.0f"|format(v.composite.mid_score) }}</td>
+          <td class="px-3 py-2 text-right font-mono text-slate-300 tabular-nums" data-sort="{{ v.composite.long_score }}">{{ "%.0f"|format(v.composite.long_score) }}</td>
+          <td class="px-3 py-2 text-right font-mono font-semibold text-white tabular-nums" data-sort="{{ v.composite.composite_score }}">{{ "%.0f"|format(v.composite.composite_score) }}</td>
+          <td class="px-3 py-2 text-center" data-sort="{{ v.composite.label }}">
+            <span class="px-2 py-0.5 text-xs rounded border label-{{ (v.narrative.label or v.composite.label)|lower }} whitespace-nowrap">
+              {{ v.label_emoji }} {{ v.narrative.label or v.composite.label }}
+            </span>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{# 뉴스 다이제스트 #}
+{% if top_news %}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3">📰 뉴스 다이제스트</h2>
+  <div class="bg-slate-900 border border-slate-800 rounded-lg divide-y divide-slate-800">
+    {% for n in top_news %}
+    <a href="{{ n.link }}" target="_blank" rel="noopener" class="block px-4 py-3 hover:bg-slate-800/50">
+      <div class="flex items-start gap-3">
+        <div class="flex-1 min-w-0">
+          <div class="text-sm text-white">{{ n.title }}</div>
+          <div class="mt-1 flex flex-wrap gap-1.5 text-xs">
+            {% for name in n.matched_names %}
+            <span class="px-1.5 py-0.5 bg-slate-800 text-slate-400 rounded">{{ name }}</span>
+            {% endfor %}
+            <span class="text-slate-500 ml-auto">{{ n.source }}</span>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{# 라벨 변경 #}
+{% if label_changes %}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3">🔄 어제 대비 라벨 변경</h2>
+  <ul class="bg-slate-900 border border-slate-800 rounded-lg divide-y divide-slate-800">
+    {% for c in label_changes %}
+    <li class="px-4 py-2.5 flex items-center gap-3 text-sm">
+      <span class="font-medium text-white">{{ c.stock.name }}</span>
+      <span class="text-slate-500 font-mono text-xs">{{ c.stock.ticker }}</span>
+      <span class="ml-auto flex items-center gap-2">
+        <span class="px-2 py-0.5 text-xs rounded border label-{{ c.old_label|lower }}">{{ c.old_label }}</span>
+        <span class="text-slate-500">→</span>
+        <span class="px-2 py-0.5 text-xs rounded border label-{{ c.new_label|lower }}">{{ c.new_label }}</span>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% endblock %}

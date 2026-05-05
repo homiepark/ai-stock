@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.cache/
+src/ai_stock/cache/
+*.egg-info/
+dist/
+build/
+.DS_Store
+.uv/
+uv.lock
+site/
+reports/sample_site/
+reports/samples/
