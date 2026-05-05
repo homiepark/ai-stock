@@ -6,13 +6,6 @@ on:
     # 화~토 (UTC) = 미국장 월~금 마감
     - cron: '30 21 * * 1-5'
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - claude/ai-investment-analysis-083bm
-    paths:
-      - '.github/workflows/daily-report.yml'
-      - 'src/ai_stock/report/templates/site_*.html.j2'
 
 permissions:
   contents: write
