@@ -1,0 +1,74 @@
+# {{ stock.name }} ({{ stock.ticker }}) — 임시 분석 {{ date }}
+
+{% if in_watchlist -%}
+> 워치리스트 종목 · 테마: **{{ stock.theme }}** · 등급: {{ stock.tier }}
+> _고정 논거:_ {{ stock.note }}
+{%- else -%}
+> 워치리스트 외 종목 — {{ stock.country }} 시장. 일회성 분석으로 워치리스트에 추가하려면 `config/universe.yaml`에 등록하세요.
+{%- endif %}
+
+## 종합 판정
+
+| 지표 | 점수 | 비고 |
+|---|---:|---|
+| 단기 (1~12주) | {{ "%.0f"|format(composite.short_score) }} | RSI·MACD·이평·거래량·모멘텀 |
+| 중기 (3~12개월) | {{ "%.0f"|format(composite.mid_score) }} | 200일선·어닝·컨센서스·상대강도 |
+| 장기 (1~5년) | {{ "%.0f"|format(composite.long_score) }} | 매출 CAGR·마진·EV/Sales·PEG |
+| **종합** | **{{ "%.0f"|format(composite.composite_score) }}** | **{{ label_emoji }} {{ narrative.label }}** |
+
+## LLM 판단
+
+{{ narrative.summary }}
+
+- **진입 가이드:** {{ narrative.entry_guide }}
+- **리스크:** {{ narrative.risks }}
+- **다음 트리거:** {{ narrative.next_trigger }}
+
+## 기술적 스냅샷
+
+| 항목 | 값 |
+|---|---:|
+| 종가 | {{ "%.2f"|format(metrics.last_close) if metrics.last_close else "-" }} |
+| 50일 이평 | {{ "%.2f"|format(metrics.ma50) if metrics.ma50 else "-" }} |
+| 200일 이평 | {{ "%.2f"|format(metrics.ma200) if metrics.ma200 else "-" }} |
+| RSI(14) | {{ "%.1f"|format(metrics.rsi14) if metrics.rsi14 else "-" }} |
+| 5일 수익률 | {{ "%+.1f%%"|format(metrics.ret_5d * 100) if metrics.ret_5d else "-" }} |
+| 20일 수익률 | {{ "%+.1f%%"|format(metrics.ret_20d * 100) if metrics.ret_20d else "-" }} |
+| 60일 수익률 | {{ "%+.1f%%"|format(metrics.ret_60d * 100) if metrics.ret_60d else "-" }} |
+| 시가총액 | {{ "{:,.0f}".format(market_cap) if market_cap else "-" }} |
+
+## 정량 신호 근거
+
+**단기 ({{ "%.0f"|format(short.score) }}점)**
+{% for r in short.rationale -%}
+- {{ r }}
+{% endfor %}
+
+**중기 ({{ "%.0f"|format(mid.score) }}점)**
+{% for r in mid.rationale -%}
+- {{ r }}
+{% endfor %}
+
+**장기 ({{ "%.0f"|format(long.score) }}점)**
+{% for r in long.rationale -%}
+- {{ r }}
+{% endfor %}
+
+## 펀더멘털
+
+- EV/Sales: {{ fundamentals.ev_to_sales if fundamentals.ev_to_sales else "-" }}
+- PER: {{ fundamentals.pe if fundamentals.pe else "-" }}
+- PEG: {{ fundamentals.peg if fundamentals.peg else "-" }}
+
+## 관련 뉴스
+
+{% if news -%}
+{% for n in news -%}
+- **{{ n.title }}** _{{ n.source }}_
+{% endfor %}
+{% else -%}
+_관련 뉴스 없음._
+{% endif %}
+
+---
+_생성: ai-stock v{{ version }} · {{ generated_at }} · 용어 설명은 docs/GLOSSARY.md 참조_

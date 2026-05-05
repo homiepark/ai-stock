@@ -47,5 +47,27 @@ def universe() -> None:
             click.echo(f"   {tier_mark} {s.ticker:<8} {s.country:<2} {s.name}")
 
 
+@main.command()
+@click.argument("ticker")
+@click.option("--name", default=None, help="종목명. 미지정 시 티커를 그대로 사용.")
+@click.option("--output-dir", type=click.Path(path_type=Path), default=None,
+              help="리포트 출력 디렉토리. 기본: reports/adhoc/")
+def analyze(ticker: str, name: str | None, output_dir: Path | None) -> None:
+    """워치리스트 외 종목 임시 분석.
+
+    예시:
+        ai-stock analyze NVDA              # 미국 주식
+        ai-stock analyze 005930            # 한국 주식 (6자리 코드)
+        ai-stock analyze AAPL --name 애플
+    """
+    from ai_stock.report.adhoc import analyze_ticker
+    try:
+        path = analyze_ticker(ticker, name=name, output_dir=output_dir)
+        click.echo(f"임시 분석 리포트 생성: {path}")
+    except RuntimeError as e:
+        click.echo(f"❌ {e}", err=True)
+        raise click.Abort()
+
+
 if __name__ == "__main__":
     main()
