@@ -1,33 +1,34 @@
 """Social signal aggregator — multi-source 'Twitter pulse' for the coin tab.
 
-Strategy:
+Strategy (in order of preference when configured):
 
-1. **ApeWisdom API** (free, reliable) — gives mention rankings + 24h deltas
-   for crypto symbols across reddit/twitter/discord. This is the workhorse
-   of the system; it works without auth and surfaces 'rising trend' signals
-   that would otherwise require expensive Twitter API access.
+1. **Sorsa API** (formerly TweetScout, paid $49~199/mo) — crypto-specific
+   Twitter data. 50x cheaper + 20x higher rate limit than official X API,
+   plus crypto-aware scoring (Sorsa Score) and bot detection. Activated
+   when `sorsa.enabled: true` in config and `SORSA_API_KEY` env var set.
 
-2. **Twitter RSS** (best-effort, often broken) — Nitter / RSSHub bridges.
-   Most public Nitter instances are dead in 2026; RSSHub public instance
-   is rate-limited. Anything we get is a bonus; failure is silent.
+2. **ApeWisdom API** (free) — coin mention rankings + 24h deltas across
+   reddit/twitter/discord. Always on by default.
 
-3. **Curated influencer weighting** — even without per-tweet data, we
-   document who matters so the user can manually cross-reference, and
-   future paid integrations (X API Pro $200/mo) can plug in cleanly.
+3. **Twitter RSS** (free, best-effort) — Nitter / RSSHub bridges. Mostly
+   broken in 2026; falls through silently.
+
+4. **Curated influencer weighting** — manual list rendered as a clickable
+   contact sheet so users can spot-check signals on X directly.
 
 Returns shape (consumed by coin_daily.py and rendered by site_report.html.j2):
     {
-      "trending": [{"ticker", "name", "rank", "rank_24h_ago", "mentions",
-                    "mentions_24h_ago", "delta_pct", "is_rising"}],
+      "trending": [...ApeWisdom rows with delta_pct + is_rising...],
       "influencer_count": int,
       "influencer_categories": {"memecoin_alpha": [...], ...},
-      "tweet_samples": [{"handle", "text", "ts"}],   # may be empty
-      "source_status": {"apewisdom": "ok", "twitter_rss": "skipped"},
+      "tweet_samples": [{"handle", "name", "text", "ts", "link", "score"}],
+      "source_status": {"sorsa": "ok|disabled|fail", "apewisdom": ..., "twitter_rss": ...},
     }
 """
 from __future__ import annotations
 
 import logging
+import os
 from pathlib import Path
 from typing import Any
 
@@ -38,6 +39,8 @@ from ai_stock.config import CONFIG_DIR
 from ai_stock.data.cache import DiskCache
 
 log = logging.getLogger(__name__)
+
+SORSA_BASE = "https://api.tweetscout.io/v2"
 
 
 def load_influencers(path: Path | None = None) -> dict[str, Any]:
@@ -162,6 +165,131 @@ def fetch_influencer_tweets(influencers: list[dict[str, Any]],
     return samples
 
 
+def fetch_sorsa_user_info(handle: str, api_key: str,
+                           cache: DiskCache | None = None) -> dict[str, Any] | None:
+    """Get Sorsa profile + crypto score for a single handle.
+
+    Sorsa endpoint: GET /v2/info/{handle}
+    Auth header: ApiKey: <key>
+    Returns parsed dict or None on failure.
+    """
+    cache_key = f"sorsa_user_{handle}"
+    if cache is not None:
+        cached = cache.get_json(cache_key)
+        if cached is not None:
+            return cached
+
+    try:
+        r = requests.get(f"{SORSA_BASE}/info/{handle}",
+                         headers={"ApiKey": api_key, "User-Agent": "ai-stock/0.1"},
+                         timeout=15)
+        if r.status_code == 401:
+            log.warning("Sorsa auth failed (check SORSA_API_KEY)")
+            return None
+        if r.status_code != 200:
+            log.warning("Sorsa /info/%s returned %d", handle, r.status_code)
+            return None
+        data = r.json()
+    except Exception as e:
+        log.warning("Sorsa user info failed for %s: %s", handle, e)
+        return None
+
+    if cache is not None:
+        cache.set_json(cache_key, data)
+    return data
+
+
+def fetch_sorsa_user_tweets(handle: str, api_key: str, count: int = 5,
+                             cache: DiskCache | None = None) -> list[dict[str, Any]]:
+    """Get recent tweets for a handle via Sorsa.
+
+    Sorsa endpoint: GET /v2/user-tweets/{handle}?count={N}
+    Returns list of {handle, name, text, ts, link, retweets, likes}.
+    """
+    cache_key = f"sorsa_tweets_{handle}_{count}"
+    if cache is not None:
+        cached = cache.get_pickle(cache_key)
+        if cached is not None:
+            return cached
+
+    try:
+        r = requests.get(f"{SORSA_BASE}/user-tweets/{handle}",
+                         params={"count": count},
+                         headers={"ApiKey": api_key, "User-Agent": "ai-stock/0.1"},
+                         timeout=15)
+        if r.status_code != 200:
+            log.warning("Sorsa /user-tweets/%s returned %d", handle, r.status_code)
+            return []
+        raw = r.json()
+    except Exception as e:
+        log.warning("Sorsa tweets failed for %s: %s", handle, e)
+        return []
+
+    # Sorsa response shape varies; handle the common patterns
+    tweets_arr = raw if isinstance(raw, list) else (raw.get("tweets") or raw.get("data") or [])
+    out: list[dict[str, Any]] = []
+    for t in tweets_arr[:count]:
+        if not isinstance(t, dict):
+            continue
+        text = t.get("full_text") or t.get("text") or ""
+        ts = t.get("created_at") or t.get("ts") or ""
+        tid = t.get("id_str") or t.get("id") or ""
+        out.append({
+            "handle": handle,
+            "text": text[:280],
+            "ts": ts,
+            "link": f"https://x.com/{handle}/status/{tid}" if tid else f"https://x.com/{handle}",
+            "retweets": int(t.get("retweet_count", 0) or 0),
+            "likes": int(t.get("favorite_count", 0) or t.get("likes", 0) or 0),
+        })
+
+    if cache is not None and out:
+        cache.set_pickle(cache_key, out)
+    return out
+
+
+def fetch_sorsa_pulse(influencers: list[dict[str, Any]], sorsa_cfg: dict[str, Any],
+                      cache: DiskCache | None = None) -> tuple[list[dict[str, Any]], str]:
+    """Pull recent tweets from top-weighted influencers via Sorsa API.
+
+    Returns (samples, status) where status is 'ok'|'disabled'|'no_key'|'fail'.
+    """
+    if not sorsa_cfg or not sorsa_cfg.get("enabled"):
+        return [], "disabled"
+    api_key = os.getenv("SORSA_API_KEY")
+    if not api_key:
+        return [], "no_key"
+
+    tweets_per = int(sorsa_cfg.get("tweets_per_influencer", 5))
+    min_score = float(sorsa_cfg.get("min_score", 0))
+
+    # Highest-weight first; cap at 30 to bound monthly request cost
+    top = sorted(influencers, key=lambda i: -int(i.get("weight", 0)))[:30]
+
+    samples: list[dict[str, Any]] = []
+    for inf in top:
+        handle = inf["handle"]
+        if min_score > 0:
+            info = fetch_sorsa_user_info(handle, api_key, cache=cache)
+            score = float((info or {}).get("score", 0) or 0)
+            if score and score < min_score:
+                continue  # skip low-trust accounts (likely paid bots)
+        else:
+            score = None
+
+        tweets = fetch_sorsa_user_tweets(handle, api_key, count=tweets_per, cache=cache)
+        for tw in tweets:
+            samples.append({**tw, "name": inf.get("name", handle), "score": score,
+                            "weight": inf.get("weight", 0)})
+
+    # Sort by recency-ish proxy: weight × engagement
+    def _sort_key(t: dict[str, Any]) -> float:
+        return float(t.get("weight", 0)) * (1 + t.get("likes", 0) / 100 + t.get("retweets", 0) / 50)
+    samples.sort(key=_sort_key, reverse=True)
+
+    return samples, ("ok" if samples else "fail")
+
+
 def assemble_social_pulse(cache: DiskCache | None = None) -> dict[str, Any]:
     """One-shot social signal assembly for the coin context."""
     cfg = load_influencers()
@@ -176,13 +304,29 @@ def assemble_social_pulse(cache: DiskCache | None = None) -> dict[str, Any]:
             cache=cache,
         )
 
-    tweet_samples = fetch_influencer_tweets(
-        influencers,
-        twitter_rss_cfg=cfg.get("twitter_rss", {}),
-        cache=cache,
-    )
+    # Sorsa first (paid, highest quality), fall through to RSS otherwise
+    sorsa_cfg = cfg.get("sorsa", {})
+    sorsa_samples, sorsa_status = fetch_sorsa_pulse(influencers, sorsa_cfg, cache=cache)
 
-    # Group influencers by category for the doc-style display
+    rss_samples: list[dict[str, Any]] = []
+    rss_status = "skipped"
+    if not sorsa_samples:
+        rss_samples = fetch_influencer_tweets(
+            influencers,
+            twitter_rss_cfg=cfg.get("twitter_rss", {}),
+            cache=cache,
+        )
+        rss_cfg = cfg.get("twitter_rss", {})
+        if not rss_cfg.get("enabled"):
+            rss_status = "disabled"
+        elif rss_samples:
+            rss_status = "ok"
+        else:
+            rss_status = "fail"
+
+    tweet_samples = sorsa_samples or rss_samples
+
+    # Group influencers by category for display
     categories: dict[str, list[dict[str, Any]]] = {}
     for inf in influencers:
         cat = inf.get("category", "other")
@@ -191,9 +335,9 @@ def assemble_social_pulse(cache: DiskCache | None = None) -> dict[str, Any]:
         categories[cat].sort(key=lambda i: -int(i.get("weight", 0)))
 
     source_status = {
+        "sorsa": sorsa_status,
         "apewisdom": "ok" if trending else "fail",
-        "twitter_rss": "ok" if tweet_samples else
-            ("disabled" if not cfg.get("twitter_rss", {}).get("enabled") else "fail"),
+        "twitter_rss": rss_status,
     }
 
     return {

@@ -65,7 +65,20 @@ twitter_rss:
   # nitter_instance: "https://nitter.net"  # 대부분 죽음
   # rsshub_instance: "https://rsshub.app"  # 공용은 rate limit 심함, 자체 호스팅 권장
 
-# 향후 X API Pro 통합 (월 $200) 시 채워질 영역
+# Sorsa (전 TweetScout) — 크립토 특화 트위터 API. X API보다 50배 저렴, 20배 높은 rate limit
+# Starter $49/월, Pro $199/월. 즉시 셋업, 크립토 특화 점수.
+# 가입: https://sorsa.io  (또는 https://app.tweetscout.io)
+# API 키 받으면 환경변수 SORSA_API_KEY로 주입 (.env 파일).
+sorsa:
+  enabled: false  # API 키 발급 후 true로 변경
+  # 폴링 간격 (분). Pro $199 플랜 기준 60분이 적정 (월 ~21,600 calls)
+  poll_interval_minutes: 60
+  # 인플루언서당 최근 N개 트윗
+  tweets_per_influencer: 5
+  # 최소 Sorsa Score (1~100). 낮으면 봇·저신뢰 계정 트윗까지 노출. 50+ 권장
+  min_score: 50
+
+# 향후 X API Pro 통합 (월 $200~) 시 채워질 영역
 x_api:
   enabled: false
   # bearer_token: ENV

@@ -29,6 +29,44 @@
 
 ---
 
+## ⭐ 추천: Sorsa API (전 TweetScout) — X API 대비 50배 저렴
+
+**가장 가성비 좋은 옵션.** 크립토 트위터에 특화돼 있고, 공식 X API보다 50배 저렴 + 20배 높은 rate limit. 이 시스템은 **API 키만 넣으면 즉시 동작**하도록 통합 완료됨.
+
+### Sorsa 가격·기능 (2026 기준)
+
+| 플랜 | 월 비용 | 월 요청 한도 | 30명 인플루언서 폴링 |
+|---|---:|---:|---|
+| **Starter** | **$49** | ~10,000 | 3시간 간격 OK |
+| **Pro** | **$199** | ~100,000 | 1시간 간격 OK + 추가 검색 여유 |
+
+**X API Basic($200)과 Sorsa Pro($199) 비교**:
+- 가격 비슷 ($200 vs $199)
+- Sorsa는 **rate limit 10배 높음** (10K → 100K)
+- Sorsa는 **크립토 특화 점수**(Sorsa Score) + **봇 탐지** 추가
+- Sorsa는 즉시 셋업 (X API는 승인 1~3일)
+
+→ **개인 투자자에겐 Sorsa Pro가 X API Basic보다 명백히 우위**.
+
+### Sorsa 활성화 방법
+
+1. https://sorsa.io 가입 (또는 https://app.tweetscout.io)
+2. API 키 발급 → `.env`에 추가:
+   ```
+   SORSA_API_KEY=your_key_here
+   ```
+3. `config/influencers.yaml`에서 `sorsa.enabled: true`로 변경
+4. `uv run ai-stock daily` 실행 → 코인 페이지에 인플루언서 실제 트윗 + Sorsa Score 자동 노출
+
+### 작동 방식 (시스템 내부)
+
+- **`min_score: 50`** 미만 계정은 폴링 전 스킵 → 봇·돈주고 산 팔로워 계정 자동 제외
+- 폴링 우선순위: weight 높은 인플루언서부터 (가중치 10인 Ansem이 가중치 5인 사람보다 먼저)
+- 트윗은 **weight × 좋아요·리트윗 수**로 정렬해서 진짜 영향력 큰 트윗 상단
+- 18시간 캐시로 같은 데이터 중복 호출 방지
+
+---
+
 ## 💰 X (Twitter) 공식 API 티어별 트래킹 능력
 
 **X API는 2023년 4월 무료 티어 제거 이후 완전 유료화**됨. 2026년 5월 기준 가격:
@@ -100,16 +138,15 @@
 - ApeWisdom 집계 + 큐레이션 명단
 - **커버리지 ~80%**: 어느 코인이 핫한지 1시간 이내 캐치, 누가 말했는지는 직접 확인 필요
 
-### Stage 2: $24/월 — LunarCrush 통합
-- 인플루언서 가중 감성 점수 추가
-- 'AI Stock Influencer Score' 같은 지표
-- **커버리지 ~90%**: 인플루언서 가중 정보, 1~3시간 지연
+### Stage 2: $49/월 — **Sorsa Starter (추천)** ⭐
+- 30명 인플루언서 3시간마다 폴링 + Sorsa Score(봇 탐지)
+- 코드는 이미 구현됨 — `SORSA_API_KEY` 넣고 `sorsa.enabled: true`만 설정
+- **커버리지 ~85%**: 진짜 인플루언서 트윗을 사이트에서 직접 확인 가능
 
-### Stage 3: $200/월 — X API Basic
-- 30명 인플루언서 4시간마다 폴링
-- LLM이 "어떤 인플루언서가 어떤 코인을 언급했는지" 정리
-- 키워드 필터 스트림 (예: "$BONK" "$WIF" 실시간 알림)
-- **커버리지 ~95%**: 거의 실시간, 개별 트윗 추적 가능
+### Stage 3: $199/월 — Sorsa Pro
+- 30명 인플루언서 1시간마다 폴링 + 키워드 검색 여유
+- **커버리지 ~95%**: 거의 실시간, 개별 트윗 추적
+- X API Basic($200) 대비 rate limit 10배
 
 ### Stage 4: $5,000/월 — X API Pro
 - 분 단위 추적, 풀 아카이브
@@ -118,27 +155,66 @@
 
 ### 권장 진행
 - 처음 1~2개월: **Stage 1**로 충분히 가치 검증
-- 시스템에 익숙해지면: **Stage 2** 추가 검토 ($24/월은 부담 적음)
-- 실제로 알파 발굴이 잘 되어 수익이 큰 경우만: **Stage 3**
+- 시스템에 익숙해지면: **Stage 2 (Sorsa Starter $49/월)** 추가 — 가성비 최고
+- 진짜 알파 노릴 때만: **Stage 3 (Sorsa Pro $199/월)**
+
+### Sorsa보다 LunarCrush가 나은 경우
+- 개별 트윗보다 **집계 감성·소셜 점수** 중심 분석을 원할 때
+- $24/월로 더 저렴
+- 둘 다 사용하는 것도 옵션 (각자 다른 신호)
 
 ---
 
-## 🔧 Stage 3 업그레이드 방법 (X API Basic)
+## 🔧 Sorsa 활성화 방법 (Stage 2 / 3)
 
-`config/influencers.yaml`에서 활성화:
+### 1. API 키 발급
+- https://sorsa.io 또는 https://app.tweetscout.io 접속
+- 가입 → Developer 섹션 → API key 생성
+- Starter $49/월 또는 Pro $199/월 결제
+
+### 2. `.env` 파일에 키 추가
+```
+SORSA_API_KEY=ts_xxxxxxxxxxxx
+```
+
+### 3. `config/influencers.yaml` 활성화
+```yaml
+sorsa:
+  enabled: true
+  poll_interval_minutes: 60   # Pro는 60분, Starter는 180분 권장
+  tweets_per_influencer: 5
+  min_score: 50               # 봇·저신뢰 계정 자동 제외 (Starter는 60+ 권장)
+```
+
+### 4. 즉시 동작
+```powershell
+uv run ai-stock daily
+start site\coin.html
+```
+
+코인 페이지의 "🔥 트위터 펄스" 섹션에 다음이 자동 추가됨:
+- 인플루언서 실제 최근 트윗 (최대 12건)
+- 각 트윗의 ❤ 좋아요·🔁 리트윗 수
+- Sorsa Score (1~100, 크립토 신뢰도)
+- 트윗 클릭 시 X 원본 이동
+
+### 비용 절감 팁
+- `poll_interval_minutes`를 `1440`(하루 1회)로 두면 한 달 ~900 calls만 사용 → Starter 한도의 9% 사용으로 적정
+- `min_score: 70`으로 올리면 정말 검증된 인플루언서만 노출 → 노이즈 감소
+- 워치리스트 인플루언서 30명 → 10명으로 줄이면 비용도 1/3
+
+---
+
+## 🔧 X API Pro 통합 (Stage 4)
+
+X API Pro는 별도 코드가 필요. Sorsa와 다른 인증 + 다른 endpoint shape. 현재 시스템은 placeholder만 있음:
 
 ```yaml
 x_api:
-  enabled: true
-  # bearer_token: 환경변수 X_API_BEARER_TOKEN로 주입
+  enabled: false  # 활성화하려면 src/ai_stock/data/social.py에 fetch_xapi_pulse 추가 필요
 ```
 
-`.env`에 토큰 추가:
-```
-X_API_BEARER_TOKEN=AAAAAAAAAAAAAAAAA...
-```
-
-이후 `src/ai_stock/data/social.py`에 X API client 추가 필요 (현재는 placeholder). 작업 발주 시 1~2시간 작업.
+대부분의 개인 투자자는 **Sorsa Pro로 충분**. X API Pro는 헤지펀드급 사용처가 아니면 오버스펙.
 
 ---
 

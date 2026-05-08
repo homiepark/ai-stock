@@ -76,6 +76,92 @@ def test_assemble_social_pulse_shape(monkeypatch):
     assert weights == sorted(weights, reverse=True)
 
 
+def test_sorsa_disabled_when_no_config(monkeypatch):
+    """When sorsa.enabled is false, status should be 'disabled' regardless of env key."""
+    monkeypatch.setenv("SORSA_API_KEY", "test-key")
+    monkeypatch.setattr(social_module, "fetch_apewisdom_trending", lambda **k: [])
+    pulse = social_module.assemble_social_pulse()
+    assert pulse["source_status"]["sorsa"] == "disabled"
+
+
+def test_sorsa_no_key_when_enabled_without_env(monkeypatch):
+    """When sorsa.enabled is true but no env key, status should be 'no_key'."""
+    monkeypatch.delenv("SORSA_API_KEY", raising=False)
+    monkeypatch.setattr(social_module, "fetch_apewisdom_trending", lambda **k: [])
+    monkeypatch.setattr(social_module, "load_influencers", lambda: {
+        "influencers": [{"handle": "test", "name": "T", "category": "trader",
+                         "weight": 5, "note": ""}],
+        "apewisdom": {"enabled": True, "top_n": 15},
+        "sorsa": {"enabled": True, "tweets_per_influencer": 5, "min_score": 50},
+    })
+    pulse = social_module.assemble_social_pulse()
+    assert pulse["source_status"]["sorsa"] == "no_key"
+
+
+def test_sorsa_fetches_when_configured(monkeypatch):
+    """When key + config both present, Sorsa returns tweet samples."""
+    monkeypatch.setenv("SORSA_API_KEY", "test-key")
+    monkeypatch.setattr(social_module, "fetch_apewisdom_trending", lambda **k: [])
+
+    fake_info = MagicMock(); fake_info.status_code = 200
+    fake_info.json = MagicMock(return_value={"score": 85})
+    fake_tweets = MagicMock(); fake_tweets.status_code = 200
+    fake_tweets.json = MagicMock(return_value=[
+        {"id_str": "12345", "full_text": "$BONK pumping", "created_at": "now",
+         "favorite_count": 500, "retweet_count": 100},
+    ])
+
+    def fake_get(url, **kwargs):
+        if "/info/" in url:
+            return fake_info
+        if "/user-tweets/" in url:
+            return fake_tweets
+        m = MagicMock(); m.status_code = 404
+        return m
+
+    monkeypatch.setattr(social_module.requests, "get", fake_get)
+    monkeypatch.setattr(social_module, "load_influencers", lambda: {
+        "influencers": [{"handle": "blknoiz06", "name": "Ansem", "category": "memecoin_alpha",
+                         "weight": 10, "note": "..."}],
+        "apewisdom": {"enabled": False},
+        "sorsa": {"enabled": True, "tweets_per_influencer": 5, "min_score": 50},
+    })
+    pulse = social_module.assemble_social_pulse()
+    assert pulse["source_status"]["sorsa"] == "ok"
+    assert len(pulse["tweet_samples"]) == 1
+    s = pulse["tweet_samples"][0]
+    assert s["handle"] == "blknoiz06"
+    assert s["name"] == "Ansem"
+    assert s["likes"] == 500
+    assert s["score"] == 85.0
+    assert "12345" in s["link"]
+
+
+def test_sorsa_skips_low_score_accounts(monkeypatch):
+    """Accounts below min_score should be skipped (likely paid bots)."""
+    monkeypatch.setenv("SORSA_API_KEY", "test-key")
+    monkeypatch.setattr(social_module, "fetch_apewisdom_trending", lambda **k: [])
+
+    fake_low_score = MagicMock(); fake_low_score.status_code = 200
+    fake_low_score.json = MagicMock(return_value={"score": 20})
+
+    def fake_get(url, **kwargs):
+        if "/info/" in url:
+            return fake_low_score
+        # Should never be called since info returns low score
+        raise AssertionError("user-tweets called for low-score account")
+
+    monkeypatch.setattr(social_module.requests, "get", fake_get)
+    monkeypatch.setattr(social_module, "load_influencers", lambda: {
+        "influencers": [{"handle": "bot1", "name": "Bot", "category": "trader",
+                         "weight": 5, "note": ""}],
+        "apewisdom": {"enabled": False},
+        "sorsa": {"enabled": True, "tweets_per_influencer": 5, "min_score": 50},
+    })
+    pulse = social_module.assemble_social_pulse()
+    assert pulse["tweet_samples"] == []
+
+
 def test_pulse_renders_in_coin_site(monkeypatch, tmp_path: Path,
                                     synthetic_prices, sample_fundamentals):
     """End-to-end: coin pipeline + social pulse appears in HTML."""

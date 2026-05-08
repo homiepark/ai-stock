@@ -155,20 +155,38 @@
   </div>
   {% endif %}
 
-  {# 인플루언서 트윗 샘플 — 무료 RSS가 작동할 때만 노출 #}
+  {# 인플루언서 트윗 샘플 (Sorsa 활성화 시 자동 노출) #}
   {% if social.tweet_samples %}
   <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden mb-3">
-    <div class="px-4 py-2 bg-slate-950 text-xs text-slate-400 uppercase tracking-wider">
-      인플루언서 최신 트윗
+    <div class="px-4 py-2 bg-slate-950 text-xs text-slate-400 uppercase tracking-wider flex items-center justify-between">
+      <span>인플루언서 최신 트윗 ({{ social.tweet_samples|length }}건)</span>
+      {% if social.source_status.sorsa == 'ok' %}
+        <span class="text-emerald-400 text-[10px] normal-case">via Sorsa API</span>
+      {% endif %}
     </div>
     <div class="divide-y divide-slate-800">
-      {% for tw in social.tweet_samples[:8] %}
+      {% for tw in social.tweet_samples[:12] %}
       <a href="{{ tw.link }}" target="_blank" rel="noopener" class="block px-4 py-2.5 hover:bg-slate-800/50">
-        <div class="flex items-center gap-2 mb-1">
-          <span class="text-xs text-sky-400 font-mono">@{{ tw.handle }}</span>
-          <span class="text-xs text-slate-500">{{ tw.ts }}</span>
+        <div class="flex items-center gap-2 mb-1 text-xs">
+          {% if tw.name %}
+          <span class="text-white font-medium">{{ tw.name }}</span>
+          {% endif %}
+          <span class="text-sky-400 font-mono">@{{ tw.handle }}</span>
+          {% if tw.weight %}
+          <span class="text-slate-500">·{{ tw.weight }}</span>
+          {% endif %}
+          {% if tw.score %}
+          <span class="px-1 py-0.5 rounded bg-slate-800 text-emerald-400 text-[10px] font-mono">Sorsa {{ "%.0f"|format(tw.score) }}</span>
+          {% endif %}
+          <span class="text-slate-500 ml-auto">{{ tw.ts }}</span>
         </div>
-        <p class="text-sm text-slate-300 leading-snug">{{ tw.text }}</p>
+        <p class="text-sm text-slate-300 leading-snug mb-1">{{ tw.text }}</p>
+        {% if tw.likes or tw.retweets %}
+        <div class="text-[11px] text-slate-500 font-mono tabular-nums">
+          {% if tw.likes %}❤ {{ tw.likes }}{% endif %}
+          {% if tw.retweets %} · 🔁 {{ tw.retweets }}{% endif %}
+        </div>
+        {% endif %}
       </a>
       {% endfor %}
     </div>
@@ -208,9 +226,13 @@
   {# 데이터 소스 상태 (디버깅·투명성) #}
   <p class="text-xs text-slate-500 mt-2">
     데이터 소스:
+    Sorsa API
+    <span class="font-mono">
+      {%- if social.source_status.sorsa == 'ok' -%}🟢{%- elif social.source_status.sorsa == 'disabled' -%}⚪ 비활성{%- elif social.source_status.sorsa == 'no_key' -%}🔑 키 없음{%- else -%}🔴{%- endif -%}
+    </span> ·
     ApeWisdom <span class="font-mono">{% if social.source_status.apewisdom == 'ok' %}🟢{% else %}🔴{% endif %}</span> ·
-    Twitter RSS <span class="font-mono">{% if social.source_status.twitter_rss == 'ok' %}🟢{% elif social.source_status.twitter_rss == 'disabled' %}⚪ 비활성{% else %}🔴{% endif %}</span>
-    <span class="ml-1">— 실시간 개별 트윗 추적은 X API Pro($200~5000/월) 필요. <a href="https://github.com/homiepark/ai-stock/blob/main/docs/SOCIAL_TRACKING.md" class="underline hover:text-slate-300">자세히</a></span>
+    Twitter RSS <span class="font-mono">{% if social.source_status.twitter_rss == 'ok' %}🟢{% elif social.source_status.twitter_rss == 'disabled' %}⚪{% else %}🔴{% endif %}</span>
+    <span class="ml-1">— Sorsa $49~199/월로 인플루언서 실시간 트윗 추적 가능. <a href="https://github.com/homiepark/ai-stock/blob/main/docs/SOCIAL_TRACKING.md" class="underline hover:text-slate-300">자세히</a></span>
   </p>
 </section>
 {% endif %}
