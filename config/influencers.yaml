@@ -1,0 +1,71 @@
+# 트위터 크립토 인플루언서 큐레이션
+#
+# 카테고리:
+#   memecoin_alpha: 밈코인·신생 코인 발굴 빠른 트레이더
+#   trader: 매크로·차트 기반 베테랑 트레이더
+#   analyst: 데이터·리서치 기반 분석가
+#   founder: 프로토콜 창립자·운영자 (실시간 정보 1차 출처)
+#   narrative: 트렌드·내러티브 정리하는 작가형
+#
+# weight: 1~10 (10이 가장 영향력). 멘션 수가 같아도 가중치 높은 사람의 멘션이 우선.
+# Source: Twitter/X 팔로워 수, 실제 영향력, 과거 콜 적중률 종합.
+
+influencers:
+  # ════ 밈코인·솔라나 알파 (트렌드를 직접 만드는 계정들) ════
+  - { handle: blknoiz06,        name: "Ansem",            category: memecoin_alpha, weight: 10, note: "솔라나 밈코인 대장. 매수가 트렌드를 만듦" }
+  - { handle: MustStopMurad,    name: "Murad",            category: memecoin_alpha, weight: 9,  note: "Memecoin 슈퍼사이클 thesis. 밈코인 비중 50% 추천" }
+  - { handle: LucaNetz,         name: "Luca Netz",        category: memecoin_alpha, weight: 8,  note: "Pudgy Penguins CEO. 밈·NFT 컬처 핵심" }
+  - { handle: IcoBeast,         name: "IcoBeast",         category: memecoin_alpha, weight: 8,  note: "온체인 알파 추적 + 밈코인 신속 콜" }
+  - { handle: 0xRamonos,        name: "Ramonos",          category: memecoin_alpha, weight: 7,  note: "솔라나 PumpFun 메타 1차 발견" }
+  - { handle: gainzy222,        name: "Gainzy",           category: memecoin_alpha, weight: 7,  note: "밈코인 빠른 회전 트레이더" }
+
+  # ════ 베테랑 트레이더 (시장 구조·매크로) ════
+  - { handle: cobie,            name: "Cobie",            category: trader,         weight: 10, note: "680K. UpOnly 팟캐스트, 시장 구조 전문" }
+  - { handle: HsakaTrades,      name: "Hsaka",            category: trader,         weight: 9,  note: "차트 + 시장 심리 분석 정확도 높음" }
+  - { handle: Pentosh1,         name: "Pentoshi",         category: trader,         weight: 9,  note: "480K. 데이터 기반 매크로·알트장" }
+  - { handle: CryptoCobain,     name: "CryptoCobain",     category: trader,         weight: 8,  note: "베테랑, 시장 분위기 캐치 빠름" }
+  - { handle: Rewkang,          name: "Andrew Kang",      category: trader,         weight: 8,  note: "Mechanism Capital, OG 트레이더" }
+  - { handle: KookCapitalLLC,   name: "Kook",             category: trader,         weight: 7,  note: "솔라나 메타·차트" }
+  - { handle: zhusu,            name: "Zhu Su",           category: trader,         weight: 6,  note: "전 3AC, 컨트로버셜하지만 큰손" }
+
+  # ════ 데이터·리서치 ════
+  - { handle: DefiIgnas,        name: "DeFi Ignas",       category: analyst,        weight: 8,  note: "DeFi 매출·TVL 깊이 분석" }
+  - { handle: tayvano_,         name: "tayvano",          category: analyst,        weight: 8,  note: "보안·온체인 추적, 사기 코인 적발" }
+  - { handle: Cryptopathic,     name: "Cryptopathic",     category: analyst,        weight: 7,  note: "구조적 시장 분석" }
+  - { handle: thiccyttv,        name: "Thiccy",           category: analyst,        weight: 7,  note: "옵션·유동성 데이터 분석" }
+  - { handle: hyblockcapital,   name: "Hyblock",          category: analyst,        weight: 7,  note: "선물·청산 데이터" }
+  - { handle: punk9059,         name: "punk9059",         category: analyst,        weight: 6,  note: "온체인·DeFi 지표" }
+
+  # ════ 창립자·운영자 (1차 정보) ════
+  - { handle: 0xMert_,          name: "Mert",             category: founder,        weight: 9,  note: "Helius CEO, 솔라나 최전선 정보" }
+  - { handle: aeyakovenko,      name: "Anatoly Yakovenko", category: founder,       weight: 9,  note: "Solana 공동창립자, 로드맵 1차" }
+  - { handle: VitalikButerin,   name: "Vitalik Buterin",  category: founder,        weight: 10, note: "이더리움 창립자, 직접 발언이 시장 움직임" }
+  - { handle: chamath,          name: "Chamath",          category: founder,        weight: 7,  note: "VC 대표, 거시 + 코인" }
+  - { handle: tier10k,          name: "tier10k",          category: founder,        weight: 8,  note: "발표·뉴스 1차 큐레이션 빠름" }
+
+  # ════ 내러티브·트렌드 정리형 ════
+  - { handle: WClementeIII,     name: "Will Clemente",    category: narrative,      weight: 8,  note: "BTC 온체인 데이터 + 매크로" }
+  - { handle: TheRealLoganJ,    name: "Logan",            category: narrative,      weight: 7,  note: "트렌드·내러티브 빠른 캐치" }
+  - { handle: DonAlt,           name: "DonAlt",           category: narrative,      weight: 8,  note: "차트 + 내러티브 결합 분석" }
+  - { handle: WaleSwoosh,       name: "Wale Swoosh",      category: narrative,      weight: 7,  note: "시장 심리·트렌드 스토리텔러" }
+  - { handle: KaitoAI,          name: "Kaito AI",         category: narrative,      weight: 6,  note: "AI가 종합한 크립토 트위터 트렌드" }
+
+# ApeWisdom 통합 (코인별 멘션 카운트 + 24h 델타)
+apewisdom:
+  enabled: true
+  endpoint: "https://apewisdom.io/api/v1.0/filter/all-crypto/page/1"
+  # 24h 멘션이 N% 급증하면 'rising trend' 신호
+  rising_threshold_pct: 100  # 2배 이상 증가
+  top_n: 15
+
+# Twitter 직접 수집 (옵션 — 무료 RSS 브릿지, 신뢰성 낮음)
+twitter_rss:
+  enabled: false  # 기본 끔; 안정적 RSS 브릿지 확보되면 켜기
+  # Nitter는 대부분 인스턴스가 죽어있음. RSSHub 셀프호스팅이나 rss.app 같은 유료 서비스 추천
+  # nitter_instance: "https://nitter.net"  # 대부분 죽음
+  # rsshub_instance: "https://rsshub.app"  # 공용은 rate limit 심함, 자체 호스팅 권장
+
+# 향후 X API Pro 통합 (월 $200) 시 채워질 영역
+x_api:
+  enabled: false
+  # bearer_token: ENV

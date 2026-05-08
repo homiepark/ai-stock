@@ -25,6 +25,7 @@ from ai_stock.data.coin_prices import fetch_global_snapshot, fetch_coin_market_c
 from ai_stock.data.fundamentals import fetch_fundamentals
 from ai_stock.data.news import fetch_news
 from ai_stock.data.prices import fetch_prices
+from ai_stock.data.social import assemble_social_pulse
 from ai_stock.judge.scorer import compose
 from ai_stock.judge.verdict import Narrative, generate_narrative, label_with_emoji
 from ai_stock.report.daily import (
@@ -54,6 +55,9 @@ def assemble_coin_context(
 
     log.info("Fetching crypto global snapshot")
     macro = fetch_global_snapshot(cache=cache)
+
+    log.info("Fetching social pulse (ApeWisdom + influencer list)")
+    social = assemble_social_pulse(cache=cache)
 
     # Bulk market-cap fetch for all coins (1 API call)
     all_coins = universe.all_stocks()
@@ -154,6 +158,7 @@ def assemble_coin_context(
         "focus": focus_results,
         "top_news": [n.to_dict() for n in top_news],
         "label_changes": label_changes,
+        "social": social,
         "_today": today,
     }
 

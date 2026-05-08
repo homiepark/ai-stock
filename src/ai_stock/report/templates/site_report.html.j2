@@ -119,6 +119,102 @@
 </section>
 {% endif %}
 
+{# 트위터 펄스 — 코인 페이지에만 노출 #}
+{% if is_coin and social %}
+<section>
+  <h2 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+    🔥 트위터 펄스
+    <span class="text-xs font-normal text-slate-500">— ApeWisdom 집계 + 큐레이션 인플루언서 {{ social.influencer_count }}명</span>
+  </h2>
+
+  {# 급상승 트렌딩 코인 #}
+  {% if social.trending %}
+  <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden mb-3">
+    <div class="px-4 py-2 bg-slate-950 text-xs text-slate-400 uppercase tracking-wider">
+      급상승 멘션 (24h 델타)
+    </div>
+    <div class="divide-y divide-slate-800">
+      {% for t in social.trending %}
+      <div class="px-4 py-2.5 flex items-center gap-3">
+        <span class="text-xs text-slate-500 font-mono w-6">#{{ t.rank }}</span>
+        <span class="font-medium text-white min-w-0 flex-shrink-0 w-20 truncate">{{ t.ticker }}</span>
+        <span class="text-xs text-slate-400 min-w-0 truncate flex-1">{{ t.name }}</span>
+        <span class="text-xs font-mono text-slate-300 tabular-nums">{{ t.mentions }} 멘션</span>
+        <span class="text-xs font-mono tabular-nums w-16 text-right
+                     {% if t.delta_pct > 50 %}text-emerald-400 font-semibold{% elif t.delta_pct > 0 %}text-emerald-400{% elif t.delta_pct < 0 %}text-rose-400{% else %}text-slate-500{% endif %}">
+          {{ "%+.0f%%"|format(t.delta_pct) }}
+        </span>
+        {% if t.is_rising %}
+          <span class="px-1.5 py-0.5 text-[10px] rounded bg-amber-500/20 text-amber-400 border border-amber-500/40 font-medium">🔥 RISING</span>
+        {% else %}
+          <span class="w-12"></span>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {# 인플루언서 트윗 샘플 — 무료 RSS가 작동할 때만 노출 #}
+  {% if social.tweet_samples %}
+  <div class="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden mb-3">
+    <div class="px-4 py-2 bg-slate-950 text-xs text-slate-400 uppercase tracking-wider">
+      인플루언서 최신 트윗
+    </div>
+    <div class="divide-y divide-slate-800">
+      {% for tw in social.tweet_samples[:8] %}
+      <a href="{{ tw.link }}" target="_blank" rel="noopener" class="block px-4 py-2.5 hover:bg-slate-800/50">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-xs text-sky-400 font-mono">@{{ tw.handle }}</span>
+          <span class="text-xs text-slate-500">{{ tw.ts }}</span>
+        </div>
+        <p class="text-sm text-slate-300 leading-snug">{{ tw.text }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {# 인플루언서 명단 (접기 가능) #}
+  <details class="bg-slate-900 border border-slate-800 rounded-lg">
+    <summary class="px-4 py-2.5 cursor-pointer text-xs text-slate-400 hover:text-white">
+      📋 추적 중인 인플루언서 명단 ({{ social.influencer_count }}명) — 클릭해서 펼치기
+    </summary>
+    <div class="px-4 pb-3 pt-1 space-y-3">
+      {% for cat, members in social.influencer_categories.items() %}
+      <div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">
+          {% if cat == 'memecoin_alpha' %}밈코인 알파{% endif -%}
+          {% if cat == 'trader' %}베테랑 트레이더{% endif -%}
+          {% if cat == 'analyst' %}데이터 분석가{% endif -%}
+          {% if cat == 'founder' %}창립자·운영자{% endif -%}
+          {% if cat == 'narrative' %}내러티브·트렌드{% endif %}
+          ({{ members|length }})
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          {% for m in members %}
+          <a href="https://x.com/{{ m.handle }}" target="_blank" rel="noopener"
+             class="text-xs px-2 py-1 rounded bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white"
+             title="{{ m.note }}">
+            {{ m.name }} <span class="text-slate-500">·{{ m.weight }}</span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </details>
+
+  {# 데이터 소스 상태 (디버깅·투명성) #}
+  <p class="text-xs text-slate-500 mt-2">
+    데이터 소스:
+    ApeWisdom <span class="font-mono">{% if social.source_status.apewisdom == 'ok' %}🟢{% else %}🔴{% endif %}</span> ·
+    Twitter RSS <span class="font-mono">{% if social.source_status.twitter_rss == 'ok' %}🟢{% elif social.source_status.twitter_rss == 'disabled' %}⚪ 비활성{% else %}🔴{% endif %}</span>
+    <span class="ml-1">— 실시간 개별 트윗 추적은 X API Pro($200~5000/월) 필요. <a href="https://github.com/homiepark/ai-stock/blob/main/docs/SOCIAL_TRACKING.md" class="underline hover:text-slate-300">자세히</a></span>
+  </p>
+</section>
+{% endif %}
+
 {# 종합 판정 매트릭스 #}
 <section>
   <h2 class="text-lg font-semibold text-white mb-3">🎯 종합 판정 매트릭스 <span class="text-xs font-normal text-slate-500">— 컬럼 헤더 클릭하면 정렬</span></h2>
