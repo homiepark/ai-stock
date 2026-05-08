@@ -1,0 +1,1872 @@
+{
+  "asset_class": "stock",
+  "date": "2026-05-08",
+  "generated_at": "2026-05-08 22:29 UTC",
+  "version": "0.1.0",
+  "universe_size": 48,
+  "us_count": 36,
+  "kr_count": 12,
+  "macro": {
+    "DGS10": {
+      "name": "US 10Y Treasury Yield",
+      "value": 0.4363999843597412,
+      "change": -0.006375308174456382
+    },
+    "DTWEXBGS": {
+      "name": "US Dollar Index",
+      "value": 97.84300231933594,
+      "change": -0.004142470032204198
+    },
+    "VIXCLS": {
+      "name": "VIX",
+      "value": 17.190000534057617,
+      "change": 0.006440316794081948
+    },
+    "NASDAQCOM": {
+      "name": "NASDAQ Composite",
+      "value": 26247.076171875,
+      "change": 0.017084149021242626
+    },
+    "KOSPI": {
+      "name": "KOSPI",
+      "value": NaN,
+      "change": NaN
+    },
+    "USDKRW": {
+      "name": "USD/KRW",
+      "value": 1461.47998046875,
+      "change": 0.011789975334942289
+    }
+  },
+  "theme_rankings": [
+    {
+      "theme_key": "semiconductors",
+      "theme_name": "반도체·HBM·패키징 (AI의 '강철')",
+      "composite_return": 0.2516706163254537,
+      "avg_return_1w": 0.08622949736529154,
+      "avg_return_1m": 0.2526365069261488,
+      "avg_return_3m": 0.41582388115135566,
+      "cap_leader": {
+        "ticker": "NVDA",
+        "name": "NVIDIA"
+      },
+      "momentum_leader": {
+        "ticker": "MU",
+        "name": "Micron"
+      },
+      "member_count": 10
+    },
+    {
+      "theme_key": "hyperscalers",
+      "theme_name": "하이퍼스케일러·AI 클라우드 (AI의 'JP모건')",
+      "composite_return": 0.1711045637587516,
+      "avg_return_1w": 0.043471791608476265,
+      "avg_return_1m": 0.1791267762340118,
+      "avg_return_3m": 0.28804105260868,
+      "cap_leader": {
+        "ticker": "MSFT",
+        "name": "Microsoft"
+      },
+      "momentum_leader": {
+        "ticker": "NBIS",
+        "name": "Nebius"
+      },
+      "member_count": 7
+    },
+    {
+      "theme_key": "vertical_ai",
+      "theme_name": "버티컬 AI / 운영자 (AI의 '밴더빌트')",
+      "composite_return": 0.15020052370898843,
+      "avg_return_1w": 0.07832224002967914,
+      "avg_return_1m": 0.27205964961269846,
+      "avg_return_3m": 0.05959997285001765,
+      "cap_leader": {
+        "ticker": "PLTR",
+        "name": "Palantir"
+      },
+      "momentum_leader": {
+        "ticker": "DDOG",
+        "name": "Datadog"
+      },
+      "member_count": 6
+    },
+    {
+      "theme_key": "power_grid",
+      "theme_name": "전력·그리드 (AI의 '땅')",
+      "composite_return": 0.1024864133793846,
+      "avg_return_1w": 0.000110413946175256,
+      "avg_return_1m": 0.16586907749584284,
+      "avg_return_3m": 0.12035219399064959,
+      "cap_leader": {
+        "ticker": "GEV",
+        "name": "GE Vernova"
+      },
+      "momentum_leader": {
+        "ticker": "VRT",
+        "name": "Vertiv"
+      },
+      "member_count": 9
+    },
+    {
+      "theme_key": "embodied_ai",
+      "theme_name": "로보틱스·Embodied AI (다음 게임체인저)",
+      "composite_return": -0.05898025067508642,
+      "avg_return_1w": 0.03432608022081868,
+      "avg_return_1m": -0.00414931815577288,
+      "avg_return_3m": -0.2253944915967429,
+      "cap_leader": {
+        "ticker": "TSLA",
+        "name": "Tesla"
+      },
+      "momentum_leader": {
+        "ticker": "TSLA",
+        "name": "Tesla"
+      },
+      "member_count": 4
+    }
+  ],
+  "verdicts": [
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "HBM3E·HBM4 진입",
+      "coingecko_id": "",
+      "scores": {
+        "short": 60.25,
+        "mid": 68.25,
+        "long": 75.5,
+        "composite": 69.15
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Micron: 정량 종합 69점, 라벨 ACCUMULATE. 단기 60 / 중기 68 / 장기 76. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 746.8099975585938,
+        "rsi14": 87.9659885631923,
+        "ma50": 448.89246032714846,
+        "ma200": 290.44646286010743,
+        "vol_z20": 2.1223078402613664,
+        "ret_5d": 0.3773445109730109,
+        "ret_20d": 0.7756247273143102,
+        "ret_60d": 0.8207430968257954
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "유럽 AI 클라우드",
+      "coingecko_id": "",
+      "scores": {
+        "short": 62.25,
+        "mid": 68.25,
+        "long": 69.5,
+        "composite": 67.25
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Nebius: 정량 종합 67점, 라벨 ACCUMULATE. 단기 62 / 중기 68 / 장기 70. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 177.0500030517578,
+        "rsi14": 58.12664473479005,
+        "ma50": 129.5887008666992,
+        "ma200": 102.07337556838989,
+        "vol_z20": -0.8441887026867296,
+        "ret_5d": 0.14602884818715345,
+        "ret_20d": 0.22128717362853512,
+        "ret_60d": 0.9980815013229392
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "country": "US",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "AI 가속기 압도적 점유",
+      "coingecko_id": "",
+      "scores": {
+        "short": 57.491649620206566,
+        "mid": 67.82461906319149,
+        "long": 69.5,
+        "composite": 65.91152907716867
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "NVIDIA: 정량 종합 66점, 라벨 ACCUMULATE. 단기 57 / 중기 68 / 장기 70. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 215.1999969482422,
+        "rsi14": 60.34645869853311,
+        "ma50": 188.6494287109375,
+        "ma200": 184.71659461975096,
+        "vol_z20": -0.45321002936294846,
+        "ret_5d": 0.08440413332114383,
+        "ret_20d": 0.14085771816597492,
+        "ret_60d": 0.13239484094150167
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "PCIe 리타이머·CXL 스위치",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.54761871975162,
+        "mid": 74.5,
+        "long": 65.0,
+        "composite": 64.7119046799379
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Astera Labs: 정량 종합 65점, 라벨 ACCUMULATE. 단기 51 / 중기 74 / 장기 65. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 199.7899932861328,
+        "rsi14": 59.212038940441616,
+        "ma50": 148.4568000793457,
+        "ma200": 165.17344997406005,
+        "vol_z20": -0.8439838784641734,
+        "ret_5d": -0.014258927837398572,
+        "ret_20d": 0.34042260446486194,
+        "ret_60d": 0.39023021329282437
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "원자력·AMZN 데이터센터 PPA",
+      "coingecko_id": "",
+      "scores": {
+        "short": 56.7193432839392,
+        "mid": 69.43149994166632,
+        "long": 61.0,
+        "composite": 62.880860800568016
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Talen Energy: 정량 종합 63점, 라벨 ACCUMULATE. 단기 57 / 중기 69 / 장기 61. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 386.3699951171875,
+        "rsi14": 62.82042177958993,
+        "ma50": 341.2720007324219,
+        "ma200": 372.33284942626955,
+        "vol_z20": -0.7544282904213006,
+        "ret_5d": 0.038182478813547194,
+        "ret_20d": 0.20240877373047383,
+        "ret_60d": 0.08953245851099823
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "전력 EPC",
+      "coingecko_id": "",
+      "scores": {
+        "short": 51.755978020869094,
+        "mid": 63.75,
+        "long": 60.15004033154649,
+        "composite": 59.31151063783587
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 745.0,
+        "rsi14": 77.44932602197427,
+        "ma50": 602.7355981445312,
+        "ma200": 476.9029650878906,
+        "vol_z20": -0.15556537402084267,
+        "ret_5d": 0.0037590142207033495,
+        "ret_20d": 0.27272109239335696,
+        "ret_60d": 0.4221435125176587
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "AI 워크로드 옵저버빌리티",
+      "coingecko_id": "",
+      "scores": {
+        "short": 58.75,
+        "mid": 63.75,
+        "long": 55.76206238893249,
+        "composite": 59.304824955573
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 200.16000366210938,
+        "rsi14": 88.42208568199744,
+        "ma50": 127.21380004882812,
+        "ma200": 138.59120067596436,
+        "vol_z20": 1.1004704548682067,
+        "ret_5d": 0.42432224721258094,
+        "ret_20d": 0.8995918994469432,
+        "ret_60d": 0.5719783301950137
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv",
+      "country": "US",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "데이터센터 전력·냉각 인프라",
+      "coingecko_id": "",
+      "scores": {
+        "short": 53.07604068035407,
+        "mid": 63.75,
+        "long": 58.289783889980356,
+        "composite": 58.89742372608066
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 339.9700012207031,
+        "rsi14": 60.71967951671531,
+        "ma50": 284.74828857421875,
+        "ma200": 197.27605457305907,
+        "vol_z20": -1.1633659199784825,
+        "ret_5d": 0.03551522569771404,
+        "ret_20d": 0.1520111758187348,
+        "ret_60d": 0.3683590874016949
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "AI 전용 GPU 클라우드 IPO 종목",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.186096107592476,
+        "mid": 71.18911227376503,
+        "long": 55.0,
+        "composite": 58.71271332271588
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 114.1500015258789,
+        "rsi14": 48.21661641796741,
+        "ma50": 95.80059982299805,
+        "ma200": 100.36367488861084,
+        "vol_z20": 1.6270611790232303,
+        "ret_5d": -0.0408369088573608,
+        "ret_20d": 0.11911766201842067,
+        "ret_60d": 0.19968470515297243
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "AI 클라우드 RPO 폭증",
+      "coingecko_id": "",
+      "scores": {
+        "short": 60.0,
+        "mid": 57.2635310261211,
+        "long": 58.746815286624205,
+        "composite": 58.540961973792065
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 195.9499969482422,
+        "rsi14": 63.011755255841415,
+        "ma50": 159.51768981933594,
+        "ma200": 209.82100944519044,
+        "vol_z20": -1.1573874748559079,
+        "ret_5d": 0.14037126730000593,
+        "ret_20d": 0.41900211561143563,
+        "ret_60d": 0.25117308020009377
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "country": "US",
+      "tier": "leader",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "AWS·Bedrock·Anthropic 투자",
+      "coingecko_id": "",
+      "scores": {
+        "short": 49.17102081220723,
+        "mid": 65.5,
+        "long": 57.23217348570988,
+        "composite": 58.11062459733576
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 272.67999267578125,
+        "rsi14": 79.62609577858919,
+        "ma50": 231.23959991455078,
+        "ma200": 228.52429985046388,
+        "vol_z20": -0.9023437047535634,
+        "ret_5d": 0.016476488292153313,
+        "ret_20d": 0.14388785590398245,
+        "ret_60d": 0.336142641264362
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "country": "US",
+      "tier": "leader",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "Gemini·TPU 수직통합",
+      "coingecko_id": "",
+      "scores": {
+        "short": 53.29374507061187,
+        "mid": 59.25,
+        "long": 58.78700379014562,
+        "composite": 57.57573778371121
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 400.79998779296875,
+        "rsi14": 89.31759898618039,
+        "ma50": 323.7033312988281,
+        "ma200": 286.01805213928225,
+        "vol_z20": -0.535004181448101,
+        "ret_5d": 0.039176502517350054,
+        "ret_20d": 0.26339679778977465,
+        "ret_60d": 0.2898190980900417
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "META",
+      "name": "Meta",
+      "country": "US",
+      "tier": "leader",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "Llama·자체 ASIC·광고 ROI 회수",
+      "coingecko_id": "",
+      "scores": {
+        "short": 59.01932420588881,
+        "mid": 44.827807565714934,
+        "long": 67.42366592617101,
+        "composite": 57.414030069940836
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 609.6300048828125,
+        "rsi14": 27.95679755296787,
+        "ma50": 626.4280725097656,
+        "ma200": 675.0011187744141,
+        "vol_z20": -0.28204553804825006,
+        "ret_5d": 0.0014455932366530533,
+        "ret_20d": -0.03211821823775396,
+        "ret_60d": -0.08754138900802955
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "맞춤형 ASIC·광인터커넥트",
+      "coingecko_id": "",
+      "scores": {
+        "short": 52.42197255398075,
+        "mid": 59.25,
+        "long": 58.87429844833278,
+        "composite": 57.3927125178283
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 170.1300048828125,
+        "rsi14": 65.01819910491082,
+        "ma50": 118.58608047485352,
+        "ma200": 90.69017560958862,
+        "vol_z20": -0.7965574148259691,
+        "ret_5d": 0.031403504276485084,
+        "ret_20d": 0.3240718936062601,
+        "ret_60d": 1.0926379745162893
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "데이터·AI 플랫폼",
+      "coingecko_id": "",
+      "scores": {
+        "short": 71.2796072238647,
+        "mid": 42.5,
+        "long": 61.28626985011705,
+        "composite": 57.209409746012994
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 152.4499969482422,
+        "rsi14": 51.68765273201494,
+        "ma50": 155.9042007446289,
+        "ma200": 205.42890045166016,
+        "vol_z20": -0.32380160789215384,
+        "ret_5d": 0.08120565211519293,
+        "ret_20d": 0.2587729847242022,
+        "ret_60d": -0.14751442494383227
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "country": "US",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "ASIC·네트워킹·VMware",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.717791106566615,
+        "mid": 63.31256081103915,
+        "long": 57.339501206757845,
+        "composite": 57.024644543208495
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 430.0,
+        "rsi14": 62.569321964623754,
+        "ma50": 358.6447296142578,
+        "ma200": 342.5106861877441,
+        "vol_z20": 0.44209468425748294,
+        "ret_5d": 0.020698825593358894,
+        "ret_20d": 0.15731399307594685,
+        "ret_60d": 0.2571536758984547
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "country": "US",
+      "tier": "leader",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "정부+엔터프라이즈 AI OS, AIP",
+      "coingecko_id": "",
+      "scores": {
+        "short": 48.47542663751142,
+        "mid": 54.48613088198391,
+        "long": 64.25,
+        "composite": 56.88900246807222
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 137.8000030517578,
+        "rsi14": 41.70256785857372,
+        "ma50": 145.69919982910156,
+        "ma200": 163.93307510375976,
+        "vol_z20": -0.36202708799767824,
+        "ret_5d": -0.043520538305733325,
+        "ret_20d": 0.0760581421119233,
+        "ret_60d": 0.015625077317350078
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "AI 광고 ROI의 정점",
+      "coingecko_id": "",
+      "scores": {
+        "short": 66.10869789349402,
+        "mid": 45.98987409336066,
+        "long": 58.481847952219546,
+        "composite": 56.01636958693756
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 468.54998779296875,
+        "rsi14": 44.30958223418548,
+        "ma50": 445.8446014404297,
+        "ma200": 528.6523754882812,
+        "vol_z20": 1.3295714450830622,
+        "ret_5d": 0.018586929984714784,
+        "ret_20d": 0.19717405577033142,
+        "ret_60d": 0.025699941544885085
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "country": "US",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "전력기기·가스터빈 글로벌 리더",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.90895576071118,
+        "mid": 59.134244124264825,
+        "long": 57.12798804780876,
+        "composite": 55.52541960279399
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1040.1500244140625,
+        "rsi14": 55.928346220302664,
+        "ma50": 944.4750427246094,
+        "ma200": 720.4510369873046,
+        "vol_z20": -0.9023097894734216,
+        "ret_5d": -0.021449671014779348,
+        "ret_20d": 0.049257572458005994,
+        "ret_60d": 0.2635873421629684
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "country": "US",
+      "tier": "leader",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "Optimus·FSD·로보택시 옵션밸류",
+      "coingecko_id": "",
+      "scores": {
+        "short": 65.23993629075673,
+        "mid": 55.96421891397248,
+        "long": 47.985453840186196,
+        "composite": 55.091642228654024
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 428.3500061035156,
+        "rsi14": 69.14858276431457,
+        "ma50": 383.1894012451172,
+        "ma200": 404.38520034790037,
+        "vol_z20": -0.009602035798344276,
+        "ret_5d": 0.0960288574688104,
+        "ret_20d": 0.2275397366926486,
+        "ret_60d": 0.00018683795712148843
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "Agentforce",
+      "coingecko_id": "",
+      "scores": {
+        "short": 62.76115445363789,
+        "mid": 43.96832053518257,
+        "long": 57.1265385770039,
+        "composite": 53.92981623152493
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 181.82000732421875,
+        "rsi14": 46.21405766144599,
+        "ma50": 186.00670013427734,
+        "ma200": 225.80856719970703,
+        "vol_z20": -0.09974186393323901,
+        "ret_5d": -0.01088020846649429,
+        "ret_20d": 0.10220659507850427,
+        "ret_60d": -0.01473112961867673
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "물류 자동화",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.93111841689701,
+        "mid": 43.9737122466737,
+        "long": 66.08259056530503,
+        "composite": 53.80661511668206
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 52.290000915527344,
+        "rsi14": 25.28868658688789,
+        "ma50": 54.86359992980957,
+        "ma200": 58.6814999961853,
+        "vol_z20": 1.6025291167033648,
+        "ret_5d": -0.11207333235736505,
+        "ret_20d": -0.02860859860938947,
+        "ret_60d": -0.10462329538885418
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "country": "US",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "원자력·MSFT PPA 수혜",
+      "coingecko_id": "",
+      "scores": {
+        "short": 59.56577572210968,
+        "mid": 49.614917988866,
+        "long": 53.10730211817169,
+        "composite": 53.499586073899195
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 303.6300048828125,
+        "rsi14": 56.58229474688424,
+        "ma50": 301.8960479736328,
+        "ma200": 326.49436866760254,
+        "vol_z20": 0.5025099139427972,
+        "ret_5d": -0.013579782037409505,
+        "ret_20d": 0.05979059295920597,
+        "ret_60d": 0.0982008194549917
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ARM",
+      "name": "ARM Holdings",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "데이터센터 CPU IP 침투",
+      "coingecko_id": "",
+      "scores": {
+        "short": 54.045219782619,
+        "mid": 63.75,
+        "long": 44.154374364191256,
+        "composite": 53.48555469133125
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 213.27000427246094,
+        "rsi14": 60.94386097326033,
+        "ma50": 158.5871011352539,
+        "ma200": 142.70442531585692,
+        "vol_z20": 0.12512385914732949,
+        "ret_5d": 0.009896825784478702,
+        "ret_20d": 0.4320151397358025,
+        "ret_60d": 0.70234679398564
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "country": "US",
+      "tier": "leader",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "OpenAI 파트너·Azure AI",
+      "coingecko_id": "",
+      "scores": {
+        "short": 56.81488870226114,
+        "mid": 46.151263578035454,
+        "long": 57.73911026746211,
+        "composite": 53.45230853486254
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 415.1199951171875,
+        "rsi14": 48.39236391987398,
+        "ma50": 398.14699890136717,
+        "ma200": 464.3681936645508,
+        "vol_z20": -0.2790633611712451,
+        "ret_5d": 0.0016407505833788694,
+        "ret_20d": 0.11931404692368797,
+        "ret_60d": 0.028927731238380883
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "country": "US",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "첨단 노드·CoWoS 독점적",
+      "coingecko_id": "",
+      "scores": {
+        "short": 49.28268904753307,
+        "mid": 51.13411557466851,
+        "long": 56.38600035195125,
+        "composite": 52.77201285379775
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 411.67999267578125,
+        "rsi14": 70.59463353182298,
+        "ma50": 363.0444616699219,
+        "ma200": 308.5137635040283,
+        "vol_z20": 0.8810459096189047,
+        "ret_5d": 0.03523016263481171,
+        "ret_20d": 0.11084723663169926,
+        "ret_60d": 0.10358477117104203
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "country": "US",
+      "tier": "leader",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "엔터프라이즈 워크플로우 AI",
+      "coingecko_id": "",
+      "scores": {
+        "short": 58.22482339549785,
+        "mid": 40.031979146384714,
+        "long": 60.12564766839378,
+        "composite": 52.61765761746663
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 91.18000030517578,
+        "rsi14": 40.10199055787084,
+        "ma50": 101.97119995117187,
+        "ma200": 147.455779876709,
+        "vol_z20": -0.2658306769350727,
+        "ret_5d": 0.00021935763781377737,
+        "ret_20d": 0.09855422054428642,
+        "ret_60d": -0.09345795739463392
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "HBM3E 엔비디아 진입 여부 핵심",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 56.5,
+        "composite": 52.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML",
+      "country": "US",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "EUV 독점",
+      "coingecko_id": "",
+      "scores": {
+        "short": 57.51360338854298,
+        "mid": 51.5227233881256,
+        "long": 50.22364851772912,
+        "composite": 52.500813440071354
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1592.02001953125,
+        "rsi14": 61.04235049817104,
+        "ma50": 1399.8602514648437,
+        "ma200": 1131.772763671875,
+        "vol_z20": 0.5728244731126341,
+        "ret_5d": 0.11562556778579713,
+        "ret_20d": 0.07929299997012507,
+        "ret_60d": 0.11135692744018377
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "SMR 옵션 가치, Sam Altman 후원",
+      "coingecko_id": "",
+      "scores": {
+        "short": 62.0,
+        "mid": 46.44592975731291,
+        "long": 50.0,
+        "composite": 51.75607541505951
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 72.51000213623047,
+        "rsi14": 53.03913754593942,
+        "ma50": 60.82239990234375,
+        "ma200": 86.49499979019166,
+        "vol_z20": -1.084596037603474,
+        "ret_5d": 0.029971598929240617,
+        "ret_20d": 0.44298511713891475,
+        "ret_60d": 0.0948210548239301
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "검사·계측",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.788097304525266,
+        "mid": 59.20660763562334,
+        "long": 45.69804766784774,
+        "composite": 51.69855606573858
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1869.18994140625,
+        "rsi14": 54.78290741550248,
+        "ma50": 1617.2061938476563,
+        "ma200": 1280.230685119629,
+        "vol_z20": 0.8306928392990219,
+        "ret_5d": 0.08279745277771378,
+        "ret_20d": 0.075928986625583,
+        "ret_60d": 0.2650346123901386
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "018260",
+      "name": "삼성SDS",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "그룹 IT·AI 솔루션",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 54.0,
+        "composite": 51.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "반도체 장비",
+      "coingecko_id": "",
+      "scores": {
+        "short": 57.9573901589488,
+        "mid": 50.25,
+        "long": 48.60528886408038,
+        "composite": 51.51896308536935
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 435.44000244140625,
+        "rsi14": 63.48639708161375,
+        "ma50": 373.03499877929687,
+        "ma200": 274.5510346984863,
+        "vol_z20": 0.7051467143089826,
+        "ret_5d": 0.11915291834351383,
+        "ret_20d": 0.08998976967092442,
+        "ret_60d": 0.2827559050516866
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "전력관리·배전",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.83299138932303,
+        "mid": 53.04710792406009,
+        "long": 50.30253253881135,
+        "composite": 51.39574863627632
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 401.510009765625,
+        "rsi14": 47.24995859163933,
+        "ma50": 382.8325476074219,
+        "ma200": 362.2453114318848,
+        "vol_z20": -0.33147853655295006,
+        "ret_5d": -0.056491549093967475,
+        "ret_20d": -0.0036972462391439143,
+        "ret_60d": 0.016844618158873725
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "country": "US",
+      "tier": "leader",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "다빈치 수술로봇 독점",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.87573190335144,
+        "mid": 40.06285512505011,
+        "long": 62.13825774385373,
+        "composite": 50.846235367146896
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 450.05999755859375,
+        "rsi14": 42.161009839089914,
+        "ma50": 470.09640014648437,
+        "ma200": 498.6360510253906,
+        "vol_z20": 0.09992280743747675,
+        "ret_5d": -0.01686399851738618,
+        "ret_20d": -0.0012427268311698825,
+        "ret_60d": -0.0928404378213259
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "298040",
+      "name": "효성중공업",
+      "country": "KR",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "변압기·차단기",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 52.0,
+        "composite": 50.8
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "034020",
+      "name": "두산에너빌리티",
+      "country": "KR",
+      "tier": "momentum",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "SMR·원자력 메인콘트랙터",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 52.0,
+        "composite": 50.8
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "108860",
+      "name": "셀바스AI",
+      "country": "KR",
+      "tier": "momentum",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "한국어 LLM·음성 AI",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 52.0,
+        "composite": 50.8
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "267260",
+      "name": "HD현대일렉트릭",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "송배전 변압기, 미국 수출 사이클",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 49.0,
+        "composite": 49.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "010120",
+      "name": "LS ELECTRIC",
+      "country": "KR",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "전력기기·자동화",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 49.0,
+        "composite": 49.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "007660",
+      "name": "이수페타시스",
+      "country": "KR",
+      "tier": "momentum",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "AI 가속기용 고다층 MLB",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 49.0,
+        "composite": 49.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "058470",
+      "name": "리노공업",
+      "country": "KR",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "반도체 검사 핀·소켓",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 49.0,
+        "composite": 49.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "HBM3E·HBM4 선두",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 48.25,
+        "composite": 49.3
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "원자력·가스 발전",
+      "coingecko_id": "",
+      "scores": {
+        "short": 48.18307130409451,
+        "mid": 40.8870557017212,
+        "long": 55.314899677978694,
+        "composite": 48.48219719281752
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 147.72000122070312,
+        "rsi14": 39.09291214684295,
+        "ma50": 158.39056213378908,
+        "ma200": 176.6463786315918,
+        "vol_z20": 2.109705024654443,
+        "ret_5d": -0.04868622886414975,
+        "ret_20d": -0.04530469010791993,
+        "ret_60d": -0.07635642628790418
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "TC본더 사실상 독점",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 43.0,
+        "composite": 47.2
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "277810",
+      "name": "레인보우로보틱스",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "삼성 자회사화, 휴머노이드",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 43.0,
+        "composite": 47.2
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "in_focus": false
+    },
+    {
+      "ticker": "RBOT",
+      "name": "Vicarious Surgical",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "수술로봇 신생",
+      "coingecko_id": "",
+      "scores": {
+        "short": 58.90349761758126,
+        "mid": 35.0,
+        "long": 50.0,
+        "composite": 46.97587440439531
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.550000011920929,
+        "rsi14": 37.99342564797247,
+        "ma50": 0.7650399947166443,
+        "ma200": 3.6366349971294403,
+        "vol_z20": -0.8786596484021634,
+        "ret_5d": 0.17021279428921554,
+        "ret_20d": -0.21428568387518077,
+        "ret_60d": -0.704301071133913
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SMR",
+      "name": "NuScale Power",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "SMR 선두주자",
+      "coingecko_id": "",
+      "scores": {
+        "short": 67.50486467600784,
+        "mid": 29.0,
+        "long": 22.0,
+        "composite": 35.82621616900196
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 12.550000190734863,
+        "rsi14": 48.91696853442807,
+        "ma50": 11.630599975585938,
+        "ma200": 24.8227999830246,
+        "vol_z20": -0.33274399759282686,
+        "ret_5d": 0.033772638864678184,
+        "ret_20d": 0.3626493093109573,
+        "ret_60d": -0.19396272082736543
+      },
+      "in_focus": false
+    }
+  ],
+  "focus_tickers": [
+    "TLN",
+    "NVDA",
+    "NBIS",
+    "MU",
+    "ALAB"
+  ],
+  "top_news": [
+    {
+      "title": "Winning the Degenerate Economy: Masters in Business with Howard Lindzon",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-08/winning-the-degenerate-economy-howard-lindzon-video",
+      "summary": "Barry speaks with Howard Lindzon, co-founder and CEO of StockTwits, and founder and managing partner at Social Leverage. They discuss his outlook for venture capital investing including what he sees as potentially profitable from human behavior. (Source: Bloomberg)",
+      "published": "Fri, 08 May 2026 21:20:18 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "BlackRock Readies Launch of Two Tokenized Money-Market Funds",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-08/blackrock-readies-launch-of-two-tokenized-money-market-funds",
+      "summary": "BlackRock Inc. is planning to launch two money-market funds built for investors who hold their cash in stablecoins, not bank accounts, a sign the world’s largest asset manager sees a durable customer base in the digital-dollar economy.",
+      "published": "Fri, 08 May 2026 21:18:46 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Fed Sees Private Credit Redemptions as ‘Manageable’ Risks",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-08/fed-calls-risks-tied-to-private-credit-redemptions-manageable",
+      "summary": "The Federal Reserve said stability risks from further private credit redemption requests appear “limited and manageable,” after some of the biggest names in the market blocked investors from getting money out of their funds in recent months.",
+      "published": "Fri, 08 May 2026 20:00:00 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Shaquille O'Neal on Partnership with Authentic Brands",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-08/shaquille-o-neal-on-partnership-with-authentic-brands-video",
+      "summary": "NBA Hall of Famer Shaquille O'Neal & Authentic Brands CEO Jamie Salter discuss the launch of 'Dunkman,' a new dunk league aiming to compete with the NBA dunk contest. They talk with Romaine Bostick at the Milken Institute Global Conference in Beverly Hills, California. (Source: Bloomberg)",
+      "published": "Fri, 08 May 2026 20:45:08 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "S&P Closes Out 6th Straight Week of Gains | Closing Bell",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-08/s-p-closes-out-6th-straight-week-of-gains-closing-bell-video",
+      "summary": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Scarlet Fu, Isabelle Lee, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+      "published": "Fri, 08 May 2026 20:35:47 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Enhanced Games Owner Jumps 21% After Going Public Via SPAC",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-08/enhanced-games-falls-14-after-spac-merger-at-1-2-billion-value",
+      "summary": "Enhanced Group Inc. shares climbed almost 21% after going public via a merger with blank-check company A Paradise Acquisition Corp.",
+      "published": "Fri, 08 May 2026 13:52:20 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Fannie, Freddie’s Latest Bull Says Traders Underpricing IPO Odds",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-08/fannie-freddie-s-latest-bull-says-traders-underpricing-ipo-odds",
+      "summary": "Fannie Mae and Freddie Mac investors are underestimating the chances of a public market re-entry from the mortgage giants after a lull in chatter around the names, according to Mizuho’s Dan Dolev.",
+      "published": "Fri, 08 May 2026 11:55:51 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "US Stocks Set Record High as Chip Stocks Roar, Payrolls Beat",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-08/us-futures-rise-as-chip-stocks-rally-iran-ceasefire-holds",
+      "summary": "US stocks closed at a record high for the third time this week, buoyed by semiconductor stocks, solid employment data and a US-Iran ceasefire that appeared intact even with clashes near the Strait of Hormuz.",
+      "published": "Fri, 08 May 2026 11:42:18 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Precision Neuroscience CEO on Medtronic Partnership, What's Next",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-08/precision-neuroscience-ceo-on-medtronic-partnership-video",
+      "summary": "Precision Neuroscience Co-Founder & CEO Michael Mager discusses the development of a new neurological implant designed to create a communication link with the brain and external computers, as well as the company's partnership with Medtronic. He talks with Romaine Bostick at the Milken Institute Global Conference in Beverly Hills, California. (Source: Bloomberg)",
+      "published": "Fri, 08 May 2026 20:15:21 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Stocks Hit Record High on Jobs as Chipmakers Surge",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-08/stocks-hit-record-high-on-jobs-as-chipmakers-surge-video",
+      "summary": "Signs of labor-market strength drove stocks to all-time highs, bolstering speculation that the world’s largest economy remains resilient in the face of an energy shock triggered by the Iran war.\nBets that solid growth will keep powering earnings sent the S&amp;P 500 to its sixth straight weekly advance. A revival of the artificial-intelligence trade fueled an 11% jump in a gauge of chipmakers since last Friday. Oil notched a slide for the week. The US and Iran are working with mediators to formu",
+      "published": "Fri, 08 May 2026 20:12:08 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ]
+    }
+  ],
+  "label_changes": [
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "old_label": "ACCUMULATE",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "old_label": "ACCUMULATE",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "old_label": "ACCUMULATE",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "RBOT",
+      "name": "Vicarious Surgical",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    }
+  ],
+  "social": null
+}
