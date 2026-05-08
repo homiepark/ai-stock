@@ -43,12 +43,15 @@ def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool,
     from ai_stock.report.daily import assemble_daily_context, build_daily_report
     from ai_stock.report.coin_daily import assemble_coin_context, build_coin_report
     from ai_stock.report.web import build_site, build_coin_site
+    from ai_stock.report.json_export import export_stock_json, export_coin_json
 
     if not no_stocks:
         click.echo("📈 주식 파이프라인 시작...")
         stock_ctx = assemble_daily_context(output_dir=output_dir)
         md_path = build_daily_report(output_dir=output_dir, context=stock_ctx)
         click.echo(f"  Markdown: {md_path}")
+        json_path = export_stock_json(stock_ctx)
+        click.echo(f"  JSON:     {json_path}")
         if not no_site:
             site_path = build_site(stock_ctx, site_dir=site_dir)
             click.echo(f"  HTML:     {site_path / 'index.html'}")
@@ -59,6 +62,8 @@ def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool,
             coin_ctx = assemble_coin_context(output_dir=output_dir)
             md_path = build_coin_report(output_dir=output_dir, context=coin_ctx)
             click.echo(f"  Markdown: {md_path}")
+            json_path = export_coin_json(coin_ctx)
+            click.echo(f"  JSON:     {json_path}")
             if not no_site:
                 site_path = build_coin_site(coin_ctx, site_dir=site_dir)
                 click.echo(f"  HTML:     {site_path / 'coin.html'}")

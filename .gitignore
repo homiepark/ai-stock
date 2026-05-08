@@ -15,3 +15,18 @@ uv.lock
 site/
 reports/sample_site/
 reports/samples/
+
+# Next.js (web/)
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+# JSON data is committed by GitHub Actions but ignored locally so
+# dev runs don't pollute git history with one-off builds.
+# Override on CI by `git add -f web/data/`.
+web/data/stock/
+web/data/coin/
+web/data/latest-stock.json
+web/data/latest-coin.json
+web/data/index.json
+web/tsconfig.tsbuildinfo
