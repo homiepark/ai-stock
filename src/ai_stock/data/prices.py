@@ -42,7 +42,16 @@ def _fetch_kr(ticker: str, start: datetime, end: datetime) -> pd.DataFrame:
 
 
 def fetch_prices(stock: Stock, days: int = 800, cache: DiskCache | None = None) -> pd.DataFrame:
-    """Fetch ~3 years of daily OHLCV. Returns empty DataFrame on failure (caller decides)."""
+    """Fetch ~3 years of daily OHLCV. Returns empty DataFrame on failure (caller decides).
+
+    Dispatches by country: US → yfinance, KR → pykrx, CRYPTO → CoinGecko.
+    For CRYPTO, free CoinGecko tier caps history at 365 days, so requests
+    larger than that get clamped to 365.
+    """
+    if stock.country == "CRYPTO":
+        from ai_stock.data.coin_prices import fetch_coin_prices
+        return fetch_coin_prices(stock, days=min(days, 365), cache=cache)
+
     end = datetime.utcnow()
     start = end - timedelta(days=days)
     cache_key = f"prices_{stock.country}_{stock.ticker}_{days}d"
@@ -64,7 +73,12 @@ def fetch_prices(stock: Stock, days: int = 800, cache: DiskCache | None = None) 
 
 
 def fetch_market_cap(stock: Stock, cache: DiskCache | None = None) -> float | None:
-    """Best-effort market cap lookup. Returns USD-denominated value or None."""
+    """Best-effort market cap lookup. Returns USD-denominated value or None.
+
+    For CRYPTO, prefer the bulk fetch via `fetch_coin_market_caps` which is
+    cheaper (1 API call covers many coins). This single-stock call falls
+    through to a small targeted bulk call.
+    """
     cache_key = f"mcap_{stock.country}_{stock.ticker}"
     if cache is not None:
         cached = cache.get_json(cache_key)
@@ -73,7 +87,11 @@ def fetch_market_cap(stock: Stock, cache: DiskCache | None = None) -> float | No
 
     cap: float | None = None
     try:
-        if stock.country == "US":
+        if stock.country == "CRYPTO":
+            from ai_stock.data.coin_prices import fetch_coin_market_caps
+            caps = fetch_coin_market_caps([stock.coingecko_id], cache=cache)
+            cap = caps.get(stock.coingecko_id)
+        elif stock.country == "US":
             import yfinance as yf
             info = yf.Ticker(stock.ticker).fast_info
             cap = float(info.get("market_cap", 0)) or None

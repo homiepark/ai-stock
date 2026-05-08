@@ -1,0 +1,87 @@
+# AI 코인 워치리스트 — "꿈→증명" 시대의 6가지 매집 기준
+#
+# 사용자의 6가지 기준을 6개 테마로 매핑:
+#  1. 기관이 사야 하는 코인 → bitcoin_eth, etf_candidates
+#  2. 사람들이 실제로 쓰는 코인 → real_usage
+#  3. 거래량이 몰리는 코인 → 각 테마 내 momentum tier
+#  4. 시대 흐름을 탄 코인 (ETF·RWA·AI) → ai, rwa
+#  5. 생태계가 이미 커진 코인 → l1_ecosystem
+#  6. 매출로 이어지는 코인 → defi_revenue
+
+themes:
+  bitcoin_eth:
+    name: "비트·이더 (시장 방향성 기준)"
+    thesis: "BTC = 디지털 금, 알트 사이클의 출발점. ETH = 스마트컨트랙트의 인프라. 시장 전체 방향성 측정 기준."
+    coins:
+      - { id: bitcoin, symbol: BTC, name: "Bitcoin", tier: leader, note: "ETF 자금 유입, 디지털 금 내러티브" }
+      - { id: ethereum, symbol: ETH, name: "Ethereum", tier: leader, note: "ETF 승인 + 스테이킹 + L2 매출" }
+
+  ai:
+    name: "AI 코인 (시대 흐름 1)"
+    thesis: "AI Capex 사이클의 크립토 노출. 분산 컴퓨팅·데이터 네트워크·AI 에이전트 인프라."
+    coins:
+      - { id: bittensor, symbol: TAO, name: "Bittensor", tier: leader, note: "분산 AI 학습 네트워크, AI 코인 대장" }
+      - { id: render-token, symbol: RNDR, name: "Render", tier: momentum, note: "GPU 분산 렌더링·AI 컴퓨트" }
+      - { id: fetch-ai, symbol: FET, name: "Fetch.ai (ASI)", tier: supporting, note: "AI 에이전트, ASI 토큰 통합" }
+      - { id: near, symbol: NEAR, name: "NEAR", tier: supporting, note: "NEAR AI, BlackRock 관련 루머" }
+      - { id: worldcoin-wld, symbol: WLD, name: "Worldcoin", tier: momentum, note: "Sam Altman 프로젝트, AI ID" }
+
+  rwa:
+    name: "RWA (시대 흐름 2)"
+    thesis: "Real World Asset 토큰화. 미국 국채·부동산·주식의 온체인화. 기관 자금 유입 가장 빠른 영역."
+    coins:
+      - { id: ondo-finance, symbol: ONDO, name: "Ondo", tier: leader, note: "BlackRock·국채 토큰화 1위" }
+      - { id: maker, symbol: MKR, name: "MakerDAO (Sky)", tier: leader, note: "DAI·미국 국채 보유, RWA 원조" }
+      - { id: chainlink, symbol: LINK, name: "Chainlink", tier: leader, note: "오라클·CCIP, 모든 RWA 인프라" }
+
+  l1_ecosystem:
+    name: "L1 생태계 (이미 커진 생태계)"
+    thesis: "이더 외 L1 중 실수요·생태계 검증된 것들. 솔라나 압도적 + 신흥 L1도 자금 유입."
+    coins:
+      - { id: solana, symbol: SOL, name: "Solana", tier: leader, note: "ETF 후보, 밈+DeFi 생태계 폭발" }
+      - { id: sui, symbol: SUI, name: "Sui", tier: momentum, note: "Move 기반 신흥 L1, TVL 급증" }
+      - { id: aptos, symbol: APT, name: "Aptos", tier: supporting, note: "Move 기반, 기관 파트너십" }
+      - { id: avalanche-2, symbol: AVAX, name: "Avalanche", tier: supporting, note: "RWA 서브넷 인프라" }
+
+  etf_candidates:
+    name: "ETF 후보 + L2 (기관 수요)"
+    thesis: "ETF 승인 가능성 높은 메이저 + 이더 L2. 기관이 매집해야 하는 영역."
+    coins:
+      - { id: ripple, symbol: XRP, name: "XRP", tier: leader, note: "ETF 후보, 결제 인프라" }
+      - { id: cardano, symbol: ADA, name: "Cardano", tier: supporting, note: "ETF 후보, 학계 기반" }
+      - { id: arbitrum, symbol: ARB, name: "Arbitrum", tier: leader, note: "L2 1위, TVL·매출 안정" }
+      - { id: optimism, symbol: OP, name: "Optimism", tier: supporting, note: "Superchain, Coinbase Base" }
+      - { id: lido-dao, symbol: LDO, name: "Lido", tier: supporting, note: "ETH 스테이킹 1위, ETF 간접" }
+
+  real_usage:
+    name: "실사용 코인 (사람들이 진짜 씀)"
+    thesis: "투기가 아닌 실제 트래픽·결제·일상 사용처가 있는 코인. 거버넌스나 의미보단 'Daily Active Users'."
+    coins:
+      - { id: the-open-network, symbol: TON, name: "TON", tier: leader, note: "Telegram 9억 유저 결제·미니앱" }
+      - { id: binancecoin, symbol: BNB, name: "BNB", tier: leader, note: "거래소 + BSC, 일거래량 1위급" }
+
+  defi_revenue:
+    name: "DeFi 매출 실체 (꿈→증명)"
+    thesis: "실제 매출 발생, 토큰 보유자 환원. 더 이상 꿈이 아닌 증명의 시대. Messari 2026 Theses에서도 핵심 영역."
+    coins:
+      - { id: hyperliquid, symbol: HYPE, name: "Hyperliquid", tier: leader, note: "Perp DEX 1위 + Prediction Markets 진입, 일매출 폭증" }
+      - { id: ethena, symbol: ENA, name: "Ethena", tier: leader, note: "USDe 합성달러, DeFi 매출 1위급" }
+      - { id: uniswap, symbol: UNI, name: "Uniswap", tier: leader, note: "DEX 1위, 수수료 분배 도입 진행" }
+      - { id: aave, symbol: AAVE, name: "Aave", tier: leader, note: "렌딩 1위, GHO 스테이블코인" }
+      - { id: pendle, symbol: PENDLE, name: "Pendle", tier: momentum, note: "Yield trading, 매출 우상향" }
+      - { id: jupiter-exchange-solana, symbol: JUP, name: "Jupiter", tier: momentum, note: "솔라나 DEX 1위" }
+
+  depin:
+    name: "DePIN / InfraFi (Messari Theses 2026 핵심)"
+    thesis: "분산 물리 인프라. 토큰 가격은 하락했지만 매출 폭증 중. InfraFi(GPU·전력 인프라 자금조달)는 stablecoin 보유자에 10~15% 수익률 제공. AI Capex의 크립토 노출 2번째 채널."
+    coins:
+      - { id: helium, symbol: HNT, name: "Helium", tier: leader, note: "모바일 DePIN, 실사용 트래픽 증가" }
+      - { id: io, symbol: IO, name: "io.net", tier: momentum, note: "GPU 분산 컴퓨트, AI Capex 직결" }
+      - { id: akash-network, symbol: AKT, name: "Akash", tier: supporting, note: "오픈소스 클라우드, AWS 대안" }
+      - { id: filecoin, symbol: FIL, name: "Filecoin", tier: supporting, note: "분산 저장, AI 데이터 인프라" }
+
+# 매크로 지표 (CoinGecko global API)
+macro:
+  - { id: BTC_DOMINANCE, name: "BTC 도미넌스" }
+  - { id: TOTAL_MCAP, name: "전체 시총 (USD)" }
+  - { id: ETH_BTC, name: "ETH/BTC (알트 시즌 신호)" }

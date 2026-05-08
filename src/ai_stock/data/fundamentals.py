@@ -108,13 +108,52 @@ def _fetch_kr(ticker: str) -> dict[str, Any]:
     return out
 
 
+def _fetch_crypto(coin: Stock, cache: DiskCache | None = None) -> dict[str, Any]:
+    """For crypto we don't have traditional fundamentals (PER, EV/Sales, etc).
+
+    Synthesize 'revenue history' from price history so the long-term scorer
+    captures momentum. The signal interpretation: a coin whose price is up
+    big over 1y still has positive long-term momentum even if there's no
+    "revenue" in the equity sense. For coins with real fees (HYPE, AAVE, UNI)
+    this is a crude proxy; future work could plug in DefiLlama fee data.
+    """
+    from ai_stock.data.prices import fetch_prices
+    out = _empty()
+    prices = fetch_prices(coin, cache=cache)
+    if prices is None or prices.empty:
+        return out
+    closes = prices["close"]
+    n = len(closes)
+    if n < 60:
+        return out
+
+    # Synthesize 12 quarterly buckets from daily close (used by long_term scorer)
+    bucket_size = max(1, n // 12)
+    revenue_history = []
+    for i in range(12):
+        start_idx = max(0, n - (i + 1) * bucket_size)
+        end_idx = max(0, n - i * bucket_size)
+        if end_idx <= start_idx:
+            continue
+        window = closes.iloc[start_idx:end_idx]
+        # 가격 평균을 "분기 매출" 프록시로 — 절대값 무의미, 추세만 의미
+        revenue_history.append((str(closes.index[end_idx - 1].date()), float(window.mean())))
+    out["revenue_history"] = revenue_history
+    return out
+
+
 def fetch_fundamentals(stock: Stock, cache: DiskCache | None = None) -> dict[str, Any]:
     cache_key = f"fund_{stock.country}_{stock.ticker}"
     if cache is not None:
         cached = cache.get_json(cache_key)
         if cached is not None:
             return cached
-    data = _fetch_us(stock.ticker) if stock.country == "US" else _fetch_kr(stock.ticker)
+    if stock.country == "CRYPTO":
+        data = _fetch_crypto(stock, cache=cache)
+    elif stock.country == "US":
+        data = _fetch_us(stock.ticker)
+    else:
+        data = _fetch_kr(stock.ticker)
     if cache is not None:
         cache.set_json(cache_key, data)
     return data

@@ -31,17 +31,39 @@ def main(verbose: bool) -> None:
 @click.option("--site-dir", type=click.Path(path_type=Path), default=None,
               help="HTML 사이트 출력 디렉토리. 기본: site/")
 @click.option("--no-site", is_flag=True, help="HTML 사이트 빌드 생략 (Markdown만)")
-def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool) -> None:
-    """일일 리포트 생성. Markdown은 reports/daily/YYYY-MM-DD.md, HTML 사이트는 site/index.html 로 저장."""
-    from ai_stock.report.daily import assemble_daily_context, build_daily_report
-    from ai_stock.report.web import build_site
+@click.option("--no-coins", is_flag=True, help="코인 파이프라인 생략 (주식만)")
+@click.option("--no-stocks", is_flag=True, help="주식 파이프라인 생략 (코인만)")
+def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool,
+          no_coins: bool, no_stocks: bool) -> None:
+    """일일 리포트 생성. 주식 + 코인 둘 다 빌드.
 
-    context = assemble_daily_context(output_dir=output_dir)
-    md_path = build_daily_report(output_dir=output_dir, context=context)
-    click.echo(f"Markdown 리포트: {md_path}")
-    if not no_site:
-        site_path = build_site(context, site_dir=site_dir)
-        click.echo(f"HTML 사이트: {site_path / 'index.html'}")
+    Markdown: reports/daily/YYYY-MM-DD.md (주식), reports/daily/coins-YYYY-MM-DD.md (코인)
+    HTML:     site/index.html (주식), site/coin.html (코인)
+    """
+    from ai_stock.report.daily import assemble_daily_context, build_daily_report
+    from ai_stock.report.coin_daily import assemble_coin_context, build_coin_report
+    from ai_stock.report.web import build_site, build_coin_site
+
+    if not no_stocks:
+        click.echo("📈 주식 파이프라인 시작...")
+        stock_ctx = assemble_daily_context(output_dir=output_dir)
+        md_path = build_daily_report(output_dir=output_dir, context=stock_ctx)
+        click.echo(f"  Markdown: {md_path}")
+        if not no_site:
+            site_path = build_site(stock_ctx, site_dir=site_dir)
+            click.echo(f"  HTML:     {site_path / 'index.html'}")
+
+    if not no_coins:
+        click.echo("🪙 코인 파이프라인 시작...")
+        try:
+            coin_ctx = assemble_coin_context(output_dir=output_dir)
+            md_path = build_coin_report(output_dir=output_dir, context=coin_ctx)
+            click.echo(f"  Markdown: {md_path}")
+            if not no_site:
+                site_path = build_coin_site(coin_ctx, site_dir=site_dir)
+                click.echo(f"  HTML:     {site_path / 'coin.html'}")
+        except Exception as e:
+            click.echo(f"  ⚠️ 코인 파이프라인 실패 (주식은 정상 완료): {e}", err=True)
 
 
 @main.command()

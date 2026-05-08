@@ -19,6 +19,7 @@ class Stock:
     name: str
     note: str = ""
     theme: str = ""
+    coingecko_id: str = ""  # only set when country == "CRYPTO"
 
     @property
     def display(self) -> str:
@@ -55,6 +56,33 @@ def load_universe(path: Path | None = None) -> Universe:
     for key, t in raw["themes"].items():
         stocks = [Stock(theme=key, **s) for s in t["stocks"]]
         themes[key] = Theme(key=key, name=t["name"], thesis=t["thesis"], stocks=stocks)
+    return Universe(themes=themes, macro=raw.get("macro", []))
+
+
+def load_coin_universe(path: Path | None = None) -> Universe:
+    """Load the crypto watchlist. Each coin entry has `id` (CoinGecko id) and
+    `symbol` (display ticker). We map these into the shared Stock dataclass:
+        ticker = symbol (e.g. BTC)
+        coingecko_id = id (e.g. bitcoin)
+        country = "CRYPTO"
+    so the rest of the pipeline (signals, judge, report) can run unchanged.
+    """
+    p = path or (CONFIG_DIR / "coin_universe.yaml")
+    raw = yaml.safe_load(p.read_text(encoding="utf-8"))
+    themes: dict[str, Theme] = {}
+    for key, t in raw["themes"].items():
+        coins: list[Stock] = []
+        for c in t["coins"]:
+            coins.append(Stock(
+                ticker=c["symbol"],
+                country="CRYPTO",
+                tier=c["tier"],
+                name=c["name"],
+                note=c.get("note", ""),
+                theme=key,
+                coingecko_id=c["id"],
+            ))
+        themes[key] = Theme(key=key, name=t["name"], thesis=t["thesis"], stocks=coins)
     return Universe(themes=themes, macro=raw.get("macro", []))
 
 

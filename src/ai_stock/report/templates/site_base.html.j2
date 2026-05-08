@@ -45,10 +45,18 @@
       <span class="font-bold text-lg text-lime-400">AI</span>
       <span class="text-slate-400 hidden sm:inline">투자 일일 리포트</span>
     </a>
-    <nav class="flex items-center gap-3 text-sm">
-      <a href="./index.html" class="text-slate-300 hover:text-white">최신</a>
-      <a href="./archive.html" class="text-slate-300 hover:text-white">기록</a>
-      <button id="theme-toggle" class="text-slate-400 hover:text-white" title="테마 변경">
+    <nav class="flex items-center gap-1 sm:gap-3 text-sm">
+      {% set active = active_tab|default('stock') %}
+      <a href="./index.html"
+         class="px-2.5 py-1 rounded {% if active == 'stock' %}bg-slate-800 text-white{% else %}text-slate-400 hover:text-white{% endif %}">
+         📈 주식
+      </a>
+      <a href="./coin.html"
+         class="px-2.5 py-1 rounded {% if active == 'coin' %}bg-slate-800 text-white{% else %}text-slate-400 hover:text-white{% endif %}">
+         🪙 코인
+      </a>
+      <a href="./archive.html" class="px-2.5 py-1 text-slate-400 hover:text-white">기록</a>
+      <button id="theme-toggle" class="text-slate-400 hover:text-white px-2" title="테마 변경">
         <span class="dark:hidden">🌙</span>
         <span class="hidden dark:inline">☀️</span>
       </button>

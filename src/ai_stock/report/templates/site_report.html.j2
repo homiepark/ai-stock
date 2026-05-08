@@ -1,27 +1,36 @@
 {% extends "site_base.html.j2" %}
-{% block title %}AI 투자 일일 리포트 — {{ date }}{% endblock %}
+{% set asset = asset_class|default('stock') %}
+{% set is_coin = asset == 'coin' %}
+{% block title %}{{ '코인' if is_coin else '주식' }} 일일 리포트 — {{ date }}{% endblock %}
 
 {% block content %}
 
 {# Hero #}
 <section class="space-y-2">
   <div class="text-sm text-slate-400">{{ date }}</div>
-  <h1 class="text-2xl sm:text-3xl font-bold text-white">AI 투자 일일 리포트</h1>
+  <h1 class="text-2xl sm:text-3xl font-bold text-white">
+    {% if is_coin %}AI 코인 일일 리포트{% else %}AI 투자 일일 리포트{% endif %}
+  </h1>
   <p class="text-sm text-slate-400">
-    워치리스트 {{ universe_size }}종목 · 미국 {{ us_count }} / 한국 {{ kr_count }} ·
-    4대 자산 계층 + Embodied AI 추적
+    {% if is_coin -%}
+    워치리스트 {{ universe_size }}코인 · 6대 매집 기준(기관·실사용·거래량·시대흐름·생태계·매출 실체) 추적
+    {%- else -%}
+    워치리스트 {{ universe_size }}종목 · 미국 {{ us_count }} / 한국 {{ kr_count }} · 4대 자산 계층 + Embodied AI 추적
+    {%- endif %}
   </p>
 </section>
 
 {# 매크로 스냅샷 #}
 {% if macro %}
 <section>
-  <h2 class="text-lg font-semibold text-white mb-3">📊 매크로 스냅샷</h2>
+  <h2 class="text-lg font-semibold text-white mb-3">📊 {{ '글로벌 스냅샷' if is_coin else '매크로 스냅샷' }}</h2>
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
     {% for key, m in macro.items() %}
     <div class="bg-slate-900 border border-slate-800 rounded-lg p-3">
       <div class="text-xs text-slate-400 truncate">{{ m.name }}</div>
-      <div class="text-lg font-mono font-semibold text-white tabular-nums">{{ "%.2f"|format(m.value) }}</div>
+      <div class="text-lg font-mono font-semibold text-white tabular-nums">
+        {% if m.value < 1 %}{{ "%.4f"|format(m.value) }}{% else %}{{ "%.2f"|format(m.value) }}{% endif %}
+      </div>
       <div class="text-xs font-mono tabular-nums {% if m.change > 0 %}text-emerald-400{% elif m.change < 0 %}text-rose-400{% else %}text-slate-500{% endif %}">
         {{ "%+.2f%%"|format(m.change * 100) }}
       </div>

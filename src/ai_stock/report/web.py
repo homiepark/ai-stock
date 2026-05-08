@@ -57,11 +57,20 @@ def _scan_existing_dates(site_dir: Path) -> list[str]:
     return sorted(dates, reverse=True)
 
 
+def _scan_existing_coin_dates(site_dir: Path) -> list[str]:
+    dates: set[str] = set()
+    for p in site_dir.glob("coin-*.html"):
+        name = p.stem.replace("coin-", "", 1)
+        if len(name) == 10 and name.count("-") == 2 and name.replace("-", "").isdigit():
+            dates.add(name)
+    return sorted(dates, reverse=True)
+
+
 def build_site(
     context: dict[str, Any],
     site_dir: Path | None = None,
 ) -> Path:
-    """Render index.html for today + per-date archive page + archive listing.
+    """Render the stock side: index.html (today) + dated archive entries.
 
     Returns the site root directory.
     """
@@ -70,27 +79,72 @@ def build_site(
 
     env = _env()
     today = context["date"]
+    context = {**context, "active_tab": "stock", "asset_class": "stock"}
 
-    # Today's page
     today_html = _render_report(env, context)
     (site_dir / "index.html").write_text(today_html, encoding="utf-8")
     (site_dir / f"{today}.html").write_text(today_html, encoding="utf-8")
 
-    # Archive
-    dates = _scan_existing_dates(site_dir)
-    if today not in dates:
-        dates.insert(0, today)
-        dates.sort(reverse=True)
-    entries = [{"date": d, "filename": f"{d}.html"} for d in dates]
+    # Archive listing — combines stock + coin dates
+    stock_dates = _scan_existing_dates(site_dir)
+    coin_dates = _scan_existing_coin_dates(site_dir)
+    if today not in stock_dates:
+        stock_dates.insert(0, today)
+        stock_dates.sort(reverse=True)
+    entries = []
+    for d in stock_dates:
+        entries.append({"date": d, "filename": f"{d}.html", "label": "📈 주식"})
+    for d in coin_dates:
+        entries.append({"date": d, "filename": f"coin-{d}.html", "label": "🪙 코인"})
+    entries.sort(key=lambda e: (e["date"], e["filename"]), reverse=True)
     (site_dir / "archive.html").write_text(
         _render_archive(env, entries, context["version"], context["generated_at"]),
         encoding="utf-8",
     )
 
-    # GitHub Pages: a CNAME-less plain build. Disable Jekyll processing so paths
-    # starting with `_` (none here, but future-proof) are served as-is.
     (site_dir / ".nojekyll").write_text("", encoding="utf-8")
 
-    log.info("Wrote site → %s (index, %s.html, archive.html, %d total entries)",
+    log.info("Wrote stock site → %s (index, %s.html, %d archive entries)",
+             site_dir, today, len(entries))
+    return site_dir
+
+
+def build_coin_site(
+    context: dict[str, Any],
+    site_dir: Path | None = None,
+) -> Path:
+    """Render the coin side: coin.html (today) + per-date coin-YYYY-MM-DD.html.
+
+    Updates archive.html to include both stocks and coins.
+    """
+    site_dir = site_dir or (REPO_ROOT / "site")
+    site_dir.mkdir(parents=True, exist_ok=True)
+
+    env = _env()
+    today = context["date"]
+    context = {**context, "active_tab": "coin", "asset_class": "coin"}
+
+    coin_html = _render_report(env, context)
+    (site_dir / "coin.html").write_text(coin_html, encoding="utf-8")
+    (site_dir / f"coin-{today}.html").write_text(coin_html, encoding="utf-8")
+
+    # Refresh archive listing to include this new coin entry
+    stock_dates = _scan_existing_dates(site_dir)
+    coin_dates = _scan_existing_coin_dates(site_dir)
+    if today not in coin_dates:
+        coin_dates.insert(0, today)
+        coin_dates.sort(reverse=True)
+    entries = []
+    for d in stock_dates:
+        entries.append({"date": d, "filename": f"{d}.html", "label": "📈 주식"})
+    for d in coin_dates:
+        entries.append({"date": d, "filename": f"coin-{d}.html", "label": "🪙 코인"})
+    entries.sort(key=lambda e: (e["date"], e["filename"]), reverse=True)
+    (site_dir / "archive.html").write_text(
+        _render_archive(env, entries, context["version"], context["generated_at"]),
+        encoding="utf-8",
+    )
+
+    log.info("Wrote coin site → %s (coin.html, coin-%s.html, %d archive entries)",
              site_dir, today, len(entries))
     return site_dir
