@@ -1,0 +1,65 @@
+# 매크로 이벤트 캘린더 — 2026년 미국 주요 발표 일정.
+#
+# 이 파일은 수동 큐레이션입니다. 매년 초에 BLS·BEA·Fed 캘린더 보고 갱신.
+# 형식:
+#   - date: YYYY-MM-DD (UTC 기준 발표일)
+#     name: 화면에 표시될 이름
+#     kind: macro 고정
+#     impact: high (강력 시장 mover) | med (보조 시그널)
+#     note: 한 줄 컨텍스트 (옵션)
+#
+# 출처:
+#   FOMC: federalreserve.gov/monetarypolicy/fomccalendars.htm
+#   CPI/Jobs: bls.gov/schedule/news_release/
+#   GDP/PCE: bea.gov/news/schedule
+
+events:
+  # === Fed FOMC 결정 (이틀 미팅의 둘째 날, 결과 발표일) ===
+  - { date: "2026-01-28", name: "FOMC 금리 결정", kind: macro, impact: high }
+  - { date: "2026-03-18", name: "FOMC 금리 결정 + SEP", kind: macro, impact: high, note: "분기 점도표" }
+  - { date: "2026-04-29", name: "FOMC 금리 결정", kind: macro, impact: high }
+  - { date: "2026-06-17", name: "FOMC 금리 결정 + SEP", kind: macro, impact: high, note: "분기 점도표" }
+  - { date: "2026-07-29", name: "FOMC 금리 결정", kind: macro, impact: high }
+  - { date: "2026-09-16", name: "FOMC 금리 결정 + SEP", kind: macro, impact: high, note: "분기 점도표" }
+  - { date: "2026-10-28", name: "FOMC 금리 결정", kind: macro, impact: high }
+  - { date: "2026-12-16", name: "FOMC 금리 결정 + SEP", kind: macro, impact: high, note: "분기 점도표" }
+
+  # === CPI (BLS, 익월 중순 발표) ===
+  - { date: "2026-05-13", name: "CPI (4월)", kind: macro, impact: high }
+  - { date: "2026-06-11", name: "CPI (5월)", kind: macro, impact: high }
+  - { date: "2026-07-14", name: "CPI (6월)", kind: macro, impact: high }
+  - { date: "2026-08-12", name: "CPI (7월)", kind: macro, impact: high }
+  - { date: "2026-09-10", name: "CPI (8월)", kind: macro, impact: high }
+  - { date: "2026-10-14", name: "CPI (9월)", kind: macro, impact: high }
+  - { date: "2026-11-12", name: "CPI (10월)", kind: macro, impact: high }
+  - { date: "2026-12-10", name: "CPI (11월)", kind: macro, impact: high }
+
+  # === Non-Farm Payrolls / Unemployment (BLS, 월 첫째 금요일) ===
+  - { date: "2026-06-05", name: "고용보고서 (5월)", kind: macro, impact: high }
+  - { date: "2026-07-02", name: "고용보고서 (6월)", kind: macro, impact: high, note: "독립기념일 직전" }
+  - { date: "2026-08-07", name: "고용보고서 (7월)", kind: macro, impact: high }
+  - { date: "2026-09-04", name: "고용보고서 (8월)", kind: macro, impact: high }
+  - { date: "2026-10-02", name: "고용보고서 (9월)", kind: macro, impact: high }
+  - { date: "2026-11-06", name: "고용보고서 (10월)", kind: macro, impact: high }
+  - { date: "2026-12-04", name: "고용보고서 (11월)", kind: macro, impact: high }
+
+  # === PCE (BEA, 보통 월말 ~30일경) — Fed 선호 인플레 지표 ===
+  - { date: "2026-05-29", name: "PCE 물가 (4월)", kind: macro, impact: med }
+  - { date: "2026-06-26", name: "PCE 물가 (5월)", kind: macro, impact: med }
+  - { date: "2026-07-31", name: "PCE 물가 (6월)", kind: macro, impact: med }
+  - { date: "2026-08-28", name: "PCE 물가 (7월)", kind: macro, impact: med }
+  - { date: "2026-09-25", name: "PCE 물가 (8월)", kind: macro, impact: med }
+  - { date: "2026-10-30", name: "PCE 물가 (9월)", kind: macro, impact: med }
+  - { date: "2026-11-25", name: "PCE 물가 (10월)", kind: macro, impact: med }
+  - { date: "2026-12-22", name: "PCE 물가 (11월)", kind: macro, impact: med }
+
+  # === GDP (분기 첫 발표) ===
+  - { date: "2026-04-30", name: "GDP Q1 advance", kind: macro, impact: med }
+  - { date: "2026-07-30", name: "GDP Q2 advance", kind: macro, impact: med }
+  - { date: "2026-10-29", name: "GDP Q3 advance", kind: macro, impact: med }
+
+  # === Jackson Hole 심포지엄 (Fed 의장 연설) ===
+  - { date: "2026-08-21", name: "잭슨홀 심포지엄 (Fed 의장 연설)", kind: macro, impact: high, note: "장기 정책 방향성 신호" }
+
+  # === NVIDIA GTC (AI 사이클 분수령) ===
+  - { date: "2026-03-17", name: "NVIDIA GTC (키노트)", kind: macro, impact: high, note: "차세대 GPU·로드맵 발표" }

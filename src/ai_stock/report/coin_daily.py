@@ -160,6 +160,15 @@ def assemble_coin_context(
     # Position review (parses prior coin reports)
     label_changes = _compute_coin_label_changes(results, output_dir)
 
+    # Upcoming macro events (no earnings — crypto)
+    try:
+        from ai_stock.data.calendar import upcoming_events
+        events = upcoming_events(stocks=None, today=today.date(),
+                                 include_earnings=False, cache=cache)
+    except Exception as e:
+        log.warning("calendar fetch failed: %s", e)
+        events = []
+
     return {
         "date": today.strftime("%Y-%m-%d"),
         "generated_at": today.strftime("%Y-%m-%d %H:%M UTC"),
@@ -174,6 +183,7 @@ def assemble_coin_context(
         "focus": focus_results,
         "top_news": [n.to_dict() for n in top_news],
         "label_changes": label_changes,
+        "upcoming_events": events,
         "social": social,
         "_today": today,
     }

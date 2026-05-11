@@ -1883,5 +1883,15 @@
       "new_label": "HOLD"
     }
   ],
-  "social": null
+  "social": null,
+  "upcoming_events": [
+    {
+      "date": "2026-05-13",
+      "name": "CPI (4월)",
+      "kind": "macro",
+      "impact": "high",
+      "ticker": "",
+      "note": ""
+    }
+  ]
 }

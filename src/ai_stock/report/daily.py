@@ -167,6 +167,14 @@ def assemble_daily_context(
     # Position review
     label_changes = _compute_label_changes(results, output_dir)
 
+    # Upcoming macro + earnings calendar (next 14 days)
+    try:
+        from ai_stock.data.calendar import upcoming_events
+        events = upcoming_events(stocks=all_stocks, today=today.date(), cache=cache)
+    except Exception as e:
+        log.warning("calendar fetch failed: %s", e)
+        events = []
+
     us_count = sum(1 for s in all_stocks if s.country == "US")
     kr_count = len(all_stocks) - us_count
 
@@ -183,6 +191,7 @@ def assemble_daily_context(
         "focus": focus_results,
         "top_news": [n.to_dict() for n in top_news],
         "label_changes": label_changes,
+        "upcoming_events": events,
         "_today": today,
     }
 
