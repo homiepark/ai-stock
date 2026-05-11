@@ -121,6 +121,9 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
         theme_rankings_out.append({
             "theme_key": r.theme_key,
             "theme_name": r.theme_name,
+            "tagline": r.tagline,
+            "why_now": r.why_now,
+            "risk": r.risk,
             "composite_return": r.composite_return,
             "avg_return_1w": r.avg_return_1w,
             "avg_return_1m": r.avg_return_1m,

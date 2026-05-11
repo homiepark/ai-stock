@@ -55,6 +55,9 @@ export interface ThemeRanking {
   cap_leader: { ticker: string; name: string } | null;
   momentum_leader: { ticker: string; name: string } | null;
   member_count: number;
+  tagline?: string;
+  why_now?: string;
+  risk?: string;
 }
 
 export interface MacroSnapshot {

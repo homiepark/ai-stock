@@ -30,6 +30,10 @@ class ThemeRanking:
     cap_leader: Stock | None
     momentum_leader: Stock | None
     members: list[StockMomentum]
+    # Static metadata copied from the Theme (for UI cards). Empty when not set.
+    tagline: str = ""
+    why_now: str = ""
+    risk: str = ""
 
 
 def stock_momentum(stock: Stock, prices: pd.DataFrame, market_cap: float | None) -> StockMomentum | None:
@@ -46,7 +50,10 @@ def stock_momentum(stock: Stock, prices: pd.DataFrame, market_cap: float | None)
 def rank_theme(theme: Theme, members: list[StockMomentum],
                theme_weights: dict[str, float], leader_weights: dict[str, float]) -> ThemeRanking:
     if not members:
-        return ThemeRanking(theme.key, theme.name, 0.0, 0.0, 0.0, 0.0, None, None, [])
+        return ThemeRanking(
+            theme.key, theme.name, 0.0, 0.0, 0.0, 0.0, None, None, [],
+            tagline=theme.tagline, why_now=theme.why_now, risk=theme.risk,
+        )
 
     n = len(members)
     avg_1w = sum(m.return_1w for m in members) / n
@@ -88,4 +95,7 @@ def rank_theme(theme: Theme, members: list[StockMomentum],
         cap_leader=cap_leader,
         momentum_leader=momentum_leader,
         members=members,
+        tagline=theme.tagline,
+        why_now=theme.why_now,
+        risk=theme.risk,
     )
