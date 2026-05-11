@@ -32,6 +32,10 @@ class Theme:
     name: str
     thesis: str
     stocks: list[Stock] = field(default_factory=list)
+    # 3-line breakdown for the dashboard UI; fall back to `thesis` when empty.
+    tagline: str = ""   # one-line metaphor / "what it is"
+    why_now: str = ""   # one-line "why this matters today"
+    risk: str = ""      # one-line "what could go wrong"
 
 
 @dataclass
@@ -55,7 +59,12 @@ def load_universe(path: Path | None = None) -> Universe:
     themes: dict[str, Theme] = {}
     for key, t in raw["themes"].items():
         stocks = [Stock(theme=key, **s) for s in t["stocks"]]
-        themes[key] = Theme(key=key, name=t["name"], thesis=t["thesis"], stocks=stocks)
+        themes[key] = Theme(
+            key=key, name=t["name"], thesis=t["thesis"], stocks=stocks,
+            tagline=t.get("tagline", ""),
+            why_now=t.get("why_now", ""),
+            risk=t.get("risk", ""),
+        )
     return Universe(themes=themes, macro=raw.get("macro", []))
 
 
@@ -82,7 +91,12 @@ def load_coin_universe(path: Path | None = None) -> Universe:
                 theme=key,
                 coingecko_id=c["id"],
             ))
-        themes[key] = Theme(key=key, name=t["name"], thesis=t["thesis"], stocks=coins)
+        themes[key] = Theme(
+            key=key, name=t["name"], thesis=t["thesis"], stocks=coins,
+            tagline=t.get("tagline", ""),
+            why_now=t.get("why_now", ""),
+            risk=t.get("risk", ""),
+        )
     return Universe(themes=themes, macro=raw.get("macro", []))
 
 

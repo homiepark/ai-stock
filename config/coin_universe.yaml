@@ -11,6 +11,9 @@
 themes:
   bitcoin_eth:
     name: "비트·이더 (시장 방향성 기준)"
+    tagline: "🥇 시장 방향성 기준 — 비트는 디지털 금, 이더는 인프라"
+    why_now: "BTC ETF 자금 유입, ETH 스테이킹 + L2 매출. 알트 사이클의 출발점."
+    risk: "거시 유동성·금리에 직접 노출. ETF 자금 흐름이 단기 방향성을 좌우."
     thesis: "BTC = 디지털 금, 알트 사이클의 출발점. ETH = 스마트컨트랙트의 인프라. 시장 전체 방향성 측정 기준."
     coins:
       - { id: bitcoin, symbol: BTC, name: "Bitcoin", tier: leader, note: "ETF 자금 유입, 디지털 금 내러티브" }
@@ -18,6 +21,9 @@ themes:
 
   ai:
     name: "AI 코인 (시대 흐름 1)"
+    tagline: "🤖 크립토 버전 AI 베팅 — 분산 컴퓨팅·에이전트"
+    why_now: "AI Capex 사이클의 크립토 노출. 미국 AI 주식 테마와 동행 흐름."
+    risk: "내러티브 의존도 큼. 실수요 검증 아직 미흡. 알트 변동성 폭."
     thesis: "AI Capex 사이클의 크립토 노출. 분산 컴퓨팅·데이터 네트워크·AI 에이전트 인프라."
     coins:
       - { id: bittensor, symbol: TAO, name: "Bittensor", tier: leader, note: "분산 AI 학습 네트워크, AI 코인 대장" }
@@ -28,6 +34,9 @@ themes:
 
   rwa:
     name: "RWA (시대 흐름 2)"
+    tagline: "🏛 온체인 금융 — 국채·부동산·주식의 토큰화"
+    why_now: "기관 자금 유입 가장 빠른 영역. BlackRock·Franklin 등 진입."
+    risk: "규제 의존적. 거시 금리 환경 변화 시 단기 자금 이탈 가능."
     thesis: "Real World Asset 토큰화. 미국 국채·부동산·주식의 온체인화. 기관 자금 유입 가장 빠른 영역."
     coins:
       - { id: ondo-finance, symbol: ONDO, name: "Ondo", tier: leader, note: "BlackRock·국채 토큰화 1위" }
@@ -36,6 +45,9 @@ themes:
 
   l1_ecosystem:
     name: "L1 생태계 (이미 커진 생태계)"
+    tagline: "🌐 검증된 L1 — 이더 외 실수요 입증된 체인들"
+    why_now: "솔라나 압도적 점유 + 신흥 L1(Sui·Aptos)도 자금 유입. 생태계 prop value 확보."
+    risk: "L1 간 경쟁 격화. 사용자·개발자 이탈 시 멀티플 빠르게 축소."
     thesis: "이더 외 L1 중 실수요·생태계 검증된 것들. 솔라나 압도적 + 신흥 L1도 자금 유입."
     coins:
       - { id: solana, symbol: SOL, name: "Solana", tier: leader, note: "ETF 후보, 밈+DeFi 생태계 폭발" }
@@ -45,6 +57,9 @@ themes:
 
   etf_candidates:
     name: "ETF 후보 + L2 (기관 수요)"
+    tagline: "📈 ETF 승인 후보 + 이더 L2 — 기관 매집 영역"
+    why_now: "SOL·LTC ETF 가능성 + L2 거래량 회복. 다음 cycle 메이저 후보."
+    risk: "ETF 미승인 시 단기 조정. L2는 fee market 경쟁 심화."
     thesis: "ETF 승인 가능성 높은 메이저 + 이더 L2. 기관이 매집해야 하는 영역."
     coins:
       - { id: ripple, symbol: XRP, name: "XRP", tier: leader, note: "ETF 후보, 결제 인프라" }
@@ -55,6 +70,9 @@ themes:
 
   real_usage:
     name: "실사용 코인 (사람들이 진짜 씀)"
+    tagline: "👥 진짜 쓰는 코인 — DAU 기반"
+    why_now: "거버넌스보단 실제 트래픽·결제 사용처. TON·BNB 일일 활성 유저 검증."
+    risk: "투기 대비 변동성 낮지만 폭발력도 작음. 환희장에서 underperform."
     thesis: "투기가 아닌 실제 트래픽·결제·일상 사용처가 있는 코인. 거버넌스나 의미보단 'Daily Active Users'."
     coins:
       - { id: the-open-network, symbol: TON, name: "TON", tier: leader, note: "Telegram 9억 유저 결제·미니앱" }
@@ -62,6 +80,9 @@ themes:
 
   defi_revenue:
     name: "DeFi 매출 실체 (꿈→증명)"
+    tagline: "💰 DeFi 매출 실체 — 꿈→증명 전환"
+    why_now: "실제 매출 + 토큰 보유자 환원. P/S 가시화로 밸류에이션 재평가 단계."
+    risk: "스마트컨트랙트 위험 + 규제. 매출은 시장 변동성에 큰 폭으로 변동."
     thesis: "실제 매출 발생, 토큰 보유자 환원. 더 이상 꿈이 아닌 증명의 시대. Messari 2026 Theses에서도 핵심 영역."
     coins:
       - { id: hyperliquid, symbol: HYPE, name: "Hyperliquid", tier: leader, note: "Perp DEX 1위 + Prediction Markets 진입, 일매출 폭증" }
@@ -73,6 +94,9 @@ themes:
 
   depin:
     name: "DePIN / InfraFi (Messari Theses 2026 핵심)"
+    tagline: "🛰 분산 물리 인프라 — GPU·전력·통신의 토큰화"
+    why_now: "토큰 가격은 하락했지만 매출 폭증 중. AI Capex 사이클의 크립토 노출 직접."
+    risk: "토큰 인플레이션 압력 + 사용자 보상 의존. 베어 마켓에서 매도 압력 큼."
     thesis: "분산 물리 인프라. 토큰 가격은 하락했지만 매출 폭증 중. InfraFi(GPU·전력 인프라 자금조달)는 stablecoin 보유자에 10~15% 수익률 제공. AI Capex의 크립토 노출 2번째 채널."
     coins:
       - { id: helium, symbol: HNT, name: "Helium", tier: leader, note: "모바일 DePIN, 실사용 트래픽 증가" }

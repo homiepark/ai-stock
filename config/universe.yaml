@@ -6,6 +6,9 @@
 themes:
   power_grid:
     name: "전력·그리드 (AI의 '땅')"
+    tagline: "🏗 AI의 '땅' — 전력·변압기·발전소"
+    why_now: "AI가 돌아가려면 전기 필요. 미국 변압기 대기 100주+ → 만드는 회사들 5년치 일감 확보."
+    risk: "사이클 후반 진입 우려는 아직 작지만, 금리 급등 시 인프라주 동반 조정."
     thesis: "AI 학습·추론의 진짜 병목은 GPU가 아니라 전력. 미국 변압기 리드타임 100주+, 데이터센터 전력 수요 2030까지 2~3배. 사이클 초·중반."
     stocks:
       - { ticker: GEV, country: US, tier: leader, name: "GE Vernova", note: "전력기기·가스터빈 글로벌 리더" }
@@ -24,6 +27,9 @@ themes:
 
   semiconductors:
     name: "반도체·HBM·패키징 (AI의 '강철')"
+    tagline: "⚙️ AI의 '강철' — GPU·메모리·장비"
+    why_now: "HBM4·CoWoS·EUV 모두 캐파 부족 지속. 2027까지 수요 가시성 확보된 영역."
+    risk: "사이클 정점 논쟁 + 중국 수출 규제 변동성. 어닝 미스 시 30% 낙폭 흔함."
     thesis: "HBM4→HBM5 사이클 2027까지 가시성. 광 인터커넥트(CPO), 첨단 패키징(CoWoS) 캐파 부족 지속. 카네기급 부 형성 영역."
     stocks:
       - { ticker: NVDA, country: US, tier: leader, name: "NVIDIA", note: "AI 가속기 압도적 점유" }
@@ -44,6 +50,9 @@ themes:
 
   hyperscalers:
     name: "하이퍼스케일러·AI 클라우드 (AI의 'JP모건')"
+    tagline: "🏦 AI의 'JP모건' — Capex의 자금줄"
+    why_now: "MSFT·GOOG·META·AMZN 2026 Capex 합계 $400B+. AI 매출 회수 본격화 단계."
+    risk: "광고·소비 둔화 시 Capex 가이던스 컷 가능. 빅테크 동반 변동성."
     thesis: "Capex 사이클의 자금중개자. MSFT·GOOG·META·AMZN의 Capex 합계 2026년 $400B+ 예상. 수직통합 가속."
     stocks:
       - { ticker: MSFT, country: US, tier: leader, name: "Microsoft", note: "OpenAI 파트너·Azure AI" }
@@ -56,6 +65,9 @@ themes:
 
   vertical_ai:
     name: "버티컬 AI / 운영자 (AI의 '밴더빌트')"
+    tagline: "🚂 AI의 '밴더빌트' — 실제 업무에 AI 박는 운영자"
+    why_now: "추론 비용 90% 하락 + 엔터프라이즈 도입 본격. 진짜 텐베거 후보가 여기서 다수."
+    risk: "밸류에이션 과열. 매출 성장 30%+ 못 보이면 멀티플 압축."
     thesis: "AI를 기존 워크플로우에 박아넣어 매출로 환원하는 운영자들. 진짜 텐베거 후보가 여기서 다수 출현."
     stocks:
       - { ticker: PLTR, country: US, tier: leader, name: "Palantir", note: "정부+엔터프라이즈 AI OS, AIP" }
@@ -69,6 +81,9 @@ themes:
 
   embodied_ai:
     name: "로보틱스·Embodied AI (다음 게임체인저)"
+    tagline: "🤖 다음 게임체인저 — 휴머노이드·자율주행·수술로봇"
+    why_now: "인지노동 다음은 물리노동. 2027~2030 진정한 텐베거 가능 영역."
+    risk: "상용화 시점 불확실. 미래 옵션밸류 비중 큼. 변동성 극심."
     thesis: "인지노동 다음은 물리노동. 휴머노이드·자율주행·수술로봇이 2027~2030 진정한 텐베거 가능 영역."
     stocks:
       - { ticker: TSLA, country: US, tier: leader, name: "Tesla", note: "Optimus·FSD·로보택시 옵션밸류" }
@@ -79,6 +94,9 @@ themes:
 
   leveraged:
     name: "레버리지 ETF (⚠️ 고위험 단기 베팅용)"
+    tagline: "⚠️ 단기 베팅용 — 일일 2~3배 추종"
+    why_now: "강한 추세장에서만 사용. 분할매수 + 손절선 명확히 + 자산의 5~10% 이하."
+    risk: "장기 보유 ❌. 횡보·하락장에선 음의 복리(volatility decay)로 손실 누적."
     thesis: "기초 자산의 일일 수익률을 2~3배로 추종. 상승장에선 폭발적이지만 횡보·하락장에선 음의 복리(volatility decay)로 손실 누적. 장기 보유 부적합. 분할매수 + 손절 명확히 + 자산의 5~10% 이하만."
     stocks:
       - { ticker: TQQQ, country: US, tier: leader, name: "TQQQ (3x QQQ)", note: "나스닥100 3배. 시총·거래량 1위 레버리지 ETF" }
