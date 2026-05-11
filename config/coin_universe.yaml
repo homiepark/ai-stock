@@ -22,7 +22,7 @@ themes:
     coins:
       - { id: bittensor, symbol: TAO, name: "Bittensor", tier: leader, note: "분산 AI 학습 네트워크, AI 코인 대장" }
       - { id: render-token, symbol: RNDR, name: "Render", tier: momentum, note: "GPU 분산 렌더링·AI 컴퓨트" }
-      - { id: fetch-ai, symbol: FET, name: "Fetch.ai (ASI)", tier: supporting, note: "AI 에이전트, ASI 토큰 통합" }
+      - { id: artificial-superintelligence-alliance, symbol: FET, name: "Fetch.ai (ASI)", tier: supporting, note: "AI 에이전트, ASI 토큰 통합" }
       - { id: near, symbol: NEAR, name: "NEAR", tier: supporting, note: "NEAR AI, BlackRock 관련 루머" }
       - { id: worldcoin-wld, symbol: WLD, name: "Worldcoin", tier: momentum, note: "Sam Altman 프로젝트, AI ID" }
 
@@ -76,7 +76,7 @@ themes:
     thesis: "분산 물리 인프라. 토큰 가격은 하락했지만 매출 폭증 중. InfraFi(GPU·전력 인프라 자금조달)는 stablecoin 보유자에 10~15% 수익률 제공. AI Capex의 크립토 노출 2번째 채널."
     coins:
       - { id: helium, symbol: HNT, name: "Helium", tier: leader, note: "모바일 DePIN, 실사용 트래픽 증가" }
-      - { id: io, symbol: IO, name: "io.net", tier: momentum, note: "GPU 분산 컴퓨트, AI Capex 직결" }
+      - { id: io-net, symbol: IO, name: "io.net", tier: momentum, note: "GPU 분산 컴퓨트, AI Capex 직결" }
       - { id: akash-network, symbol: AKT, name: "Akash", tier: supporting, note: "오픈소스 클라우드, AWS 대안" }
       - { id: filecoin, symbol: FIL, name: "Filecoin", tier: supporting, note: "분산 저장, AI 데이터 인프라" }
 

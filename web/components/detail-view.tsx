@@ -4,6 +4,8 @@ import type { AssetClass, Verdict } from "@/lib/types";
 import { LabelBadge } from "./label-badge";
 import { ScoreBars } from "./score-bars";
 import { MetricsGrid } from "./metrics-grid";
+import { OverheatBadge, BuyTimingGuide } from "./overheat-badge";
+import { Term } from "./glossary";
 
 export function DetailView({
   verdict,
@@ -48,6 +50,9 @@ export function DetailView({
             {verdict.ticker}
           </span>
           <LabelBadge label={verdict.label} size="lg" />
+          {verdict.overheat && verdict.overheat.level !== "normal" && (
+            <OverheatBadge overheat={verdict.overheat} />
+          )}
         </h1>
         <p className="text-sm text-slate-300 max-w-3xl">{verdict.note}</p>
         <div className="flex flex-wrap gap-2 text-xs">
@@ -96,7 +101,19 @@ export function DetailView({
       </header>
 
       <section>
-        <h2 className="text-base font-semibold text-white mb-3">정량 점수</h2>
+        <h2 className="text-base font-semibold text-white mb-3">
+          🎯 지금 사도 되나? — 매수 타이밍 가이드
+        </h2>
+        <BuyTimingGuide
+          label={verdict.label}
+          overheat={verdict.overheat}
+        />
+      </section>
+
+      <section>
+        <h2 className="text-base font-semibold text-white mb-3">
+          <Term term="Composite">정량 점수</Term>
+        </h2>
         <div className="bg-slate-900 border border-slate-800 rounded-lg p-4">
           <ScoreBars scores={verdict.scores} />
           {verdict.label_quant !== verdict.label && (

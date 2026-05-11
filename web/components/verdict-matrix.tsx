@@ -6,6 +6,7 @@ import { ArrowDown, ArrowUp, Search, X } from "lucide-react";
 import type { AssetClass, Verdict } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { LabelBadge } from "./label-badge";
+import { OverheatBadge } from "./overheat-badge";
 
 type SortKey = "name" | "theme" | "short" | "mid" | "long" | "composite" | "label";
 type SortDir = "asc" | "desc";
@@ -212,6 +213,7 @@ export function VerdictMatrix({
               <SortableTh active={sortKey === "label"} dir={sortDir} onClick={() => setSort("label")} className="text-center">
                 라벨
               </SortableTh>
+              <th className="px-3 py-2 text-center whitespace-nowrap">과열도</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-800">
@@ -239,6 +241,13 @@ export function VerdictMatrix({
                   <ScoreCell value={v.scores.composite} bold />
                   <td className="px-3 py-2 text-center">
                     <LabelBadge label={v.label} size="sm" />
+                  </td>
+                  <td className="px-3 py-2 text-center">
+                    {v.overheat ? (
+                      <OverheatBadge overheat={v.overheat} size="sm" showLabel={false} />
+                    ) : (
+                      <span className="text-slate-600">—</span>
+                    )}
                   </td>
                 </tr>
               );

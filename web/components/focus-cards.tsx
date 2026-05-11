@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Verdict, AssetClass } from "@/lib/types";
 import { LabelBadge } from "./label-badge";
+import { OverheatBadge } from "./overheat-badge";
 
 export function FocusCards({
   verdicts,
@@ -34,7 +35,12 @@ export function FocusCards({
                   </span>
                 </div>
               </div>
-              <LabelBadge label={f.label} size="md" />
+              <div className="flex flex-col items-end gap-1">
+                <LabelBadge label={f.label} size="md" />
+                {f.overheat && f.overheat.level !== "normal" && (
+                  <OverheatBadge overheat={f.overheat} size="sm" />
+                )}
+              </div>
             </div>
 
             {/* Score bars */}

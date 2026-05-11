@@ -10,6 +10,7 @@ import { NewsList } from "@/components/news-list";
 import { LabelChangesPanel } from "@/components/label-changes";
 import { TwitterPulse } from "@/components/twitter-pulse";
 import { SearchPalette } from "@/components/search-palette";
+import { BeginnerGuide } from "@/components/beginner-guide";
 
 export const revalidate = 3600;
 
@@ -49,6 +50,8 @@ export default async function CoinDashboard() {
         subtitle={subtitle}
         asset="coin"
       />
+
+      <BeginnerGuide />
 
       <section>
         <h2 className="text-lg font-semibold text-white mb-3">📊 글로벌 스냅샷</h2>

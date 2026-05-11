@@ -63,6 +63,7 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
     verdicts_out = []
     for v in context.get("verdicts", []):
         c = v.composite
+        oh = v.overheat
         verdicts_out.append({
             "ticker": v.stock.ticker,
             "name": v.stock.name,
@@ -87,6 +88,17 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
                 "next_trigger": v.narrative.next_trigger,
             },
             "metrics": v.metrics,
+            "overheat": (
+                {
+                    "score": oh.score,
+                    "level": oh.level,
+                    "emoji": oh.emoji,
+                    "label": oh.label,
+                    "guidance": oh.guidance,
+                    "flags": oh.flags,
+                }
+                if oh is not None else None
+            ),
             "in_focus": False,
         })
 

@@ -68,7 +68,12 @@ def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool,
                 site_path = build_coin_site(coin_ctx, site_dir=site_dir)
                 click.echo(f"  HTML:     {site_path / 'coin.html'}")
         except Exception as e:
-            click.echo(f"  ⚠️ 코인 파이프라인 실패 (주식은 정상 완료): {e}", err=True)
+            import traceback
+            click.echo(f"  ⚠️ 코인 파이프라인 실패: {type(e).__name__}: {e}", err=True)
+            click.echo("  Traceback (마지막 5줄):", err=True)
+            tb_lines = traceback.format_exc().splitlines()
+            for line in tb_lines[-10:]:
+                click.echo(f"    {line}", err=True)
 
 
 @main.command()

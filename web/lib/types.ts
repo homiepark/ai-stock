@@ -18,6 +18,15 @@ export interface Narrative {
   next_trigger: string;
 }
 
+export interface Overheat {
+  score: number;
+  level: "normal" | "mild" | "high" | "extreme";
+  emoji: string;
+  label: string;
+  guidance: string;
+  flags: string[];
+}
+
 export interface Verdict {
   ticker: string;
   name: string;
@@ -32,6 +41,7 @@ export interface Verdict {
   label_quant: LabelText;
   narrative: Narrative;
   metrics: Record<string, number | null>;
+  overheat: Overheat | null;
   in_focus: boolean;
 }
 

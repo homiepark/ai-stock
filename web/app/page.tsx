@@ -9,6 +9,7 @@ import { VerdictMatrix } from "@/components/verdict-matrix";
 import { NewsList } from "@/components/news-list";
 import { LabelChangesPanel } from "@/components/label-changes";
 import { SearchPalette } from "@/components/search-palette";
+import { BeginnerGuide } from "@/components/beginner-guide";
 
 export const revalidate = 3600;
 
@@ -36,6 +37,8 @@ export default async function StockDashboard() {
         subtitle={subtitle}
         asset="stock"
       />
+
+      <BeginnerGuide />
 
       <section>
         <h2 className="text-lg font-semibold text-white mb-3">📊 매크로 스냅샷</h2>
