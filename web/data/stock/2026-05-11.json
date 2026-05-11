@@ -1,7 +1,7 @@
 {
   "asset_class": "stock",
   "date": "2026-05-11",
-  "generated_at": "2026-05-11 06:25 UTC",
+  "generated_at": "2026-05-11 06:48 UTC",
   "version": "0.1.0",
   "universe_size": 48,
   "us_count": 36,
@@ -14,8 +14,8 @@
     },
     "DTWEXBGS": {
       "name": "US Dollar Index",
-      "value": 98.08300018310547,
-      "change": 0.0024836861642515756
+      "value": 98.05799865722656,
+      "change": 0.0022281513439868297
     },
     "VIXCLS": {
       "name": "VIX",
@@ -153,7 +153,7 @@
         "last_close": 746.8099975585938,
         "rsi14": 87.9659885631923,
         "ma50": 448.89246032714846,
-        "ma200": 290.4464630126953,
+        "ma200": 290.4464625930786,
         "vol_z20": 2.143660165348793,
         "ret_5d": 0.3773445109730109,
         "ret_20d": 0.7756247273143102,
@@ -223,7 +223,7 @@
         "last_close": 215.1999969482422,
         "rsi14": 60.34645869853311,
         "ma50": 188.6494287109375,
-        "ma200": 184.71659477233888,
+        "ma200": 184.71659461975096,
         "vol_z20": -0.40210017417809796,
         "ret_5d": 0.08440413332114383,
         "ret_20d": 0.14085771816597492,
@@ -398,7 +398,7 @@
         "last_close": 745.0,
         "rsi14": 77.44932602197427,
         "ma50": 602.7355981445312,
-        "ma200": 476.9029655456543,
+        "ma200": 476.9029650878906,
         "vol_z20": 0.2087735824400731,
         "ret_5d": 0.0037590142207033495,
         "ret_20d": 0.27272109239335696,
@@ -433,7 +433,7 @@
         "last_close": 339.9700012207031,
         "rsi14": 60.71967951671531,
         "ma50": 284.74828857421875,
-        "ma200": 197.27605445861818,
+        "ma200": 197.27605457305907,
         "vol_z20": -1.1551292277571918,
         "ret_5d": 0.03551522569771404,
         "ret_20d": 0.1520111758187348,
@@ -503,7 +503,7 @@
         "last_close": 195.9499969482422,
         "rsi14": 63.011755255841415,
         "ma50": 159.51768981933594,
-        "ma200": 209.82101028442383,
+        "ma200": 209.82101081848145,
         "vol_z20": -1.1159986830514057,
         "ret_5d": 0.14037126730000593,
         "ret_20d": 0.41900211561143563,
@@ -573,7 +573,7 @@
         "last_close": 147.72000122070312,
         "rsi14": 39.09291214684295,
         "ma50": 158.39056213378908,
-        "ma200": 176.6463787841797,
+        "ma200": 176.64637840270996,
         "vol_z20": 2.129665697176967,
         "ret_5d": -0.04868622886414975,
         "ret_20d": -0.04530469010791993,
@@ -643,7 +643,7 @@
         "last_close": 609.6300048828125,
         "rsi14": 27.95679755296787,
         "ma50": 626.4280725097656,
-        "ma200": 675.0011181640625,
+        "ma200": 675.0011172485351,
         "vol_z20": -0.25843086794576026,
         "ret_5d": 0.0014455932366530533,
         "ret_20d": -0.03211821823775396,
@@ -748,7 +748,7 @@
         "last_close": 430.0,
         "rsi14": 62.569321964623754,
         "ma50": 358.6447296142578,
-        "ma200": 342.5106861877441,
+        "ma200": 342.5106869506836,
         "vol_z20": 0.4715398794912994,
         "ret_5d": 0.020698825593358894,
         "ret_20d": 0.15731399307594685,
@@ -818,7 +818,7 @@
         "last_close": 1040.1500244140625,
         "rsi14": 55.928346220302664,
         "ma50": 944.4750427246094,
-        "ma200": 720.4510369873046,
+        "ma200": 720.4510366821289,
         "vol_z20": -0.8747244839194691,
         "ret_5d": -0.021449671014779348,
         "ret_20d": 0.049257572458005994,
@@ -888,7 +888,7 @@
         "last_close": 181.82000732421875,
         "rsi14": 46.21405766144599,
         "ma50": 186.00670013427734,
-        "ma200": 225.80856735229492,
+        "ma200": 225.80856727600099,
         "vol_z20": 0.6688344260759332,
         "ret_5d": -0.01088020846649429,
         "ret_20d": 0.10220659507850427,
@@ -993,7 +993,7 @@
         "last_close": 415.1199951171875,
         "rsi14": 48.39236391987398,
         "ma50": 398.14699890136717,
-        "ma200": 464.3681939697266,
+        "ma200": 464.36819412231443,
         "vol_z20": -0.2507344163668453,
         "ret_5d": 0.0016407505833788694,
         "ret_20d": 0.11931404692368797,
@@ -1124,7 +1124,7 @@
         "last_close": 1592.02001953125,
         "rsi14": 61.04235049817104,
         "ma50": 1399.8602514648437,
-        "ma200": 1131.772763671875,
+        "ma200": 1131.7727648925782,
         "vol_z20": 0.578220371776111,
         "ret_5d": 0.11562556778579713,
         "ret_20d": 0.07929299997012507,
@@ -1402,8 +1402,8 @@
       "metrics": {
         "last_close": 401.510009765625,
         "rsi14": 47.775876476720185,
-        "ma50": 381.79964050292966,
-        "ma200": 361.2525408935547,
+        "ma50": 381.799638671875,
+        "ma200": 361.2525407409668,
         "vol_z20": -0.3258240981209929,
         "ret_5d": -0.053884177850513804,
         "ret_20d": -0.000943951341893956,
@@ -1700,13 +1700,43 @@
     }
   ],
   "focus_tickers": [
+    "NVDA",
     "MU",
     "TLN",
-    "NBIS",
     "ALAB",
-    "NVDA"
+    "NBIS"
   ],
   "top_news": [
+    {
+      "title": "Hedge Funds Make Their Move as Litigation Finance Assets Slump",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/hedge-funds-make-their-move-as-litigation-finance-assets-slump",
+      "summary": "A losing streak in litigation finance is attracting hedge funds and other alternative investment managers looking to invest in legal claims at distressed valuations, according to people familiar with the matter.",
+      "published": "Mon, 11 May 2026 06:39:52 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Copper Shrugs Off Middle East Uncertainty to Eye Record High",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/copper-shrugs-off-middle-east-uncertainty-to-aim-for-record-high",
+      "summary": "Copper traded around its highest close ever &mdash; and other metals advanced &mdash; as traders shrugged off the apparent deadlock between the US and Iran to join a broader rally for risk assets.",
+      "published": "Mon, 11 May 2026 04:54:16 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120",
+        "META"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC",
+        "Meta"
+      ]
+    },
     {
       "title": "Oil Jumps as Hormuz Stays Shut After Trump Rebuffs Iran’s Offer",
       "link": "https://www.bloomberg.com/news/articles/2026-05-10/latest-oil-market-news-and-analysis-for-may-11",
@@ -1760,6 +1790,19 @@
       ]
     },
     {
+      "title": "The Iran Peace Push Stalls; India Turns to COVID Playbook | Insight with Haslinda Amin 05/11/2026",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-11/insight-with-haslinda-amin-5-11-2026-video",
+      "summary": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter. The show features prominent leaders spanning the worlds of business, finance, politics and culture. (Source: Bloomberg)",
+      "published": "Mon, 11 May 2026 06:11:26 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
       "title": "Oil Jumps as Trump Rebuffs Iran’s Offer",
       "link": "https://www.bloomberg.com/news/videos/2026-05-11/oil-jumps-as-trump-rebuffs-iran-s-offer-video",
       "summary": "Oil surged after US President Donald Trump rejected Iran’s latest response to his proposal to end the war in the Middle East, prolonging the effective closure of the crucial Strait of Hormuz. Bloomberg's Anthony di Paola has more. (Source: Bloomberg)",
@@ -1799,60 +1842,8 @@
       "matched_names": [
         "LS ELECTRIC"
       ]
-    },
-    {
-      "title": "Gold Falls as Trump Rejection of Iran Offer Fans Inflation Fears",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-10/gold-falls-as-trump-rejection-of-iran-offer-fans-inflation-fears",
-      "summary": "Gold fell as President Donald Trump’s rejection of Iran’s latest peace offer to end the war in the Middle East fanned inflation fears.",
-      "published": "Sun, 10 May 2026 22:45:37 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "010120"
-      ],
-      "matched_names": [
-        "LS ELECTRIC"
-      ]
-    },
-    {
-      "title": "Trump Rejects 'Unacceptable' Iran Offer, AI Boost Continues | The Asia Trade 5/11/2026",
-      "link": "https://www.bloomberg.com/news/videos/2026-05-11/the-asia-trade-5-11-2026-video",
-      "summary": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia. Bloomberg TV is live from Tokyo and Singapore with Shery Ahn and Avril Hong, getting insight and analysis from newsmakers and industry leaders on the biggest stories shaping global markets.\n (Source: Bloomberg)",
-      "published": "Mon, 11 May 2026 05:24:35 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ]
-    },
-    {
-      "title": "Kiwi May Defy Hedge-Fund Bears on Hawkish RBNZ, Analysts Say",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/kiwi-may-defy-hedge-fund-bears-on-hawkish-rbnz-analysts-say",
-      "summary": "New Zealand’s dollar may defy bearish hedge-fund positioning and rally in the near-term on a hawkish tilt from the central bank and any de-escalation in the Middle East, analysts say.",
-      "published": "Mon, 11 May 2026 05:14:34 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ]
     }
   ],
-  "label_changes": [
-    {
-      "ticker": "APP",
-      "name": "AppLovin",
-      "old_label": "HOLD",
-      "new_label": "ACCUMULATE"
-    },
-    {
-      "ticker": "DDOG",
-      "name": "Datadog",
-      "old_label": "HOLD",
-      "new_label": "ACCUMULATE"
-    }
-  ],
+  "label_changes": [],
   "social": null
 }
