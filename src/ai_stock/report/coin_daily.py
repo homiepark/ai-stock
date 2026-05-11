@@ -33,6 +33,7 @@ from ai_stock.report.daily import (
 )
 from ai_stock.signals.long_term import long_term_signal
 from ai_stock.signals.mid_term import mid_term_signal
+from ai_stock.signals.overheat import overheat_signal
 from ai_stock.signals.short_term import latest_metrics, short_term_signal
 from ai_stock.signals.theme import StockMomentum, ThemeRanking, rank_theme, stock_momentum
 
@@ -73,30 +74,41 @@ def assemble_coin_context(
     results: list[StockResult] = []
 
     log.info("Processing %d coins", len(all_coins))
+    failed_coins: list[str] = []
     for coin in all_coins:
-        prices = fetch_prices(coin, cache=cache)
-        fundamentals = fetch_fundamentals(coin, cache=cache)
-        cap = market_caps.get(coin.coingecko_id)
+        try:
+            prices = fetch_prices(coin, cache=cache)
+            fundamentals = fetch_fundamentals(coin, cache=cache)
+            cap = market_caps.get(coin.coingecko_id)
 
-        short = short_term_signal(prices, settings["signals"]["short_term"]["weights"])
-        mid = mid_term_signal(prices, fundamentals, btc_prices,
-                              settings["signals"]["mid_term"]["weights"])
-        long = long_term_signal(fundamentals, settings["signals"]["long_term"]["weights"])
-        composite = compose(short, mid, long, settings["verdict"]["weights"], settings["verdict"]["thresholds"])
+            short = short_term_signal(prices, settings["signals"]["short_term"]["weights"])
+            mid = mid_term_signal(prices, fundamentals, btc_prices,
+                                  settings["signals"]["mid_term"]["weights"])
+            long = long_term_signal(fundamentals, settings["signals"]["long_term"]["weights"])
+            composite = compose(short, mid, long, settings["verdict"]["weights"], settings["verdict"]["thresholds"])
 
-        sm = stock_momentum(coin, prices, cap)
-        if sm:
-            momentum_by_theme[coin.theme].append(sm)
+            sm = stock_momentum(coin, prices, cap)
+            if sm:
+                momentum_by_theme[coin.theme].append(sm)
 
-        metrics = latest_metrics(prices)
-        results.append(StockResult(
-            stock=coin,
-            composite=composite,
-            narrative=Narrative(label=composite.label, summary="", entry_guide="", risks="", next_trigger=""),
-            metrics=metrics,
-            theme_short=_theme_short(universe.themes[coin.theme].name),
-            label_emoji=label_with_emoji(composite.label).split()[0],
-        ))
+            metrics = latest_metrics(prices)
+            overheat = overheat_signal(prices)
+            results.append(StockResult(
+                stock=coin,
+                composite=composite,
+                narrative=Narrative(label=composite.label, summary="", entry_guide="", risks="", next_trigger=""),
+                metrics=metrics,
+                theme_short=_theme_short(universe.themes[coin.theme].name),
+                label_emoji=label_with_emoji(composite.label).split()[0],
+                overheat=overheat,
+            ))
+        except Exception as e:
+            log.warning("Coin %s (%s) failed: %s; continuing", coin.ticker, coin.coingecko_id, e)
+            failed_coins.append(f"{coin.ticker}({coin.coingecko_id})")
+
+    if failed_coins:
+        log.warning("Skipped %d coins due to errors: %s",
+                    len(failed_coins), ", ".join(failed_coins))
 
     # Theme rankings
     theme_rankings: list[ThemeRanking] = []

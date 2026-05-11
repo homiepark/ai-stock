@@ -6,6 +6,7 @@ import { ArrowDown, ArrowUp, Search, X } from "lucide-react";
 import type { AssetClass, Verdict } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { LabelBadge } from "./label-badge";
+import { OverheatBadge } from "./overheat-badge";
 
 type SortKey = "name" | "theme" | "short" | "mid" | "long" | "composite" | "label";
 type SortDir = "asc" | "desc";
@@ -212,6 +213,7 @@ export function VerdictMatrix({
               <SortableTh active={sortKey === "label"} dir={sortDir} onClick={() => setSort("label")} className="text-center">
                 라벨
               </SortableTh>
+              <th className="px-3 py-2 text-center whitespace-nowrap">과열도</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-800">
@@ -233,20 +235,19 @@ export function VerdictMatrix({
                   <td className="px-3 py-2 text-slate-400 text-xs whitespace-nowrap">
                     {v.theme_short}
                   </td>
-                  <td className="px-3 py-2 text-right font-mono text-slate-300 tabular-nums">
-                    {v.scores.short.toFixed(0)}
-                  </td>
-                  <td className="px-3 py-2 text-right font-mono text-slate-300 tabular-nums">
-                    {v.scores.mid.toFixed(0)}
-                  </td>
-                  <td className="px-3 py-2 text-right font-mono text-slate-300 tabular-nums">
-                    {v.scores.long.toFixed(0)}
-                  </td>
-                  <td className="px-3 py-2 text-right font-mono font-semibold text-white tabular-nums">
-                    {v.scores.composite.toFixed(0)}
-                  </td>
+                  <ScoreCell value={v.scores.short} />
+                  <ScoreCell value={v.scores.mid} />
+                  <ScoreCell value={v.scores.long} />
+                  <ScoreCell value={v.scores.composite} bold />
                   <td className="px-3 py-2 text-center">
                     <LabelBadge label={v.label} size="sm" />
+                  </td>
+                  <td className="px-3 py-2 text-center">
+                    {v.overheat ? (
+                      <OverheatBadge overheat={v.overheat} size="sm" showLabel={false} />
+                    ) : (
+                      <span className="text-slate-600">—</span>
+                    )}
                   </td>
                 </tr>
               );
@@ -260,6 +261,30 @@ export function VerdictMatrix({
         )}
       </div>
     </div>
+  );
+}
+
+function ScoreCell({ value, bold }: { value: number; bold?: boolean }) {
+  // Color the cell background based on score magnitude.
+  // 0~40 rose, 40~60 amber, 60~100 emerald. Opacity scales with distance.
+  const v = Math.max(0, Math.min(100, value));
+  let bg = "";
+  if (v >= 70) bg = `rgb(16 185 129 / ${0.05 + (v - 70) * 0.008})`;       // emerald-500
+  else if (v >= 55) bg = `rgb(132 204 22 / ${0.04 + (v - 55) * 0.005})`;  // lime-500
+  else if (v >= 45) bg = "rgb(148 163 184 / 0.04)";                       // slate-400
+  else if (v >= 30) bg = `rgb(245 158 11 / ${0.04 + (45 - v) * 0.005})`;  // amber-500
+  else bg = `rgb(244 63 94 / ${0.05 + (30 - v) * 0.008})`;                 // rose-500
+
+  return (
+    <td
+      className={cn(
+        "px-3 py-2 text-right font-mono tabular-nums whitespace-nowrap",
+        bold ? "font-semibold text-white" : "text-slate-300",
+      )}
+      style={{ backgroundColor: bg }}
+    >
+      {value.toFixed(0)}
+    </td>
   );
 }
 

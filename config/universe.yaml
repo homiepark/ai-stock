@@ -77,6 +77,22 @@ themes:
       - { ticker: SYM, country: US, tier: momentum, name: "Symbotic", note: "물류 자동화" }
       - { ticker: "277810", country: KR, tier: leader, name: "레인보우로보틱스", note: "삼성 자회사화, 휴머노이드" }
 
+  leveraged:
+    name: "레버리지 ETF (⚠️ 고위험 단기 베팅용)"
+    thesis: "기초 자산의 일일 수익률을 2~3배로 추종. 상승장에선 폭발적이지만 횡보·하락장에선 음의 복리(volatility decay)로 손실 누적. 장기 보유 부적합. 분할매수 + 손절 명확히 + 자산의 5~10% 이하만."
+    stocks:
+      - { ticker: TQQQ, country: US, tier: leader, name: "TQQQ (3x QQQ)", note: "나스닥100 3배. 시총·거래량 1위 레버리지 ETF" }
+      - { ticker: SOXL, country: US, tier: leader, name: "SOXL (3x 반도체)", note: "필라델피아 반도체 3배. NVDA·AVGO 베타 노출" }
+      - { ticker: NVDL, country: US, tier: momentum, name: "NVDL (2x NVDA)", note: "엔비디아 2배. 단일종목 레버리지, 변동성 매우 큼" }
+      - { ticker: NVDU, country: US, tier: supporting, name: "NVDU (2x NVDA)", note: "NVDL 대안. 운용사 다름" }
+      - { ticker: TSLL, country: US, tier: momentum, name: "TSLL (2x TSLA)", note: "테슬라 2배" }
+      - { ticker: BITX, country: US, tier: momentum, name: "BITX (2x BTC)", note: "비트코인 선물 2배" }
+      - { ticker: ETHU, country: US, tier: supporting, name: "ETHU (2x ETH)", note: "이더리움 선물 2배" }
+      - { ticker: SQQQ, country: US, tier: supporting, name: "SQQQ (3x 인버스 QQQ)", note: "하락에 베팅. 보험용·단기 헤지" }
+      - { ticker: "122630", country: KR, tier: leader, name: "KODEX 레버리지", note: "코스피200 2배" }
+      - { ticker: "252670", country: KR, tier: leader, name: "KODEX 200선물인버스2X", note: "코스피200 2배 인버스" }
+      - { ticker: "233740", country: KR, tier: momentum, name: "KODEX 코스닥150레버리지", note: "코스닥150 2배" }
+
 # 매크로 지표 (FRED 시리즈)
 macro:
   - { id: DGS10, name: "US 10Y Treasury Yield" }
