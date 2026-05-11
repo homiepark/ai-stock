@@ -1,0 +1,1970 @@
+{
+  "asset_class": "coin",
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11 17:32 UTC",
+  "version": "0.1.0",
+  "universe_size": 31,
+  "us_count": 0,
+  "kr_count": 0,
+  "macro": {
+    "BTC_DOMINANCE": {
+      "name": "BTC 도미넌스 (%)",
+      "value": 58.32284263805486,
+      "change": 0.0
+    },
+    "TOTAL_MCAP": {
+      "name": "전체 시총 ($T)",
+      "value": 2.8021756572753675,
+      "change": -0.0019432478652008658
+    },
+    "ETH_BTC": {
+      "name": "ETH/BTC",
+      "value": 0.028538226749531128,
+      "change": -0.014687978871242537
+    }
+  },
+  "theme_rankings": [
+    {
+      "theme_key": "defi_revenue",
+      "theme_name": "DeFi 매출 실체 (꿈→증명)",
+      "composite_return": 0.223441745492315,
+      "avg_return_1w": 0.1138390072721583,
+      "avg_return_1m": 0.26312230404048315,
+      "avg_return_3m": 0.28013707231491425,
+      "cap_leader": {
+        "ticker": "HYPE",
+        "name": "Hyperliquid"
+      },
+      "momentum_leader": {
+        "ticker": "HYPE",
+        "name": "Hyperliquid"
+      },
+      "member_count": 5
+    },
+    {
+      "theme_key": "rwa",
+      "theme_name": "RWA (시대 흐름 2)",
+      "composite_return": 0.21614933256771188,
+      "avg_return_1w": 0.11809958590027021,
+      "avg_return_1m": 0.25538250724448747,
+      "avg_return_3m": 0.26188817966611944,
+      "cap_leader": {
+        "ticker": "LINK",
+        "name": "Chainlink"
+      },
+      "momentum_leader": {
+        "ticker": "LINK",
+        "name": "Chainlink"
+      },
+      "member_count": 3
+    },
+    {
+      "theme_key": "l1_ecosystem",
+      "theme_name": "L1 생태계 (이미 커진 생태계)",
+      "composite_return": 0.1867189504035033,
+      "avg_return_1w": 0.182621646022073,
+      "avg_return_1m": 0.2023927942573344,
+      "avg_return_3m": 0.16991779631315884,
+      "cap_leader": {
+        "ticker": "SOL",
+        "name": "Solana"
+      },
+      "momentum_leader": {
+        "ticker": "SOL",
+        "name": "Solana"
+      },
+      "member_count": 3
+    },
+    {
+      "theme_key": "etf_candidates",
+      "theme_name": "ETF 후보 + L2 (기관 수요)",
+      "composite_return": 0.17751878443808755,
+      "avg_return_1w": 0.1325773829982514,
+      "avg_return_1m": 0.12911953528803444,
+      "avg_return_3m": 0.2869925180779945,
+      "cap_leader": {
+        "ticker": "XRP",
+        "name": "XRP"
+      },
+      "momentum_leader": {
+        "ticker": "XRP",
+        "name": "XRP"
+      },
+      "member_count": 4
+    },
+    {
+      "theme_key": "ai",
+      "theme_name": "AI 코인 (시대 흐름 1)",
+      "composite_return": 0.1455561793884111,
+      "avg_return_1w": 0.10820451283953114,
+      "avg_return_1m": 0.1097169420472981,
+      "avg_return_3m": 0.23069349572544173,
+      "cap_leader": {
+        "ticker": "NEAR",
+        "name": "NEAR"
+      },
+      "momentum_leader": {
+        "ticker": "NEAR",
+        "name": "NEAR"
+      },
+      "member_count": 2
+    },
+    {
+      "theme_key": "depin",
+      "theme_name": "DePIN / InfraFi (Messari Theses 2026 핵심)",
+      "composite_return": 0.07428530689887727,
+      "avg_return_1w": 0.09358069546606196,
+      "avg_return_1m": 0.07258750387971191,
+      "avg_return_3m": 0.05725365569057972,
+      "cap_leader": {
+        "ticker": "FIL",
+        "name": "Filecoin"
+      },
+      "momentum_leader": {
+        "ticker": "FIL",
+        "name": "Filecoin"
+      },
+      "member_count": 2
+    },
+    {
+      "theme_key": "bitcoin_eth",
+      "theme_name": "비트·이더 (시장 방향성 기준)",
+      "composite_return": 0.05975372906959856,
+      "avg_return_1w": -0.0029275580204575213,
+      "avg_return_1m": 0.04043340707090848,
+      "avg_return_3m": 0.14819544549124142,
+      "cap_leader": {
+        "ticker": "BTC",
+        "name": "Bitcoin"
+      },
+      "momentum_leader": {
+        "ticker": "BTC",
+        "name": "Bitcoin"
+      },
+      "member_count": 2
+    },
+    {
+      "theme_key": "real_usage",
+      "theme_name": "실사용 코인 (사람들이 진짜 씀)",
+      "composite_return": 0.0376626307334641,
+      "avg_return_1w": 0.046881546130890905,
+      "avg_return_1m": 0.04887057165059838,
+      "avg_return_3m": 0.013499794113191577,
+      "cap_leader": {
+        "ticker": "BNB",
+        "name": "BNB"
+      },
+      "momentum_leader": {
+        "ticker": "BNB",
+        "name": "BNB"
+      },
+      "member_count": 1
+    }
+  ],
+  "verdicts": [
+    {
+      "ticker": "HYPE",
+      "name": "Hyperliquid",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "Perp DEX 1위 + Prediction Markets 진입, 일매출 폭증",
+      "coingecko_id": "hyperliquid",
+      "scores": {
+        "short": 59.52793229338788,
+        "mid": 64.22377348663532,
+        "long": 42.5,
+        "composite": 54.36030379366933
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Hyperliquid: 정량 종합 54점, 라벨 HOLD. 단기 60 / 중기 64 / 장기 42. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 41.91269808528696,
+        "rsi14": 46.8772602730051,
+        "ma50": 40.4040832942682,
+        "ma200": 34.002119088318366,
+        "vol_z20": 0.754131348865258,
+        "ret_5d": -0.040705616171507475,
+        "ret_20d": 0.03252852407853002,
+        "ret_60d": 0.1561279706872878
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "RNDR",
+      "name": "Render",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "GPU 분산 렌더링·AI 컴퓨트",
+      "coingecko_id": "render-token",
+      "scores": {
+        "short": 62.197770049249556,
+        "mid": 61.70444376129442,
+        "long": 42.5,
+        "composite": 54.14599782876543
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Render: 정량 종합 54점, 라벨 HOLD. 단기 62 / 중기 62 / 장기 42. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 1.967379905960307,
+        "rsi14": 61.16194456537353,
+        "ma50": 1.8329248477401832,
+        "ma200": 1.7762079621358244,
+        "vol_z20": 2.156483846325806,
+        "ret_5d": 0.0391979085001517,
+        "ret_20d": 0.09951498496967903,
+        "ret_60d": 0.2857413761804697
+      },
+      "overheat": {
+        "score": 8.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "ONDO",
+      "name": "Ondo",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "rwa",
+      "theme_short": "RWA",
+      "note": "BlackRock·국채 토큰화 1위",
+      "coingecko_id": "ondo-finance",
+      "scores": {
+        "short": 58.75,
+        "mid": 56.5,
+        "long": 42.5,
+        "composite": 51.4625
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Ondo: 정량 종합 51점, 라벨 HOLD. 단기 59 / 중기 56 / 장기 42. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 0.4244347471468884,
+        "rsi14": 83.99294087000739,
+        "ma50": 0.2772766037702563,
+        "ma200": 0.3766207365639356,
+        "vol_z20": 1.5956360030017793,
+        "ret_5d": 0.31702462966447276,
+        "ret_20d": 0.6618463000303374,
+        "ret_60d": 0.6597909835306357
+      },
+      "overheat": {
+        "score": 85.0,
+        "level": "extreme",
+        "emoji": "🔴",
+        "label": "극과열",
+        "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
+        "flags": [
+          "RSI 84 극과열",
+          "50일선 +53% 극이격",
+          "5일 +32% 급등",
+          "20일 +66% 폭등"
+        ]
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "JUP",
+      "name": "Jupiter",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "솔라나 DEX 1위",
+      "coingecko_id": "jupiter-exchange-solana",
+      "scores": {
+        "short": 58.75,
+        "mid": 56.5,
+        "long": 42.5,
+        "composite": 51.4625
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Jupiter: 정량 종합 51점, 라벨 HOLD. 단기 59 / 중기 56 / 장기 42. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 0.24147882758208575,
+        "rsi14": 76.3497800393905,
+        "ma50": 0.17340314800464235,
+        "ma200": 0.21110543084603228,
+        "vol_z20": 1.5625784320807865,
+        "ret_5d": 0.25987872067373763,
+        "ret_20d": 0.42771722528334966,
+        "ret_60d": 0.463080639125248
+      },
+      "overheat": {
+        "score": 65.0,
+        "level": "high",
+        "emoji": "🟠",
+        "label": "과열",
+        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
+        "flags": [
+          "RSI 76 과매수",
+          "50일선 +39% 극이격",
+          "5일 +26% 급등"
+        ]
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "PENDLE",
+      "name": "Pendle",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "Yield trading, 매출 우상향",
+      "coingecko_id": "pendle",
+      "scores": {
+        "short": 57.00819886758137,
+        "mid": 56.5,
+        "long": 42.5,
+        "composite": 51.02704971689534
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Pendle: 정량 종합 51점, 라벨 HOLD. 단기 57 / 중기 56 / 장기 42. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 1.9804312967635966,
+        "rsi14": 77.78884210892919,
+        "ma50": 1.325128253104276,
+        "ma200": 1.814861357466443,
+        "vol_z20": -0.2332157988163763,
+        "ret_5d": 0.0005533592950635047,
+        "ret_20d": 0.48922123611312784,
+        "ret_60d": 0.5353714866796961
+      },
+      "overheat": {
+        "score": 50.0,
+        "level": "mild",
+        "emoji": "🟡",
+        "label": "약과열",
+        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "flags": [
+          "RSI 78 과매수",
+          "50일선 +49% 극이격"
+        ]
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "NEAR",
+      "name": "NEAR",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "NEAR AI, BlackRock 관련 루머",
+      "coingecko_id": "near",
+      "scores": {
+        "short": 61.60852833706846,
+        "mid": 50.94965571579162,
+        "long": 42.5,
+        "composite": 50.23451158479418
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1.5253089111088725,
+        "rsi14": 60.852124481402804,
+        "ma50": 1.330202462201359,
+        "ma200": 1.5482978176671633,
+        "vol_z20": 0.7406417993611082,
+        "ret_5d": 0.17721111717891058,
+        "ret_20d": 0.11991889912491716,
+        "ret_60d": 0.17564561527041378
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "FET",
+      "name": "Fetch.ai (ASI)",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "AI 에이전트, ASI 토큰 통합",
+      "coingecko_id": "artificial-superintelligence-alliance",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 50.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "IO",
+      "name": "io.net",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "GPU 분산 컴퓨트, AI Capex 직결",
+      "coingecko_id": "io-net",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 50.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ARB",
+      "name": "Arbitrum",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "L2 1위, TVL·매출 안정",
+      "coingecko_id": "arbitrum",
+      "scores": {
+        "short": 61.892572641708284,
+        "mid": 49.0,
+        "long": 42.5,
+        "composite": 49.62314316042707
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.14195896759985138,
+        "rsi14": 63.97854563725545,
+        "ma50": 0.11350562631133526,
+        "ma200": 0.16663368808841544,
+        "vol_z20": 0.0816552982588633,
+        "ret_5d": 0.18479724860856295,
+        "ret_20d": 0.1161084084512054,
+        "ret_60d": 0.42024110624540767
+      },
+      "overheat": {
+        "score": 37.0,
+        "level": "mild",
+        "emoji": "🟡",
+        "label": "약과열",
+        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "flags": [
+          "50일선 +25% 극이격"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "LDO",
+      "name": "Lido",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "ETH 스테이킹 1위, ETF 간접",
+      "coingecko_id": "lido-dao",
+      "scores": {
+        "short": 61.8920643168149,
+        "mid": 48.9107955974992,
+        "long": 42.5,
+        "composite": 49.59179453832844
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.404357345191601,
+        "rsi14": 36.52268624433566,
+        "ma50": 0.35276234204019574,
+        "ma200": 0.4973339279439058,
+        "vol_z20": 1.7383087129363224,
+        "ret_5d": 0.08268207233169744,
+        "ret_20d": 0.1003184280092011,
+        "ret_60d": 0.3598684129045653
+      },
+      "overheat": {
+        "score": 8.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "MKR",
+      "name": "MakerDAO (Sky)",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "rwa",
+      "theme_short": "RWA",
+      "note": "DAI·미국 국채 보유, RWA 원조",
+      "coingecko_id": "maker",
+      "scores": {
+        "short": 58.11585760731845,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 49.02896440182961
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1776.0143703671959,
+        "rsi14": 19.54368751204869,
+        "ma50": 1819.5935013073013,
+        "ma200": 1545.4477536590089,
+        "vol_z20": 1.858166940804571,
+        "ret_5d": -0.04562963426925715,
+        "ret_20d": -0.03410642716874768,
+        "ret_60d": -0.04917595466479985
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "bitcoin_eth",
+      "theme_short": "비트·이더",
+      "note": "ETF 자금 유입, 디지털 금 내러티브",
+      "coingecko_id": "bitcoin",
+      "scores": {
+        "short": 57.033738441352156,
+        "mid": 50.25,
+        "long": 42.5,
+        "composite": 48.845934610338034
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 81579.15968229156,
+        "rsi14": 62.57513728684809,
+        "ma50": 73904.24621238849,
+        "ma200": 82721.71550355529,
+        "vol_z20": 0.3914108768402406,
+        "ret_5d": 0.008082363551281002,
+        "ret_20d": 0.07518481055152426,
+        "ret_60d": 0.16165250095458128
+      },
+      "overheat": {
+        "score": 8.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "OP",
+      "name": "Optimism",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "Superchain, Coinbase Base",
+      "coingecko_id": "optimism",
+      "scores": {
+        "short": 62.25,
+        "mid": 46.26924497166583,
+        "long": 42.5,
+        "composite": 48.75673574008304
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.15722515603419962,
+        "rsi14": 69.71260736685679,
+        "ma50": 0.12091103487814538,
+        "ma200": 0.23492145200399217,
+        "vol_z20": 0.03896813234232509,
+        "ret_5d": 0.22297472039947608,
+        "ret_20d": 0.26872936471164,
+        "ret_60d": 0.30703740038789773
+      },
+      "overheat": {
+        "score": 55.0,
+        "level": "high",
+        "emoji": "🟠",
+        "label": "과열",
+        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
+        "flags": [
+          "50일선 +30% 극이격",
+          "5일 +22% 급등"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SUI",
+      "name": "Sui",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "Move 기반 신흥 L1, TVL 급증",
+      "coingecko_id": "sui",
+      "scores": {
+        "short": 60.25,
+        "mid": 47.134649792050865,
+        "long": 42.5,
+        "composite": 48.559627427217805
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1.2970783937965393,
+        "rsi14": 85.59090729222052,
+        "ma50": 0.9376500571296262,
+        "ma200": 1.335159911237508,
+        "vol_z20": 4.078477499420532,
+        "ret_5d": 0.34198194584836084,
+        "ret_20d": 0.37387034761084137,
+        "ret_60d": 0.32434549679559854
+      },
+      "overheat": {
+        "score": 90.0,
+        "level": "extreme",
+        "emoji": "🔴",
+        "label": "극과열",
+        "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
+        "flags": [
+          "RSI 86 극과열",
+          "50일선 +38% 극이격",
+          "거래량 Z=4.1 폭증",
+          "5일 +34% 급등"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "FIL",
+      "name": "Filecoin",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "분산 저장, AI 데이터 인프라",
+      "coingecko_id": "filecoin",
+      "scores": {
+        "short": 62.25,
+        "mid": 45.58255872623069,
+        "long": 42.5,
+        "composite": 48.51639555418074
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1.1357854764356219,
+        "rsi14": 66.43466290063722,
+        "ma50": 0.9250620822287435,
+        "ma200": 1.252904269282052,
+        "vol_z20": 0.13461926367372964,
+        "ret_5d": 0.16670706365369514,
+        "ret_20d": 0.23325950295006814,
+        "ret_60d": 0.2933036754791949
+      },
+      "overheat": {
+        "score": 35.0,
+        "level": "mild",
+        "emoji": "🟡",
+        "label": "약과열",
+        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "flags": [
+          "50일선 +23% 과이격"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "TAO",
+      "name": "Bittensor",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "분산 AI 학습 네트워크, AI 코인 대장",
+      "coingecko_id": "bittensor",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "WLD",
+      "name": "Worldcoin",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "Sam Altman 프로젝트, AI ID",
+      "coingecko_id": "worldcoin-wld",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "APT",
+      "name": "Aptos",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "Move 기반, 기관 파트너십",
+      "coingecko_id": "aptos",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ADA",
+      "name": "Cardano",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "ETF 후보, 학계 기반",
+      "coingecko_id": "cardano",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "TON",
+      "name": "TON",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "real_usage",
+      "theme_short": "실사용",
+      "note": "Telegram 9억 유저 결제·미니앱",
+      "coingecko_id": "the-open-network",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AAVE",
+      "name": "Aave",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "렌딩 1위, GHO 스테이블코인",
+      "coingecko_id": "aave",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AKT",
+      "name": "Akash",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "오픈소스 클라우드, AWS 대안",
+      "coingecko_id": "akash-network",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ENA",
+      "name": "Ethena",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "USDe 합성달러, DeFi 매출 1위급",
+      "coingecko_id": "ethena",
+      "scores": {
+        "short": 58.75,
+        "mid": 43.309405137008525,
+        "long": 42.5,
+        "composite": 46.845791797952984
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.13063498460984502,
+        "rsi14": 73.49072130923733,
+        "ma50": 0.10159590917198737,
+        "ma200": 0.1856851109523728,
+        "vol_z20": 1.1970236651586492,
+        "ret_5d": 0.19210934358305365,
+        "ret_20d": 0.1636890640273776,
+        "ret_60d": 0.2478406036947518
+      },
+      "overheat": {
+        "score": 57.0,
+        "level": "high",
+        "emoji": "🟠",
+        "label": "과열",
+        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
+        "flags": [
+          "RSI 73 과매수",
+          "50일선 +29% 극이격"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AVAX",
+      "name": "Avalanche",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "RWA 서브넷 인프라",
+      "coingecko_id": "avalanche-2",
+      "scores": {
+        "short": 62.749293363480334,
+        "mid": 34.18477761617983,
+        "long": 42.5,
+        "composite": 44.65199550653303
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 10.171344548781898,
+        "rsi14": 68.57601811078672,
+        "ma50": 9.274097738653621,
+        "ma200": 11.821246282898047,
+        "vol_z20": 1.8741596192318777,
+        "ret_5d": 0.08193690885708249,
+        "ret_20d": 0.09609791682504842,
+        "ret_60d": 0.06534805327817783
+      },
+      "overheat": {
+        "score": 18.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "LINK",
+      "name": "Chainlink",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "rwa",
+      "theme_short": "RWA",
+      "note": "오라클·CCIP, 모든 RWA 인프라",
+      "coingecko_id": "chainlink",
+      "scores": {
+        "short": 53.85537933707657,
+        "mid": 39.66985045889706,
+        "long": 42.5,
+        "composite": 44.34829249488311
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 10.572658086522166,
+        "rsi14": 73.8990541517018,
+        "ma50": 9.195730969414736,
+        "ma200": 11.418735927252083,
+        "vol_z20": 1.2326908338582416,
+        "ret_5d": 0.08290376230559504,
+        "ret_20d": 0.13840764887187262,
+        "ret_60d": 0.17504951013252246
+      },
+      "overheat": {
+        "score": 28.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "RSI 74 과매수"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "XRP",
+      "name": "XRP",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "ETF 후보, 결제 인프라",
+      "coingecko_id": "ripple",
+      "scores": {
+        "short": 60.52582303216573,
+        "mid": 33.9585325909763,
+        "long": 42.5,
+        "composite": 44.01694216488313
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1.469542976626411,
+        "rsi14": 57.77398507699439,
+        "ma50": 1.3840674539466142,
+        "ma200": 1.7592135438281784,
+        "vol_z20": 2.5116141297274304,
+        "ret_5d": 0.0398554906532691,
+        "ret_20d": 0.03132193998009125,
+        "ret_60d": 0.060823152774107214
+      },
+      "overheat": {
+        "score": 8.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ETH",
+      "name": "Ethereum",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "bitcoin_eth",
+      "theme_short": "비트·이더",
+      "note": "ETF 승인 + 스테이킹 + L2 매출",
+      "coingecko_id": "ethereum",
+      "scores": {
+        "short": 55.195176110147514,
+        "mid": 37.65429445366601,
+        "long": 42.5,
+        "composite": 43.97779708631998
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 2328.1781228131977,
+        "rsi14": 43.71763252946551,
+        "ma50": 2233.966446386659,
+        "ma200": 2662.4978990074624,
+        "vol_z20": 0.7240218978427049,
+        "ret_5d": -0.013937479592196045,
+        "ret_20d": 0.005682003590292695,
+        "ret_60d": 0.13473839002790156
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SOL",
+      "name": "Solana",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "ETF 후보, 밈+DeFi 생태계 폭발",
+      "coingecko_id": "solana",
+      "scores": {
+        "short": 55.87755712644162,
+        "mid": 36.920366895555944,
+        "long": 42.5,
+        "composite": 43.891517695054986
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 97.03043508419361,
+        "rsi14": 74.99793228780635,
+        "ma50": 85.35500125006345,
+        "ma200": 113.93681597587609,
+        "vol_z20": 1.7237442765227462,
+        "ret_5d": 0.12394608336077573,
+        "ret_20d": 0.1372101183361134,
+        "ret_60d": 0.12005983886570015
+      },
+      "overheat": {
+        "score": 35.0,
+        "level": "mild",
+        "emoji": "🟡",
+        "label": "약과열",
+        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "flags": [
+          "RSI 75 과매수"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "BNB",
+      "name": "BNB",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "real_usage",
+      "theme_short": "실사용",
+      "note": "거래소 + BSC, 일거래량 1위급",
+      "coingecko_id": "binancecoin",
+      "scores": {
+        "short": 58.31584159780951,
+        "mid": 31.592364657930517,
+        "long": 42.5,
+        "composite": 42.63628802972806
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 660.2328434184194,
+        "rsi14": 63.780797872838754,
+        "ma50": 621.8102527525883,
+        "ma200": 775.1848098620815,
+        "vol_z20": 0.5353917584967406,
+        "ret_5d": 0.046881546130890905,
+        "ret_20d": 0.04887057165059838,
+        "ret_60d": 0.013499794113191577
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "UNI",
+      "name": "Uniswap",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "DEX 1위, 수수료 분배 도입 진행",
+      "coingecko_id": "uniswap",
+      "scores": {
+        "short": 58.75,
+        "mid": 30.830608021650313,
+        "long": 42.5,
+        "composite": 42.478212807577606
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 3.8859165735517327,
+        "rsi14": 83.6562416388416,
+        "ma50": 3.332383286984572,
+        "ma200": 4.686634802645232,
+        "vol_z20": 1.9625963208059263,
+        "ret_5d": 0.1573592289804442,
+        "ret_20d": 0.20245547070003056,
+        "ret_60d": -0.0017353386124124848
+      },
+      "overheat": {
+        "score": 55.0,
+        "level": "high",
+        "emoji": "🟠",
+        "label": "과열",
+        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
+        "flags": [
+          "RSI 84 극과열",
+          "50일선 +17% 과이격"
+        ]
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "HNT",
+      "name": "Helium",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "모바일 DePIN, 실사용 트래픽 증가",
+      "coingecko_id": "helium",
+      "scores": {
+        "short": 54.57060398415533,
+        "mid": 29.0,
+        "long": 42.5,
+        "composite": 40.79265099603883
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.9573710736631208,
+        "rsi14": 44.28069451164724,
+        "ma50": 1.034237017479998,
+        "ma200": 1.4587407133414896,
+        "vol_z20": 0.8911190345626708,
+        "ret_5d": 0.020454327278428774,
+        "ret_20d": -0.08808449519064432,
+        "ret_60d": -0.17879636409803545
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "in_focus": false
+    }
+  ],
+  "focus_tickers": [
+    "HYPE",
+    "ONDO",
+    "PENDLE",
+    "JUP",
+    "RNDR"
+  ],
+  "top_news": [
+    {
+      "title": "Fermi Wins Support Of Major Shareholder Amid Ex-CEO Fight",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/fermi-wins-support-of-major-shareholder-amid-fight-with-ex-ceo",
+      "summary": "Fermi Inc. has won the backing of its second-largest shareholder as its former chief executive officer seeks a special meeting to seize control of the data-center developer’s board.",
+      "published": "Mon, 11 May 2026 12:00:00 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Emerging Currencies Weaken as Iran Conflict Dims Risk Appetite",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/emerging-stocks-set-to-close-at-record-high-on-tech-bets",
+      "summary": "Most emerging-market currencies fell against the dollar as oil traded above $105 a barrel and tensions in the Middle East escalated, with President Donald Trump and Iran’s leadership rejecting each other’s peace proposals and signaling no end in sight to the 10-week-old war.",
+      "published": "Mon, 11 May 2026 05:27:57 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Circle Surges Amid Optimism Over Own Blockchain, Legislation",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/circle-s-first-quarter-revenue-increases-20-net-income-drops",
+      "summary": "Circle Internet Group Inc.’s shares jumped as much as 14% amid optimism over the prospects of the stablecoin issuer’s ARC blockchain project and as US lawmakers move toward considering a landmark digital asset bill.",
+      "published": "Mon, 11 May 2026 10:53:22 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Iran Says It’s Deployed Mini Subs in Contest to Control Hormuz",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/iran-says-it-s-deployed-mini-subs-in-contest-to-control-hormuz",
+      "summary": "Iran says it’s deployed small submarines to act as an “invisible guardian” of the Strait of Hormuz amid a series of rejected peace deals between Tehran and the US.",
+      "published": "Mon, 11 May 2026 16:45:27 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Fertilizer Maker Mosaic Loses Out as Iran War Roils Inputs",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/fertilizer-maker-mosaic-loses-out-as-iran-conflict-roils-inputs",
+      "summary": "The war in Iran has sent fertilizer prices soaring, but that’s not creating a windfall for producer Mosaic Co.",
+      "published": "Mon, 11 May 2026 13:52:38 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Hedge Funds Move In as Litigation Finance Assets Slump",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/hedge-funds-make-their-move-as-litigation-finance-assets-slump",
+      "summary": "A losing streak in litigation finance is attracting hedge funds and other alternative investment managers looking to invest in legal claims at distressed valuations, according to people familiar with the matter.",
+      "published": "Mon, 11 May 2026 06:39:52 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "SEC Moves to End ‘Gag Rule’ Criticized by Musk and Cuban",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/sec-moves-to-end-gag-rule-on-firms-settling-agency-accusations",
+      "summary": "The White House is reviewing a plan for the Securities and Exchange Commission to end its decades-old policy that lets companies and people settle enforcement actions without admitting wrongdoing if they also promise not to dispute the allegations.",
+      "published": "Mon, 11 May 2026 15:57:01 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Chile Signals Codelco Governance Overhaul Amid Debt Concerns",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/chile-signals-codelco-governance-overhaul-amid-debt-concerns",
+      "summary": "Chile’s new right-wing government is signaling an overhaul of Codelco’s corporate governance to ensure greater scrutiny of decision making at the heavily indebted state copper giant.",
+      "published": "Mon, 11 May 2026 15:53:01 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    },
+    {
+      "title": "Activist Palliser Builds Stake in EQT Takeover Target Intertek",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/activist-palliser-builds-stake-in-eqt-takeover-target-intertek",
+      "summary": "Palliser Capital has amassed a stake in Intertek Group Plc, the British product-testing company that’s rejected multiple takeover offers from EQT AB, people with knowledge of the matter said.",
+      "published": "Mon, 11 May 2026 15:44:42 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ]
+    },
+    {
+      "title": "Goldman, BofA Delay Fed Cut Calls After ‘Last Straw’ Jobs Data",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/bond-watchers-delay-fed-cut-calls-after-last-straw-jobs-data",
+      "summary": "Goldman Sachs &amp; Co and Bank of America Corp are the latest in a growing cohort of Wall Street banks pushing back their forecasts for interest-rate cuts, arguing that both jobs and inflation data make a case for the Federal Reserve to keep rates on hold until at least the end of the year.",
+      "published": "Mon, 11 May 2026 15:39:40 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ]
+    }
+  ],
+  "label_changes": [],
+  "social": {
+    "trending": [
+      {
+        "ticker": "BTC.X",
+        "name": "Bitcoin",
+        "rank": 1,
+        "rank_24h_ago": 1,
+        "mentions": 101,
+        "mentions_24h_ago": 80,
+        "delta_pct": 26.25,
+        "is_rising": false
+      },
+      {
+        "ticker": "ETH.X",
+        "name": "Ethereum",
+        "rank": 2,
+        "rank_24h_ago": 2,
+        "mentions": 73,
+        "mentions_24h_ago": 51,
+        "delta_pct": 43.13725490196079,
+        "is_rising": false
+      },
+      {
+        "ticker": "SOL.X",
+        "name": "Solana",
+        "rank": 3,
+        "rank_24h_ago": 8,
+        "mentions": 13,
+        "mentions_24h_ago": 3,
+        "delta_pct": 333.33333333333337,
+        "is_rising": true
+      },
+      {
+        "ticker": "XRP.X",
+        "name": "XRP",
+        "rank": 4,
+        "rank_24h_ago": 3,
+        "mentions": 7,
+        "mentions_24h_ago": 22,
+        "delta_pct": -68.18181818181817,
+        "is_rising": false
+      },
+      {
+        "ticker": "ADA.X",
+        "name": "Cardano",
+        "rank": 5,
+        "rank_24h_ago": 15,
+        "mentions": 7,
+        "mentions_24h_ago": 0,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "LINK.X",
+        "name": "Chainlink",
+        "rank": 6,
+        "rank_24h_ago": 16,
+        "mentions": 6,
+        "mentions_24h_ago": 1,
+        "delta_pct": 500.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "ZEC.X",
+        "name": "Zcash",
+        "rank": 7,
+        "rank_24h_ago": 5,
+        "mentions": 6,
+        "mentions_24h_ago": 13,
+        "delta_pct": -53.84615384615385,
+        "is_rising": false
+      },
+      {
+        "ticker": "USDT.X",
+        "name": "Tether",
+        "rank": 8,
+        "rank_24h_ago": 12,
+        "mentions": 4,
+        "mentions_24h_ago": 1,
+        "delta_pct": 300.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "XMR.X",
+        "name": "Monero",
+        "rank": 9,
+        "rank_24h_ago": 4,
+        "mentions": 4,
+        "mentions_24h_ago": 14,
+        "delta_pct": -71.42857142857143,
+        "is_rising": false
+      },
+      {
+        "ticker": "AVAX.X",
+        "name": "Avalanche",
+        "rank": 10,
+        "rank_24h_ago": 28,
+        "mentions": 4,
+        "mentions_24h_ago": 1,
+        "delta_pct": 300.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "USDC.X",
+        "name": "USD Coin",
+        "rank": 11,
+        "rank_24h_ago": 7,
+        "mentions": 3,
+        "mentions_24h_ago": 3,
+        "delta_pct": 0.0,
+        "is_rising": false
+      },
+      {
+        "ticker": "DEX.X",
+        "name": "DEX",
+        "rank": 12,
+        "rank_24h_ago": 50,
+        "mentions": 3,
+        "mentions_24h_ago": 3,
+        "delta_pct": 0.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "GPT.X",
+        "name": "GoPower",
+        "rank": 13,
+        "rank_24h_ago": 82,
+        "mentions": 3,
+        "mentions_24h_ago": 1,
+        "delta_pct": 200.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "CPU.X",
+        "name": "CPUchain",
+        "rank": 14,
+        "rank_24h_ago": 0,
+        "mentions": 3,
+        "mentions_24h_ago": 0,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "OG.X",
+        "name": "OG Fan Token",
+        "rank": 15,
+        "rank_24h_ago": 47,
+        "mentions": 2,
+        "mentions_24h_ago": 1,
+        "delta_pct": 100.0,
+        "is_rising": true
+      }
+    ],
+    "influencer_count": 29,
+    "influencer_categories": {
+      "memecoin_alpha": [
+        {
+          "handle": "blknoiz06",
+          "name": "Ansem",
+          "category": "memecoin_alpha",
+          "weight": 10,
+          "note": "솔라나 밈코인 대장. 매수가 트렌드를 만듦"
+        },
+        {
+          "handle": "MustStopMurad",
+          "name": "Murad",
+          "category": "memecoin_alpha",
+          "weight": 9,
+          "note": "Memecoin 슈퍼사이클 thesis. 밈코인 비중 50% 추천"
+        },
+        {
+          "handle": "LucaNetz",
+          "name": "Luca Netz",
+          "category": "memecoin_alpha",
+          "weight": 8,
+          "note": "Pudgy Penguins CEO. 밈·NFT 컬처 핵심"
+        },
+        {
+          "handle": "IcoBeast",
+          "name": "IcoBeast",
+          "category": "memecoin_alpha",
+          "weight": 8,
+          "note": "온체인 알파 추적 + 밈코인 신속 콜"
+        },
+        {
+          "handle": "0xRamonos",
+          "name": "Ramonos",
+          "category": "memecoin_alpha",
+          "weight": 7,
+          "note": "솔라나 PumpFun 메타 1차 발견"
+        },
+        {
+          "handle": "gainzy222",
+          "name": "Gainzy",
+          "category": "memecoin_alpha",
+          "weight": 7,
+          "note": "밈코인 빠른 회전 트레이더"
+        }
+      ],
+      "trader": [
+        {
+          "handle": "cobie",
+          "name": "Cobie",
+          "category": "trader",
+          "weight": 10,
+          "note": "680K. UpOnly 팟캐스트, 시장 구조 전문"
+        },
+        {
+          "handle": "HsakaTrades",
+          "name": "Hsaka",
+          "category": "trader",
+          "weight": 9,
+          "note": "차트 + 시장 심리 분석 정확도 높음"
+        },
+        {
+          "handle": "Pentosh1",
+          "name": "Pentoshi",
+          "category": "trader",
+          "weight": 9,
+          "note": "480K. 데이터 기반 매크로·알트장"
+        },
+        {
+          "handle": "CryptoCobain",
+          "name": "CryptoCobain",
+          "category": "trader",
+          "weight": 8,
+          "note": "베테랑, 시장 분위기 캐치 빠름"
+        },
+        {
+          "handle": "Rewkang",
+          "name": "Andrew Kang",
+          "category": "trader",
+          "weight": 8,
+          "note": "Mechanism Capital, OG 트레이더"
+        },
+        {
+          "handle": "KookCapitalLLC",
+          "name": "Kook",
+          "category": "trader",
+          "weight": 7,
+          "note": "솔라나 메타·차트"
+        },
+        {
+          "handle": "zhusu",
+          "name": "Zhu Su",
+          "category": "trader",
+          "weight": 6,
+          "note": "전 3AC, 컨트로버셜하지만 큰손"
+        }
+      ],
+      "analyst": [
+        {
+          "handle": "DefiIgnas",
+          "name": "DeFi Ignas",
+          "category": "analyst",
+          "weight": 8,
+          "note": "DeFi 매출·TVL 깊이 분석"
+        },
+        {
+          "handle": "tayvano_",
+          "name": "tayvano",
+          "category": "analyst",
+          "weight": 8,
+          "note": "보안·온체인 추적, 사기 코인 적발"
+        },
+        {
+          "handle": "Cryptopathic",
+          "name": "Cryptopathic",
+          "category": "analyst",
+          "weight": 7,
+          "note": "구조적 시장 분석"
+        },
+        {
+          "handle": "thiccyttv",
+          "name": "Thiccy",
+          "category": "analyst",
+          "weight": 7,
+          "note": "옵션·유동성 데이터 분석"
+        },
+        {
+          "handle": "hyblockcapital",
+          "name": "Hyblock",
+          "category": "analyst",
+          "weight": 7,
+          "note": "선물·청산 데이터"
+        },
+        {
+          "handle": "punk9059",
+          "name": "punk9059",
+          "category": "analyst",
+          "weight": 6,
+          "note": "온체인·DeFi 지표"
+        }
+      ],
+      "founder": [
+        {
+          "handle": "VitalikButerin",
+          "name": "Vitalik Buterin",
+          "category": "founder",
+          "weight": 10,
+          "note": "이더리움 창립자, 직접 발언이 시장 움직임"
+        },
+        {
+          "handle": "0xMert_",
+          "name": "Mert",
+          "category": "founder",
+          "weight": 9,
+          "note": "Helius CEO, 솔라나 최전선 정보"
+        },
+        {
+          "handle": "aeyakovenko",
+          "name": "Anatoly Yakovenko",
+          "category": "founder",
+          "weight": 9,
+          "note": "Solana 공동창립자, 로드맵 1차"
+        },
+        {
+          "handle": "tier10k",
+          "name": "tier10k",
+          "category": "founder",
+          "weight": 8,
+          "note": "발표·뉴스 1차 큐레이션 빠름"
+        },
+        {
+          "handle": "chamath",
+          "name": "Chamath",
+          "category": "founder",
+          "weight": 7,
+          "note": "VC 대표, 거시 + 코인"
+        }
+      ],
+      "narrative": [
+        {
+          "handle": "WClementeIII",
+          "name": "Will Clemente",
+          "category": "narrative",
+          "weight": 8,
+          "note": "BTC 온체인 데이터 + 매크로"
+        },
+        {
+          "handle": "DonAlt",
+          "name": "DonAlt",
+          "category": "narrative",
+          "weight": 8,
+          "note": "차트 + 내러티브 결합 분석"
+        },
+        {
+          "handle": "TheRealLoganJ",
+          "name": "Logan",
+          "category": "narrative",
+          "weight": 7,
+          "note": "트렌드·내러티브 빠른 캐치"
+        },
+        {
+          "handle": "WaleSwoosh",
+          "name": "Wale Swoosh",
+          "category": "narrative",
+          "weight": 7,
+          "note": "시장 심리·트렌드 스토리텔러"
+        },
+        {
+          "handle": "KaitoAI",
+          "name": "Kaito AI",
+          "category": "narrative",
+          "weight": 6,
+          "note": "AI가 종합한 크립토 트위터 트렌드"
+        }
+      ]
+    },
+    "tweet_samples": [],
+    "source_status": {
+      "sorsa": "disabled",
+      "apewisdom": "ok",
+      "twitter_rss": "disabled"
+    }
+  }
+}
