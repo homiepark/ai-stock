@@ -85,7 +85,7 @@ def fetch_coin_prices(coin: Stock, days: int = 365,
             "volume": vol_lookup.get(ts_ms, 0.0),
         })
     df = pd.DataFrame(rows)
-    df.index = pd.to_datetime(df["ts"], unit="ms").dt.tz_localize(None).normalize()
+    df.index = pd.DatetimeIndex(pd.to_datetime(df["ts"], unit="ms")).normalize()
     df = df.drop(columns=["ts"])
     # CoinGecko free tier doesn't expose OHL on this endpoint — fill with close
     df["open"] = df["close"]
