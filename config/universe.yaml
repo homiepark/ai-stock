@@ -22,6 +22,7 @@ themes:
       - { ticker: SMR, country: US, tier: momentum, name: "NuScale Power", note: "SMR 선두주자" }
       - { ticker: "267260", country: KR, tier: leader, name: "HD현대일렉트릭", note: "송배전 변압기, 미국 수출 사이클" }
       - { ticker: "298040", country: KR, tier: supporting, name: "효성중공업", note: "변압기·차단기" }
+      - { ticker: "006400", country: KR, tier: supporting, name: "삼성SDI", note: "데이터센터 ESS·배터리, AI 전력 수요 보조" }
       - { ticker: "010120", country: KR, tier: supporting, name: "LS ELECTRIC", note: "전력기기·자동화" }
       - { ticker: "034020", country: KR, tier: momentum, name: "두산에너빌리티", note: "SMR·원자력 메인콘트랙터" }
 
@@ -42,6 +43,8 @@ themes:
       - { ticker: ARM, country: US, tier: supporting, name: "ARM Holdings", note: "데이터센터 CPU IP 침투" }
       - { ticker: AMAT, country: US, tier: supporting, name: "Applied Materials", note: "반도체 장비" }
       - { ticker: KLAC, country: US, tier: supporting, name: "KLA", note: "검사·계측" }
+      - { ticker: ANET, country: US, tier: momentum, name: "Arista Networks", note: "AI 데이터센터 네트워킹 스위치 1위, Meta·MSFT 핵심 공급" }
+      - { ticker: CIEN, country: US, tier: supporting, name: "Ciena", note: "광통신·데이터센터 인터커넥트(DCI), 800G/1.6T 사이클" }
       - { ticker: "005930", country: KR, tier: leader, name: "삼성전자", note: "HBM3E 엔비디아 진입 여부 핵심" }
       - { ticker: "000660", country: KR, tier: leader, name: "SK하이닉스", note: "HBM3E·HBM4 선두" }
       - { ticker: "042700", country: KR, tier: leader, name: "한미반도체", note: "TC본더 사실상 독점" }
@@ -62,6 +65,8 @@ themes:
       - { ticker: ORCL, country: US, tier: momentum, name: "Oracle", note: "AI 클라우드 RPO 폭증" }
       - { ticker: CRWV, country: US, tier: momentum, name: "CoreWeave", note: "AI 전용 GPU 클라우드 IPO 종목" }
       - { ticker: NBIS, country: US, tier: momentum, name: "Nebius", note: "유럽 AI 클라우드" }
+      - { ticker: SMCI, country: US, tier: momentum, name: "Super Micro", note: "AI 서버 OEM, NVDA 출하 직접 지표" }
+      - { ticker: EQIX, country: US, tier: supporting, name: "Equinix", note: "데이터센터 REIT, 글로벌 colocation 1위" }
 
   vertical_ai:
     name: "버티컬 AI / 운영자 (AI의 '밴더빌트')"
@@ -76,8 +81,12 @@ themes:
       - { ticker: CRM, country: US, tier: supporting, name: "Salesforce", note: "Agentforce" }
       - { ticker: SNOW, country: US, tier: supporting, name: "Snowflake", note: "데이터·AI 플랫폼" }
       - { ticker: DDOG, country: US, tier: supporting, name: "Datadog", note: "AI 워크로드 옵저버빌리티" }
+      - { ticker: CRWD, country: US, tier: supporting, name: "CrowdStrike", note: "AI 기반 위협 탐지·EDR, AI 워크로드 보안 수혜" }
+      - { ticker: "035420", country: KR, tier: leader, name: "NAVER", note: "HyperCLOVA X 자체 LLM, 검색·커머스 AI 적용" }
       - { ticker: "018260", country: KR, tier: leader, name: "삼성SDS", note: "그룹 IT·AI 솔루션" }
+      - { ticker: "035720", country: KR, tier: supporting, name: "카카오", note: "KoGPT·카카오톡 AI 통합 진행" }
       - { ticker: "108860", country: KR, tier: momentum, name: "셀바스AI", note: "한국어 LLM·음성 AI" }
+      - { ticker: "328130", country: KR, tier: momentum, name: "루닛", note: "의료 영상 AI, FDA 승인·글로벌 진출" }
 
   embodied_ai:
     name: "로보틱스·Embodied AI (다음 게임체인저)"
@@ -91,6 +100,7 @@ themes:
       - { ticker: RBOT, country: US, tier: momentum, name: "Vicarious Surgical", note: "수술로봇 신생" }
       - { ticker: SYM, country: US, tier: momentum, name: "Symbotic", note: "물류 자동화" }
       - { ticker: "277810", country: KR, tier: leader, name: "레인보우로보틱스", note: "삼성 자회사화, 휴머노이드" }
+      - { ticker: "307950", country: KR, tier: supporting, name: "현대오토에버", note: "현대차 자율주행·차량 SW 플랫폼" }
 
   leveraged:
     name: "레버리지 ETF (⚠️ 고위험 단기 베팅용)"
