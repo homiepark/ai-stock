@@ -72,6 +72,7 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
     for v in context.get("verdicts", []):
         c = v.composite
         oh = v.overheat
+        g = getattr(v, "guidance", None)
         verdicts_out.append({
             "ticker": v.stock.ticker,
             "name": v.stock.name,
@@ -106,6 +107,17 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
                     "flags": oh.flags,
                 }
                 if oh is not None else None
+            ),
+            "guidance": (
+                {
+                    "suggested_pct": g.suggested_pct,
+                    "stop_pct": g.stop_pct,
+                    "atr_pct": g.atr_pct,
+                    "entry_price": g.entry_price,
+                    "stop_price": g.stop_price,
+                    "basis": g.basis,
+                }
+                if g is not None else None
             ),
             "in_focus": False,
         })

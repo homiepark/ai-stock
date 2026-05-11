@@ -93,6 +93,14 @@ def assemble_coin_context(
 
             metrics = latest_metrics(prices)
             overheat = overheat_signal(prices)
+            from ai_stock.signals.sizing import position_guidance as _pg
+            guidance = _pg(
+                prices,
+                label=composite.label,
+                overheat_level=overheat.level if overheat else "normal",
+                tier=coin.tier,
+                is_leveraged=False,
+            )
             results.append(StockResult(
                 stock=coin,
                 composite=composite,
@@ -101,6 +109,7 @@ def assemble_coin_context(
                 theme_short=_theme_short(universe.themes[coin.theme].name),
                 label_emoji=label_with_emoji(composite.label).split()[0],
                 overheat=overheat,
+                guidance=guidance,
             ))
         except Exception as e:
             log.warning("Coin %s (%s) failed: %s; continuing", coin.ticker, coin.coingecko_id, e)
