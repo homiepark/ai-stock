@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { loadLatest } from "@/lib/data";
+import { loadLatest, loadBacktestSummary } from "@/lib/data";
 import { HeroStats } from "@/components/hero-stats";
 import { MacroGrid } from "@/components/macro-grid";
 import { ThemeRankings } from "@/components/theme-rankings";
@@ -12,11 +12,13 @@ import { TwitterPulse } from "@/components/twitter-pulse";
 import { SearchPalette } from "@/components/search-palette";
 import { BeginnerGuide } from "@/components/beginner-guide";
 import { UpcomingEvents } from "@/components/upcoming-events";
+import { BacktestSummary } from "@/components/backtest-summary";
 
 export const revalidate = 3600;
 
 export default async function CoinDashboard() {
   const ctx = await loadLatest("coin");
+  const backtest = await loadBacktestSummary();
 
   if (ctx.universe_size === 0) {
     return (
@@ -95,6 +97,10 @@ export default async function CoinDashboard() {
           </span>
         </h2>
         <VerdictMatrix verdicts={ctx.verdicts} asset="coin" />
+      </section>
+
+      <section>
+        <BacktestSummary summary={backtest} />
       </section>
 
       <div className="grid gap-6 md:grid-cols-2">

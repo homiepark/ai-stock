@@ -75,6 +75,27 @@ def daily(output_dir: Path | None, site_dir: Path | None, no_site: bool,
             for line in tb_lines[-10:]:
                 click.echo(f"    {line}", err=True)
 
+    # --- Backtest Stage 1: append today's verdicts + fill forward returns ---
+    click.echo("📊 백테스트 로그 기록...")
+    try:
+        from ai_stock.backtest import (
+            record_from_context, fill_forward_returns, write_summary,
+        )
+        from ai_stock.config import REPO_ROOT
+        wrote = 0
+        if not no_stocks and "stock_ctx" in locals():
+            wrote += record_from_context(stock_ctx, asset_class="stock")
+        if not no_coins and "coin_ctx" in locals():
+            wrote += record_from_context(coin_ctx, asset_class="coin")
+        filled = fill_forward_returns()
+        summary_path = REPO_ROOT / "web" / "data" / "backtest-summary.json"
+        summary = write_summary(summary_path)
+        click.echo(f"  +{wrote} 라벨 / +{filled} forward / n={summary['n_records']}")
+    except Exception as e:
+        import traceback
+        click.echo(f"  ⚠️ 백테스트 기록 실패: {type(e).__name__}: {e}", err=True)
+        traceback.print_exc()
+
 
 @main.command()
 def universe() -> None:
