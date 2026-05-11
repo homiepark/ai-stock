@@ -29,8 +29,8 @@
     },
     "KOSPI": {
       "name": "KOSPI",
-      "value": NaN,
-      "change": NaN
+      "value": null,
+      "change": null
     },
     "USDKRW": {
       "name": "USD/KRW",

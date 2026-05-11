@@ -6,9 +6,17 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function pctFmt(n: number, digits = 2): string {
+export function pctFmt(n: number | null | undefined, digits = 2): string {
+  if (n === null || n === undefined || Number.isNaN(n)) return "—";
   const v = (n * 100).toFixed(digits);
   return n > 0 ? `+${v}%` : `${v}%`;
+}
+
+export function changeColor(n: number | null | undefined): string {
+  if (n === null || n === undefined || Number.isNaN(n)) return "text-slate-500";
+  if (n > 0) return "text-emerald-400";
+  if (n < 0) return "text-rose-400";
+  return "text-slate-500";
 }
 
 export function numFmt(n: number | null | undefined, digits = 2): string {
@@ -46,8 +54,3 @@ export function labelClass(label: string): string {
   return `label-${label.toLowerCase()}`;
 }
 
-export function changeColor(n: number): string {
-  if (n > 0) return "text-emerald-400";
-  if (n < 0) return "text-rose-400";
-  return "text-slate-500";
-}

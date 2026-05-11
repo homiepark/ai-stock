@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 from dataclasses import asdict, is_dataclass
 from datetime import datetime
 from pathlib import Path
@@ -29,9 +30,16 @@ WEB_DATA_DIR = REPO_ROOT / "web" / "data"
 
 
 def _serialize(obj: Any) -> Any:
-    """Recursively convert dataclasses, datetimes, etc. into JSON-safe values."""
-    if obj is None or isinstance(obj, (str, int, float, bool)):
+    """Recursively convert dataclasses, datetimes, etc. into JSON-safe values.
+
+    NaN/Infinity are coerced to None so the output is valid per RFC 8259
+    (Python's json module emits bare `NaN` tokens by default, which
+    JavaScript's JSON.parse rejects — that breaks the Next.js dashboard).
+    """
+    if obj is None or isinstance(obj, (str, int, bool)):
         return obj
+    if isinstance(obj, float):
+        return None if math.isnan(obj) or math.isinf(obj) else obj
     if isinstance(obj, datetime):
         return obj.isoformat()
     if is_dataclass(obj) and not isinstance(obj, type):
@@ -40,10 +48,10 @@ def _serialize(obj: Any) -> Any:
         return {k: _serialize(v) for k, v in obj.items() if not k.startswith("_")}
     if isinstance(obj, (list, tuple, set)):
         return [_serialize(v) for v in obj]
-    # numpy / pandas scalars
+    # numpy / pandas scalars — recurse so NaN/Inf get sanitized
     if hasattr(obj, "item"):
         try:
-            return obj.item()
+            return _serialize(obj.item())
         except Exception:
             pass
     if hasattr(obj, "to_dict"):
@@ -180,7 +188,7 @@ def _update_manifest(data_dir: Path, date: str, asset_class: str) -> None:
         manifest[asset_class].insert(0, date)
         manifest[asset_class].sort(reverse=True)
 
-    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False, allow_nan=False))
 
 
 def export_stock_json(context: dict[str, Any], data_dir: Path | None = None) -> Path:
@@ -193,10 +201,10 @@ def export_stock_json(context: dict[str, Any], data_dir: Path | None = None) -> 
     date = payload["date"]
 
     dated_path = data_dir / "stock" / f"{date}.json"
-    dated_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    dated_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False))
 
     latest_path = data_dir / "latest-stock.json"
-    latest_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    latest_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False))
 
     _update_manifest(data_dir, date, "stock")
     log.info("Wrote stock JSON → %s + latest-stock.json", dated_path)
@@ -213,10 +221,10 @@ def export_coin_json(context: dict[str, Any], data_dir: Path | None = None) -> P
     date = payload["date"]
 
     dated_path = data_dir / "coin" / f"{date}.json"
-    dated_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    dated_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False))
 
     latest_path = data_dir / "latest-coin.json"
-    latest_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    latest_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False))
 
     _update_manifest(data_dir, date, "coin")
     log.info("Wrote coin JSON → %s + latest-coin.json", dated_path)
