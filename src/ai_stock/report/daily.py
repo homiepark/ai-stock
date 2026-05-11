@@ -146,19 +146,23 @@ def assemble_daily_context(
     focus_results = sorted(results, key=lambda r: r.composite.composite_score, reverse=True)[:focus_n]
     log.info("Generating narratives for top %d focus stocks", len(focus_results))
     for r in focus_results:
-        prices = fetch_prices(r.stock, cache=cache)
-        fundamentals = fetch_fundamentals(r.stock, cache=cache)
-        short = short_term_signal(prices, settings["signals"]["short_term"]["weights"])
-        mid = mid_term_signal(prices, fundamentals, _benchmark_for(r.stock, benchmarks),
-                              settings["signals"]["mid_term"]["weights"])
-        long = long_term_signal(fundamentals, settings["signals"]["long_term"]["weights"])
-        recent = [n.to_dict() for n in news_by_ticker.get(r.stock.ticker, [])[:5]]
-        r.narrative = generate_narrative(
-            r.stock, r.composite, short, mid, long, r.metrics, fundamentals, recent,
-            model=settings["llm"]["model"],
-            use_caching=settings["llm"]["use_prompt_caching"],
-        )
-        r.label_emoji = label_with_emoji(r.narrative.label).split()[0]
+        try:
+            prices = fetch_prices(r.stock, cache=cache)
+            fundamentals = fetch_fundamentals(r.stock, cache=cache)
+            short = short_term_signal(prices, settings["signals"]["short_term"]["weights"])
+            mid = mid_term_signal(prices, fundamentals, _benchmark_for(r.stock, benchmarks),
+                                  settings["signals"]["mid_term"]["weights"])
+            long = long_term_signal(fundamentals, settings["signals"]["long_term"]["weights"])
+            recent = [n.to_dict() for n in news_by_ticker.get(r.stock.ticker, [])[:5]]
+            r.narrative = generate_narrative(
+                r.stock, r.composite, short, mid, long, r.metrics, fundamentals, recent,
+                model=settings["llm"]["model"],
+                use_caching=settings["llm"]["use_prompt_caching"],
+            )
+            r.label_emoji = label_with_emoji(r.narrative.label).split()[0]
+        except Exception as e:
+            log.warning("Narrative gen failed for %s: %s; keeping quant label",
+                        r.stock.ticker, e)
 
     # Position review
     label_changes = _compute_label_changes(results, output_dir)
