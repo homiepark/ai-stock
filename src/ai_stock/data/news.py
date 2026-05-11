@@ -12,6 +12,7 @@ from typing import Iterable
 
 from ai_stock.config import Stock
 from ai_stock.data.cache import DiskCache
+from ai_stock.data.translator import translate_news
 
 log = logging.getLogger(__name__)
 
@@ -25,12 +26,14 @@ class NewsItem:
     source: str
     matched_tickers: list[str] = field(default_factory=list)
     matched_names: list[str] = field(default_factory=list)
+    # Themes the matched tickers belong to (for theme-filtering in the UI).
+    matched_themes: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return self.__dict__
 
 
-def _build_match_patterns(stocks: Iterable[Stock]) -> list[tuple[Stock, re.Pattern]]:
+def _build_match_patterns(stocks: Iterable[Stock]) -> list[tuple[Stock, re.Pattern, re.Pattern]]:
     pats = []
     for s in stocks:
         # Match ticker as standalone word, plus the company name (case-insensitive, partial OK)
@@ -69,15 +72,25 @@ def fetch_news(
                 source = parsed.feed.get("title", url) if hasattr(parsed, "feed") else url
 
                 blob = f"{title} {summary}"
-                matched_t, matched_n = [], []
+                matched_t, matched_n, matched_th = [], [], []
+                seen_themes: set[str] = set()
                 for s, ticker_re, name_re in pats:
                     if ticker_re.search(blob) or name_re.search(blob):
                         matched_t.append(s.ticker)
                         matched_n.append(s.name)
+                        if s.theme and s.theme not in seen_themes:
+                            matched_th.append(s.theme)
+                            seen_themes.add(s.theme)
+
+                # Translate English → Korean for matched articles only (saves
+                # cost — untouched articles never go into the report anyway).
+                if matched_t:
+                    title, summary = translate_news(title, summary, link=link, cache=cache)
 
                 items.append(NewsItem(
                     title=title, link=link, summary=summary[:500], published=published,
                     source=source, matched_tickers=matched_t, matched_names=matched_n,
+                    matched_themes=matched_th,
                 ))
                 if len(items) >= max_articles:
                     break

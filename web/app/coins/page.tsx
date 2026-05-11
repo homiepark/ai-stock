@@ -89,7 +89,13 @@ export default async function CoinDashboard() {
       <div className="grid gap-6 md:grid-cols-2">
         <section>
           <h2 className="text-lg font-semibold text-white mb-3">📰 뉴스</h2>
-          <NewsList news={ctx.top_news} />
+          <NewsList
+            news={ctx.top_news}
+            themes={ctx.theme_rankings.map((r) => ({
+              key: r.theme_key,
+              label: r.theme_name.split(/[·(]/)[0].trim(),
+            }))}
+          />
         </section>
         <section>
           <h2 className="text-lg font-semibold text-white mb-3">

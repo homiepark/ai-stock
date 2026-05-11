@@ -72,6 +72,7 @@ export interface NewsItem {
   source: string;
   matched_tickers: string[];
   matched_names: string[];
+  matched_themes?: string[];
 }
 
 export interface LabelChange {
