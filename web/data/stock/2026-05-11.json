@@ -1,7 +1,7 @@
 {
   "asset_class": "stock",
   "date": "2026-05-11",
-  "generated_at": "2026-05-11 19:20 UTC",
+  "generated_at": "2026-05-11 22:32 UTC",
   "version": "0.1.0",
   "universe_size": 69,
   "us_count": 49,
@@ -14,18 +14,18 @@
     },
     "DTWEXBGS": {
       "name": "US Dollar Index",
-      "value": 97.947998046875,
-      "change": 0.0011038605174451446
+      "value": 97.90499877929688,
+      "change": 0.0006643749370325397
     },
     "VIXCLS": {
       "name": "VIX",
-      "value": 18.290000915527344,
-      "change": 0.0639907124662594
+      "value": 18.3799991607666,
+      "change": 0.06922621231752173
     },
     "NASDAQCOM": {
       "name": "NASDAQ Composite",
-      "value": 26266.130859375,
-      "change": 0.0007258247848253953
+      "value": 26274.125,
+      "change": 0.0010303973544676286
     },
     "KOSPI": {
       "name": "KOSPI",
@@ -34,8 +34,8 @@
     },
     "USDKRW": {
       "name": "USD/KRW",
-      "value": 1472.0,
-      "change": 0.011829858931801935
+      "value": 1460.550048828125,
+      "change": 0.003959340943341131
     }
   },
   "theme_rankings": [
@@ -45,10 +45,10 @@
       "tagline": "⚠️ 단기 베팅용 — 일일 2~3배 추종",
       "why_now": "강한 추세장에서만 사용. 분할매수 + 손절선 명확히 + 자산의 5~10% 이하.",
       "risk": "장기 보유 ❌. 횡보·하락장에선 음의 복리(volatility decay)로 손실 누적.",
-      "composite_return": 0.33500987485732747,
-      "avg_return_1w": 0.15686000132697658,
-      "avg_return_1m": 0.3752903505022012,
-      "avg_return_3m": 0.45945244752784664,
+      "composite_return": 0.3344123003706851,
+      "avg_return_1w": 0.15558553613906714,
+      "avg_return_1m": 0.3744085113671596,
+      "avg_return_3m": 0.45991078327367035,
       "cap_leader": {
         "ticker": "TQQQ",
         "name": "TQQQ (3x QQQ)"
@@ -65,10 +65,10 @@
       "tagline": "⚙️ AI의 '강철' — GPU·메모리·장비",
       "why_now": "HBM4·CoWoS·EUV 모두 캐파 부족 지속. 2027까지 수요 가시성 확보된 영역.",
       "risk": "사이클 정점 논쟁 + 중국 수출 규제 변동성. 어닝 미스 시 30% 낙폭 흔함.",
-      "composite_return": 0.24896912608761695,
-      "avg_return_1w": 0.07172041706460093,
-      "avg_return_1m": 0.20612453222290872,
-      "avg_return_3m": 0.48334396026357723,
+      "composite_return": 0.24812240509702346,
+      "avg_return_1w": 0.07097952429333305,
+      "avg_return_1m": 0.20496459999591635,
+      "avg_return_3m": 0.4828090260355234,
       "cap_leader": {
         "ticker": "NVDA",
         "name": "NVIDIA"
@@ -85,10 +85,10 @@
       "tagline": "🚂 AI의 '밴더빌트' — 실제 업무에 AI 박는 운영자",
       "why_now": "추론 비용 90% 하락 + 엔터프라이즈 도입 본격. 진짜 텐베거 후보가 여기서 다수.",
       "risk": "밸류에이션 과열. 매출 성장 30%+ 못 보이면 멀티플 압축.",
-      "composite_return": 0.1426767891549725,
-      "avg_return_1w": 0.05990452903615546,
-      "avg_return_1m": 0.2109108998918272,
-      "avg_return_3m": 0.13447023495798327,
+      "composite_return": 0.1523324806378852,
+      "avg_return_1w": 0.06881620151784724,
+      "avg_return_1m": 0.22130284014987814,
+      "avg_return_3m": 0.14388828040859927,
       "cap_leader": {
         "ticker": "PLTR",
         "name": "Palantir"
@@ -100,35 +100,15 @@
       "member_count": 7
     },
     {
-      "theme_key": "hyperscalers",
-      "theme_name": "하이퍼스케일러·AI 클라우드 (AI의 'JP모건')",
-      "tagline": "🏦 AI의 'JP모건' — Capex의 자금줄",
-      "why_now": "MSFT·GOOG·META·AMZN 2026 Capex 합계 $400B+. AI 매출 회수 본격화 단계.",
-      "risk": "광고·소비 둔화 시 Capex 가이던스 컷 가능. 빅테크 동반 변동성.",
-      "composite_return": 0.13925445118064905,
-      "avg_return_1w": 0.02836604755630339,
-      "avg_return_1m": 0.13166067265823744,
-      "avg_return_3m": 0.2602678928348769,
-      "cap_leader": {
-        "ticker": "MSFT",
-        "name": "Microsoft"
-      },
-      "momentum_leader": {
-        "ticker": "NBIS",
-        "name": "Nebius"
-      },
-      "member_count": 9
-    },
-    {
       "theme_key": "power_grid",
       "theme_name": "전력·그리드 (AI의 '땅')",
       "tagline": "🏗 AI의 '땅' — 전력·변압기·발전소",
       "why_now": "AI가 돌아가려면 전기 필요. 미국 변압기 대기 100주+ → 만드는 회사들 5년치 일감 확보.",
       "risk": "사이클 후반 진입 우려는 아직 작지만, 금리 급등 시 인프라주 동반 조정.",
-      "composite_return": 0.13811677990190427,
-      "avg_return_1w": 0.026534165066754337,
-      "avg_return_1m": 0.18413509228691038,
-      "avg_return_3m": 0.18834164489037938,
+      "composite_return": 0.13867102709761486,
+      "avg_return_1w": 0.026985035283776184,
+      "avg_return_1m": 0.18470836059712495,
+      "avg_return_3m": 0.18897390757877341,
       "cap_leader": {
         "ticker": "GEV",
         "name": "GE Vernova"
@@ -140,15 +120,35 @@
       "member_count": 9
     },
     {
+      "theme_key": "hyperscalers",
+      "theme_name": "하이퍼스케일러·AI 클라우드 (AI의 'JP모건')",
+      "tagline": "🏦 AI의 'JP모건' — Capex의 자금줄",
+      "why_now": "MSFT·GOOG·META·AMZN 2026 Capex 합계 $400B+. AI 매출 회수 본격화 단계.",
+      "risk": "광고·소비 둔화 시 Capex 가이던스 컷 가능. 빅테크 동반 변동성.",
+      "composite_return": 0.13622650762793667,
+      "avg_return_1w": 0.025490511650106566,
+      "avg_return_1m": 0.12851063050935627,
+      "avg_return_3m": 0.25725033976387396,
+      "cap_leader": {
+        "ticker": "MSFT",
+        "name": "Microsoft"
+      },
+      "momentum_leader": {
+        "ticker": "NBIS",
+        "name": "Nebius"
+      },
+      "member_count": 9
+    },
+    {
       "theme_key": "embodied_ai",
       "theme_name": "로보틱스·Embodied AI (다음 게임체인저)",
       "tagline": "🤖 다음 게임체인저 — 휴머노이드·자율주행·수술로봇",
       "why_now": "인지노동 다음은 물리노동. 2027~2030 진정한 텐베거 가능 영역.",
       "risk": "상용화 시점 불확실. 미래 옵션밸류 비중 큼. 변동성 극심.",
-      "composite_return": -0.015779494304220418,
-      "avg_return_1w": 0.16796396021223428,
-      "avg_return_1m": -0.023133334816482082,
-      "avg_return_3m": -0.18971782813765958,
+      "composite_return": -0.018957144603513443,
+      "avg_return_1w": 0.16492004542871855,
+      "avg_return_1m": -0.026482996790100605,
+      "avg_return_3m": -0.19279986505362923,
       "cap_leader": {
         "ticker": "TSLA",
         "name": "Tesla"
@@ -171,28 +171,28 @@
       "note": "HBM3E·HBM4 진입",
       "coingecko_id": "",
       "scores": {
-        "short": 58.75,
+        "short": 60.25,
         "mid": 68.25,
         "long": 75.5,
-        "composite": 68.775
+        "composite": 69.15
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
       "narrative": {
-        "summary": "Micron: 정량 종합 69점, 라벨 ACCUMULATE. 단기 59 / 중기 68 / 장기 76. (LLM 미연결 — 정량 요약만 표기)",
+        "summary": "Micron: 정량 종합 69점, 라벨 ACCUMULATE. 단기 60 / 중기 68 / 장기 76. (LLM 미연결 — 정량 요약만 표기)",
         "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
         "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
         "next_trigger": "다음 어닝 발표"
       },
       "metrics": {
-        "last_close": 805.3800048828125,
-        "rsi14": 89.50462626510284,
-        "ma50": 456.75612365722657,
-        "ma200": 293.9155220413208,
-        "vol_z20": 1.4004981062543618,
-        "ret_5d": 0.39713763175975325,
-        "ret_20d": 0.888081417602181,
-        "ret_60d": 0.9463205733817734
+        "last_close": 795.3300170898438,
+        "rsi14": 89.26519117174769,
+        "ma50": 456.5551239013672,
+        "ma200": 293.86527210235596,
+        "vol_z20": 2.133244113109871,
+        "ret_5d": 0.37970335718234316,
+        "ret_20d": 0.8645208684403054,
+        "ret_60d": 0.9220332830528599
       },
       "overheat": {
         "score": 100.0,
@@ -201,20 +201,20 @@
         "label": "극과열",
         "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
         "flags": [
-          "RSI 90 극과열",
-          "50일선 +76% 극이격",
-          "200일선 +174% 장기 과열",
-          "5일 +40% 급등",
-          "20일 +89% 폭등"
+          "RSI 89 극과열",
+          "50일선 +74% 극이격",
+          "200일선 +171% 장기 과열",
+          "5일 +38% 급등",
+          "20일 +86% 폭등"
         ]
       },
       "guidance": {
-        "suggested_pct": 0.0063,
-        "stop_pct": 0.1139,
-        "atr_pct": 0.0569,
-        "entry_price": 805.38,
-        "stop_price": 713.6529,
-        "basis": "ATR(14) 5.7% → 2-ATR 손절폭 11.4%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+        "suggested_pct": 0.0062,
+        "stop_pct": 0.1153,
+        "atr_pct": 0.0577,
+        "entry_price": 795.33,
+        "stop_price": 703.6029,
+        "basis": "ATR(14) 5.8% → 2-ATR 손절폭 11.5%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": true
     },
@@ -228,10 +228,10 @@
       "note": "AI 가속기 압도적 점유",
       "coingecko_id": "",
       "scores": {
-        "short": 59.154966587805454,
-        "mid": 69.09167928747286,
+        "short": 59.009054940237874,
+        "mid": 68.95096028606028,
         "long": 69.5,
-        "composite": 66.77082939756686
+        "composite": 66.68509983518057
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
@@ -242,31 +242,31 @@
         "next_trigger": "다음 어닝 발표"
       },
       "metrics": {
-        "last_close": 219.82000732421875,
-        "rsi14": 65.11980717556446,
-        "ma50": 189.50222045898437,
-        "ma200": 184.94713897705077,
-        "vol_z20": -0.7676357697014313,
-        "ret_5d": 0.1075171909312913,
-        "ret_20d": 0.16116428164963548,
-        "ret_60d": 0.17594897310237823
+        "last_close": 219.44000244140625,
+        "rsi14": 64.91763139642596,
+        "ma50": 189.49462036132812,
+        "ma200": 184.94523933410645,
+        "vol_z20": 0.13967873753386748,
+        "ret_5d": 0.10560261570460616,
+        "ret_20d": 0.15915696620030273,
+        "ret_60d": 0.17391609921998352
       },
       "overheat": {
-        "score": 35.0,
-        "level": "mild",
-        "emoji": "🟡",
-        "label": "약과열",
-        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "score": 25.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
         "flags": [
           "50일선 +16% 과이격"
         ]
       },
       "guidance": {
         "suggested_pct": 0.05,
-        "stop_pct": 0.07,
-        "atr_pct": 0.035,
-        "entry_price": 219.82,
-        "stop_price": 204.43,
+        "stop_pct": 0.0701,
+        "atr_pct": 0.0351,
+        "entry_price": 219.44,
+        "stop_price": 204.05,
         "basis": "ATR(14) 3.5% → 2-ATR 손절폭 7.0%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": true
@@ -281,10 +281,10 @@
       "note": "유럽 AI 클라우드",
       "coingecko_id": "",
       "scores": {
-        "short": 57.87994026915411,
+        "short": 57.59503553814447,
         "mid": 68.25,
         "long": 69.5,
-        "composite": 66.15748506728853
+        "composite": 66.08625888453612
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
@@ -295,14 +295,14 @@
         "next_trigger": "다음 어닝 발표"
       },
       "metrics": {
-        "last_close": 186.74000549316406,
-        "rsi14": 62.885188284170034,
-        "ma50": 131.49970092773438,
-        "ma200": 102.74627559661866,
-        "vol_z20": -0.8885765357693115,
-        "ret_5d": 0.0584968111967441,
-        "ret_20d": 0.20820398837267629,
-        "ret_60d": 1.081132269106667
+        "last_close": 186.10000610351562,
+        "rsi14": 62.681313494510775,
+        "ma50": 131.4869009399414,
+        "ma200": 102.7430755996704,
+        "vol_z20": -0.4664247105191019,
+        "ret_5d": 0.054869108009515166,
+        "ret_20d": 0.2040632055067486,
+        "ret_60d": 1.0739997675385728
       },
       "overheat": {
         "score": 50.0,
@@ -312,15 +312,15 @@
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
           "50일선 +42% 극이격",
-          "200일선 +82% 장기 과열"
+          "200일선 +81% 장기 과열"
         ]
       },
       "guidance": {
-        "suggested_pct": 0.0205,
-        "stop_pct": 0.1638,
-        "atr_pct": 0.0819,
-        "entry_price": 186.74,
-        "stop_price": 156.1577,
+        "suggested_pct": 0.0204,
+        "stop_pct": 0.1643,
+        "atr_pct": 0.0822,
+        "entry_price": 186.1,
+        "stop_price": 155.5177,
         "basis": "ATR(14) 8.2% → 2-ATR 손절폭 16.4%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": true
@@ -335,28 +335,28 @@
       "note": "AI 광고 ROI의 정점",
       "coingecko_id": "",
       "scores": {
-        "short": 60.01322011846711,
+        "short": 60.76133686905864,
         "mid": 67.0,
         "long": 67.25,
-        "composite": 65.35330502961678
+        "composite": 65.54033421726466
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
       "narrative": {
-        "summary": "AppLovin: 정량 종합 65점, 라벨 ACCUMULATE. 단기 60 / 중기 67 / 장기 67. (LLM 미연결 — 정량 요약만 표기)",
+        "summary": "AppLovin: 정량 종합 66점, 라벨 ACCUMULATE. 단기 61 / 중기 67 / 장기 67. (LLM 미연결 — 정량 요약만 표기)",
         "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
         "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
         "next_trigger": "다음 어닝 발표"
       },
       "metrics": {
-        "last_close": 473.8901062011719,
-        "rsi14": 50.1924738577505,
-        "ma50": 446.6270037841797,
-        "ma200": 529.2221260070801,
-        "vol_z20": -0.3311421561631307,
-        "ret_5d": -0.002336618523848699,
-        "ret_20d": 0.13520204178638173,
-        "ret_60d": 0.29157041637267933
+        "last_close": 478.4200134277344,
+        "rsi14": 51.38624865234235,
+        "ma50": 446.71760192871096,
+        "ma200": 529.2447755432129,
+        "vol_z20": 0.031665136981664906,
+        "ret_5d": 0.007200028268914416,
+        "ret_20d": 0.14605341822451656,
+        "ret_60d": 0.3039165153652108
       },
       "overheat": {
         "score": 0.0,
@@ -367,65 +367,12 @@
         "flags": []
       },
       "guidance": {
-        "suggested_pct": 0.0404,
-        "stop_pct": 0.1189,
-        "atr_pct": 0.0594,
-        "entry_price": 473.8901,
-        "stop_price": 417.5568,
-        "basis": "ATR(14) 5.9% → 2-ATR 손절폭 11.9%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
-      },
-      "in_focus": true
-    },
-    {
-      "ticker": "ALAB",
-      "name": "Astera Labs",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "PCIe 리타이머·CXL 스위치",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.952688060595875,
-        "mid": 74.5,
-        "long": 65.0,
-        "composite": 64.06317201514896
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "Astera Labs: 정량 종합 64점, 라벨 ACCUMULATE. 단기 48 / 중기 74 / 장기 65. (LLM 미연결 — 정량 요약만 표기)",
-        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
-        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
-        "next_trigger": "다음 어닝 발표"
-      },
-      "metrics": {
-        "last_close": 206.9949951171875,
-        "rsi14": 56.19612953176426,
-        "ma50": 150.22009994506837,
-        "ma200": 165.6000249481201,
-        "vol_z20": -1.161225971293703,
-        "ret_5d": 0.028546559588509268,
-        "ret_20d": 0.24101440324681644,
-        "ret_60d": 0.6352898729884842
-      },
-      "overheat": {
-        "score": 30.0,
-        "level": "mild",
-        "emoji": "🟡",
-        "label": "약과열",
-        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
-        "flags": [
-          "50일선 +38% 극이격"
-        ]
-      },
-      "guidance": {
-        "suggested_pct": 0.0211,
-        "stop_pct": 0.1595,
-        "atr_pct": 0.0798,
-        "entry_price": 206.995,
-        "stop_price": 173.9718,
-        "basis": "ATR(14) 8.0% → 2-ATR 손절폭 16.0%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+        "suggested_pct": 0.0402,
+        "stop_pct": 0.1193,
+        "atr_pct": 0.0597,
+        "entry_price": 478.42,
+        "stop_price": 421.321,
+        "basis": "ATR(14) 6.0% → 2-ATR 손절폭 11.9%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": true
     },
@@ -440,9 +387,63 @@
       "coingecko_id": "",
       "scores": {
         "short": 62.25,
-        "mid": 59.120222146501675,
+        "mid": 57.83238194615699,
         "long": 67.5,
-        "composite": 63.25457775127558
+        "composite": 62.80383368115494
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Super Micro: 정량 종합 63점, 라벨 ACCUMULATE. 단기 62 / 중기 58 / 장기 68. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 33.52000045776367,
+        "rsi14": 61.54195085873942,
+        "ma50": 27.752600021362305,
+        "ma200": 37.1783499622345,
+        "vol_z20": 0.032019904022271645,
+        "ret_5d": 0.20057307901745047,
+        "ret_20d": 0.2907201133627586,
+        "ret_60d": 0.10154453242191774
+      },
+      "overheat": {
+        "score": 33.0,
+        "level": "mild",
+        "emoji": "🟡",
+        "label": "약과열",
+        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "flags": [
+          "50일선 +21% 과이격",
+          "5일 +20% 급등"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0241,
+        "stop_pct": 0.1395,
+        "atr_pct": 0.0698,
+        "entry_price": 33.52,
+        "stop_price": 28.8429,
+        "basis": "ATR(14) 7.0% → 2-ATR 손절폭 14.0%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "PCIe 리타이머·CXL 스위치",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.344100224195415,
+        "mid": 68.25,
+        "long": 65.0,
+        "composite": 62.47352505604886
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
@@ -453,33 +454,32 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 34.279998779296875,
-        "rsi14": 63.73884035358247,
-        "ma50": 27.76779998779297,
-        "ma200": 37.18214995384216,
-        "vol_z20": -0.33427191408246265,
-        "ret_5d": 0.22779364919855483,
-        "ret_20d": 0.31998458550860076,
-        "ret_60d": 0.12651983028295444
+        "last_close": 207.35000610351562,
+        "rsi14": 56.324014848206424,
+        "ma50": 150.2272001647949,
+        "ma200": 165.60180000305175,
+        "vol_z20": -0.33808631379962056,
+        "ret_5d": 0.030310589334239024,
+        "ret_20d": 0.24314283029933836,
+        "ret_60d": 0.6380945102233764
       },
       "overheat": {
-        "score": 33.0,
+        "score": 30.0,
         "level": "mild",
         "emoji": "🟡",
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "50일선 +23% 과이격",
-          "5일 +23% 급등"
+          "50일선 +38% 극이격"
         ]
       },
       "guidance": {
-        "suggested_pct": 0.0252,
-        "stop_pct": 0.1335,
-        "atr_pct": 0.0667,
-        "entry_price": 34.28,
-        "stop_price": 29.7043,
-        "basis": "ATR(14) 6.7% → 2-ATR 손절폭 13.3%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+        "suggested_pct": 0.0211,
+        "stop_pct": 0.1593,
+        "atr_pct": 0.0796,
+        "entry_price": 207.35,
+        "stop_price": 174.3269,
+        "basis": "ATR(14) 8.0% → 2-ATR 손절폭 15.9%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": false
     },
@@ -493,10 +493,10 @@
       "note": "광통신·데이터센터 인터커넥트(DCI), 800G/1.6T 사이클",
       "coingecko_id": "",
       "scores": {
-        "short": 58.582116699212506,
+        "short": 59.02998552776493,
         "mid": 63.75,
         "long": 62.17619327401936,
-        "composite": 61.82850648441088
+        "composite": 61.94047369154897
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
@@ -507,14 +507,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 578.3800048828125,
-        "rsi14": 64.11456064183372,
-        "ma50": 441.2782000732422,
-        "ma200": 251.1518994140625,
-        "vol_z20": -0.9491822567405578,
-        "ret_5d": 0.07403761191837477,
-        "ret_20d": 0.20520944413175068,
-        "ret_60d": 0.9742627722307948
+        "last_close": 581.469970703125,
+        "rsi14": 64.54146769252026,
+        "ma50": 441.3399993896484,
+        "ma200": 251.16734924316407,
+        "vol_z20": 0.22909202787503294,
+        "ret_5d": 0.07977560334708977,
+        "ret_20d": 0.21164821441641757,
+        "ret_60d": 0.9848101708874004
       },
       "overheat": {
         "score": 50.0,
@@ -523,71 +523,17 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "50일선 +31% 극이격",
-          "200일선 +130% 장기 과열"
+          "50일선 +32% 극이격",
+          "200일선 +132% 장기 과열"
         ]
       },
       "guidance": {
-        "suggested_pct": 0.0204,
-        "stop_pct": 0.1233,
-        "atr_pct": 0.0617,
-        "entry_price": 578.38,
-        "stop_price": 507.055,
-        "basis": "ATR(14) 6.2% → 2-ATR 손절폭 12.3%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv",
-      "country": "US",
-      "tier": "leader",
-      "theme": "power_grid",
-      "theme_short": "전력·그리드",
-      "note": "데이터센터 전력·냉각 인프라",
-      "coingecko_id": "",
-      "scores": {
-        "short": 61.23175089705448,
-        "mid": 63.75,
-        "long": 58.289783889980356,
-        "composite": 60.936351280255764
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 368.92498779296875,
-        "rsi14": 69.31705561692262,
-        "ma50": 287.03020141601564,
-        "ma200": 198.46691394805907,
-        "vol_z20": -0.05969770431238315,
-        "ret_5d": 0.114678026504752,
-        "ret_20d": 0.22991398287267528,
-        "ret_60d": 0.5602418420324271
-      },
-      "overheat": {
-        "score": 67.0,
-        "level": "high",
-        "emoji": "🟠",
-        "label": "과열",
-        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
-        "flags": [
-          "50일선 +29% 극이격",
-          "200일선 +86% 장기 과열"
-        ]
-      },
-      "guidance": {
-        "suggested_pct": 0.0249,
-        "stop_pct": 0.0966,
-        "atr_pct": 0.0483,
-        "entry_price": 368.925,
-        "stop_price": 333.3037,
-        "basis": "ATR(14) 4.8% → 2-ATR 손절폭 9.7%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+        "suggested_pct": 0.0205,
+        "stop_pct": 0.1227,
+        "atr_pct": 0.0613,
+        "entry_price": 581.47,
+        "stop_price": 510.145,
+        "basis": "ATR(14) 6.1% → 2-ATR 손절폭 12.3%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": false
     },
@@ -601,10 +547,10 @@
       "note": "원자력·AMZN 데이터센터 PPA",
       "coingecko_id": "",
       "scores": {
-        "short": 51.63217408005381,
-        "mid": 66.09692172337168,
+        "short": 53.991703617711295,
+        "mid": 66.12989431891111,
         "long": 61.0,
-        "composite": 60.44196612319354
+        "composite": 61.04338891604671
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
@@ -615,14 +561,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 382.9100036621094,
-        "rsi14": 68.54293224553949,
-        "ma50": 341.51080078125,
-        "ma200": 372.55159942626955,
-        "vol_z20": -1.2115647081427279,
-        "ret_5d": -0.004497740537758088,
-        "ret_20d": 0.17428244427766848,
-        "ret_60d": 0.04105382182035466
+        "last_close": 383.44000244140625,
+        "rsi14": 68.79725640956616,
+        "ma50": 341.52140075683593,
+        "ma200": 372.554249420166,
+        "vol_z20": -0.2181057491307076,
+        "ret_5d": -0.003119831950214702,
+        "ret_20d": 0.17590780860888122,
+        "ret_60d": 0.042494779877000344
       },
       "overheat": {
         "score": 18.0,
@@ -634,11 +580,65 @@
       },
       "guidance": {
         "suggested_pct": 0.0395,
-        "stop_pct": 0.0912,
-        "atr_pct": 0.0456,
-        "entry_price": 382.91,
-        "stop_price": 347.9814,
+        "stop_pct": 0.0911,
+        "atr_pct": 0.0455,
+        "entry_price": 383.44,
+        "stop_price": 348.5114,
         "basis": "ATR(14) 4.6% → 2-ATR 손절폭 9.1%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv",
+      "country": "US",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "데이터센터 전력·냉각 인프라",
+      "coingecko_id": "",
+      "scores": {
+        "short": 60.996169286732936,
+        "mid": 63.75,
+        "long": 58.289783889980356,
+        "composite": 60.877455877675374
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 367.9200134277344,
+        "rsi14": 69.10468938797325,
+        "ma50": 287.0101019287109,
+        "ma200": 198.4618885040283,
+        "vol_z20": 0.5562259173164472,
+        "ret_5d": 0.11164157497885019,
+        "ret_20d": 0.22656362151161713,
+        "ret_60d": 0.5559916472592594
+      },
+      "overheat": {
+        "score": 67.0,
+        "level": "high",
+        "emoji": "🟠",
+        "label": "과열",
+        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
+        "flags": [
+          "50일선 +28% 극이격",
+          "200일선 +85% 장기 과열"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0248,
+        "stop_pct": 0.0968,
+        "atr_pct": 0.0484,
+        "entry_price": 367.92,
+        "stop_price": 332.2987,
+        "basis": "ATR(14) 4.8% → 2-ATR 손절폭 9.7%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": false
     },
@@ -666,14 +666,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 199.69000244140625,
-        "rsi14": 88.40280278320614,
-        "ma50": 128.9684001159668,
-        "ma200": 138.85685070037843,
-        "vol_z20": -0.1822949978154965,
-        "ret_5d": 0.3613061498255157,
-        "ret_20d": 0.8140443233992722,
-        "ret_60d": 0.5832078553065607
+        "last_close": 202.32000732421875,
+        "rsi14": 89.11624060015185,
+        "ma50": 129.02100021362304,
+        "ma200": 138.87000072479248,
+        "vol_z20": 0.2153334609622908,
+        "ret_5d": 0.37923514866006847,
+        "ret_20d": 0.8379360824750841,
+        "ret_60d": 0.6040593968912984
       },
       "overheat": {
         "score": 95.0,
@@ -682,19 +682,19 @@
         "label": "극과열",
         "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
         "flags": [
-          "RSI 88 극과열",
-          "50일선 +55% 극이격",
-          "5일 +36% 급등",
-          "20일 +81% 폭등"
+          "RSI 89 극과열",
+          "50일선 +57% 극이격",
+          "5일 +38% 급등",
+          "20일 +84% 폭등"
         ]
       },
       "guidance": {
-        "suggested_pct": 0.0066,
-        "stop_pct": 0.1091,
-        "atr_pct": 0.0546,
-        "entry_price": 199.69,
-        "stop_price": 177.897,
-        "basis": "ATR(14) 5.5% → 2-ATR 손절폭 10.9%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
+        "suggested_pct": 0.0067,
+        "stop_pct": 0.1077,
+        "atr_pct": 0.0539,
+        "entry_price": 202.32,
+        "stop_price": 180.527,
+        "basis": "ATR(14) 5.4% → 2-ATR 손절폭 10.8%. 포트폴리오의 1%만 risk-on (1번 손절 = 자산 1% 손실)."
       },
       "in_focus": false
     },
@@ -708,10 +708,10 @@
       "note": "전력 EPC",
       "coingecko_id": "",
       "scores": {
-        "short": 53.53561877107525,
+        "short": 54.12193913850293,
         "mid": 63.75,
         "long": 60.15004033154649,
-        "composite": 59.75642082538741
+        "composite": 59.903000917244334
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -722,33 +722,33 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 775.9500122070312,
-        "rsi14": 79.82461868018075,
-        "ma50": 606.9952099609375,
-        "ma200": 478.7480355834961,
-        "vol_z20": -0.3955216176953282,
-        "ret_5d": 0.02457282685669271,
-        "ret_20d": 0.30227909712962475,
-        "ret_60d": 0.5044243441644642
+        "last_close": 781.3800048828125,
+        "rsi14": 80.20169561457836,
+        "ma50": 607.1038098144531,
+        "ma200": 478.775185546875,
+        "vol_z20": 0.5453198821919462,
+        "ret_5d": 0.031742648182956135,
+        "ret_20d": 0.31139226917420504,
+        "ret_60d": 0.514952101161136
       },
       "overheat": {
-        "score": 70.0,
-        "level": "high",
-        "emoji": "🟠",
-        "label": "과열",
-        "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
+        "score": 80.0,
+        "level": "extreme",
+        "emoji": "🔴",
+        "label": "극과열",
+        "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
         "flags": [
-          "RSI 80 과매수",
-          "50일선 +28% 극이격",
-          "200일선 +62% 장기 과열"
+          "RSI 80 극과열",
+          "50일선 +29% 극이격",
+          "200일선 +63% 장기 과열"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0761,
-        "atr_pct": 0.038,
-        "entry_price": 775.95,
-        "stop_price": 716.91,
+        "stop_pct": 0.0758,
+        "atr_pct": 0.0379,
+        "entry_price": 781.38,
+        "stop_price": 722.1615,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -763,10 +763,10 @@
       "note": "ASIC·네트워킹·VMware",
       "coingecko_id": "",
       "scores": {
-        "short": 45.01888101510765,
+        "short": 47.386911468216326,
         "mid": 70.0,
         "long": 57.339501206757845,
-        "composite": 58.69052073648005
+        "composite": 59.28252834975723
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -777,14 +777,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 427.7950134277344,
-        "rsi14": 60.63498866688755,
-        "ma50": 360.82300842285156,
-        "ma200": 343.21434341430665,
-        "vol_z20": -2.015165186620134,
-        "ret_5d": 0.027118879778473826,
-        "ret_20d": 0.12651748104735838,
-        "ret_60d": 0.29447829419775284
+        "last_close": 428.42999267578125,
+        "rsi14": 60.956266709991574,
+        "ma50": 360.8357080078125,
+        "ma200": 343.2175187683105,
+        "vol_z20": -0.8395293392715821,
+        "ret_5d": 0.028643439797794157,
+        "ret_20d": 0.1281895791330645,
+        "ret_60d": 0.29639969773931507
       },
       "overheat": {
         "score": 18.0,
@@ -798,10 +798,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.072,
-        "atr_pct": 0.036,
-        "entry_price": 427.795,
-        "stop_price": 396.9984,
+        "stop_pct": 0.0719,
+        "atr_pct": 0.0359,
+        "entry_price": 428.43,
+        "stop_price": 397.6334,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -830,14 +830,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 539.0,
-        "rsi14": 76.70432271444456,
-        "ma50": 429.0191986083984,
-        "ma200": 458.378800201416,
-        "vol_z20": -0.9753326827262528,
-        "ret_5d": 0.14866595178893727,
-        "ret_20d": 0.3399960548078236,
-        "ret_60d": 0.30971470284441405
+        "last_close": 542.260009765625,
+        "rsi14": 77.14940365238101,
+        "ma50": 429.08439880371094,
+        "ma200": 458.3951002502441,
+        "vol_z20": -0.0023458128031786972,
+        "ret_5d": 0.15561337705846023,
+        "ret_20d": 0.3481006934433941,
+        "ret_60d": 0.3176361921235522
       },
       "overheat": {
         "score": 57.0,
@@ -852,10 +852,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0744,
-        "atr_pct": 0.0372,
-        "entry_price": 539.0,
-        "stop_price": 498.8929,
+        "stop_pct": 0.0745,
+        "atr_pct": 0.0373,
+        "entry_price": 542.26,
+        "stop_price": 501.8564,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -870,10 +870,10 @@
       "note": "AI 클라우드 RPO 폭증",
       "coingecko_id": "",
       "scores": {
-        "short": 57.22917287974471,
-        "mid": 55.824734241134166,
+        "short": 57.39779227866799,
+        "mid": 55.909105745345855,
         "long": 58.746815286624205,
-        "composite": 57.34467631898282
+        "composite": 57.41636119518773
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -884,14 +884,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 193.4550018310547,
-        "rsi14": 58.838768634628664,
-        "ma50": 160.4889111328125,
-        "ma200": 209.58364112854005,
-        "vol_z20": -1.6357049454397528,
-        "ret_5d": 0.07302129366674337,
-        "ret_20d": 0.24312432785630178,
-        "ret_60d": 0.24061007217560437
+        "last_close": 193.83999633789062,
+        "rsi14": 59.166544680255406,
+        "ma50": 160.49661102294922,
+        "ma200": 209.58556587219238,
+        "vol_z20": -1.3862842447659247,
+        "ret_5d": 0.07515671172194804,
+        "ret_20d": 0.24559826770282367,
+        "ret_60d": 0.24307900840569507
       },
       "overheat": {
         "score": 18.0,
@@ -905,114 +905,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0932,
-        "atr_pct": 0.0466,
-        "entry_price": 193.455,
-        "stop_price": 175.4164,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "country": "US",
-      "tier": "leader",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "정부+엔터프라이즈 AI OS, AIP",
-      "coingecko_id": "",
-      "scores": {
-        "short": 46.30948554227902,
-        "mid": 55.67891918905429,
-        "long": 64.25,
-        "composite": 56.76499310173876
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 136.5800018310547,
-        "rsi14": 40.5892969487621,
-        "ma50": 145.68699981689454,
-        "ma200": 163.84167510986327,
-        "vol_z20": -0.9092645957514781,
-        "ret_5d": -0.06471270990369915,
-        "ret_20d": 0.031804841498559,
-        "ret_60d": 0.057693771134006866
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.0914,
-        "atr_pct": 0.0457,
-        "entry_price": 136.58,
-        "stop_price": 124.0987,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "hyperscalers",
-      "theme_short": "하이퍼스케일러·AI",
-      "note": "AI 전용 GPU 클라우드 IPO 종목",
-      "coingecko_id": "",
-      "scores": {
-        "short": 41.120557125842865,
-        "mid": 69.92322839136872,
-        "long": 55.0,
-        "composite": 56.75326921843977
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 114.12989807128906,
-        "rsi14": 49.4258697678833,
-        "ma50": 96.49199783325196,
-        "ma200": 100.33432437896728,
-        "vol_z20": -0.9462886275863175,
-        "ret_5d": -0.09009090493815797,
-        "ret_20d": 0.035004094910030537,
-        "ret_60d": 0.19257995518029536
-      },
-      "overheat": {
-        "score": 18.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": [
-          "50일선 +18% 과이격"
-        ]
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.1798,
-        "atr_pct": 0.0899,
-        "entry_price": 114.1299,
-        "stop_price": 93.6098,
+        "stop_pct": 0.0931,
+        "atr_pct": 0.0465,
+        "entry_price": 193.84,
+        "stop_price": 175.8014,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1027,10 +923,10 @@
       "note": "맞춤형 ASIC·광인터커넥트",
       "coingecko_id": "",
       "scores": {
-        "short": 49.74109062404945,
+        "short": 52.47212884791186,
         "mid": 59.25,
         "long": 58.87429844833278,
-        "composite": 56.72249203534547
+        "composite": 57.40525159131107
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1041,14 +937,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 169.8699951171875,
-        "rsi14": 63.07042081591109,
-        "ma50": 120.35049774169921,
-        "ma200": 91.17002145767212,
-        "vol_z20": -1.1117231985637583,
-        "ret_5d": 0.03794446606453228,
-        "ret_20d": 0.29375469283291333,
-        "ret_60d": 1.1725043720464963
+        "last_close": 170.83999633789062,
+        "rsi14": 63.66690257821279,
+        "ma50": 120.36989776611328,
+        "ma200": 91.17487161636353,
+        "vol_z20": -0.5502327645637625,
+        "ret_5d": 0.04387139505755466,
+        "ret_20d": 0.3011423638013653,
+        "ret_60d": 1.1849099289632092
       },
       "overheat": {
         "score": 50.0,
@@ -1057,16 +953,120 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "50일선 +41% 극이격",
-          "200일선 +86% 장기 과열"
+          "50일선 +42% 극이격",
+          "200일선 +87% 장기 과열"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1159,
-        "atr_pct": 0.058,
-        "entry_price": 169.87,
-        "stop_price": 150.1743,
+        "stop_pct": 0.1153,
+        "atr_pct": 0.0576,
+        "entry_price": 170.84,
+        "stop_price": 151.1444,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "AI 전용 GPU 클라우드 IPO 종목",
+      "coingecko_id": "",
+      "scores": {
+        "short": 41.4770655881526,
+        "mid": 70.18201039605752,
+        "long": 55.0,
+        "composite": 56.93297003565828
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 114.69999694824219,
+        "rsi14": 49.74512036588632,
+        "ma50": 96.50339981079101,
+        "ma200": 100.33717487335205,
+        "vol_z20": -0.44051025614787376,
+        "ret_5d": -0.08554574926913106,
+        "ret_20d": 0.0401741220643661,
+        "ret_60d": 0.19853710141992842
+      },
+      "overheat": {
+        "score": 18.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "50일선 +19% 과이격"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.1789,
+        "atr_pct": 0.0895,
+        "entry_price": 114.7,
+        "stop_price": 94.1799,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "country": "US",
+      "tier": "leader",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "정부+엔터프라이즈 AI OS, AIP",
+      "coingecko_id": "",
+      "scores": {
+        "short": 46.47417483111611,
+        "mid": 55.75987700608259,
+        "long": 64.25,
+        "composite": 56.83450065990794
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 136.88999938964844,
+        "rsi14": 40.843080379469264,
+        "ma50": 145.6931997680664,
+        "ma200": 163.84322509765624,
+        "vol_z20": -0.3260688513390999,
+        "ret_5d": -0.06258987513560288,
+        "ret_20d": 0.03414674351585023,
+        "ret_60d": 0.060094433620429655
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0912,
+        "atr_pct": 0.0456,
+        "entry_price": 136.89,
+        "stop_price": 124.4087,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1081,10 +1081,10 @@
       "note": "Gemini·TPU 수직통합",
       "coingecko_id": "",
       "scores": {
-        "short": 51.12615029479714,
-        "mid": 58.31285014519365,
+        "short": 50.69190990741111,
+        "mid": 57.93616007304516,
         "long": 58.78700379014562,
-        "composite": 56.705836640575306
+        "composite": 56.46543501847683
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1095,14 +1095,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 390.7250061035156,
-        "rsi14": 84.15454394325216,
-        "ma50": 325.2870172119141,
-        "ma200": 287.01298812866213,
-        "vol_z20": -0.8886413737197352,
-        "ret_5d": 0.019504255977861984,
-        "ret_20d": 0.21603749983616183,
-        "ret_60d": 0.26537239025679393
+        "last_close": 388.6400146484375,
+        "rsi14": 82.15224385930637,
+        "ma50": 325.2453173828125,
+        "ma200": 287.0025633239746,
+        "vol_z20": 0.2399700569589129,
+        "ret_5d": 0.014063965162263603,
+        "ret_20d": 0.20954846597191712,
+        "ret_60d": 0.2586200949596811
       },
       "overheat": {
         "score": 58.0,
@@ -1111,16 +1111,16 @@
         "label": "과열",
         "guidance": "조정(10~15% 하락) 기다리는 게 안전. 지금은 관망.",
         "flags": [
-          "RSI 84 극과열",
-          "50일선 +20% 과이격"
+          "RSI 82 극과열",
+          "50일선 +19% 과이격"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0537,
-        "atr_pct": 0.0268,
-        "entry_price": 390.725,
-        "stop_price": 369.745,
+        "stop_pct": 0.0548,
+        "atr_pct": 0.0274,
+        "entry_price": 388.64,
+        "stop_price": 367.34,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1135,10 +1135,10 @@
       "note": "원자력·가스 발전",
       "coingecko_id": "",
       "scores": {
-        "short": 43.108303637210845,
-        "mid": 45.01329887447167,
+        "short": 43.04266122446824,
+        "mid": 44.931246755733156,
         "long": 74.27059496567506,
-        "composite": 56.23996850163782
+        "composite": 56.19483965689369
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1149,14 +1149,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 152.19000244140625,
-        "rsi14": 47.492625202761204,
-        "ma50": 157.96129974365235,
-        "ma200": 176.42988220214843,
-        "vol_z20": -0.18207462810274314,
-        "ret_5d": -0.05383900114082807,
-        "ret_20d": -0.037989852229910026,
-        "ret_60d": -0.06561863515764554
+        "last_close": 152.0500030517578,
+        "rsi14": 47.35674724488711,
+        "ma50": 157.95849975585938,
+        "ma200": 176.42918167114257,
+        "vol_z20": 0.5210951154839225,
+        "ret_5d": -0.05470937344008886,
+        "ret_20d": -0.03887480414109268,
+        "ret_60d": -0.06647817138655887
       },
       "overheat": {
         "score": 0.0,
@@ -1168,10 +1168,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0959,
-        "atr_pct": 0.0479,
-        "entry_price": 152.19,
-        "stop_price": 137.6006,
+        "stop_pct": 0.096,
+        "atr_pct": 0.048,
+        "entry_price": 152.05,
+        "stop_price": 137.4606,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1186,10 +1186,10 @@
       "note": "AWS·Bedrock·Anthropic 투자",
       "coingecko_id": "",
       "scores": {
-        "short": 38.12432611228289,
+        "short": 40.22024281878768,
         "mid": 65.5,
         "long": 57.23217348570988,
-        "composite": 55.348950922354675
+        "composite": 55.87293009898087
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1200,14 +1200,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 269.5249938964844,
-        "rsi14": 72.96573990569935,
-        "ma50": 232.43009979248046,
-        "ma200": 228.7107748413086,
-        "vol_z20": -1.417267182781226,
-        "ret_5d": -0.00928136008006697,
-        "ret_20d": 0.12353576465144944,
-        "ret_60d": 0.35032557943262077
+        "last_close": 268.989990234375,
+        "rsi14": 72.06294088793373,
+        "ma50": 232.41939971923827,
+        "ma200": 228.70809982299804,
+        "vol_z20": -0.6854340717918728,
+        "ret_5d": -0.01124792389596585,
+        "ret_20d": 0.121305560543439,
+        "ret_60d": 0.3476452004458992
       },
       "overheat": {
         "score": 38.0,
@@ -1216,16 +1216,67 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "RSI 73 과매수",
+          "RSI 72 과매수",
           "50일선 +16% 과이격"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0533,
-        "atr_pct": 0.0267,
-        "entry_price": 269.525,
-        "stop_price": 255.156,
+        "stop_pct": 0.0538,
+        "atr_pct": 0.0269,
+        "entry_price": 268.99,
+        "stop_price": 254.5257,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "데이터·AI 플랫폼",
+      "coingecko_id": "",
+      "scores": {
+        "short": 64.24195250267486,
+        "mid": 42.5,
+        "long": 61.28626985011705,
+        "composite": 55.44999606571554
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 151.5,
+        "rsi14": 50.5490878494859,
+        "ma50": 155.56600067138672,
+        "ma200": 205.11130043029786,
+        "vol_z20": -1.1182634129786093,
+        "ret_5d": 0.05055123047457566,
+        "ret_20d": 0.1285756391578432,
+        "ret_60d": -0.12382165987311844
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.1112,
+        "atr_pct": 0.0556,
+        "entry_price": 151.5,
+        "stop_price": 134.653,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1254,14 +1305,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 112.29499816894531,
-        "rsi14": 63.97447017460498,
-        "ma50": 85.94190048217773,
-        "ma200": 87.58597499847411,
-        "vol_z20": -0.1856823385813475,
-        "ret_5d": 0.2151822716028018,
-        "ret_20d": 0.3201857675999893,
-        "ret_60d": 0.3033309354225264
+        "last_close": 112.13999938964844,
+        "rsi14": 63.88625670103068,
+        "ma50": 85.9388005065918,
+        "ma200": 87.58520000457764,
+        "vol_z20": -0.0014240510109404497,
+        "ret_5d": 0.21350497722822737,
+        "ret_20d": 0.31836353877626866,
+        "ret_60d": 0.30153197102247
       },
       "overheat": {
         "score": 45.0,
@@ -1270,16 +1321,16 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "50일선 +31% 극이격",
-          "5일 +22% 급등"
+          "50일선 +30% 극이격",
+          "5일 +21% 급등"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1313,
-        "atr_pct": 0.0656,
-        "entry_price": 112.295,
-        "stop_price": 97.5507,
+        "stop_pct": 0.1315,
+        "atr_pct": 0.0657,
+        "entry_price": 112.14,
+        "stop_price": 97.3957,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1308,14 +1359,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 149.72999572753906,
-        "rsi14": 64.1551624563026,
-        "ma50": 114.36461380004883,
-        "ma200": 116.70182773590088,
-        "vol_z20": 0.164340795893995,
-        "ret_5d": 0.2169212826187772,
-        "ret_20d": 0.32422389786557115,
-        "ret_60d": 0.30756427285354726
+        "last_close": 149.1999969482422,
+        "rsi14": 63.92975057283806,
+        "ma50": 114.3540138244629,
+        "ma200": 116.6991784286499,
+        "vol_z20": 0.37343886917877134,
+        "ret_5d": 0.2126137503093395,
+        "ret_20d": 0.31953654683764743,
+        "ret_60d": 0.30293589184613956
       },
       "overheat": {
         "score": 45.0,
@@ -1324,16 +1375,16 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "50일선 +31% 극이격",
-          "5일 +22% 급등"
+          "50일선 +30% 극이격",
+          "5일 +21% 급등"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1297,
-        "atr_pct": 0.0649,
-        "entry_price": 149.73,
-        "stop_price": 130.3044,
+        "stop_pct": 0.1302,
+        "atr_pct": 0.0651,
+        "entry_price": 149.2,
+        "stop_price": 129.7744,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1348,10 +1399,10 @@
       "note": "Llama·자체 ASIC·광고 ROI 회수",
       "coingecko_id": "",
       "scores": {
-        "short": 50.41795693962622,
-        "mid": 44.42562764928857,
+        "short": 50.39854296930934,
+        "mid": 44.37422787864102,
         "long": 67.42366592617101,
-        "composite": 55.12292528262596
+        "composite": 55.100081870320096
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1362,14 +1413,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 599.02001953125,
-        "rsi14": 26.338574875759676,
-        "ma50": 625.4559631347656,
-        "ma200": 674.430592956543,
-        "vol_z20": -0.48652004637873714,
-        "ret_5d": -0.01865951428448298,
-        "ret_20d": -0.05596269384598518,
-        "ret_60d": -0.07737205966130756
+        "last_close": 598.8599853515625,
+        "rsi14": 26.310036765784545,
+        "ma50": 625.4527624511719,
+        "ma200": 674.429792175293,
+        "vol_z20": -0.14457911432190312,
+        "ret_5d": -0.018921689194344116,
+        "ret_20d": -0.05621490283893826,
+        "ret_60d": -0.07761854892840159
       },
       "overheat": {
         "score": 0.0,
@@ -1381,10 +1432,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.061,
-        "atr_pct": 0.0305,
-        "entry_price": 599.02,
-        "stop_price": 562.4557,
+        "stop_pct": 0.0612,
+        "atr_pct": 0.0306,
+        "entry_price": 598.86,
+        "stop_price": 562.2157,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1399,10 +1450,10 @@
       "note": "전력기기·가스터빈 글로벌 리더",
       "coingecko_id": "",
       "scores": {
-        "short": 45.08264963350652,
+        "short": 44.77685271165788,
         "mid": 59.25,
         "long": 57.12798804780876,
-        "composite": 54.85935762750013
+        "composite": 54.78290839703797
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1413,14 +1464,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 1077.340087890625,
-        "rsi14": 59.4028769175704,
-        "ma50": 948.5604040527344,
-        "ma200": 722.7233651733399,
-        "vol_z20": -0.9218771727500955,
-        "ret_5d": 0.003156698983086459,
-        "ret_20d": 0.08699258737408799,
-        "ret_60d": 0.3201620829959595
+        "last_close": 1073.0799560546875,
+        "rsi14": 59.02130979041668,
+        "ma50": 948.4752014160156,
+        "ma200": 722.7020645141602,
+        "vol_z20": -0.553885723003948,
+        "ret_5d": -0.0008100890700150076,
+        "ret_20d": 0.08269428660634515,
+        "ret_60d": 0.314941758809026
       },
       "overheat": {
         "score": 18.0,
@@ -1432,10 +1483,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1061,
-        "atr_pct": 0.0531,
-        "entry_price": 1077.3401,
-        "stop_price": 963.0237,
+        "stop_pct": 0.1065,
+        "atr_pct": 0.0533,
+        "entry_price": 1073.08,
+        "stop_price": 958.7635,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1450,10 +1501,10 @@
       "note": "첨단 노드·CoWoS 독점적",
       "coingecko_id": "",
       "scores": {
-        "short": 57.37661173928047,
-        "mid": 50.07525488840699,
+        "short": 57.48037172356895,
+        "mid": 50.10973706461432,
         "long": 56.38600035195125,
-        "composite": 54.42489228654306
+        "composite": 54.46290104428775
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1464,14 +1515,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 404.0,
-        "rsi14": 65.46143779928755,
-        "ma50": 363.65391235351564,
-        "ma200": 309.33617736816404,
-        "vol_z20": -0.6963460990199897,
-        "ret_5d": 0.005951083727027573,
-        "ret_20d": 0.0931623021171637,
-        "ret_60d": 0.10062048512106081
+        "last_close": 404.5400085449219,
+        "rsi14": 65.76717847795354,
+        "ma50": 363.6647125244141,
+        "ma200": 309.3388774108887,
+        "vol_z20": -0.061204477414250634,
+        "ret_5d": 0.007295693085903832,
+        "ret_20d": 0.09462348277095023,
+        "ret_60d": 0.10209163479106431
       },
       "overheat": {
         "score": 28.0,
@@ -1483,10 +1534,61 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0776,
-        "atr_pct": 0.0388,
-        "entry_price": 404.0,
-        "stop_price": 372.6543,
+        "stop_pct": 0.0775,
+        "atr_pct": 0.0387,
+        "entry_price": 404.54,
+        "stop_price": 373.1943,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "AI 데이터센터 네트워킹 스위치 1위, Meta·MSFT 핵심 공급",
+      "coingecko_id": "",
+      "scores": {
+        "short": 41.75,
+        "mid": 59.98990873163784,
+        "long": 56.787709497206706,
+        "composite": 54.14905185495593
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 136.42999267578125,
+        "rsi14": 23.89279792951217,
+        "ma50": 145.27960006713866,
+        "ma200": 138.75684947967528,
+        "vol_z20": 1.023039779710377,
+        "ret_5d": -0.2096512771700506,
+        "ret_20d": -0.10255236915227406,
+        "ret_60d": 0.009695068131534645
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.1302,
+        "atr_pct": 0.0651,
+        "entry_price": 136.43,
+        "stop_price": 118.6707,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1502,9 +1604,9 @@
       "coingecko_id": "",
       "scores": {
         "short": 58.75,
-        "mid": 56.0737000501415,
+        "mid": 55.38680945097736,
         "long": 50.0,
-        "composite": 54.31329501754952
+        "composite": 54.072883307842076
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1515,14 +1617,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 17.0393009185791,
-        "rsi14": 78.91612923025718,
-        "ma50": 12.952057952880859,
-        "ma200": 15.84386956691742,
-        "vol_z20": 1.3765131278280605,
-        "ret_5d": 0.29281491077718513,
-        "ret_20d": 0.5762534927989651,
-        "ret_60d": 0.08058938835575091
+        "last_close": 16.834999084472656,
+        "rsi14": 78.30121494463174,
+        "ma50": 12.94797191619873,
+        "ma200": 15.842848086357117,
+        "vol_z20": 1.5822421572301504,
+        "ret_5d": 0.27731401325245475,
+        "ret_20d": 0.5573541564274602,
+        "ret_60d": 0.06763308251832512
       },
       "overheat": {
         "score": 75.0,
@@ -1531,36 +1633,36 @@
         "label": "극과열",
         "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
         "flags": [
-          "RSI 79 과매수",
-          "50일선 +32% 극이격",
-          "5일 +29% 급등",
-          "20일 +58% 폭등"
+          "RSI 78 과매수",
+          "50일선 +30% 극이격",
+          "5일 +28% 급등",
+          "20일 +56% 폭등"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1214,
-        "atr_pct": 0.0607,
-        "entry_price": 17.0393,
-        "stop_price": 14.9709,
+        "stop_pct": 0.1229,
+        "atr_pct": 0.0614,
+        "entry_price": 16.835,
+        "stop_price": 14.7666,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
     },
     {
-      "ticker": "ANET",
-      "name": "Arista Networks",
+      "ticker": "SOXL",
+      "name": "SOXL (3x 반도체)",
       "country": "US",
-      "tier": "momentum",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "AI 데이터센터 네트워킹 스위치 1위, Meta·MSFT 핵심 공급",
+      "tier": "leader",
+      "theme": "leveraged",
+      "theme_short": "레버리지",
+      "note": "필라델피아 반도체 3배. NVDA·AVGO 베타 노출",
       "coingecko_id": "",
       "scores": {
-        "short": 40.25,
-        "mid": 60.27321275635217,
-        "long": 56.787709497206706,
-        "composite": 53.873208263605946
+        "short": 57.25,
+        "mid": 56.25,
+        "long": 50.0,
+        "composite": 54.0
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1571,29 +1673,35 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 137.08999633789062,
-        "rsi14": 24.120975140173925,
-        "ma50": 145.29280014038085,
-        "ma200": 138.76014949798585,
-        "vol_z20": 0.3880590436085113,
-        "ret_5d": -0.20582782866594584,
-        "ret_20d": -0.09821081117595354,
-        "ret_60d": 0.01457964247996446
+        "last_close": 190.4199981689453,
+        "rsi14": 78.313400828869,
+        "ma50": 82.62960014343261,
+        "ma200": 52.57361472129822,
+        "vol_z20": -0.9533926581085977,
+        "ret_5d": 0.49290469316316554,
+        "ret_20d": 1.3637041204035167,
+        "ret_60d": 2.017749647760156
       },
       "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
+        "score": 95.0,
+        "level": "extreme",
+        "emoji": "🔴",
+        "label": "극과열",
+        "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
+        "flags": [
+          "RSI 78 과매수",
+          "50일선 +130% 극이격",
+          "200일선 +262% 장기 과열",
+          "5일 +49% 급등",
+          "20일 +136% 폭등"
+        ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1295,
-        "atr_pct": 0.0648,
-        "entry_price": 137.09,
-        "stop_price": 119.3307,
+        "stop_pct": 0.1542,
+        "atr_pct": 0.0771,
+        "entry_price": 190.42,
+        "stop_price": 161.06,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1609,9 +1717,9 @@
       "coingecko_id": "",
       "scores": {
         "short": 62.25,
-        "mid": 52.104462209311166,
+        "mid": 51.87061174835024,
         "long": 50.0,
-        "composite": 53.799061773258906
+        "composite": 53.71721411192259
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1622,14 +1730,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 78.37899780273438,
-        "rsi14": 60.88883836038131,
-        "ma50": 61.13097984313965,
-        "ma200": 86.51394479751588,
-        "vol_z20": -0.5687855607468367,
-        "ret_5d": 0.14255101379196589,
-        "ret_20d": 0.45307748977071993,
-        "ret_60d": 0.22620463153914439
+        "last_close": 78.12999725341797,
+        "rsi14": 60.75387853127804,
+        "ma50": 61.12599983215332,
+        "ma200": 86.51269979476929,
+        "vol_z20": 0.0265905592983661,
+        "ret_5d": 0.13892126809437189,
+        "ret_20d": 0.44846123920238745,
+        "ret_60d": 0.22230912846578277
       },
       "overheat": {
         "score": 37.0,
@@ -1643,10 +1751,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1878,
-        "atr_pct": 0.0939,
-        "entry_price": 78.379,
-        "stop_price": 63.659,
+        "stop_pct": 0.1884,
+        "atr_pct": 0.0942,
+        "entry_price": 78.13,
+        "stop_price": 63.41,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1661,10 +1769,10 @@
       "note": "비트코인 선물 2배",
       "coingecko_id": "",
       "scores": {
-        "short": 57.64998912156963,
+        "short": 57.689763232645696,
         "mid": 55.0,
         "long": 50.0,
-        "composite": 53.66249728039241
+        "composite": 53.672440808161426
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1675,14 +1783,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 21.04990005493164,
-        "rsi14": 69.35544584175537,
-        "ma50": 17.20883153915405,
-        "ma200": 33.69732878684997,
-        "vol_z20": -0.9756094785606656,
-        "ret_5d": 0.04414187570709549,
-        "ret_20d": 0.22771581344859437,
-        "ret_60d": 0.46733018794924175
+        "last_close": 21.059999465942383,
+        "rsi14": 69.39266678472433,
+        "ma50": 17.209033527374267,
+        "ma200": 33.697379336357116,
+        "vol_z20": -0.8005756351276571,
+        "ret_5d": 0.04464283855864237,
+        "ret_20d": 0.22830485218854313,
+        "ret_60d": 0.4680341898978446
       },
       "overheat": {
         "score": 28.0,
@@ -1696,28 +1804,28 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0901,
+        "stop_pct": 0.09,
         "atr_pct": 0.045,
-        "entry_price": 21.0499,
-        "stop_price": 19.154,
+        "entry_price": 21.06,
+        "stop_price": 19.1641,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
     },
     {
-      "ticker": "ARM",
-      "name": "ARM Holdings",
+      "ticker": "ASML",
+      "name": "ASML",
       "country": "US",
-      "tier": "supporting",
+      "tier": "leader",
       "theme": "semiconductors",
       "theme_short": "반도체·HBM·패키징",
-      "note": "데이터센터 CPU IP 침투",
+      "note": "EUV 독점",
       "coingecko_id": "",
       "scores": {
-        "short": 54.06374393126318,
-        "mid": 63.75,
-        "long": 44.154374364191256,
-        "composite": 53.4901857284923
+        "short": 62.37844882179612,
+        "mid": 50.7754140241993,
+        "long": 50.22364851772912,
+        "composite": 53.455466521010436
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1728,31 +1836,29 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 213.30999755859375,
-        "rsi14": 60.865316457249925,
-        "ma50": 160.30430114746093,
-        "ma200": 142.9710252761841,
-        "vol_z20": -0.3376505080146029,
-        "ret_5d": 0.04944407814307894,
-        "ret_20d": 0.3536616009643694,
-        "ret_60d": 0.7457238177966503
+        "last_close": 1565.81005859375,
+        "rsi14": 60.068322523420235,
+        "ma50": 1402.2284790039062,
+        "ma200": 1136.004610595703,
+        "vol_z20": 0.4131194442238655,
+        "ret_5d": 0.12956197309012674,
+        "ret_20d": 0.04601400669159128,
+        "ret_60d": 0.11540517398276395
       },
       "overheat": {
-        "score": 40.0,
-        "level": "mild",
-        "emoji": "🟡",
-        "label": "약과열",
-        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
-        "flags": [
-          "50일선 +33% 극이격"
-        ]
+        "score": 25.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1734,
-        "atr_pct": 0.0867,
-        "entry_price": 213.31,
-        "stop_price": 176.3279,
+        "stop_pct": 0.0782,
+        "atr_pct": 0.0391,
+        "entry_price": 1565.8101,
+        "stop_price": 1443.3668,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1781,14 +1887,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 76.71759796142578,
-        "rsi14": 86.67304825062621,
-        "ma50": 52.861177368164064,
-        "ma200": 51.497237606048586,
-        "vol_z20": -1.6351862284848802,
-        "ret_5d": 0.18190715811358027,
-        "ret_20d": 0.5143623804283288,
-        "ret_60d": 0.5923008899234825
+        "last_close": 76.95999908447266,
+        "rsi14": 86.79458582683222,
+        "ma50": 52.866025390625,
+        "ma200": 51.498449611663816,
+        "vol_z20": -1.2512815850358199,
+        "ret_5d": 0.18564157668346204,
+        "ret_20d": 0.5191472427215975,
+        "ret_60d": 0.5973320109987288
       },
       "overheat": {
         "score": 87.0,
@@ -1798,142 +1904,34 @@
         "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
         "flags": [
           "RSI 87 극과열",
-          "50일선 +45% 극이격",
-          "20일 +51% 폭등"
+          "50일선 +46% 극이격",
+          "20일 +52% 폭등"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0736,
-        "atr_pct": 0.0368,
-        "entry_price": 76.7176,
-        "stop_price": 71.0747,
+        "stop_pct": 0.0733,
+        "atr_pct": 0.0367,
+        "entry_price": 76.96,
+        "stop_price": 71.3171,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
     },
     {
-      "ticker": "SOXL",
-      "name": "SOXL (3x 반도체)",
-      "country": "US",
-      "tier": "leader",
-      "theme": "leveraged",
-      "theme_short": "레버리지",
-      "note": "필라델피아 반도체 3배. NVDA·AVGO 베타 노출",
-      "coingecko_id": "",
-      "scores": {
-        "short": 55.0,
-        "mid": 56.25,
-        "long": 50.0,
-        "composite": 53.4375
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 189.26119995117188,
-        "rsi14": 78.15817070074164,
-        "ma50": 82.60642417907715,
-        "ma200": 52.56782073020935,
-        "vol_z20": -1.1892044797175887,
-        "ret_5d": 0.48381964267278477,
-        "ret_20d": 1.3493198322593845,
-        "ret_60d": 1.999385174768153
-      },
-      "overheat": {
-        "score": 95.0,
-        "level": "extreme",
-        "emoji": "🔴",
-        "label": "극과열",
-        "guidance": "회피하거나 차익실현. 지금 진입은 단기 손실 위험 매우 큼.",
-        "flags": [
-          "RSI 78 과매수",
-          "50일선 +129% 극이격",
-          "200일선 +260% 장기 과열",
-          "5일 +48% 급등",
-          "20일 +135% 폭등"
-        ]
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.1551,
-        "atr_pct": 0.0776,
-        "entry_price": 189.2612,
-        "stop_price": 159.9012,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "ASML",
-      "name": "ASML",
-      "country": "US",
-      "tier": "leader",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "EUV 독점",
-      "coingecko_id": "",
-      "scores": {
-        "short": 62.223828667346005,
-        "mid": 50.71012810800625,
-        "long": 50.22364851772912,
-        "composite": 53.39396141173033
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 1562.8800048828125,
-        "rsi14": 59.74790620007454,
-        "ma50": 1402.1698779296876,
-        "ma200": 1135.9899545288085,
-        "vol_z20": -0.1445845642520133,
-        "ret_5d": 0.12744825742402677,
-        "ret_20d": 0.044056631845786676,
-        "ret_60d": 0.11331794951304608
-      },
-      "overheat": {
-        "score": 25.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.0783,
-        "atr_pct": 0.0392,
-        "entry_price": 1562.88,
-        "stop_price": 1440.4367,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake",
+      "ticker": "ARM",
+      "name": "ARM Holdings",
       "country": "US",
       "tier": "supporting",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "데이터·AI 플랫폼",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "데이터센터 CPU IP 침투",
       "coingecko_id": "",
       "scores": {
-        "short": 55.89891576819579,
-        "mid": 42.5,
-        "long": 61.28626985011705,
-        "composite": 53.36423688209577
+        "short": 53.79668009113841,
+        "mid": 63.75,
+        "long": 44.154374364191256,
+        "composite": 53.4234197684611
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1944,14 +1942,67 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 148.97999572753906,
-        "rsi14": 48.51485124388839,
-        "ma50": 155.5156005859375,
-        "ma200": 205.09870040893554,
-        "vol_z20": -1.513570989580258,
-        "ret_5d": 0.03307668533111019,
-        "ret_20d": 0.10980326006561136,
-        "ret_60d": -0.13839574014082456
+        "last_close": 212.64999389648438,
+        "rsi14": 60.64024344154792,
+        "ma50": 160.29110107421874,
+        "ma200": 142.96772525787352,
+        "vol_z20": -0.10178724155035325,
+        "ret_5d": 0.04619698732370403,
+        "ret_20d": 0.3494732289981286,
+        "ret_60d": 0.7403223639221743
+      },
+      "overheat": {
+        "score": 40.0,
+        "level": "mild",
+        "emoji": "🟡",
+        "label": "약과열",
+        "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
+        "flags": [
+          "50일선 +33% 극이격"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.1739,
+        "atr_pct": 0.087,
+        "entry_price": 212.65,
+        "stop_price": 175.6679,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "country": "US",
+      "tier": "leader",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "OpenAI 파트너·Azure AI",
+      "coingecko_id": "",
+      "scores": {
+        "short": 57.473976999017886,
+        "mid": 45.218659778379376,
+        "long": 57.73911026746211,
+        "composite": 53.29066927917209
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 412.6600036621094,
+        "rsi14": 43.47480671968571,
+        "ma50": 398.5453991699219,
+        "ma200": 463.8918469238281,
+        "vol_z20": -0.14128302099345466,
+        "ret_5d": -0.002320950308038472,
+        "ret_20d": 0.07360098057679232,
+        "ret_60d": 0.029270089066365523
       },
       "overheat": {
         "score": 0.0,
@@ -1963,10 +2014,63 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1131,
-        "atr_pct": 0.0565,
-        "entry_price": 148.98,
-        "stop_price": 132.133,
+        "stop_pct": 0.0572,
+        "atr_pct": 0.0286,
+        "entry_price": 412.66,
+        "stop_price": 389.0571,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "country": "US",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "원자력·MSFT PPA 수혜",
+      "coingecko_id": "",
+      "scores": {
+        "short": 59.10643557489649,
+        "mid": 48.09595404428778,
+        "long": 53.10730211817169,
+        "composite": 52.85311365649352
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 299.69000244140625,
+        "rsi14": 59.466206271042424,
+        "ma50": 301.3010772705078,
+        "ma200": 326.3903936004639,
+        "vol_z20": 3.7232530050558177,
+        "ret_5d": -0.06653164978575432,
+        "ret_20d": 0.027320722567368172,
+        "ret_60d": 0.08681597438453359
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "거래량 Z=3.7 폭증"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0991,
+        "atr_pct": 0.0496,
+        "entry_price": 299.69,
+        "stop_price": 269.98,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -1982,9 +2086,9 @@
       "coingecko_id": "",
       "scores": {
         "short": 57.25,
-        "mid": 54.96867297515444,
+        "mid": 54.60351317689642,
         "long": 47.985453840186196,
-        "composite": 52.74571707737853
+        "composite": 52.617911147988224
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1995,14 +2099,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 447.7200012207031,
-        "rsi14": 78.67162712516651,
-        "ma50": 384.0936010742187,
-        "ma200": 405.09730041503906,
-        "vol_z20": 0.08073644576923719,
-        "ret_5d": 0.1406588114480063,
-        "ret_20d": 0.27041593599085,
-        "ret_60d": 0.07348884685600976
+        "last_close": 445.0,
+        "rsi14": 78.11477213042578,
+        "ma50": 384.03920104980466,
+        "ma200": 405.08370040893556,
+        "vol_z20": 0.6323683446437421,
+        "ret_5d": 0.13372904875908187,
+        "ret_20d": 0.2626978691471211,
+        "ret_60d": 0.0669671570367063
       },
       "overheat": {
         "score": 45.0,
@@ -2011,16 +2115,16 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "RSI 79 과매수",
-          "50일선 +17% 과이격"
+          "RSI 78 과매수",
+          "50일선 +16% 과이격"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0692,
-        "atr_pct": 0.0346,
-        "entry_price": 447.72,
-        "stop_price": 416.7457,
+        "stop_pct": 0.0696,
+        "atr_pct": 0.0348,
+        "entry_price": 445.0,
+        "stop_price": 414.0257,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2058,57 +2162,6 @@
         "flags": []
       },
       "guidance": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "MSFT",
-      "name": "Microsoft",
-      "country": "US",
-      "tier": "leader",
-      "theme": "hyperscalers",
-      "theme_short": "하이퍼스케일러·AI",
-      "note": "OpenAI 파트너·Azure AI",
-      "coingecko_id": "",
-      "scores": {
-        "short": 54.80776124428593,
-        "mid": 44.97855350274328,
-        "long": 57.73911026746211,
-        "composite": 52.540078144016476
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 410.42138671875,
-        "rsi14": 42.397726885095636,
-        "ma50": 398.50062683105466,
-        "ma200": 463.8806541442871,
-        "vol_z20": -1.3793084245339098,
-        "ret_5d": -0.007733205445087932,
-        "ret_20d": 0.06777686066161293,
-        "ret_60d": 0.023686457407786632
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.0575,
-        "atr_pct": 0.0288,
-        "entry_price": 410.4214,
-        "stop_price": 386.8185,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
       "in_focus": false
     },
     {
@@ -2156,10 +2209,10 @@
       "note": "전력관리·배전",
       "coingecko_id": "",
       "scores": {
-        "short": 50.30943119534717,
-        "mid": 55.13215674341504,
+        "short": 50.52101378140275,
+        "mid": 55.243839156955175,
         "long": 50.30253253881135,
-        "composite": 51.994625674556595
+        "composite": 52.08661016580954
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2170,14 +2223,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 417.8299865722656,
-        "rsi14": 53.6983335125203,
-        "ma50": 382.6818658447266,
-        "ma200": 361.4392691040039,
-        "vol_z20": -0.349276625329041,
-        "ret_5d": -0.00817951364082925,
-        "ret_20d": 0.03873627509554556,
-        "ret_60d": 0.0767585222212217
+        "last_close": 419.0,
+        "rsi14": 54.12709530940534,
+        "ma50": 382.7052648925781,
+        "ma200": 361.44511932373047,
+        "vol_z20": 0.7903511389756241,
+        "ret_5d": -0.005402203911429204,
+        "ret_20d": 0.04164495907896848,
+        "ret_60d": 0.07977367663788137
       },
       "overheat": {
         "score": 8.0,
@@ -2189,10 +2242,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0786,
-        "atr_pct": 0.0393,
-        "entry_price": 417.83,
-        "stop_price": 384.9677,
+        "stop_pct": 0.0784,
+        "atr_pct": 0.0392,
+        "entry_price": 419.0,
+        "stop_price": 386.1377,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2207,10 +2260,10 @@
       "note": "반도체 장비",
       "coingecko_id": "",
       "scores": {
-        "short": 59.49124406959767,
+        "short": 59.44923979487473,
         "mid": 50.25,
         "long": 48.60528886408038,
-        "composite": 51.90242656303157
+        "composite": 51.89192549435083
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2221,14 +2274,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 443.8399963378906,
-        "rsi14": 64.72197519392225,
-        "ma50": 374.46579895019534,
-        "ma200": 275.83532402038577,
-        "vol_z20": -0.9845446052842992,
-        "ret_5d": 0.13403850682353013,
-        "ret_20d": 0.12157274913684679,
-        "ret_60d": 0.35324928726152116
+        "last_close": 443.6199951171875,
+        "rsi14": 64.67575827348276,
+        "ma50": 374.4613989257812,
+        "ma200": 275.8342237091064,
+        "vol_z20": 0.735428414755492,
+        "ret_5d": 0.13347639016463497,
+        "ret_20d": 0.12101681146571908,
+        "ret_60d": 0.35257851288884257
       },
       "overheat": {
         "score": 45.0,
@@ -2237,16 +2290,16 @@
         "label": "약과열",
         "guidance": "분할매수만. 한 번에 들어가지 말고 1/3~1/2씩 나눠서.",
         "flags": [
-          "50일선 +19% 과이격",
+          "50일선 +18% 과이격",
           "200일선 +61% 장기 과열"
         ]
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0806,
+        "stop_pct": 0.0807,
         "atr_pct": 0.0403,
-        "entry_price": 443.84,
-        "stop_price": 408.0586,
+        "entry_price": 443.62,
+        "stop_price": 407.8386,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2261,10 +2314,10 @@
       "note": "이더리움 선물 2배",
       "coingecko_id": "",
       "scores": {
-        "short": 49.94178579351555,
+        "short": 49.98355488610888,
         "mid": 55.0,
         "long": 50.0,
-        "composite": 51.73544644837889
+        "composite": 51.74588872152722
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2275,14 +2328,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 27.0049991607666,
-        "rsi14": 51.96837667125022,
-        "ma50": 24.772208099365233,
-        "ma200": 74.22428175926208,
-        "vol_z20": -0.5361271859354348,
-        "ret_5d": -0.01835699977875871,
-        "ret_20d": 0.044385431298139544,
-        "ret_60d": 0.341065508142828
+        "last_close": 27.020000457763672,
+        "rsi14": 52.02307468547847,
+        "ma50": 24.772508239746095,
+        "ma200": 74.22435623168946,
+        "vol_z20": -0.37200356463896905,
+        "ret_5d": -0.017811696366462737,
+        "ret_20d": 0.04496558817728058,
+        "ret_60d": 0.3418104710239749
       },
       "overheat": {
         "score": 8.0,
@@ -2295,9 +2348,9 @@
       "guidance": {
         "suggested_pct": 0.0,
         "stop_pct": 0.1143,
-        "atr_pct": 0.0572,
-        "entry_price": 27.005,
-        "stop_price": 23.9179,
+        "atr_pct": 0.0571,
+        "entry_price": 27.02,
+        "stop_price": 23.9329,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2347,10 +2400,10 @@
       "note": "엔터프라이즈 워크플로우 AI",
       "coingecko_id": "",
       "scores": {
-        "short": 55.79196080875307,
-        "mid": 38.0,
+        "short": 56.17116803419478,
+        "mid": 38.043081093689906,
         "long": 60.12564766839378,
-        "composite": 51.29824926954578
+        "composite": 51.40812945869767
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2361,14 +2414,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 91.02999877929688,
-        "rsi14": 39.37485228835591,
-        "ma50": 101.6315998840332,
-        "ma200": 146.91474990844728,
-        "vol_z20": -0.7200770112888727,
-        "ret_5d": -0.010220750559201353,
-        "ret_20d": 0.022119933468525366,
-        "ret_60d": -0.11869495621610993
+        "last_close": 91.48999786376953,
+        "rsi14": 39.94886903910212,
+        "ma50": 101.64079986572266,
+        "ma200": 146.91704990386964,
+        "vol_z20": -0.4574653190866265,
+        "ret_5d": -0.005219129613597717,
+        "ret_20d": 0.02728498059498663,
+        "ret_60d": -0.1142414846274239
       },
       "overheat": {
         "score": 0.0,
@@ -2380,10 +2433,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1208,
-        "atr_pct": 0.0604,
-        "entry_price": 91.03,
-        "stop_price": 80.0371,
+        "stop_pct": 0.1202,
+        "atr_pct": 0.0601,
+        "entry_price": 91.49,
+        "stop_price": 80.4971,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2398,10 +2451,10 @@
       "note": "검사·계측",
       "coingecko_id": "",
       "scores": {
-        "short": 49.702183196028855,
-        "mid": 58.73580478450418,
+        "short": 49.678356652254706,
+        "mid": 58.67774875624892,
         "long": 45.69804766784774,
-        "composite": 51.26229654072277
+        "composite": 51.23602029488989
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2412,14 +2465,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 1845.739990234375,
-        "rsi14": 54.49723546296925,
-        "ma50": 1623.6299926757813,
-        "ma200": 1284.9617028808593,
-        "vol_z20": -0.9652866432028759,
-        "ret_5d": 0.07728856728255895,
-        "ret_20d": 0.043510193276036224,
-        "ret_60d": 0.27383148304300464
+        "last_close": 1845.18994140625,
+        "rsi14": 54.45261085301464,
+        "ma50": 1623.6189916992187,
+        "ma200": 1284.9589529418945,
+        "vol_z20": 0.5259963681910056,
+        "ret_5d": 0.0769675246020507,
+        "ret_20d": 0.04319921688608708,
+        "ret_60d": 0.27345186862375614
       },
       "overheat": {
         "score": 18.0,
@@ -2433,112 +2486,8 @@
         "suggested_pct": 0.0,
         "stop_pct": 0.0902,
         "atr_pct": 0.0451,
-        "entry_price": 1845.74,
-        "stop_price": 1679.3113,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy",
-      "country": "US",
-      "tier": "leader",
-      "theme": "power_grid",
-      "theme_short": "전력·그리드",
-      "note": "원자력·MSFT PPA 수혜",
-      "coingecko_id": "",
-      "scores": {
-        "short": 51.77807660457831,
-        "mid": 47.88842670218337,
-        "long": 53.10730211817169,
-        "composite": 50.948389344177436
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 298.3299865722656,
-        "rsi14": 58.777966985121935,
-        "ma50": 301.273876953125,
-        "ma200": 326.38359352111814,
-        "vol_z20": 3.052167574625457,
-        "ret_5d": -0.07076779967160218,
-        "ret_20d": 0.02265866352633683,
-        "ret_60d": 0.08188392139658829
-      },
-      "overheat": {
-        "score": 15.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": [
-          "거래량 Z=3.1 폭증"
-        ]
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.0996,
-        "atr_pct": 0.0498,
-        "entry_price": 298.33,
-        "stop_price": 268.62,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
-      "ticker": "SYM",
-      "name": "Symbotic",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "embodied_ai",
-      "theme_short": "로보틱스·Embodied",
-      "note": "물류 자동화",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.449544252867696,
-        "mid": 41.509456329817425,
-        "long": 61.17233799265352,
-        "composite": 50.85963097571443
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 52.209999084472656,
-        "rsi14": 27.50104588814267,
-        "ma50": 54.812199935913085,
-        "ma200": 58.675450000762936,
-        "vol_z20": -0.2712492073696051,
-        "ret_5d": -0.08403510378118151,
-        "ret_20d": -0.04394802232292916,
-        "ret_60d": -0.04569548605073048
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.143,
-        "atr_pct": 0.0715,
-        "entry_price": 52.21,
-        "stop_price": 44.7443,
+        "entry_price": 1845.1899,
+        "stop_price": 1678.7613,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2684,19 +2633,19 @@
       "in_focus": false
     },
     {
-      "ticker": "CRM",
-      "name": "Salesforce",
+      "ticker": "SYM",
+      "name": "Symbotic",
       "country": "US",
-      "tier": "supporting",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "Agentforce",
+      "tier": "momentum",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "물류 자동화",
       "coingecko_id": "",
       "scores": {
-        "short": 51.76279587012914,
-        "mid": 41.60401040261177,
-        "long": 57.1265385770039,
-        "composite": 50.35271803924796
+        "short": 46.782051957569074,
+        "mid": 41.01342616201727,
+        "long": 61.17233799265352,
+        "composite": 50.519147343159716
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2707,14 +2656,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 176.86500549316406,
-        "rsi14": 41.85418340923297,
-        "ma50": 185.65791931152344,
-        "ma200": 225.36220031738281,
-        "vol_z20": -1.5938466792162171,
-        "ret_5d": -0.046447004705725714,
-        "ret_20d": 0.023405844216617178,
-        "ret_60d": -0.04380440459484358
+        "last_close": 51.709999084472656,
+        "rsi14": 26.93726879555662,
+        "ma50": 54.80219993591309,
+        "ma200": 58.67295000076294,
+        "vol_z20": 0.3424203118192365,
+        "ret_5d": -0.09280703360574283,
+        "ret_20d": -0.05310385448575139,
+        "ret_60d": -0.054834583260876646
       },
       "overheat": {
         "score": 0.0,
@@ -2726,10 +2675,61 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.0848,
-        "atr_pct": 0.0424,
-        "entry_price": 176.865,
-        "stop_price": 161.8736,
+        "stop_pct": 0.1444,
+        "atr_pct": 0.0722,
+        "entry_price": 51.71,
+        "stop_price": 44.2443,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "Agentforce",
+      "coingecko_id": "",
+      "scores": {
+        "short": 52.021689636542426,
+        "mid": 41.73388379307342,
+        "long": 57.1265385770039,
+        "composite": 50.462897167512864
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 177.49000549316406,
+        "rsi14": 42.27433857350687,
+        "ma50": 185.67041931152343,
+        "ma200": 225.36532539367676,
+        "vol_z20": -1.2028375898547419,
+        "ret_5d": -0.04307736908788751,
+        "ret_20d": 0.027022323637472034,
+        "ret_60d": -0.04042543063975379
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0845,
+        "atr_pct": 0.0422,
+        "entry_price": 177.49,
+        "stop_price": 162.4986,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2744,10 +2744,10 @@
       "note": "데이터센터 REIT, 글로벌 colocation 1위",
       "coingecko_id": "",
       "scores": {
-        "short": 48.29321078506332,
-        "mid": 49.02205769897782,
+        "short": 48.33439922272055,
+        "mid": 49.013945952321464,
         "long": 52.20280898876405,
-        "composite": 50.112146486413685
+        "composite": 50.11960448449827
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -2758,14 +2758,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 1085.6300048828125,
-        "rsi14": 46.82327107979933,
-        "ma50": 1021.9575927734375,
-        "ma200": 849.6826577758789,
-        "vol_z20": -2.0279389394980605,
-        "ret_5d": 0.002243402714622089,
-        "ret_20d": 0.027241625973288608,
-        "ret_60d": 0.1395565413324773
+        "last_close": 1086.219970703125,
+        "rsi14": 47.05113598581403,
+        "ma50": 1021.9693920898437,
+        "ma200": 849.6856094360352,
+        "vol_z20": -1.370337908658088,
+        "ret_5d": 0.0027880536072613094,
+        "ret_20d": 0.027799861694299155,
+        "ret_60d": 0.14017581254520728
       },
       "overheat": {
         "score": 0.0,
@@ -2777,10 +2777,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.045,
+        "stop_pct": 0.0449,
         "atr_pct": 0.0225,
-        "entry_price": 1085.63,
-        "stop_price": 1036.8081,
+        "entry_price": 1086.22,
+        "stop_price": 1037.3981,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -2923,6 +2923,57 @@
         "flags": []
       },
       "guidance": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "country": "US",
+      "tier": "leader",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "다빈치 수술로봇 독점",
+      "coingecko_id": "",
+      "scores": {
+        "short": 46.06193941671315,
+        "mid": 38.0,
+        "long": 62.13825774385373,
+        "composite": 49.67078795171978
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 420.05999755859375,
+        "rsi14": 36.399259667424495,
+        "ma50": 468.4273999023437,
+        "ma200": 498.2933010864258,
+        "vol_z20": 2.020563174406433,
+        "ret_5d": -0.0713827967486147,
+        "ret_20d": -0.08475682983424448,
+        "ret_60d": -0.12231510196065554
+      },
+      "overheat": {
+        "score": 8.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0719,
+        "atr_pct": 0.0359,
+        "entry_price": 420.06,
+        "stop_price": 389.8586,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
       "in_focus": false
     },
     {
@@ -3128,7 +3179,7 @@
         "rsi14": 42.17791509191273,
         "ma50": 0.7362399959564209,
         "ma200": 3.573684999346733,
-        "vol_z20": -0.888434901214174,
+        "vol_z20": -0.8831608194443469,
         "ret_5d": 0.6901409633101498,
         "ret_20d": -0.23076917198752767,
         "ret_60d": -0.661016932029691
@@ -3224,57 +3275,6 @@
       "in_focus": false
     },
     {
-      "ticker": "ISRG",
-      "name": "Intuitive Surgical",
-      "country": "US",
-      "tier": "leader",
-      "theme": "embodied_ai",
-      "theme_short": "로보틱스·Embodied",
-      "note": "다빈치 수술로봇 독점",
-      "coingecko_id": "",
-      "scores": {
-        "short": 42.79875646994009,
-        "mid": 38.0,
-        "long": 62.13825774385373,
-        "composite": 48.85499221502651
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 418.4649963378906,
-        "rsi14": 35.90051064949856,
-        "ma50": 468.3954998779297,
-        "ma200": 498.28532608032225,
-        "vol_z20": 0.6062433541328776,
-        "ret_5d": -0.0749088301280375,
-        "ret_20d": -0.08823208094632151,
-        "ret_60d": -0.12564774132622658
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 0.0722,
-        "atr_pct": 0.0361,
-        "entry_price": 418.465,
-        "stop_price": 388.2636,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "in_focus": false
-    },
-    {
       "ticker": "042700",
       "name": "한미반도체",
       "country": "KR",
@@ -3354,10 +3354,10 @@
       "note": "하락에 베팅. 보험용·단기 헤지",
       "coingecko_id": "",
       "scores": {
-        "short": 38.0,
+        "short": 40.25,
         "mid": 35.0,
         "long": 50.0,
-        "composite": 41.75
+        "composite": 42.3125
       },
       "label": "TRIM",
       "label_quant": "TRIM",
@@ -3368,14 +3368,14 @@
         "next_trigger": ""
       },
       "metrics": {
-        "last_close": 42.350101470947266,
-        "rsi14": 13.988708725426534,
-        "ma50": 65.7243285369873,
-        "ma200": 70.96379913330078,
-        "vol_z20": -1.317298732447328,
-        "ret_5d": -0.16155013109765326,
-        "ret_20d": -0.35412381168136287,
-        "ret_60d": -0.41594677719275674
+        "last_close": 42.220001220703125,
+        "rsi14": 13.903225615713765,
+        "ma50": 65.72172653198243,
+        "ma200": 70.96314859390259,
+        "vol_z20": -0.7504487232560217,
+        "ret_5d": -0.16412586371629168,
+        "ret_20d": -0.35610795459503763,
+        "ret_60d": -0.4177409988782761
       },
       "overheat": {
         "score": 0.0,
@@ -3387,10 +3387,10 @@
       },
       "guidance": {
         "suggested_pct": 0.0,
-        "stop_pct": 0.1059,
-        "atr_pct": 0.053,
-        "entry_price": 42.3501,
-        "stop_price": 37.8651,
+        "stop_pct": 0.1062,
+        "atr_pct": 0.0531,
+        "entry_price": 42.22,
+        "stop_price": 37.735,
         "basis": "라벨/과열도 기준 신규 진입 비추천"
       },
       "in_focus": false
@@ -3406,9 +3406,9 @@
       "coingecko_id": "",
       "scores": {
         "short": 62.25,
-        "mid": 32.29244428239896,
+        "mid": 32.25336897510611,
         "long": 22.0,
-        "composite": 35.664855498839636
+        "composite": 35.651179141287145
       },
       "label": "TRIM",
       "label_quant": "TRIM",
@@ -3423,7 +3423,7 @@
         "rsi14": 57.570093058115404,
         "ma50": 11.639399967193604,
         "ma200": 24.63409998893738,
-        "vol_z20": 0.015101762440592411,
+        "vol_z20": 0.4055474606237499,
         "ret_5d": 0.09113297445530955,
         "ret_20d": 0.38726514276544455,
         "ret_60d": -0.05003572699909975
@@ -3448,85 +3448,18 @@
     }
   ],
   "focus_tickers": [
-    "ALAB",
-    "NBIS",
-    "MU",
+    "SMCI",
+    "NVDA",
     "APP",
-    "NVDA"
+    "NBIS",
+    "MU"
   ],
   "top_news": [
     {
-      "title": "Low-Cost Airlines ‘Ripe’ For Mergers, Deutsche Bank Analyst Says",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/low-cost-airlines-ripe-for-mergers-deutsche-bank-analyst-says",
-      "summary": "The US airline industry is primed for a new round of mergers as low-cost carriers are squeezed by the oil-price spike, according to Deutsche Bank analyst Michael Linenberg.",
-      "published": "Mon, 11 May 2026 19:04:51 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Ramaphosa Defies Calls to Resign as Parliament Prepares Inquiry",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/ramaphosa-says-won-t-resign-over-court-ruling-denies-wrongdoing",
-      "summary": "South African President Cyril Ramaphosa said he would contest a report that criticized his handling of a robbery at his farm in 2020 after a ruling by the nation’s top court resurrected the scandal, and rejected calls to stand down.",
-      "published": "Mon, 11 May 2026 18:40:24 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "010120",
-        "ARM"
-      ],
-      "matched_names": [
-        "LS ELECTRIC",
-        "ARM Holdings"
-      ],
-      "matched_themes": [
-        "power_grid",
-        "semiconductors"
-      ]
-    },
-    {
-      "title": "Telus CEO of 26 Years Urges Successor to Take Risks, Trust Team",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/telus-ceo-darren-entwistle-urges-successor-to-take-risks-trust-team",
-      "summary": "Telus Corp. Chief Executive Officer Darren Entwistle shared parting words of wisdom for his replacement, shortly before he leaves the job he’s occupied for 26 years.",
-      "published": "Mon, 11 May 2026 18:58:00 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Healthcare Firm Accendra Inks Discount Debt Exchange, New Funds",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/healthcare-firm-accendra-inks-discount-debt-exchange-new-funds",
-      "summary": "Accendra Health Inc. has reached an agreement with a majority of its creditors to push out the maturities of its existing debt through debt exchanges, some of them at a discount.",
-      "published": "Mon, 11 May 2026 18:57:21 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Carlyle BDC Cuts Dividend Even As It Flags Better Credit Market",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/carlyle-bdc-cuts-dividend-even-as-it-flags-better-credit-market",
-      "summary": "A private credit fund managed by Carlyle Group Inc. cut the value of its assets in the first quarter and lowered its dividend, while reporting that it originated more loan deals.",
-      "published": "Mon, 11 May 2026 18:54:08 GMT",
+      "title": "Saudi Arabian Oil Exports to China Set for Deep Drop in June",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/saudi-arabian-oil-exports-to-china-set-for-deep-plunge-in-june",
+      "summary": "Saudi Arabian crude oil exports to China for loading in June are set to plunge to around 13 million to 14 million barrels, according to traders informed by the producer.",
+      "published": "Mon, 11 May 2026 08:59:45 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "GEV",
@@ -3541,58 +3474,10 @@
       ]
     },
     {
-      "title": "Onex Seeks $1 Billion to Hang Onto OneDigital Stake For Longer",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/onex-seeks-1-billion-to-hang-onto-onedigital-stake-for-longer",
-      "summary": "Onex Partners aims to raise $1 billion to extend its minority ownership of insurance brokerage and employer adviser OneDigital, as more private asset firms tap the booming secondaries market.",
-      "published": "Mon, 11 May 2026 18:52:26 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "United Revives Junk-Rated Muni Sale for Its Biggest Kitchen Ever",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/united-revives-junk-rated-muni-sale-in-tough-time-for-airlines",
-      "summary": "United Airlines Holding Inc. is returning to the municipal bond market with a junk-rated $256 million sale, after last year’s volatility forced it to postpone the deal.",
-      "published": "Mon, 11 May 2026 18:12:26 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Pimco Scorns Daily Marks on Private Assets That Apollo Heralded",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/pimco-scorns-daily-marks-on-private-assets-that-apollo-heralded",
-      "summary": "More frequently marking assets does little to improve transparency or accuracy in the $1.8 trillion private credit market, according to Pacific Investment Management Co. strategist Lotfi Karoui.",
-      "published": "Mon, 11 May 2026 18:06:39 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Crop Futures Advance Ahead of Key USDA Report, China Summit",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/crop-futures-advance-ahead-of-key-usda-report-china-summit",
-      "summary": "Grain and oilseed futures rose ahead of a key US government supply-and-demand report and a summit between President Donald Trump and Xi Jinping, who leads the world’s biggest importer of soybeans.",
-      "published": "Mon, 11 May 2026 17:54:55 GMT",
+      "title": "US Unleashes Another Wave of Emergency Oil as Gas Prices Bite",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/us-unleashes-another-wave-of-emergency-oil-as-gas-prices-bite",
+      "summary": "The US Strategic Petroleum Reserve awarded 53.3 million barrels to companies including oil trader Trafigura Group and US refiner Marathon Petroleum Corp, adding to a wave of oil released to help tame surging prices stemming from the Iran war.",
+      "published": "Mon, 11 May 2026 22:06:51 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "GEV",
@@ -3607,16 +3492,132 @@
       ]
     },
     {
-      "title": "Goldman, BofA Delay Fed Cut Calls After ‘Last Straw’ Jobs Data",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-11/bond-watchers-delay-fed-cut-calls-after-last-straw-jobs-data",
-      "summary": "Goldman Sachs &amp; Co and Bank of America Corp are the latest in a growing cohort of Wall Street banks pushing back their forecasts for interest-rate cuts, arguing that both jobs and inflation data make a case for the Federal Reserve to keep rates on hold until at least the end of the year.",
-      "published": "Mon, 11 May 2026 15:39:40 GMT",
+      "title": "Gen Z Shoppers Driving Traffic Growth at Simon’s Malls, CEO Says",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/gen-z-shoppers-driving-traffic-growth-at-simon-s-malls-ceo-says",
+      "summary": "Mall owner Simon Property Group Inc. is seeing strong interest from Gen Z shoppers and the brands that target them, Chief Executive Officer Eli Simon said on a call with investors.",
+      "published": "Mon, 11 May 2026 22:06:09 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Sunshine Silver Files for IPO Seeking Funds to Reopen Idaho Mine",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/sunshine-silver-files-for-ipo-seeking-funds-to-reopen-idaho-mine",
+      "summary": "Sunshine Silver Mining &amp; Refining Co. filed for a US initial public offering, and is seeking funds to restart a mine in Idaho that previously produced silver, antimony and other minerals.",
+      "published": "Mon, 11 May 2026 21:52:08 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "010120"
       ],
       "matched_names": [
         "LS ELECTRIC"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Radio Station Owner Spanish Broadcasting Files Bankruptcy",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/radio-station-owner-spanish-broadcasting-files-for-bankruptcy",
+      "summary": "Radio station owner Spanish Broadcasting System Inc. filed for bankruptcy on Monday after announcing plans to hand ownership to noteholders in exchange for restructuring the debt.",
+      "published": "Mon, 11 May 2026 19:25:16 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "SEC Moves to End ‘Gag Rule’ Criticized by Musk and Cuban",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/sec-moves-to-end-gag-rule-on-firms-settling-agency-accusations",
+      "summary": "The White House is reviewing a plan for the Securities and Exchange Commission to end its decades-old policy that lets companies and people settle enforcement actions without admitting wrongdoing if they also promise not to dispute the allegations.",
+      "published": "Mon, 11 May 2026 15:57:01 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Another Record Setting Day for US Equities | Closing Bell",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-11/another-record-setting-day-for-us-equities-closing-bell",
+      "summary": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Katie Greifeld, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+      "published": "Mon, 11 May 2026 21:24:56 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Market Still Expecting Strait of Hormuz to Reopen: Renaud-Chatelain",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-11/market-still-expecting-hormuz-to-reopen-renaud-chatelain-video",
+      "summary": "Pictet Wealth Management Senior Fixed Income Strategist Laureline Renaud-Chatelain says short-term inflation rates have not priced in the worse-case scenario of an extended closure of the Strait of Hormuz. She speaks to Bloomberg's Tom Mackenzie, Anna Edwards and Guy Johnson on \"The Opening Trade.\" (Source: Bloomberg)",
+      "published": "Mon, 11 May 2026 20:44:43 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Emerging Currencies Drop as Iran Conflict Dims Risk Appetite",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/emerging-stocks-set-to-close-at-record-high-on-tech-bets",
+      "summary": "Emerging-market currencies weakened against the dollar on Monday as oil advanced and tensions in the Middle East escalated, with President Donald Trump and Iran’s leadership rejecting each other’s peace proposals and signaling no end in sight to the 10-week-old war.",
+      "published": "Mon, 11 May 2026 05:27:57 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "010120"
+      ],
+      "matched_names": [
+        "LS ELECTRIC"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "UK Fintech Wise Makes US Trading Debut With Dual Listing",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-11/uk-fintech-wise-makes-us-trading-debut-with-dual-listing",
+      "summary": "Wise Group Plc made its trading debut in the US with a Nasdaq listing as the financial technology firm tries to take advantage of a larger stock market and its legions of investors.",
+      "published": "Mon, 11 May 2026 10:07:17 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
       ],
       "matched_themes": [
         "power_grid"
