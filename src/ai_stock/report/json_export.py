@@ -145,6 +145,11 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
         for c in context.get("label_changes", [])
     ]
 
+    upcoming_events_out = [
+        e.to_dict() if hasattr(e, "to_dict") else e
+        for e in context.get("upcoming_events", [])
+    ]
+
     return _serialize({
         "asset_class": asset_class,
         "date": context["date"],
@@ -159,6 +164,7 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
         "focus_tickers": list(focus_tickers),
         "top_news": context.get("top_news", []),
         "label_changes": label_changes_out,
+        "upcoming_events": upcoming_events_out,
         "social": context.get("social"),  # only set for coin context
     })
 

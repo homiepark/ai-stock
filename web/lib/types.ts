@@ -82,6 +82,15 @@ export interface LabelChange {
   new_label: LabelText;
 }
 
+export interface UpcomingEvent {
+  date: string;          // YYYY-MM-DD
+  name: string;
+  kind: "macro" | "earnings";
+  impact: "high" | "med";
+  ticker?: string;
+  note?: string;
+}
+
 export interface SocialPulse {
   trending: Array<{
     ticker: string;
@@ -130,6 +139,7 @@ export interface DailyContext {
   focus_tickers: string[];
   top_news: NewsItem[];
   label_changes: LabelChange[];
+  upcoming_events?: UpcomingEvent[];
   social: SocialPulse | null;
 }
 

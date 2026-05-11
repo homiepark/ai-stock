@@ -10,6 +10,7 @@ import { NewsList } from "@/components/news-list";
 import { LabelChangesPanel } from "@/components/label-changes";
 import { SearchPalette } from "@/components/search-palette";
 import { BeginnerGuide } from "@/components/beginner-guide";
+import { UpcomingEvents } from "@/components/upcoming-events";
 
 export const revalidate = 3600;
 
@@ -43,6 +44,16 @@ export default async function StockDashboard() {
       <section>
         <h2 className="text-lg font-semibold text-white mb-3">📊 매크로 스냅샷</h2>
         <MacroGrid macro={ctx.macro} />
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-white mb-3">
+          🗓 다가오는 트리거{" "}
+          <span className="text-xs font-normal text-slate-500">
+            — 14일 내 FOMC·CPI·실적
+          </span>
+        </h2>
+        <UpcomingEvents events={ctx.upcoming_events} />
       </section>
 
       <Movers verdicts={ctx.verdicts} asset="stock" />
