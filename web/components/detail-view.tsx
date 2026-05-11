@@ -6,6 +6,7 @@ import { ScoreBars } from "./score-bars";
 import { MetricsGrid } from "./metrics-grid";
 import { OverheatBadge, BuyTimingGuide } from "./overheat-badge";
 import { Term } from "./glossary";
+import { LivePriceBadge } from "./live-price-badge";
 
 export function DetailView({
   verdict,
@@ -55,6 +56,22 @@ export function DetailView({
           )}
         </h1>
         <p className="text-sm text-slate-300 max-w-3xl">{verdict.note}</p>
+        {(() => {
+          const kind =
+            asset === "coin"
+              ? "coin"
+              : verdict.country === "KR"
+              ? "stock_kr"
+              : "stock_us";
+          const symbol =
+            asset === "coin" ? verdict.coingecko_id : verdict.ticker;
+          if (!symbol) return null;
+          return (
+            <div className="pt-1">
+              <LivePriceBadge symbol={symbol} kind={kind} />
+            </div>
+          );
+        })()}
         <div className="flex flex-wrap gap-2 text-xs">
           <a
             href={xUrl}
