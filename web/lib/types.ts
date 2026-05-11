@@ -157,3 +157,24 @@ export interface Manifest {
   stock: string[];
   coin: string[];
 }
+
+export interface BacktestBucket {
+  return_5d?: { n: number; mean: number | null };
+  return_20d?: { n: number; mean: number | null };
+  return_60d?: { n: number; mean: number | null };
+}
+
+export interface BacktestSummary {
+  generated_at: string;
+  n_records: number;
+  n_with_5d: number;
+  n_with_20d: number;
+  n_with_60d: number;
+  by_label: Record<string, BacktestBucket>;
+  by_overheat: Record<string, BacktestBucket>;
+  signal_ic: {
+    return_5d: number | null;
+    return_20d: number | null;
+    return_60d: number | null;
+  };
+}

@@ -53,6 +53,11 @@ export async function loadManifest(): Promise<Manifest> {
   return m ?? { stock: [], coin: [] };
 }
 
+export async function loadBacktestSummary() {
+  const p = path.join(DATA_DIR, "backtest-summary.json");
+  return readJson<import("./types").BacktestSummary>(p);
+}
+
 // Helpers for client-side filtering ----------------------------------------
 
 export function filterVerdicts(
