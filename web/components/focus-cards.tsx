@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import type { Verdict, AssetClass } from "@/lib/types";
 import { LabelBadge } from "./label-badge";
 
@@ -21,28 +22,33 @@ export function FocusCards({
           <Link
             key={f.ticker}
             href={detailHref}
-            className="bg-slate-900 border border-slate-800 rounded-lg p-4 space-y-3 hover:border-slate-700 transition-colors"
+            className="group bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4 hover:border-slate-600 hover:bg-slate-900/80 transition-all"
           >
-            <div className="flex items-start justify-between gap-2">
-              <div className="min-w-0">
-                <div className="text-xs text-slate-500 mb-0.5">{f.theme_short}</div>
-                <div className="font-semibold text-white truncate">
-                  {f.name}{" "}
-                  <span className="text-slate-500 font-mono text-sm">{f.ticker}</span>
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0 flex-1">
+                <div className="text-xs text-slate-500 mb-1">{f.theme_short}</div>
+                <div className="flex items-baseline gap-2 flex-wrap">
+                  <span className="font-bold text-lg text-white">{f.name}</span>
+                  <span className="text-slate-500 font-mono text-sm">
+                    {f.ticker}
+                  </span>
                 </div>
               </div>
-              <LabelBadge label={f.label} />
+              <LabelBadge label={f.label} size="md" />
             </div>
 
-            <div className="grid grid-cols-4 gap-2 text-center">
-              <ScoreCell label="단기" value={f.scores.short} />
-              <ScoreCell label="중기" value={f.scores.mid} />
-              <ScoreCell label="장기" value={f.scores.long} />
-              <ScoreCell
-                label="종합"
-                value={f.scores.composite}
-                highlight
-              />
+            {/* Score bars */}
+            <div className="space-y-2">
+              <ScoreLine label="단기" value={f.scores.short} />
+              <ScoreLine label="중기" value={f.scores.mid} />
+              <ScoreLine label="장기" value={f.scores.long} />
+              <div className="pt-2 border-t border-slate-800">
+                <ScoreLine
+                  label="종합"
+                  value={f.scores.composite}
+                  highlight
+                />
+              </div>
             </div>
 
             {f.narrative.summary && (
@@ -51,25 +57,41 @@ export function FocusCards({
               </p>
             )}
 
-            <div className="space-y-1 text-xs">
+            <div className="space-y-1.5 text-xs">
               {f.narrative.entry_guide && (
-                <div>
-                  <span className="text-emerald-400 font-medium">진입</span>{" "}
-                  <span className="text-slate-300">{f.narrative.entry_guide}</span>
+                <div className="flex gap-2">
+                  <span className="text-emerald-400 font-semibold w-12 flex-shrink-0">
+                    진입
+                  </span>
+                  <span className="text-slate-300 line-clamp-2">
+                    {f.narrative.entry_guide}
+                  </span>
                 </div>
               )}
               {f.narrative.risks && (
-                <div>
-                  <span className="text-rose-400 font-medium">리스크</span>{" "}
-                  <span className="text-slate-300">{f.narrative.risks}</span>
+                <div className="flex gap-2">
+                  <span className="text-rose-400 font-semibold w-12 flex-shrink-0">
+                    리스크
+                  </span>
+                  <span className="text-slate-300 line-clamp-2">
+                    {f.narrative.risks}
+                  </span>
                 </div>
               )}
               {f.narrative.next_trigger && (
-                <div>
-                  <span className="text-sky-400 font-medium">트리거</span>{" "}
-                  <span className="text-slate-300">{f.narrative.next_trigger}</span>
+                <div className="flex gap-2">
+                  <span className="text-sky-400 font-semibold w-12 flex-shrink-0">
+                    트리거
+                  </span>
+                  <span className="text-slate-300 line-clamp-2">
+                    {f.narrative.next_trigger}
+                  </span>
                 </div>
               )}
+            </div>
+
+            <div className="flex items-center justify-end text-xs text-slate-500 group-hover:text-sky-400 transition-colors">
+              상세 보기 <ArrowRight className="size-3 ml-1" />
             </div>
           </Link>
         );
@@ -78,7 +100,7 @@ export function FocusCards({
   );
 }
 
-function ScoreCell({
+function ScoreLine({
   label,
   value,
   highlight,
@@ -87,22 +109,40 @@ function ScoreCell({
   value: number;
   highlight?: boolean;
 }) {
+  const pct = Math.max(0, Math.min(100, value));
+  const color =
+    value >= 70
+      ? "bg-emerald-500"
+      : value >= 55
+        ? "bg-lime-500"
+        : value >= 45
+          ? "bg-slate-500"
+          : value >= 30
+            ? "bg-amber-500"
+            : "bg-rose-500";
+
   return (
-    <div
-      className={`rounded p-2 ${
-        highlight ? "bg-sky-950 ring-1 ring-sky-800" : "bg-slate-950"
-      }`}
-    >
-      <div className={`text-xs ${highlight ? "text-sky-300" : "text-slate-500"}`}>
+    <div className="flex items-center gap-3 text-xs">
+      <span
+        className={`w-8 flex-shrink-0 ${
+          highlight ? "text-sky-300 font-semibold" : "text-slate-400"
+        }`}
+      >
         {label}
+      </span>
+      <div className="flex-1 h-2 bg-slate-800 rounded-full overflow-hidden">
+        <div
+          className={`h-full ${color} rounded-full`}
+          style={{ width: `${pct}%` }}
+        />
       </div>
-      <div
-        className={`font-mono text-sm tabular-nums ${
-          highlight ? "font-semibold text-sky-300" : "text-white"
+      <span
+        className={`w-8 text-right font-mono tabular-nums ${
+          highlight ? "text-sky-300 font-semibold" : "text-white"
         }`}
       >
         {value.toFixed(0)}
-      </div>
+      </span>
     </div>
   );
 }

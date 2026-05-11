@@ -1,7 +1,10 @@
+import Link from "next/link";
 import { loadLatest } from "@/lib/data";
+import { HeroStats } from "@/components/hero-stats";
 import { MacroGrid } from "@/components/macro-grid";
 import { ThemeRankings } from "@/components/theme-rankings";
 import { FocusCards } from "@/components/focus-cards";
+import { Movers } from "@/components/movers";
 import { VerdictMatrix } from "@/components/verdict-matrix";
 import { NewsList } from "@/components/news-list";
 import { LabelChangesPanel } from "@/components/label-changes";
@@ -15,14 +18,21 @@ export default async function CoinDashboard() {
 
   if (ctx.universe_size === 0) {
     return (
-      <div className="text-center py-20 space-y-4">
-        <h1 className="text-2xl font-semibold text-white">데이터 준비 중</h1>
+      <div className="max-w-xl mx-auto py-20 text-center space-y-6">
+        <div className="text-6xl">🪙</div>
+        <h1 className="text-2xl font-semibold text-white">코인 데이터 준비 중</h1>
         <p className="text-slate-400 text-sm">
-          코인 데이터는 첫 빌드 후 표시됩니다.
+          첫 빌드 후 표시됩니다.{" "}
+          <Link href="/" className="text-sky-400 underline">
+            주식 탭
+          </Link>
+          으로 가서 데이터가 있는지 먼저 확인해보세요.
         </p>
       </div>
     );
   }
+
+  const subtitle = `워치리스트 ${ctx.universe_size}코인 · 6대 매집 기준(기관·실사용·거래량·시대흐름·생태계·매출 실체)`;
 
   return (
     <div className="space-y-8">
@@ -32,20 +42,22 @@ export default async function CoinDashboard() {
         asset="coin"
       />
 
-      <section className="space-y-2">
-        <div className="text-sm text-slate-400">{ctx.date}</div>
-        <h1 className="text-2xl sm:text-3xl font-bold text-white">
-          AI 코인 일일 리포트
-        </h1>
-        <p className="text-sm text-slate-400">
-          워치리스트 {ctx.universe_size}코인 · 6대 매집 기준(기관·실사용·거래량·시대흐름·생태계·매출 실체)
-        </p>
-      </section>
+      <HeroStats
+        verdicts={ctx.verdicts}
+        date={ctx.date}
+        title="AI 코인 일일 리포트"
+        subtitle={subtitle}
+        asset="coin"
+      />
 
       <section>
         <h2 className="text-lg font-semibold text-white mb-3">📊 글로벌 스냅샷</h2>
         <MacroGrid macro={ctx.macro} />
       </section>
+
+      {ctx.social && <TwitterPulse social={ctx.social} />}
+
+      <Movers verdicts={ctx.verdicts} asset="coin" />
 
       <section>
         <h2 className="text-lg font-semibold text-white mb-3">
@@ -60,8 +72,6 @@ export default async function CoinDashboard() {
         </h2>
         <FocusCards verdicts={ctx.verdicts} asset="coin" />
       </section>
-
-      {ctx.social && <TwitterPulse social={ctx.social} />}
 
       <section>
         <h2 className="text-lg font-semibold text-white mb-3">
