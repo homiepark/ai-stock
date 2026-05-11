@@ -7,6 +7,7 @@ import { MetricsGrid } from "./metrics-grid";
 import { OverheatBadge, BuyTimingGuide } from "./overheat-badge";
 import { Term } from "./glossary";
 import { LivePriceBadge } from "./live-price-badge";
+import { PositionGuide } from "./position-guide";
 
 export function DetailView({
   verdict,
@@ -126,6 +127,15 @@ export function DetailView({
           overheat={verdict.overheat}
         />
       </section>
+
+      {verdict.guidance && (
+        <section>
+          <PositionGuide
+            guidance={verdict.guidance}
+            currency={verdict.country === "KR" ? "KRW" : "USD"}
+          />
+        </section>
+      )}
 
       <section>
         <h2 className="text-base font-semibold text-white mb-3">

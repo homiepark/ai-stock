@@ -27,6 +27,15 @@ export interface Overheat {
   flags: string[];
 }
 
+export interface PositionGuidance {
+  suggested_pct: number;   // 0.0~0.05 — fraction of total portfolio
+  stop_pct: number;        // 0.02~0.30 — drop from entry to cut
+  atr_pct: number;         // ATR / price
+  entry_price: number;     // most recent close
+  stop_price: number;      // entry × (1 - stop_pct)
+  basis: string;           // short Korean rationale
+}
+
 export interface Verdict {
   ticker: string;
   name: string;
@@ -42,6 +51,7 @@ export interface Verdict {
   narrative: Narrative;
   metrics: Record<string, number | null>;
   overheat: Overheat | null;
+  guidance?: PositionGuidance | null;
   in_focus: boolean;
 }
 

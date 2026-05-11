@@ -25,6 +25,7 @@ from ai_stock.judge.verdict import Narrative, generate_narrative, label_with_emo
 from ai_stock.signals.long_term import long_term_signal
 from ai_stock.signals.mid_term import mid_term_signal
 from ai_stock.signals.overheat import OverheatResult, overheat_signal
+from ai_stock.signals.sizing import PositionGuidance, position_guidance
 from ai_stock.signals.short_term import latest_metrics, short_term_signal
 from ai_stock.signals.theme import StockMomentum, ThemeRanking, rank_theme, stock_momentum
 
@@ -40,6 +41,7 @@ class StockResult:
     theme_short: str = ""
     label_emoji: str = ""
     overheat: OverheatResult | None = None
+    guidance: PositionGuidance | None = None
 
 
 @dataclass
@@ -108,6 +110,13 @@ def assemble_daily_context(
 
         metrics = latest_metrics(prices)
         overheat = overheat_signal(prices)
+        guidance = position_guidance(
+            prices,
+            label=composite.label,
+            overheat_level=overheat.level if overheat else "normal",
+            tier=stock.tier,
+            is_leveraged=(stock.theme == "leveraged"),
+        )
         results.append(StockResult(
             stock=stock,
             composite=composite,
@@ -116,6 +125,7 @@ def assemble_daily_context(
             theme_short=_theme_short(universe.themes[stock.theme].name),
             label_emoji=label_with_emoji(composite.label).split()[0],
             overheat=overheat,
+            guidance=guidance,
         ))
 
     # Theme rankings
