@@ -138,6 +138,14 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
                 }
                 if tp is not None else None
             ),
+            "derivatives": (
+                getattr(v, "derivatives").to_dict()
+                if getattr(v, "derivatives", None) is not None else None
+            ),
+            "multi_tf": (
+                getattr(v, "multi_tf").to_dict()
+                if getattr(v, "multi_tf", None) is not None else None
+            ),
             "in_focus": False,
         })
 

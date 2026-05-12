@@ -77,6 +77,34 @@ export interface TradePlan {
   zones: ConfluenceZone[];
 }
 
+export interface DerivativesContext {
+  symbol: string;
+  funding_rate_8h: number;
+  funding_rate_annual: number;
+  long_short_ratio: number | null;
+  oi_change_24h_pct: number | null;
+  bias: "long_crowded" | "short_crowded" | "neutral";
+  bias_note: string;
+  source: string;
+}
+
+export interface TFSummary {
+  timeframe: "weekly" | "daily" | "4h";
+  trend: "up" | "down" | "neutral";
+  rsi: number | null;
+  last_close: number | null;
+  ma_50: number | null;
+  ma_200: number | null;
+  note: string;
+}
+
+export interface MultiTFContext {
+  timeframes: TFSummary[];
+  bias_score: number;
+  bias: "bullish" | "bearish" | "mixed";
+  note: string;
+}
+
 export interface Verdict {
   ticker: string;
   name: string;
@@ -94,6 +122,8 @@ export interface Verdict {
   overheat: Overheat | null;
   guidance?: PositionGuidance | null;
   trade_plan?: TradePlan | null;
+  derivatives?: DerivativesContext | null;
+  multi_tf?: MultiTFContext | null;
   in_focus: boolean;
 }
 

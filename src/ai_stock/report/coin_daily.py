@@ -107,7 +107,20 @@ def assemble_coin_context(
             except Exception as e:
                 log.debug("trade plan failed for %s: %s", coin.ticker, e)
                 trade_plan = None
-            results.append(StockResult(
+
+            # Derivatives + multi-TF context (best-effort; majors only)
+            try:
+                from ai_stock.data.derivatives import fetch_derivatives, fetch_4h_klines
+                from ai_stock.signals.multi_tf import build_multi_tf
+                derivatives = fetch_derivatives(coin.ticker, cache=cache)
+                h4 = fetch_4h_klines(coin.ticker, cache=cache) if derivatives else None
+                multi_tf = build_multi_tf(prices, h4)
+            except Exception as e:
+                log.debug("derivatives/multi_tf failed for %s: %s", coin.ticker, e)
+                derivatives = None
+                multi_tf = None
+
+            r = StockResult(
                 stock=coin,
                 composite=composite,
                 narrative=Narrative(label=composite.label, summary="", entry_guide="", risks="", next_trigger=""),
@@ -117,7 +130,11 @@ def assemble_coin_context(
                 overheat=overheat,
                 guidance=guidance,
                 trade_plan=trade_plan,
-            ))
+            )
+            # Attach extra context as attributes so json_export can pick them up
+            r.derivatives = derivatives  # type: ignore[attr-defined]
+            r.multi_tf = multi_tf        # type: ignore[attr-defined]
+            results.append(r)
         except Exception as e:
             log.warning("Coin %s (%s) failed: %s; continuing", coin.ticker, coin.coingecko_id, e)
             failed_coins.append(f"{coin.ticker}({coin.coingecko_id})")
