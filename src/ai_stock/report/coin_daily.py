@@ -94,6 +94,7 @@ def assemble_coin_context(
             metrics = latest_metrics(prices)
             overheat = overheat_signal(prices)
             from ai_stock.signals.sizing import position_guidance as _pg
+            from ai_stock.signals.trade_plan import generate_plan as _gp
             guidance = _pg(
                 prices,
                 label=composite.label,
@@ -101,6 +102,11 @@ def assemble_coin_context(
                 tier=coin.tier,
                 is_leveraged=False,
             )
+            try:
+                trade_plan = _gp(prices, name=coin.name)
+            except Exception as e:
+                log.debug("trade plan failed for %s: %s", coin.ticker, e)
+                trade_plan = None
             results.append(StockResult(
                 stock=coin,
                 composite=composite,
@@ -110,6 +116,7 @@ def assemble_coin_context(
                 label_emoji=label_with_emoji(composite.label).split()[0],
                 overheat=overheat,
                 guidance=guidance,
+                trade_plan=trade_plan,
             ))
         except Exception as e:
             log.warning("Coin %s (%s) failed: %s; continuing", coin.ticker, coin.coingecko_id, e)

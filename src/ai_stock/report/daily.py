@@ -26,6 +26,7 @@ from ai_stock.signals.long_term import long_term_signal
 from ai_stock.signals.mid_term import mid_term_signal
 from ai_stock.signals.overheat import OverheatResult, overheat_signal
 from ai_stock.signals.sizing import PositionGuidance, position_guidance
+from ai_stock.signals.trade_plan import TradePlan, generate_plan
 from ai_stock.signals.short_term import latest_metrics, short_term_signal
 from ai_stock.signals.theme import StockMomentum, ThemeRanking, rank_theme, stock_momentum
 
@@ -42,6 +43,7 @@ class StockResult:
     label_emoji: str = ""
     overheat: OverheatResult | None = None
     guidance: PositionGuidance | None = None
+    trade_plan: TradePlan | None = None
 
 
 @dataclass
@@ -117,6 +119,11 @@ def assemble_daily_context(
             tier=stock.tier,
             is_leveraged=(stock.theme == "leveraged"),
         )
+        try:
+            trade_plan = generate_plan(prices, name=stock.name)
+        except Exception as e:
+            log.debug("trade plan failed for %s: %s", stock.ticker, e)
+            trade_plan = None
         results.append(StockResult(
             stock=stock,
             composite=composite,
@@ -126,6 +133,7 @@ def assemble_daily_context(
             label_emoji=label_with_emoji(composite.label).split()[0],
             overheat=overheat,
             guidance=guidance,
+            trade_plan=trade_plan,
         ))
 
     # Theme rankings

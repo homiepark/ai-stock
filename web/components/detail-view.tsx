@@ -8,6 +8,8 @@ import { OverheatBadge, BuyTimingGuide } from "./overheat-badge";
 import { Term } from "./glossary";
 import { LivePriceBadge } from "./live-price-badge";
 import { PositionGuide } from "./position-guide";
+import { TradePlanCard } from "./trade-plan-card";
+import { TradePlanChart } from "./trade-plan-chart";
 
 export function DetailView({
   verdict,
@@ -136,6 +138,30 @@ export function DetailView({
           />
         </section>
       )}
+
+      {verdict.trade_plan && (() => {
+        const kind =
+          asset === "coin"
+            ? "coin"
+            : verdict.country === "KR"
+            ? "stock_kr"
+            : "stock_us";
+        const symbol =
+          asset === "coin" ? verdict.coingecko_id : verdict.ticker;
+        const currency: "USD" | "KRW" =
+          verdict.country === "KR" ? "KRW" : "USD";
+        if (!symbol) return null;
+        return (
+          <section className="space-y-3">
+            <TradePlanCard plan={verdict.trade_plan} currency={currency} />
+            <TradePlanChart
+              symbol={symbol}
+              kind={kind}
+              plan={verdict.trade_plan}
+            />
+          </section>
+        );
+      })()}
 
       <section>
         <h2 className="text-base font-semibold text-white mb-3">
