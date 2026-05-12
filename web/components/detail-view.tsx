@@ -10,6 +10,7 @@ import { LivePriceBadge } from "./live-price-badge";
 import { PositionGuide } from "./position-guide";
 import { TradePlanCard } from "./trade-plan-card";
 import { TradePlanChart } from "./trade-plan-chart";
+import { MarketStructure } from "./market-structure";
 
 export function DetailView({
   verdict,
@@ -135,6 +136,15 @@ export function DetailView({
           <PositionGuide
             guidance={verdict.guidance}
             currency={verdict.country === "KR" ? "KRW" : "USD"}
+          />
+        </section>
+      )}
+
+      {(verdict.derivatives || verdict.multi_tf) && (
+        <section>
+          <MarketStructure
+            derivatives={verdict.derivatives}
+            multiTf={verdict.multi_tf}
           />
         </section>
       )}
