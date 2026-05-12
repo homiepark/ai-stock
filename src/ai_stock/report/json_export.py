@@ -73,6 +73,7 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
         c = v.composite
         oh = v.overheat
         g = getattr(v, "guidance", None)
+        tp = getattr(v, "trade_plan", None)
         verdicts_out.append({
             "ticker": v.stock.ticker,
             "name": v.stock.name,
@@ -118,6 +119,24 @@ def _shape_context(context: dict[str, Any], asset_class: str) -> dict[str, Any]:
                     "basis": g.basis,
                 }
                 if g is not None else None
+            ),
+            "trade_plan": (
+                {
+                    "side": tp.side,
+                    "entry": tp.entry,
+                    "entry_low": tp.entry_low,
+                    "entry_high": tp.entry_high,
+                    "stop_loss": tp.stop_loss,
+                    "stop_pct": tp.stop_pct,
+                    "targets": tp.targets,
+                    "confidence": tp.confidence,
+                    "rationale": tp.rationale,
+                    "invalidation": tp.invalidation,
+                    "actionable": tp.actionable,
+                    "atr_pct": tp.atr_pct,
+                    "zones": tp.zones,
+                }
+                if tp is not None else None
             ),
             "in_focus": False,
         })

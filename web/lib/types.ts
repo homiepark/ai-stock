@@ -36,6 +36,47 @@ export interface PositionGuidance {
   basis: string;           // short Korean rationale
 }
 
+export interface TradePlanTarget {
+  price: number;
+  rr: number;
+  label: string;
+  weight: number;
+  count: number;
+}
+
+export interface ConfluenceSignal {
+  kind: string;
+  label: string;
+  price: number;
+  weight: number;
+  age_days: number;
+}
+
+export interface ConfluenceZone {
+  center: number;
+  low: number;
+  high: number;
+  weight: number;
+  count: number;
+  signals: ConfluenceSignal[];
+}
+
+export interface TradePlan {
+  side: "LONG";
+  entry: number;
+  entry_low: number;
+  entry_high: number;
+  stop_loss: number;
+  stop_pct: number;
+  targets: TradePlanTarget[];
+  confidence: number;
+  rationale: string;
+  invalidation: string;
+  actionable: boolean;
+  atr_pct: number;
+  zones: ConfluenceZone[];
+}
+
 export interface Verdict {
   ticker: string;
   name: string;
@@ -52,6 +93,7 @@ export interface Verdict {
   metrics: Record<string, number | null>;
   overheat: Overheat | null;
   guidance?: PositionGuidance | null;
+  trade_plan?: TradePlan | null;
   in_focus: boolean;
 }
 
