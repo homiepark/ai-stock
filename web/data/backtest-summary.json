@@ -1,63 +1,63 @@
 {
-  "generated_at": "2026-05-25T22:51:44Z",
-  "n_records": 793,
-  "n_with_5d": 431,
+  "generated_at": "2026-05-26T23:04:33Z",
+  "n_records": 866,
+  "n_with_5d": 502,
   "n_with_20d": 0,
   "n_with_60d": 0,
   "by_label": {
     "TRIM": {
       "return_5d": {
-        "n": 110,
-        "mean": -0.04435
+        "n": 124,
+        "mean": -0.03591
       }
     },
     "HOLD": {
       "return_5d": {
-        "n": 278,
-        "mean": -0.01118
+        "n": 326,
+        "mean": -0.00032
       }
     },
     "ACCUMULATE": {
       "return_5d": {
-        "n": 42,
-        "mean": 0.00434
+        "n": 50,
+        "mean": 0.02643
       }
     },
     "AVOID": {
       "return_5d": {
-        "n": 1,
-        "mean": 0.01514
+        "n": 2,
+        "mean": 0.09058
       }
     }
   },
   "by_overheat": {
     "normal": {
       "return_5d": {
-        "n": 296,
-        "mean": -0.01794
+        "n": 349,
+        "mean": -0.00881
       }
     },
     "extreme": {
       "return_5d": {
-        "n": 35,
-        "mean": -0.06254
+        "n": 38,
+        "mean": -0.05108
       }
     },
     "mild": {
       "return_5d": {
-        "n": 59,
-        "mean": 0.01794
+        "n": 69,
+        "mean": 0.03229
       }
     },
     "high": {
       "return_5d": {
-        "n": 41,
-        "mean": -0.03285
+        "n": 46,
+        "mean": -0.00578
       }
     }
   },
   "signal_ic": {
-    "return_5d": 0.1741,
+    "return_5d": 0.189,
     "return_20d": null,
     "return_60d": null
   }
