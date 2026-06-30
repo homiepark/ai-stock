@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-06-29T22:53:11Z",
-  "n_records": 2590,
-  "n_with_5d": 2276,
-  "n_with_20d": 1242,
+  "generated_at": "2026-06-30T23:10:57Z",
+  "n_records": 2663,
+  "n_with_5d": 2348,
+  "n_with_20d": 1314,
   "n_with_60d": 0,
   "by_label": {
     "TRIM": {
       "return_5d": {
-        "n": 591,
-        "mean": -0.04615
+        "n": 612,
+        "mean": -0.04569
       },
       "return_20d": {
-        "n": 358,
-        "mean": -0.14162
+        "n": 381,
+        "mean": -0.13741
       }
     },
     "HOLD": {
       "return_5d": {
-        "n": 1336,
-        "mean": -0.00532
+        "n": 1373,
+        "mean": -0.00437
       },
       "return_20d": {
-        "n": 729,
-        "mean": -0.03327
+        "n": 762,
+        "mean": -0.03329
       }
     },
     "ACCUMULATE": {
       "return_5d": {
-        "n": 339,
-        "mean": 0.01623
+        "n": 353,
+        "mean": 0.01663
       },
       "return_20d": {
-        "n": 151,
-        "mean": 0.07993
+        "n": 167,
+        "mean": 0.06621
       }
     },
     "AVOID": {
@@ -49,12 +49,12 @@
   "by_overheat": {
     "normal": {
       "return_5d": {
-        "n": 1727,
-        "mean": -0.02055
+        "n": 1788,
+        "mean": -0.02003
       },
       "return_20d": {
-        "n": 931,
-        "mean": -0.0791
+        "n": 983,
+        "mean": -0.07725
       }
     },
     "extreme": {
@@ -63,18 +63,18 @@
         "mean": -0.01717
       },
       "return_20d": {
-        "n": 106,
-        "mean": 0.01911
+        "n": 116,
+        "mean": 0.01807
       }
     },
     "mild": {
       "return_5d": {
-        "n": 205,
-        "mean": 0.01855
+        "n": 216,
+        "mean": 0.02272
       },
       "return_20d": {
-        "n": 114,
-        "mean": 0.04537
+        "n": 120,
+        "mean": 0.03394
       }
     },
     "high": {
@@ -83,14 +83,14 @@
         "mean": 0.04032
       },
       "return_20d": {
-        "n": 91,
-        "mean": 0.03962
+        "n": 95,
+        "mean": 0.03317
       }
     }
   },
   "signal_ic": {
-    "return_5d": 0.1901,
-    "return_20d": 0.4238,
+    "return_5d": 0.1937,
+    "return_20d": 0.4,
     "return_60d": null
   }
 }
