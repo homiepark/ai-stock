@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-07-03T22:49:09Z",
-  "n_records": 2879,
-  "n_with_5d": 2469,
-  "n_with_20d": 1456,
+  "generated_at": "2026-07-06T23:02:40Z",
+  "n_records": 2952,
+  "n_with_5d": 2588,
+  "n_with_20d": 1549,
   "n_with_60d": 0,
   "by_label": {
     "TRIM": {
       "return_5d": {
-        "n": 635,
-        "mean": -0.04315
+        "n": 677,
+        "mean": -0.03501
       },
       "return_20d": {
-        "n": 424,
-        "mean": -0.12086
+        "n": 450,
+        "mean": -0.11457
       }
     },
     "HOLD": {
       "return_5d": {
-        "n": 1444,
-        "mean": -0.00305
+        "n": 1509,
+        "mean": -0.00047
       },
       "return_20d": {
-        "n": 836,
-        "mean": -0.03833
+        "n": 889,
+        "mean": -0.03953
       }
     },
     "ACCUMULATE": {
       "return_5d": {
-        "n": 379,
-        "mean": 0.01181
+        "n": 390,
+        "mean": 0.01068
       },
       "return_20d": {
-        "n": 192,
-        "mean": 0.04393
+        "n": 206,
+        "mean": 0.03584
       }
     },
     "AVOID": {
       "return_5d": {
-        "n": 11,
-        "mean": 0.08359
+        "n": 12,
+        "mean": 0.07258
       },
       "return_20d": {
         "n": 4,
@@ -49,32 +49,32 @@
   "by_overheat": {
     "normal": {
       "return_5d": {
-        "n": 1891,
-        "mean": -0.01806
+        "n": 1997,
+        "mean": -0.01341
       },
       "return_20d": {
-        "n": 1079,
-        "mean": -0.07394
+        "n": 1149,
+        "mean": -0.07158
       }
     },
     "extreme": {
       "return_5d": {
-        "n": 178,
-        "mean": -0.01738
+        "n": 179,
+        "mean": -0.01759
       },
       "return_20d": {
-        "n": 135,
-        "mean": 0.00196
+        "n": 141,
+        "mean": -0.00264
       }
     },
     "mild": {
       "return_5d": {
-        "n": 230,
-        "mean": 0.01823
+        "n": 242,
+        "mean": 0.01611
       },
       "return_20d": {
-        "n": 136,
-        "mean": 0.02178
+        "n": 143,
+        "mean": 0.0123
       }
     },
     "high": {
@@ -83,14 +83,14 @@
         "mean": 0.03914
       },
       "return_20d": {
-        "n": 106,
-        "mean": 0.01651
+        "n": 116,
+        "mean": 0.01373
       }
     }
   },
   "signal_ic": {
-    "return_5d": 0.1727,
-    "return_20d": 0.3403,
+    "return_5d": 0.1472,
+    "return_20d": 0.3155,
     "return_60d": null
   }
 }
