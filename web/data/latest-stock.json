@@ -1,7 +1,7 @@
 {
   "asset_class": "stock",
-  "date": "2026-11-12",
-  "generated_at": "2026-11-12 02:21 UTC",
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13 01:59 UTC",
   "version": "0.1.0",
   "universe_size": 69,
   "us_count": 49,
@@ -9,23 +9,23 @@
   "macro": {
     "DGS10": {
       "name": "US 10Y Treasury Yield",
-      "value": 0.4998000144958496,
-      "change": 0.0030103038169557676
+      "value": 0.5102999687194825,
+      "change": 0.02100831116266405
     },
     "DTWEXBGS": {
       "name": "US Dollar Index",
-      "value": 102.8740005493164,
-      "change": 0.006299493018055686
+      "value": 103.12899780273438,
+      "change": 0.0021280160609461903
     },
     "VIXCLS": {
       "name": "VIX",
-      "value": 17.489999771118164,
-      "change": -0.10123326855273986
+      "value": 18.700000762939453,
+      "change": 0.06918244755036562
     },
     "NASDAQCOM": {
       "name": "NASDAQ Composite",
-      "value": 25466.189453125,
-      "change": 0.015970733360735095
+      "value": 25366.09375,
+      "change": -0.003930533200078627
     },
     "KOSPI": {
       "name": "KOSPI",
@@ -34,8 +34,8 @@
     },
     "USDKRW": {
       "name": "USD/KRW",
-      "value": 1334.1600341796875,
-      "change": -0.005775349913630828
+      "value": 1331.3800048828125,
+      "change": -0.0036519875227489854
     }
   },
   "theme_rankings": [
@@ -162,6 +162,53 @@
   ],
   "verdicts": [
     {
+      "ticker": "SMCI",
+      "name": "Super Micro",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "AI 서버 OEM, NVDA 출하 직접 지표",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.75,
+        "mid": 62.0,
+        "long": 80.5,
+        "composite": 66.5875
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Super Micro: 정량 종합 67점, 라벨 ACCUMULATE. 단기 51 / 중기 62 / 장기 80. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 2.8209771982881957,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 8.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": true
+    },
+    {
       "ticker": "TSM",
       "name": "TSMC",
       "country": "US",
@@ -189,54 +236,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.13407876514393813,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": true
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "hyperscalers",
-      "theme_short": "하이퍼스케일러·AI",
-      "note": "AI 서버 OEM, NVDA 출하 직접 지표",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 62.0,
-        "long": 80.5,
-        "composite": 65.8375
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "Super Micro: 정량 종합 66점, 라벨 ACCUMULATE. 단기 48 / 중기 62 / 장기 80. (LLM 미연결 — 정량 요약만 표기)",
-        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
-        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
-        "next_trigger": "다음 어닝 발표"
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.18113946103475315,
+        "vol_z20": -0.4378769794246047,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -283,101 +283,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.32983765109906077,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": true
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "country": "US",
-      "tier": "leader",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "AI 가속기 압도적 점유",
-      "coingecko_id": "",
-      "scores": {
-        "short": 49.25,
-        "mid": 62.0,
-        "long": 75.5,
-        "composite": 64.2125
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "NVIDIA: 정량 종합 64점, 라벨 ACCUMULATE. 단기 49 / 중기 62 / 장기 76. (LLM 미연결 — 정량 요약만 표기)",
-        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
-        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
-        "next_trigger": "다음 어닝 발표"
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": 1.026750563032428,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": true
-    },
-    {
-      "ticker": "VRT",
-      "name": "Vertiv",
-      "country": "US",
-      "tier": "leader",
-      "theme": "power_grid",
-      "theme_short": "전력·그리드",
-      "note": "데이터센터 전력·냉각 인프라",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 62.0,
-        "long": 75.5,
-        "composite": 63.837500000000006
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "Vertiv: 정량 종합 64점, 라벨 ACCUMULATE. 단기 48 / 중기 62 / 장기 76. (LLM 미연결 — 정량 요약만 표기)",
-        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
-        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
-        "next_trigger": "다음 어닝 발표"
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.48066292320538323,
+        "vol_z20": -0.29730846065114264,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -406,10 +312,106 @@
       "note": "ASIC·네트워킹·VMware",
       "coingecko_id": "",
       "scores": {
-        "short": 47.75,
+        "short": 56.25,
         "mid": 62.0,
         "long": 72.5,
-        "composite": 62.6375
+        "composite": 64.7625
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "Broadcom: 정량 종합 65점, 라벨 ACCUMULATE. 단기 56 / 중기 62 / 장기 72. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 1.6200669894187842,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": true
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "country": "US",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "AI 가속기 압도적 점유",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.75,
+        "mid": 62.0,
+        "long": 75.5,
+        "composite": 64.5875
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "NVIDIA: 정량 종합 65점, 라벨 ACCUMULATE. 단기 51 / 중기 62 / 장기 76. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 3.1096905075915378,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "거래량 Z=3.1 폭증"
+        ]
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": true
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "전력 EPC",
+      "coingecko_id": "",
+      "scores": {
+        "short": 54.75,
+        "mid": 62.0,
+        "long": 72.25,
+        "composite": 64.28750000000001
       },
       "label": "ACCUMULATE",
       "label_quant": "ACCUMULATE",
@@ -424,7 +426,103 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.708987397089122,
+        "vol_z20": -0.9411117138038054,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "유럽 AI 클라우드",
+      "coingecko_id": "",
+      "scores": {
+        "short": 57.75,
+        "mid": 62.0,
+        "long": 69.5,
+        "composite": 63.9375
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 3.219328378531938,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "거래량 Z=3.2 폭증"
+        ]
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv",
+      "country": "US",
+      "tier": "leader",
+      "theme": "power_grid",
+      "theme_short": "전력·그리드",
+      "note": "데이터센터 전력·냉각 인프라",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.75,
+        "mid": 62.0,
+        "long": 75.5,
+        "composite": 63.837500000000006
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -0.6743167030549879,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -471,54 +569,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.341217597818083,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "PWR",
-      "name": "Quanta Services",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "power_grid",
-      "theme_short": "전력·그리드",
-      "note": "전력 EPC",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 62.0,
-        "long": 72.25,
-        "composite": 62.53750000000001
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.6580550815637516,
+        "vol_z20": -0.4527460918924021,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -565,7 +616,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.050122561827476965,
+        "vol_z20": 0.19946881964294033,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -612,101 +663,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.2343137690304349,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "CIEN",
-      "name": "Ciena",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "광통신·데이터센터 인터커넥트(DCI), 800G/1.6T 사이클",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 57.5,
-        "long": 74.61406159662452,
-        "composite": 61.90812463864981
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": 0.39420085283492734,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "hyperscalers",
-      "theme_short": "하이퍼스케일러·AI",
-      "note": "유럽 AI 클라우드",
-      "coingecko_id": "",
-      "scores": {
-        "short": 49.25,
-        "mid": 62.0,
-        "long": 69.5,
-        "composite": 61.8125
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": 1.3389076722047422,
+        "vol_z20": -0.53068207746499,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -753,7 +710,101 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.3878822771778867,
+        "vol_z20": 0.17972661238861418,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "광통신·데이터센터 인터커넥트(DCI), 800G/1.6T 사이클",
+      "coingecko_id": "",
+      "scores": {
+        "short": 45.5,
+        "mid": 57.5,
+        "long": 74.61406159662452,
+        "composite": 61.34562463864981
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -1.0896626709902482,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "PCIe 리타이머·CXL 스위치",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.75,
+        "mid": 62.0,
+        "long": 68.0,
+        "composite": 60.837500000000006
+      },
+      "label": "ACCUMULATE",
+      "label_quant": "ACCUMULATE",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -0.6252258882814635,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -800,54 +851,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.6568210396309685,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "PLTR",
-      "name": "Palantir",
-      "country": "US",
-      "tier": "leader",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "정부+엔터프라이즈 AI OS, AIP",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 62.0,
-        "long": 67.25,
-        "composite": 60.53750000000001
-      },
-      "label": "ACCUMULATE",
-      "label_quant": "ACCUMULATE",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.9652254599065628,
+        "vol_z20": -0.7573666688303435,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -894,7 +898,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.344816726138036,
+        "vol_z20": -0.5906032469515857,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -941,7 +945,54 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.7516868409605297,
+        "vol_z20": -0.25162724494838046,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "country": "US",
+      "tier": "leader",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "정부+엔터프라이즈 AI OS, AIP",
+      "coingecko_id": "",
+      "scores": {
+        "short": 45.5,
+        "mid": 62.0,
+        "long": 67.25,
+        "composite": 59.97500000000001
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -1.1902037334199709,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -988,7 +1039,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.1996068778397769,
+        "vol_z20": -0.8103523971643903,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1035,7 +1086,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.39849517907324394,
+        "vol_z20": -0.8237900329388607,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1055,19 +1106,19 @@
       "in_focus": false
     },
     {
-      "ticker": "ALAB",
-      "name": "Astera Labs",
+      "ticker": "KLAC",
+      "name": "KLA",
       "country": "US",
-      "tier": "momentum",
+      "tier": "supporting",
       "theme": "semiconductors",
       "theme_short": "반도체·HBM·패키징",
-      "note": "PCIe 리타이머·CXL 스위치",
+      "note": "검사·계측",
       "coingecko_id": "",
       "scores": {
-        "short": 47.75,
-        "mid": 62.0,
-        "long": 65.0,
-        "composite": 59.6375
+        "short": 54.75,
+        "mid": 57.5,
+        "long": 63.90800686420147,
+        "composite": 59.375702745680584
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1082,7 +1133,101 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.40144119204183937,
+        "vol_z20": -0.8874582698545052,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "AI 전용 GPU 클라우드 IPO 종목",
+      "coingecko_id": "",
+      "scores": {
+        "short": 56.25,
+        "mid": 62.0,
+        "long": 58.0,
+        "composite": 58.962500000000006
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 1.1153826311116175,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "반도체 장비",
+      "coingecko_id": "",
+      "scores": {
+        "short": 54.75,
+        "mid": 53.0,
+        "long": 64.94864420706656,
+        "composite": 58.216957682826624
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 0.19192568860298687,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1129,7 +1274,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.5697223932706299,
+        "vol_z20": -0.7180791692504261,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1149,66 +1294,19 @@
       "in_focus": false
     },
     {
-      "ticker": "KLAC",
-      "name": "KLA",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "검사·계측",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 57.5,
-        "long": 63.90800686420147,
-        "composite": 57.625702745680584
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.6638222092324307,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave",
+      "ticker": "SYM",
+      "name": "Symbotic",
       "country": "US",
       "tier": "momentum",
-      "theme": "hyperscalers",
-      "theme_short": "하이퍼스케일러·AI",
-      "note": "AI 전용 GPU 클라우드 IPO 종목",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "물류 자동화",
       "coingecko_id": "",
       "scores": {
-        "short": 50.75,
-        "mid": 62.0,
-        "long": 58.0,
-        "composite": 57.587500000000006
+        "short": 54.75,
+        "mid": 53.0,
+        "long": 63.77148800667431,
+        "composite": 57.74609520266972
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1223,13 +1321,13 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 2.7139515682218285,
+        "vol_z20": 0.44636966906126,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
       },
       "overheat": {
-        "score": 8.0,
+        "score": 0.0,
         "level": "normal",
         "emoji": "🟢",
         "label": "정상",
@@ -1270,7 +1368,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.1946661051662331,
+        "vol_z20": -0.5503954914123943,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1290,66 +1388,19 @@
       "in_focus": false
     },
     {
-      "ticker": "AMAT",
-      "name": "Applied Materials",
+      "ticker": "META",
+      "name": "Meta",
       "country": "US",
-      "tier": "supporting",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "반도체 장비",
+      "tier": "leader",
+      "theme": "hyperscalers",
+      "theme_short": "하이퍼스케일러·AI",
+      "note": "Llama·자체 ASIC·광고 ROI 회수",
       "coingecko_id": "",
       "scores": {
-        "short": 47.75,
-        "mid": 53.0,
-        "long": 64.94864420706656,
-        "composite": 56.466957682826624
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.39706758110037266,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "SNOW",
-      "name": "Snowflake",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "데이터·AI 플랫폼",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
+        "short": 52.5,
         "mid": 57.5,
-        "long": 59.77842478704663,
-        "composite": 55.97386991481865
+        "long": 58.32112329729519,
+        "composite": 56.578449318918075
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1364,7 +1415,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.10623725908573947,
+        "vol_z20": -1.2892669817269669,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1411,7 +1462,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.5420661435232237,
+        "vol_z20": -0.2021379446555981,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1431,66 +1482,19 @@
       "in_focus": false
     },
     {
-      "ticker": "SYM",
-      "name": "Symbotic",
+      "ticker": "SNOW",
+      "name": "Snowflake",
       "country": "US",
-      "tier": "momentum",
-      "theme": "embodied_ai",
-      "theme_short": "로보틱스·Embodied",
-      "note": "물류 자동화",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "데이터·AI 플랫폼",
       "coingecko_id": "",
       "scores": {
         "short": 45.5,
-        "mid": 53.0,
-        "long": 63.77148800667431,
-        "composite": 55.43359520266972
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -1.2732076248898325,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "META",
-      "name": "Meta",
-      "country": "US",
-      "tier": "leader",
-      "theme": "hyperscalers",
-      "theme_short": "하이퍼스케일러·AI",
-      "note": "Llama·자체 ASIC·광고 ROI 회수",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
         "mid": 57.5,
-        "long": 58.32112329729519,
-        "composite": 55.390949318918075
+        "long": 59.77842478704663,
+        "composite": 55.41136991481865
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1505,7 +1509,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.8628825822401821,
+        "vol_z20": -1.106980598681924,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1552,7 +1556,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.7618725611227192,
+        "vol_z20": -0.47726700236741726,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1599,101 +1603,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.9888299390318255,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "ARM",
-      "name": "ARM Holdings",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "데이터센터 CPU IP 침투",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 57.5,
-        "long": 54.39096916299559,
-        "composite": 53.81888766519823
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": 0.28985915211177776,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "CRWD",
-      "name": "CrowdStrike",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "AI 기반 위협 탐지·EDR, AI 워크로드 보안 수혜",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 57.5,
-        "long": 53.9991205798014,
-        "composite": 53.66214823192056
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.8509137787824159,
+        "vol_z20": -0.9341981202458055,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1720,6 +1630,44 @@
       "theme": "semiconductors",
       "theme_short": "반도체·HBM·패키징",
       "note": "HBM3E 엔비디아 진입 여부 핵심",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 58.5,
+        "composite": 53.400000000000006
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "country": "KR",
+      "tier": "leader",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "HBM3E·HBM4 선두",
       "coingecko_id": "",
       "scores": {
         "short": 50.0,
@@ -1778,54 +1726,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.47775931372618624,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "CRM",
-      "name": "Salesforce",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "vertical_ai",
-      "theme_short": "버티컬",
-      "note": "Agentforce",
-      "coingecko_id": "",
-      "scores": {
-        "short": 47.75,
-        "mid": 53.0,
-        "long": 56.75029308323564,
-        "composite": 53.187617233294255
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -0.9045376870726658,
+        "vol_z20": -0.7582506642307556,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1872,7 +1773,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.4141601058550965,
+        "vol_z20": -0.7007514416138266,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -1892,19 +1793,19 @@
       "in_focus": false
     },
     {
-      "ticker": "000660",
-      "name": "SK하이닉스",
-      "country": "KR",
-      "tier": "leader",
-      "theme": "semiconductors",
-      "theme_short": "반도체·HBM·패키징",
-      "note": "HBM3E·HBM4 선두",
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "AI 기반 위협 탐지·EDR, AI 워크로드 보안 수혜",
       "coingecko_id": "",
       "scores": {
-        "short": 50.0,
-        "mid": 50.0,
-        "long": 56.5,
-        "composite": 52.6
+        "short": 45.5,
+        "mid": 57.5,
+        "long": 53.9991205798014,
+        "composite": 53.09964823192056
       },
       "label": "HOLD",
       "label_quant": "HOLD",
@@ -1914,13 +1815,116 @@
         "risks": "",
         "next_trigger": ""
       },
-      "metrics": {},
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -1.1249926127311876,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
       "overheat": {
         "score": 0.0,
         "level": "normal",
         "emoji": "🟢",
         "label": "정상",
-        "guidance": "데이터 부족 — 판단 보류.",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "vertical_ai",
+      "theme_short": "버티컬",
+      "note": "Agentforce",
+      "coingecko_id": "",
+      "scores": {
+        "short": 45.5,
+        "mid": 53.0,
+        "long": 56.75029308323564,
+        "composite": 52.625117233294255
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -2.5299180810539363,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "ARM",
+      "name": "ARM Holdings",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "semiconductors",
+      "theme_short": "반도체·HBM·패키징",
+      "note": "데이터센터 CPU IP 침투",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.75,
+        "mid": 57.5,
+        "long": 51.39096916299559,
+        "composite": 52.61888766519824
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -0.6031700412181237,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
         "flags": []
       },
       "guidance": null,
@@ -1995,7 +1999,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.2147150031731852,
+        "vol_z20": -0.8106363875696837,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -2232,7 +2236,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.2794402793977352,
+        "vol_z20": 0.17135085758969418,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -2396,6 +2400,230 @@
         "label": "정상",
         "guidance": "데이터 부족 — 판단 보류.",
         "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "RBOT",
+      "name": "Vicarious Surgical",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "embodied_ai",
+      "theme_short": "로보틱스·Embodied",
+      "note": "수술로봇 신생",
+      "coingecko_id": "",
+      "scores": {
+        "short": 72.25,
+        "mid": 35.0,
+        "long": 50.0,
+        "composite": 50.3125
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.019999999552965164,
+        "rsi14": 21.31147419280947,
+        "ma50": 0.038780000247061255,
+        "ma200": 0.5311449985485523,
+        "vol_z20": -0.8949250419149585,
+        "ret_5d": 0.8181817873942949,
+        "ret_20d": -0.600000014901161,
+        "ret_60d": -0.5348837471221051
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "5일 +82% 급등"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 8.0429,
+        "atr_pct": 4.0214,
+        "entry_price": 0.02,
+        "stop_price": -0.1409,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 4.02142865316876,
+        "zones": [
+          {
+            "center": 0.03644999897223897,
+            "low": 0.03644999897223897,
+            "high": 0.03644999897223897,
+            "weight": 1.6,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "vp_poc",
+                "label": "Volume POC (90일)",
+                "price": 0.03645,
+                "weight": 0.9,
+                "age_days": 0
+              },
+              {
+                "kind": "vp_val",
+                "label": "Value Area Low",
+                "price": 0.03645,
+                "weight": 0.7,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.8397200004896149,
+            "low": 0.8397200004896149,
+            "high": 0.8397200004896149,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.83972,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.5311449985485523,
+            "low": 0.5311449985485523,
+            "high": 0.5311449985485523,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.531145,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "NVDL",
+      "name": "NVDL (2x NVDA)",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "leveraged",
+      "theme_short": "레버리지",
+      "note": "엔비디아 2배. 단일종목 레버리지, 변동성 매우 큼",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.75,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 50.1875
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 3.365593693622173,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "거래량 Z=3.4 폭증"
+        ]
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "NVDU",
+      "name": "NVDU (2x NVDA)",
+      "country": "US",
+      "tier": "supporting",
+      "theme": "leveraged",
+      "theme_short": "레버리지",
+      "note": "NVDL 대안. 운용사 다름",
+      "coingecko_id": "",
+      "scores": {
+        "short": 50.75,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 50.1875
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": 3.4521670948883996,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 15.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "거래량 Z=3.5 폭증"
+        ]
       },
       "guidance": null,
       "trade_plan": null,
@@ -2594,100 +2822,6 @@
       "in_focus": false
     },
     {
-      "ticker": "NVDL",
-      "name": "NVDL (2x NVDA)",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "leveraged",
-      "theme_short": "레버리지",
-      "note": "엔비디아 2배. 단일종목 레버리지, 변동성 매우 큼",
-      "coingecko_id": "",
-      "scores": {
-        "short": 49.25,
-        "mid": 50.0,
-        "long": 50.0,
-        "composite": 49.8125
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": 1.679715326742851,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
-      "ticker": "NVDU",
-      "name": "NVDU (2x NVDA)",
-      "country": "US",
-      "tier": "supporting",
-      "theme": "leveraged",
-      "theme_short": "레버리지",
-      "note": "NVDL 대안. 운용사 다름",
-      "coingecko_id": "",
-      "scores": {
-        "short": 49.25,
-        "mid": 50.0,
-        "long": 50.0,
-        "composite": 49.8125
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": 1.6536761394390602,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
       "ticker": "328130",
       "name": "루닛",
       "country": "KR",
@@ -2753,7 +2887,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.4284955244951943,
+        "vol_z20": -0.40516036650655574,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -2800,7 +2934,54 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.4292279355202843,
+        "vol_z20": -0.023772465235805177,
+        "ret_5d": null,
+        "ret_20d": null,
+        "ret_60d": null
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "TSLL",
+      "name": "TSLL (2x TSLA)",
+      "country": "US",
+      "tier": "momentum",
+      "theme": "leveraged",
+      "theme_short": "레버리지",
+      "note": "테슬라 2배",
+      "coingecko_id": "",
+      "scores": {
+        "short": 47.75,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 49.4375
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": null,
+        "rsi14": null,
+        "ma50": null,
+        "ma200": null,
+        "vol_z20": -0.6010250550763452,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -2847,7 +3028,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.7090807982933697,
+        "vol_z20": 0.4739653818123801,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -2894,7 +3075,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.4551062349334389,
+        "vol_z20": 0.16719971693752847,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -2952,53 +3133,6 @@
       "in_focus": false
     },
     {
-      "ticker": "TSLL",
-      "name": "TSLL (2x TSLA)",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "leveraged",
-      "theme_short": "레버리지",
-      "note": "테슬라 2배",
-      "coingecko_id": "",
-      "scores": {
-        "short": 45.5,
-        "mid": 50.0,
-        "long": 50.0,
-        "composite": 48.875
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": null,
-        "rsi14": null,
-        "ma50": null,
-        "ma200": null,
-        "vol_z20": -1.0750622043954623,
-        "ret_5d": null,
-        "ret_20d": null,
-        "ret_60d": null
-      },
-      "overheat": {
-        "score": 0.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": []
-      },
-      "guidance": null,
-      "trade_plan": null,
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
       "ticker": "OKLO",
       "name": "Oklo",
       "country": "US",
@@ -3026,7 +3160,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.1609685868778729,
+        "vol_z20": -0.4006513760794454,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -3084,132 +3218,6 @@
       "in_focus": false
     },
     {
-      "ticker": "RBOT",
-      "name": "Vicarious Surgical",
-      "country": "US",
-      "tier": "momentum",
-      "theme": "embodied_ai",
-      "theme_short": "로보틱스·Embodied",
-      "note": "수술로봇 신생",
-      "coingecko_id": "",
-      "scores": {
-        "short": 59.25,
-        "mid": 35.0,
-        "long": 50.0,
-        "composite": 47.0625
-      },
-      "label": "HOLD",
-      "label_quant": "HOLD",
-      "narrative": {
-        "summary": "",
-        "entry_guide": "",
-        "risks": "",
-        "next_trigger": ""
-      },
-      "metrics": {
-        "last_close": 0.01899999938905239,
-        "rsi14": 54.28571402278989,
-        "ma50": 0.03908000025898218,
-        "ma200": 0.5426449982170015,
-        "vol_z20": -0.5380822182364184,
-        "ret_5d": 0.7272726810914423,
-        "ret_20d": -0.5869565358234037,
-        "ret_60d": -0.6041666828354613
-      },
-      "overheat": {
-        "score": 15.0,
-        "level": "normal",
-        "emoji": "🟢",
-        "label": "정상",
-        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
-        "flags": [
-          "5일 +73% 급등"
-        ]
-      },
-      "guidance": {
-        "suggested_pct": 0.0,
-        "stop_pct": 10.3308,
-        "atr_pct": 5.1654,
-        "entry_price": 0.019,
-        "stop_price": -0.1773,
-        "basis": "라벨/과열도 기준 신규 진입 비추천"
-      },
-      "trade_plan": {
-        "side": "LONG",
-        "entry": 0.0,
-        "entry_low": 0.0,
-        "entry_high": 0.0,
-        "stop_loss": 0.0,
-        "stop_pct": 0.0,
-        "targets": [],
-        "confidence": 0,
-        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
-        "invalidation": "setup 미완성, 관망",
-        "actionable": false,
-        "atr_pct": 5.1654136905599275,
-        "zones": [
-          {
-            "center": 0.03644999897223897,
-            "low": 0.03644999897223897,
-            "high": 0.03644999897223897,
-            "weight": 1.6,
-            "count": 2,
-            "signals": [
-              {
-                "kind": "vp_poc",
-                "label": "Volume POC (90일)",
-                "price": 0.03645,
-                "weight": 0.9,
-                "age_days": 0
-              },
-              {
-                "kind": "vp_val",
-                "label": "Value Area Low",
-                "price": 0.03645,
-                "weight": 0.7,
-                "age_days": 0
-              }
-            ]
-          },
-          {
-            "center": 0.8397000004863366,
-            "low": 0.8397000004863366,
-            "high": 0.8397000004863366,
-            "weight": 0.95,
-            "count": 1,
-            "signals": [
-              {
-                "kind": "ma_50_weekly",
-                "label": "주봉 50MA",
-                "price": 0.8397,
-                "weight": 0.95,
-                "age_days": 0
-              }
-            ]
-          },
-          {
-            "center": 0.5426449982170015,
-            "low": 0.5426449982170015,
-            "high": 0.5426449982170015,
-            "weight": 0.85,
-            "count": 1,
-            "signals": [
-              {
-                "kind": "ma_200_daily",
-                "label": "일봉 200MA",
-                "price": 0.542645,
-                "weight": 0.85,
-                "age_days": 0
-              }
-            ]
-          }
-        ]
-      },
-      "derivatives": null,
-      "multi_tf": null,
-      "in_focus": false
-    },
-    {
       "ticker": "TSLA",
       "name": "Tesla",
       "country": "US",
@@ -3237,7 +3245,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": -0.9412509763546627,
+        "vol_z20": -0.8685250924233998,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -3284,7 +3292,7 @@
         "rsi14": null,
         "ma50": null,
         "ma200": null,
-        "vol_z20": 0.8243952124933895,
+        "vol_z20": 0.7042372780739323,
         "ret_5d": null,
         "ret_20d": null,
         "ret_60d": null
@@ -3305,34 +3313,18 @@
     }
   ],
   "focus_tickers": [
-    "NVDA",
-    "MU",
     "SMCI",
-    "VRT",
-    "TSM"
+    "MU",
+    "TSM",
+    "NVDA",
+    "AVGO"
   ],
   "top_news": [
     {
-      "title": "IDR/USD: Indonesian Rupiah Drops to Record Amid MSCI Concerns, Oil Risks",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-12/idr-usd-indonesian-rupiah-drops-to-record-amid-msci-concerns-oil-risks",
-      "summary": "The Indonesian rupiah fell to an all-time low as a stronger dollar and the risk of MSCI Inc. removing the nation’s stocks from its emerging-market indexes cast a pall over Asia’s worst-performing currency.",
-      "published": "Thu, 12 Nov 2026 02:06:49 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Asian Stocks Edge Higher, Shrug Off Nvidia Woes: Markets Wrap",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-11/stock-market-today-dow-s-p-live-updates",
-      "summary": "Asian stocks edged higher as investors largely shrugged off a leadership crisis at Nvidia Corp. that sent shares of the chipmaker at the heart of this year’s artificial-intelligence boom tumbling in after-hours trading.",
-      "published": "Wed, 11 Nov 2026 22:08:05 GMT",
+      "title": "Asian Stocks Gain After Nvidia Upheaval, Oil Holds: Markets Wrap",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates",
+      "summary": "Asian stocks climbed as investors eased back into technology shares amid fading concerns that a leadership crisis at Nvidia Corp. may derail the broader artificial-intelligence trade. Oil steadied.",
+      "published": "Thu, 12 Nov 2026 22:17:13 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "GEV",
@@ -3348,58 +3340,10 @@
       ]
     },
     {
-      "title": "Nvidia Shares Slide as Investors Consider Future Without Huang",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-11/nvidia-tumbles-as-investors-consider-future-without-ceo-huang",
-      "summary": "Nvidia Corp. shares sank in extended trading Wednesday as investors grappled with the possibility of the company without Chief Executive Officer Jensen Huang at the helm.",
-      "published": "Wed, 11 Nov 2026 22:48:40 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "NVDA"
-      ],
-      "matched_names": [
-        "NVIDIA"
-      ],
-      "matched_themes": [
-        "semiconductors"
-      ]
-    },
-    {
-      "title": "Sri Lanka Budget Targets Growth With IMF Bailout Nearing End",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-12/sri-lanka-budget-targets-growth-with-imf-bailout-nearing-end",
-      "summary": "Sri Lanka will unveil a budget aimed at keeping its economic recovery on track amid global headwinds and as its $3 billion International Monetary Fund bailout draws to a close.",
-      "published": "Thu, 12 Nov 2026 01:30:00 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "GEV"
-      ],
-      "matched_names": [
-        "GE Vernova"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Gold Holds Below $4,000 as Market Looks Ahead to Fed Rate Hike",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-12/gold-holds-below-4-000-as-market-looks-ahead-to-fed-rate-hike",
-      "summary": "Gold held a drop below $4,000 an ounce, as persistent inflation and hawkish remarks from Federal Reserve officials fueled expectations for an interest-rate hike next month.",
-      "published": "Thu, 12 Nov 2026 00:12:52 GMT",
-      "source": "Bloomberg Markets",
-      "matched_tickers": [
-        "010120"
-      ],
-      "matched_names": [
-        "LS ELECTRIC"
-      ],
-      "matched_themes": [
-        "power_grid"
-      ]
-    },
-    {
-      "title": "Long US Bonds Reopen With Gains as Risk Sentiment Sours Again",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-12/long-us-bonds-reopen-with-gains-as-risk-sentiment-sours-again",
-      "summary": "Long-end Treasuries drifted higher as trading resumed after a holiday as turmoil at Nvidia Corp. fueled doubts about the artificial intelligence trade and fueled demand for haven assets.",
-      "published": "Thu, 12 Nov 2026 00:58:09 GMT",
+      "title": "Singtel Says ‘Fairly Insulated’ From Nvidia, Raises Guidance",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-13/singtel-raises-profit-outlook-as-overseas-businesses-gain-ground",
+      "summary": "Singapore Telecommunications Ltd. said it is largely insulated from developments surrounding Nvidia Corp., with only a small share of its data-center capacity exposed to neocloud customers that may be linked to the chipmaker.",
+      "published": "Fri, 13 Nov 2026 00:45:59 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "GEV",
@@ -3415,10 +3359,10 @@
       ]
     },
     {
-      "title": "Anthropic IPO Is ‘Jenga Block’ Holding Up Next Leg of AI Trade",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-11/anthropic-ipo-is-jenga-block-holding-up-next-leg-of-ai-trade",
-      "summary": "Anthropic PBC’s long-awaited initial public offering will give investors a crucial look at the health of the artificial intelligence trade, and Wall Street hopes it will spur the next leg of the AI-fueled stock market rally that’s going on four years.",
-      "published": "Wed, 11 Nov 2026 21:15:02 GMT",
+      "title": "India Equity Surge Brightens Outlook for Exchanges, Brokerages",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-13/india-equity-surge-brightens-outlook-for-exchanges-brokerages",
+      "summary": "India’s $5.4 trillion equity market is bouncing back to life, creating a sweet spot for exchanges and brokerages as stronger trading activity brightens their earnings outlook.",
+      "published": "Fri, 13 Nov 2026 01:00:00 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "GEV"
@@ -3431,10 +3375,26 @@
       ]
     },
     {
-      "title": "AI Trade Roars Back, Anthropic IPO Outlook, Nordstrom Co-CEO on Going Private",
-      "link": "https://www.bloomberg.com/news/videos/2026-11-12/the-close-11-11-2026-video",
-      "summary": "The Close brings you the latest news and analysis leading up to the final minutes and seconds before and after the closing bell on Wall Street. Today’s guests are Morgan Stanley Investment Management Deputy CIO, Solutions & Multi-Asset Jitania Kandhari, Citi Research Global Chief Economist Nathan Sheets, Woodside Energy CEO & Managing Director Liz Westcott, NYU Emeritus Professor, psychology and neural science Gary Marcus, Pivotal Advisors CEO and CIO Tiffany McGhee, Neostellar Principal Evan Sc",
-      "published": "Thu, 12 Nov 2026 00:30:39 GMT",
+      "title": "Silver Market Set for Deficit Even as Solar Makers Cut Back",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-13/silver-market-set-for-deficit-even-as-solar-makers-cut-back",
+      "summary": "The silver market is set for a sixth straight annual supply deficit in 2026, even as solar manufacturers cut their use of the metal and investor selling eases pressure on the physical market.",
+      "published": "Fri, 13 Nov 2026 00:30:00 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "META"
+      ],
+      "matched_names": [
+        "Meta"
+      ],
+      "matched_themes": [
+        "hyperscalers"
+      ]
+    },
+    {
+      "title": "Australia Bond Yield Falls Below US Peer as Rate Paths Diverge",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-13/australia-bond-yield-falls-below-us-peer-as-rate-paths-diverge",
+      "summary": "Australia’s benchmark bond yield fell below its US counterpart for the first time in more than a year as expectations for monetary policy in the two nations diverge.",
+      "published": "Fri, 13 Nov 2026 00:24:14 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
         "GEV",
@@ -3449,64 +3409,106 @@
       ]
     },
     {
-      "title": "New Zealand Draws Record US Tourists With Wellness and Weak Kiwi Dollar",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-12/new-zealand-draws-record-us-tourists-with-wellness-and-weak-kiwi-dollar",
-      "summary": "New Zealand welcomed a record number of visitors from the US in the 12 months through September as favorable exchange rates and increased air connections make the South Pacific nation more accessible.",
-      "published": "Thu, 12 Nov 2026 00:19:45 GMT",
+      "title": "Stocks Fall as Huang Resigns, Nvidia Turns to CFO",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-13/the-close-11-12-2026-video",
+      "summary": "Bloomberg Television brings you the latest news and analysis leading up to the final minutes and seconds before and after the closing bell on Wall Street. Today's guests are Ross Gerber, Gerber Kawasaki Wealth and Investment Management Co-Founder, President & CEO, Emily Kilcrease, Center for a New American Security Senior Fellow & Director,  Nell Minow, ValueEdge Advisors Chair, Carolyn Everson, Permira Senior advisor, Dan Clancy, Twitch CEO, Jim Caron, Morgan Stanley Investment Management CIO, ",
+      "published": "Fri, 13 Nov 2026 00:23:37 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
-        "GEV"
+        "GEV",
+        "010120",
+        "NVDA"
       ],
       "matched_names": [
-        "GE Vernova"
+        "GE Vernova",
+        "LS ELECTRIC",
+        "NVIDIA"
       ],
       "matched_themes": [
-        "power_grid"
+        "power_grid",
+        "semiconductors"
       ]
     },
     {
-      "title": "Indonesia Bonds Lure Global Funds as Yields Hit Six-Year High",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-12/indonesia-bonds-lure-global-funds-as-yields-hit-six-year-high",
-      "summary": "Indonesian government bonds are drawing bargain-hunters after the benchmark yields’ surge last week to the highest since 2020.",
-      "published": "Thu, 12 Nov 2026 00:05:36 GMT",
+      "title": "Nvidia Is Not a Normal Company Having a CEO Issue: Everson",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-13/nvda-is-not-a-normal-company-having-a-ceo-issue-everson-video",
+      "summary": "Carolyn Everson, a board member at Coca-Cola, Disney and Under Armour and a senior advisor at Permira, discusses how boards respond to allegations involving executives. Everson speaks with Romaine Bostick and Jess Menton on “The Close.” (Source: Bloomberg)",
+      "published": "Fri, 13 Nov 2026 00:19:02 GMT",
       "source": "Bloomberg Markets",
       "matched_tickers": [
-        "GEV"
+        "NVDA",
+        "ARM"
       ],
       "matched_names": [
-        "GE Vernova"
+        "NVIDIA",
+        "ARM Holdings"
       ],
       "matched_themes": [
-        "power_grid"
+        "semiconductors"
+      ]
+    },
+    {
+      "title": "Charles Elson on Nvidia’s Corporate Governance Structure",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-13/charles-elson-on-nvidia-s-corporate-governance-structure-video",
+      "summary": "Charles Elson, founding director of the University of Delaware’s Weinberg Center for Corporate Governance, says Nvidia’s board should have had a clearer succession plan and stronger oversight in place. He speaks with Romaine Bostick and Jess Menton on “The Close.” (Source: Bloomberg)",
+      "published": "Fri, 13 Nov 2026 00:13:57 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120",
+        "NVDA"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC",
+        "NVIDIA"
+      ],
+      "matched_themes": [
+        "power_grid",
+        "semiconductors"
+      ]
+    },
+    {
+      "title": "China Internet Stock Gains Face Reality Check in Nvidia Fallout",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-13/china-internet-stock-gains-face-reality-check-in-nvidia-fallout",
+      "summary": "A November rebound in beaten-down Chinese internet stocks is facing a reckoning in collateral damage from the scandal at Nvidia Corp.",
+      "published": "Fri, 13 Nov 2026 00:07:02 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "NVDA"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "NVIDIA"
+      ],
+      "matched_themes": [
+        "power_grid",
+        "semiconductors"
+      ]
+    },
+    {
+      "title": "Jensen Is Not the Only Executive To Have a Relationship With a Spy: Nell Minow",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-12/minow-boards-need-to-be-careful-about-personal-hacking-video",
+      "summary": "Nell Minow, Chair at ValueEdge Advisors, says she was surprised that Nvidia lacked an independent board chair and a formal succession plan. She discusses the allegations regarding Jensen Huang in an interview with Romaine Bostick and Jess Menton on “The Close.” (Source: Bloomberg)",
+      "published": "Thu, 12 Nov 2026 23:54:21 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "NVDA"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "NVIDIA"
+      ],
+      "matched_themes": [
+        "power_grid",
+        "semiconductors"
       ]
     }
   ],
   "label_changes": [],
   "upcoming_events": [
-    {
-      "date": "2026-11-12",
-      "name": "CPI (10월)",
-      "kind": "macro",
-      "impact": "high",
-      "ticker": "",
-      "note": ""
-    },
-    {
-      "date": "2026-11-12",
-      "name": "Applied Materials 실적",
-      "kind": "earnings",
-      "impact": "med",
-      "ticker": "AMAT",
-      "note": "semiconductors"
-    },
-    {
-      "date": "2026-11-12",
-      "name": "Nebius 실적",
-      "kind": "earnings",
-      "impact": "med",
-      "ticker": "NBIS",
-      "note": "hyperscalers"
-    },
     {
       "date": "2026-11-17",
       "name": "NVIDIA 실적",
