@@ -1,0 +1,5377 @@
+{
+  "asset_class": "coin",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28 03:24 UTC",
+  "version": "0.1.0",
+  "universe_size": 31,
+  "us_count": 0,
+  "kr_count": 0,
+  "macro": {
+    "BTC_DOMINANCE": {
+      "name": "BTC 도미넌스 (%)",
+      "value": 57.795242781664925,
+      "change": 0.0
+    },
+    "TOTAL_MCAP": {
+      "name": "전체 시총 ($T)",
+      "value": 2.0851193671248054,
+      "change": -0.0450585962471826
+    },
+    "ETH_BTC": {
+      "name": "ETH/BTC",
+      "value": 0.02774982471369904,
+      "change": -0.01224356206977295
+    }
+  },
+  "theme_rankings": [
+    {
+      "theme_key": "rwa",
+      "theme_name": "RWA (시대 흐름 2)",
+      "tagline": "🏛 온체인 금융 — 국채·부동산·주식의 토큰화",
+      "why_now": "기관 자금 유입 가장 빠른 영역. BlackRock·Franklin 등 진입.",
+      "risk": "규제 의존적. 거시 금리 환경 변화 시 단기 자금 이탈 가능.",
+      "composite_return": -0.14541547089838988,
+      "avg_return_1w": 0.11731498278706443,
+      "avg_return_1m": -0.17191677344036688,
+      "avg_return_3m": -0.3728108545278749,
+      "cap_leader": {
+        "ticker": "LINK",
+        "name": "Chainlink"
+      },
+      "momentum_leader": {
+        "ticker": "LINK",
+        "name": "Chainlink"
+      },
+      "member_count": 2
+    },
+    {
+      "theme_key": "real_usage",
+      "theme_name": "실사용 코인 (사람들이 진짜 씀)",
+      "tagline": "👥 진짜 쓰는 코인 — DAU 기반",
+      "why_now": "거버넌스보단 실제 트래픽·결제 사용처. TON·BNB 일일 활성 유저 검증.",
+      "risk": "투기 대비 변동성 낮지만 폭발력도 작음. 환희장에서 underperform.",
+      "composite_return": -0.157176369443977,
+      "avg_return_1w": -0.0046908110746436416,
+      "avg_return_1m": -0.14410705867140022,
+      "avg_return_3m": -0.32708767551007945,
+      "cap_leader": {
+        "ticker": "BNB",
+        "name": "BNB"
+      },
+      "momentum_leader": {
+        "ticker": "BNB",
+        "name": "BNB"
+      },
+      "member_count": 2
+    },
+    {
+      "theme_key": "l1_ecosystem",
+      "theme_name": "L1 생태계 (이미 커진 생태계)",
+      "tagline": "🌐 검증된 L1 — 이더 외 실수요 입증된 체인들",
+      "why_now": "솔라나 압도적 점유 + 신흥 L1(Sui·Aptos)도 자금 유입. 생태계 prop value 확보.",
+      "risk": "L1 간 경쟁 격화. 사용자·개발자 이탈 시 멀티플 빠르게 축소.",
+      "composite_return": -0.1997094754462622,
+      "avg_return_1w": 0.008217361326337916,
+      "avg_return_1m": -0.2052675659831871,
+      "avg_return_3m": -0.40022552483629575,
+      "cap_leader": {
+        "ticker": "SOL",
+        "name": "Solana"
+      },
+      "momentum_leader": {
+        "ticker": "SOL",
+        "name": "Solana"
+      },
+      "member_count": 3
+    },
+    {
+      "theme_key": "bitcoin_eth",
+      "theme_name": "비트·이더 (시장 방향성 기준)",
+      "tagline": "🥇 시장 방향성 기준 — 비트는 디지털 금, 이더는 인프라",
+      "why_now": "BTC ETF 자금 유입, ETH 스테이킹 + L2 매출. 알트 사이클의 출발점.",
+      "risk": "거시 유동성·금리에 직접 노출. ETF 자금 흐름이 단기 방향성을 좌우.",
+      "composite_return": -0.2012955070157384,
+      "avg_return_1w": -0.02776292823694193,
+      "avg_return_1m": -0.23333222479470944,
+      "avg_return_3m": -0.3321124620892401,
+      "cap_leader": {
+        "ticker": "BTC",
+        "name": "Bitcoin"
+      },
+      "momentum_leader": {
+        "ticker": "BTC",
+        "name": "Bitcoin"
+      },
+      "member_count": 2
+    },
+    {
+      "theme_key": "ai",
+      "theme_name": "AI 코인 (시대 흐름 1)",
+      "tagline": "🤖 크립토 버전 AI 베팅 — 분산 컴퓨팅·에이전트",
+      "why_now": "AI Capex 사이클의 크립토 노출. 미국 AI 주식 테마와 동행 흐름.",
+      "risk": "내러티브 의존도 큼. 실수요 검증 아직 미흡. 알트 변동성 폭.",
+      "composite_return": -0.2054013352734571,
+      "avg_return_1w": 0.011036473457318471,
+      "avg_return_1m": -0.2058199142855924,
+      "avg_return_3m": -0.421281038654719,
+      "cap_leader": {
+        "ticker": "NEAR",
+        "name": "NEAR"
+      },
+      "momentum_leader": {
+        "ticker": "TAO",
+        "name": "Bittensor"
+      },
+      "member_count": 3
+    },
+    {
+      "theme_key": "defi_revenue",
+      "theme_name": "DeFi 매출 실체 (꿈→증명)",
+      "tagline": "💰 DeFi 매출 실체 — 꿈→증명 전환",
+      "why_now": "실제 매출 + 토큰 보유자 환원. P/S 가시화로 밸류에이션 재평가 단계.",
+      "risk": "스마트컨트랙트 위험 + 규제. 매출은 시장 변동성에 큰 폭으로 변동.",
+      "composite_return": -0.2163648887895597,
+      "avg_return_1w": 0.021328902547102624,
+      "avg_return_1m": -0.2418675053813874,
+      "avg_return_3m": -0.4200551913371184,
+      "cap_leader": {
+        "ticker": "UNI",
+        "name": "Uniswap"
+      },
+      "momentum_leader": {
+        "ticker": "AAVE",
+        "name": "Aave"
+      },
+      "member_count": 4
+    },
+    {
+      "theme_key": "etf_candidates",
+      "theme_name": "ETF 후보 + L2 (기관 수요)",
+      "tagline": "📈 ETF 승인 후보 + 이더 L2 — 기관 매집 영역",
+      "why_now": "SOL·LTC ETF 가능성 + L2 거래량 회복. 다음 cycle 메이저 후보.",
+      "risk": "ETF 미승인 시 단기 조정. L2는 fee market 경쟁 심화.",
+      "composite_return": -0.22445332083111708,
+      "avg_return_1w": 0.004121168149205212,
+      "avg_return_1m": -0.24213410248899123,
+      "avg_return_3m": -0.42945343426760707,
+      "cap_leader": {
+        "ticker": "XRP",
+        "name": "XRP"
+      },
+      "momentum_leader": {
+        "ticker": "XRP",
+        "name": "XRP"
+      },
+      "member_count": 4
+    },
+    {
+      "theme_key": "depin",
+      "theme_name": "DePIN / InfraFi (Messari Theses 2026 핵심)",
+      "tagline": "🛰 분산 물리 인프라 — GPU·전력·통신의 토큰화",
+      "why_now": "토큰 가격은 하락했지만 매출 폭증 중. AI Capex 사이클의 크립토 노출 직접.",
+      "risk": "토큰 인플레이션 압력 + 사용자 보상 의존. 베어 마켓에서 매도 압력 큼.",
+      "composite_return": -0.230505350229076,
+      "avg_return_1w": -0.0022173290936056134,
+      "avg_return_1m": -0.2526772922065845,
+      "avg_return_3m": -0.42923078206120174,
+      "cap_leader": {
+        "ticker": "FIL",
+        "name": "Filecoin"
+      },
+      "momentum_leader": {
+        "ticker": "FIL",
+        "name": "Filecoin"
+      },
+      "member_count": 3
+    }
+  ],
+  "verdicts": [
+    {
+      "ticker": "NEAR",
+      "name": "NEAR",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "NEAR AI, BlackRock 관련 루머",
+      "coingecko_id": "near",
+      "scores": {
+        "short": 49.99811106595013,
+        "mid": 60.23736870529187,
+        "long": 59.0,
+        "composite": 57.18260681333968
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "NEAR: 정량 종합 57점, 라벨 HOLD. 단기 50 / 중기 60 / 장기 59. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 3.0458801485714453,
+        "rsi14": 39.1870539861803,
+        "ma50": 4.0602497688218655,
+        "ma200": 2.7885607360791416,
+        "vol_z20": -1.1961683464626176,
+        "ret_5d": 0.021889306016949828,
+        "ret_20d": -0.18385416939589472,
+        "ret_60d": -0.3678979210884513
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0868,
+        "atr_pct": 0.0434,
+        "entry_price": 3.0459,
+        "stop_price": 2.7814,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 2.1888881588155975,
+        "entry_low": 2.1888881588155975,
+        "entry_high": 2.1888881588155975,
+        "stop_loss": 1.9905411425306807,
+        "stop_pct": 0.09061541837397573,
+        "targets": [
+          {
+            "price": 4.230842,
+            "rr": 10.29,
+            "label": "T1",
+            "weight": 0.922,
+            "count": 2
+          },
+          {
+            "price": 4.480718,
+            "rr": 11.55,
+            "label": "T2",
+            "weight": 0.712,
+            "count": 2
+          }
+        ],
+        "confidence": 72,
+        "rationale": "진입 zone에 1개 시그널 합류 — 주봉 50MA. 현재가 대비 +28.1% 위치. T1 $4.231 (R:R 10.3), T2 $4.481 (R:R 11.6)",
+        "invalidation": "진입가 $2.189 아래 손절가 $1.991 일봉 종가 마감 시 plan 폐기.",
+        "actionable": false,
+        "atr_pct": 0.04341318034196541,
+        "zones": [
+          {
+            "center": 2.1888881588155975,
+            "low": 2.1888881588155975,
+            "high": 2.1888881588155975,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 2.188888,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 4.230842093624943,
+            "low": 4.216560929366534,
+            "high": 4.245123257883352,
+            "weight": 0.922,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 4.216561,
+                "weight": 0.572,
+                "age_days": 47
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 4.245123,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 2.7885607360791416,
+            "low": 2.7885607360791416,
+            "high": 2.7885607360791416,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 2.788561,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 4.480718203949377,
+            "low": 4.461436407898754,
+            "high": 4.5,
+            "weight": 0.712,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 4.461436,
+                "weight": 0.412,
+                "age_days": 50
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $4.50",
+                "price": 4.5,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 2.00707477594173,
+            "low": 2.0,
+            "high": 2.0141495518834596,
+            "weight": 0.616,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 2.01415,
+                "weight": 0.316,
+                "age_days": 96
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $2.00",
+                "price": 2.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 58.97038140804382,
+            "last_close": 3.0458801485714453,
+            "ma_50": 2.1888881588155975,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 39.1870539861803,
+            "last_close": 3.0458801485714453,
+            "ma_50": 4.0602497688218655,
+            "ma_200": 2.7885607360791416,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "JUP",
+      "name": "Jupiter",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "솔라나 DEX 1위",
+      "coingecko_id": "jupiter-exchange-solana",
+      "scores": {
+        "short": 60.87121377523209,
+        "mid": 60.945002042783855,
+        "long": 48.5,
+        "composite": 55.94855415878237
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Jupiter: 정량 종합 56점, 라벨 HOLD. 단기 61 / 중기 61 / 장기 48. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {
+        "last_close": 0.2460582138039652,
+        "rsi14": 44.95429438262546,
+        "ma50": 0.27251688686052505,
+        "ma200": 0.23252076998522242,
+        "vol_z20": -0.4774385147991621,
+        "ret_5d": 0.0961752379234424,
+        "ret_20d": 0.01249807516239887,
+        "ret_60d": -0.2487452543386116
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.109,
+        "atr_pct": 0.0545,
+        "entry_price": 0.2461,
+        "stop_price": 0.2192,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.23279308189335865,
+        "entry_low": 0.23169646519027473,
+        "entry_high": 0.23416201050457872,
+        "stop_loss": 0.2115884556570637,
+        "stop_pct": 0.09108787109923092,
+        "targets": [
+          {
+            "price": 0.273758,
+            "rr": 1.93,
+            "label": "T1",
+            "weight": 0.95,
+            "count": 2
+          },
+          {
+            "price": 0.286374,
+            "rr": 2.53,
+            "label": "T2",
+            "weight": 0.799,
+            "count": 2
+          }
+        ],
+        "confidence": 100,
+        "rationale": "진입 zone에 3개 시그널 합류 — 일봉 200MA, Fib 0.618, Swing Low. 현재가 대비 +5.4% 위치. T1 $0.2738 (R:R 1.9), T2 $0.2864 (R:R 2.5)",
+        "invalidation": "진입가 $0.2328 아래 손절가 $0.2116 일봉 종가 마감 시 plan 폐기.",
+        "actionable": true,
+        "atr_pct": 0.054480358454879294,
+        "zones": [
+          {
+            "center": 0.23279308189335865,
+            "low": 0.23169646519027473,
+            "high": 0.23416201050457872,
+            "weight": 1.943,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.232521,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 0.234162,
+                "weight": 0.6,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.231696,
+                "weight": 0.493,
+                "age_days": 19
+              }
+            ]
+          },
+          {
+            "center": 0.20991525560851967,
+            "low": 0.20991525560851967,
+            "high": 0.20991525560851967,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.209915,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.27375844343026257,
+            "low": 0.27251688686052505,
+            "high": 0.275,
+            "weight": 0.95,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 0.272517,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $0.28",
+                "price": 0.275,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.28637415940803973,
+            "low": 0.2849055927757312,
+            "high": 0.2878427260403483,
+            "weight": 0.799,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (저점 기준)",
+                "price": 0.284906,
+                "weight": 0.449,
+                "age_days": 89
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 0.287843,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 51.19518099026536,
+            "last_close": 0.2460582138039652,
+            "ma_50": 0.20991525560851967,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 44.95429438262546,
+            "last_close": 0.2460582138039652,
+            "ma_50": 0.27251688686052505,
+            "ma_200": 0.23252076998522242,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": true
+    },
+    {
+      "ticker": "HYPE",
+      "name": "Hyperliquid",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "Perp DEX 1위 + Prediction Markets 진입, 일매출 폭증",
+      "coingecko_id": "hyperliquid",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 59.0,
+        "composite": 53.6
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Hyperliquid: 정량 종합 54점, 라벨 HOLD. 단기 52 / 중기 49 / 장기 59. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": true
+    },
+    {
+      "ticker": "FET",
+      "name": "Fetch.ai (ASI)",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "AI 에이전트, ASI 토큰 통합",
+      "coingecko_id": "artificial-superintelligence-alliance",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 50.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "Fetch.ai (ASI): 정량 종합 50점, 라벨 HOLD. 단기 50 / 중기 50 / 장기 50. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": true
+    },
+    {
+      "ticker": "IO",
+      "name": "io.net",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "GPU 분산 컴퓨트, AI Capex 직결",
+      "coingecko_id": "io-net",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 50.0,
+        "composite": 50.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "io.net: 정량 종합 50점, 라벨 HOLD. 단기 50 / 중기 50 / 장기 50. (LLM 미연결 — 정량 요약만 표기)",
+        "entry_guide": "API 키 미설정 — 진입 가이드 자동 생성 불가",
+        "risks": "LLM 서술 미생성. 정량 점수만 참고할 것",
+        "next_trigger": "다음 어닝 발표"
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": true
+    },
+    {
+      "ticker": "ONDO",
+      "name": "Ondo",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "rwa",
+      "theme_short": "RWA",
+      "note": "BlackRock·국채 토큰화 1위",
+      "coingecko_id": "ondo-finance",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 48.5,
+        "composite": 49.400000000000006
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "UNI",
+      "name": "Uniswap",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "DEX 1위, 수수료 분배 도입 진행",
+      "coingecko_id": "uniswap",
+      "scores": {
+        "short": 47.88377613488868,
+        "mid": 48.08519900929775,
+        "long": 48.5,
+        "composite": 48.20076368697639
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 4.745913038555078,
+        "rsi14": 33.17019196633909,
+        "ma50": 6.445530551947967,
+        "ma200": 5.040514684438027,
+        "vol_z20": -0.43079063408970064,
+        "ret_5d": 0.013855296016168417,
+        "ret_20d": -0.3423595466367899,
+        "ret_60d": -0.4609413150083336
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0901,
+        "atr_pct": 0.045,
+        "entry_price": 4.7459,
+        "stop_price": 4.3183,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 4.58432991507021,
+        "entry_low": 4.58432991507021,
+        "entry_high": 4.58432991507021,
+        "stop_loss": 4.2636390788681675,
+        "stop_pct": 0.06995369926318472,
+        "targets": [
+          {
+            "price": 5.020257,
+            "rr": 1.36,
+            "label": "T1",
+            "weight": 1.15,
+            "count": 2
+          },
+          {
+            "price": 6.452708,
+            "rr": 5.83,
+            "label": "T2",
+            "weight": 1.115,
+            "count": 2
+          },
+          {
+            "price": 7.615603,
+            "rr": 9.45,
+            "label": "T3",
+            "weight": 0.994,
+            "count": 2
+          }
+        ],
+        "confidence": 77,
+        "rationale": "진입 zone에 1개 시그널 합류 — 주봉 50MA. 현재가 대비 +3.4% 위치. T1 $5.02 (R:R 1.4), T2 $6.453 (R:R 5.8)",
+        "invalidation": "진입가 $4.584 아래 손절가 $4.264 일봉 종가 마감 시 plan 폐기.",
+        "actionable": false,
+        "atr_pct": 0.045048000050682095,
+        "zones": [
+          {
+            "center": 5.020257342219013,
+            "low": 5.0,
+            "high": 5.040514684438027,
+            "weight": 1.15,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 5.040515,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $5.00",
+                "price": 5.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 6.452708378063605,
+            "low": 6.445530551947967,
+            "high": 6.459886204179243,
+            "weight": 1.115,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 6.445531,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 6.459886,
+                "weight": 0.465,
+                "age_days": 29
+              }
+            ]
+          },
+          {
+            "center": 7.615603033387796,
+            "low": 7.610182959065028,
+            "high": 7.621023107710563,
+            "weight": 0.994,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 7.610183,
+                "weight": 0.512,
+                "age_days": 66
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 7.621023,
+                "weight": 0.482,
+                "age_days": 23
+              }
+            ]
+          },
+          {
+            "center": 4.58432991507021,
+            "low": 4.58432991507021,
+            "high": 4.58432991507021,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 4.58433,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 50.273924947272775,
+            "last_close": 4.745913038555078,
+            "ma_50": 4.58432991507021,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 33.17019196633909,
+            "last_close": 4.745913038555078,
+            "ma_50": 6.445530551947967,
+            "ma_200": 5.040514684438027,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "BNB",
+      "name": "BNB",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "real_usage",
+      "theme_short": "실사용",
+      "note": "거래소 + BSC, 일거래량 1위급",
+      "coingecko_id": "binancecoin",
+      "scores": {
+        "short": 54.16190903562151,
+        "mid": 48.36049568610396,
+        "long": 42.5,
+        "composite": 47.46665074904176
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 553.3329033854674,
+        "rsi14": 27.108995983587164,
+        "ma50": 674.2498257024821,
+        "ma200": 653.6358687833002,
+        "vol_z20": -0.9864832589596091,
+        "ret_5d": -0.009652250859678801,
+        "ret_20d": -0.20421913685578197,
+        "ret_60d": -0.2754353814722096
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0436,
+        "atr_pct": 0.0218,
+        "entry_price": 553.3329,
+        "stop_price": 529.1926,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.021813528627734825,
+        "zones": [
+          {
+            "center": 670.4954014586366,
+            "low": 667.851437652968,
+            "high": 674.2498257024821,
+            "weight": 2.05,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 667.851438,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 674.249826,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 669.384941,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 702.2473745640414,
+            "low": 700.0,
+            "high": 706.7357762257922,
+            "weight": 1.159,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 706.735776,
+                "weight": 0.509,
+                "age_days": 67
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 700.006347,
+                "weight": 0.35,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $700",
+                "price": 700.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 653.6358687833002,
+            "low": 653.6358687833002,
+            "high": 653.6358687833002,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 653.635869,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 797.5910025223402,
+            "low": 795.1820050446804,
+            "high": 800.0,
+            "weight": 0.703,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 795.182005,
+                "weight": 0.403,
+                "age_days": 54
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $800",
+                "price": 800.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 25.49678226033717,
+            "last_close": 553.3329033854674,
+            "ma_50": 667.851437652968,
+            "ma_200": null,
+            "note": "혼조 · RSI 과매도"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 27.108995983587164,
+            "last_close": 553.3329033854674,
+            "ma_50": 674.2498257024821,
+            "ma_200": 653.6358687833002,
+            "note": "혼조 · RSI 과매도"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AKT",
+      "name": "Akash",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "오픈소스 클라우드, AWS 대안",
+      "coingecko_id": "akash-network",
+      "scores": {
+        "short": 46.8442604050518,
+        "mid": 46.43707117257861,
+        "long": 48.5,
+        "composite": 47.364040011665466
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.490641968375188,
+        "rsi14": 40.32877159755665,
+        "ma50": 0.6151322528668495,
+        "ma200": 0.6173406192113043,
+        "vol_z20": -1.424003812683031,
+        "ret_5d": -0.017077148668201758,
+        "ret_20d": -0.23207528646152442,
+        "ret_60d": -0.25390387174271645
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0861,
+        "atr_pct": 0.043,
+        "entry_price": 0.4906,
+        "stop_price": 0.4484,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.043045086135574596,
+        "zones": [
+          {
+            "center": 0.6162364360390769,
+            "low": 0.6151322528668495,
+            "high": 0.6173406192113043,
+            "weight": 1.5,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.617341,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 0.615132,
+                "weight": 0.65,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.534908059951047,
+            "low": 0.534908059951047,
+            "high": 0.534908059951047,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.534908,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.6669922782568847,
+            "low": 0.664483501918596,
+            "high": 0.6695010545951734,
+            "weight": 0.899,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 0.664484,
+                "weight": 0.549,
+                "age_days": 54
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 0.669501,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.4974099504612653,
+            "low": 0.4948199009225306,
+            "high": 0.5,
+            "weight": 0.661,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.49482,
+                "weight": 0.361,
+                "age_days": 73
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $0.50",
+                "price": 0.5,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.5974620662658081,
+            "low": 0.5949241325316161,
+            "high": 0.6,
+            "weight": 0.646,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 0.594924,
+                "weight": 0.346,
+                "age_days": 80
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $0.60",
+                "price": 0.6,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 43.93460465033771,
+            "last_close": 0.490641968375188,
+            "ma_50": 0.534908059951047,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 40.32877159755665,
+            "last_close": 0.490641968375188,
+            "ma_50": 0.6151322528668495,
+            "ma_200": 0.6173406192113043,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "RNDR",
+      "name": "Render",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "GPU 분산 렌더링·AI 컴퓨트",
+      "coingecko_id": "render-token",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "APT",
+      "name": "Aptos",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "Move 기반, 기관 파트너십",
+      "coingecko_id": "aptos",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "ARB",
+      "name": "Arbitrum",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "L2 1위, TVL·매출 안정",
+      "coingecko_id": "arbitrum",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "PENDLE",
+      "name": "Pendle",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "Yield trading, 매출 우상향",
+      "coingecko_id": "pendle",
+      "scores": {
+        "short": 50.0,
+        "mid": 50.0,
+        "long": 42.5,
+        "composite": 47.0
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {},
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "데이터 부족 — 판단 보류.",
+        "flags": []
+      },
+      "guidance": null,
+      "trade_plan": null,
+      "derivatives": null,
+      "multi_tf": null,
+      "in_focus": false
+    },
+    {
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "bitcoin_eth",
+      "theme_short": "비트·이더",
+      "note": "ETF 자금 유입, 디지털 금 내러티브",
+      "coingecko_id": "bitcoin",
+      "scores": {
+        "short": 53.45430547244906,
+        "mid": 45.0,
+        "long": 42.5,
+        "composite": 46.11357636811226
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 59884.23585131975,
+        "rsi14": 25.522532008893563,
+        "ma50": 74268.81986945383,
+        "ma200": 71819.42467340577,
+        "vol_z20": -0.7074288718177968,
+        "ret_5d": -0.021051782226630067,
+        "ret_20d": -0.2097242166487775,
+        "ret_60d": -0.2826452951942887
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0411,
+        "atr_pct": 0.0205,
+        "entry_price": 59884.2359,
+        "stop_price": 57424.4013,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.020538248211002034,
+        "zones": [
+          {
+            "center": 72200.42034528748,
+            "low": 71819.42467340577,
+            "high": 72581.4160171692,
+            "weight": 1.3,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 71819.424673,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 72581.416017,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 75951.3630608634,
+            "low": 75590.24471973324,
+            "high": 76374.8119757108,
+            "weight": 1.22,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 76374.811976,
+                "weight": 0.509,
+                "age_days": 67
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 75590.24472,
+                "weight": 0.361,
+                "age_days": 73
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 75889.032487,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 60062.31081584981,
+            "low": 60000.0,
+            "high": 60124.62163169962,
+            "weight": 1.02,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (저점 기준)",
+                "price": 60124.621632,
+                "weight": 0.72,
+                "age_days": 7
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $60,000",
+                "price": 60000.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 73314.61288721874,
+            "low": 73314.61288721874,
+            "high": 73314.61288721874,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 73314.612887,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 69636.89977359613,
+            "low": 69273.79954719226,
+            "high": 70000.0,
+            "weight": 0.9,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 69273.799547,
+                "weight": 0.6,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $70,000",
+                "price": 70000.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 24.682307392897215,
+            "last_close": 59884.23585131975,
+            "ma_50": 73314.61288721874,
+            "ma_200": null,
+            "note": "혼조 · RSI 과매도"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 25.522532008893563,
+            "last_close": 59884.23585131975,
+            "ma_50": 74268.81986945383,
+            "ma_200": 71819.42467340577,
+            "note": "혼조 · RSI 과매도"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ENA",
+      "name": "Ethena",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "USDe 합성달러, DeFi 매출 1위급",
+      "coingecko_id": "ethena",
+      "scores": {
+        "short": 49.45605747330739,
+        "mid": 47.0,
+        "long": 42.5,
+        "composite": 45.814014368326845
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.10270654297746136,
+        "rsi14": 26.216543147374594,
+        "ma50": 0.16380201021945828,
+        "ma200": 0.13165445695418915,
+        "vol_z20": -1.3420967598172548,
+        "ret_5d": 0.01526419413338509,
+        "ret_20d": -0.3522860893344746,
+        "ret_60d": -0.5997301176089136
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0932,
+        "atr_pct": 0.0466,
+        "entry_price": 0.1027,
+        "stop_price": 0.0931,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.04658763683206002,
+        "zones": [
+          {
+            "center": 0.13148090290228936,
+            "low": 0.1313073488503896,
+            "high": 0.13165445695418915,
+            "weight": 1.8,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.131307,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.131654,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 37.67102209288261,
+            "last_close": 0.10270654297746136,
+            "ma_50": 0.1313073488503896,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 26.216543147374594,
+            "last_close": 0.10270654297746136,
+            "ma_50": 0.16380201021945828,
+            "ma_200": 0.13165445695418915,
+            "note": "혼조 · RSI 과매도"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "MKR",
+      "name": "MakerDAO (Sky)",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "rwa",
+      "theme_short": "RWA",
+      "note": "DAI·미국 국채 보유, RWA 원조",
+      "coingecko_id": "maker",
+      "scores": {
+        "short": 63.14581972303602,
+        "mid": 35.9440141679781,
+        "long": 42.5,
+        "composite": 45.366859889551336
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1181.3245514158468,
+        "rsi14": 41.83805826786673,
+        "ma50": 1433.4079914691972,
+        "ma200": 1466.8094320490147,
+        "vol_z20": 3.2362182226289087,
+        "ret_5d": 0.18652352843811837,
+        "ret_20d": -0.19721426795479602,
+        "ret_60d": -0.34376501183472674
+      },
+      "overheat": {
+        "score": 22.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": [
+          "거래량 Z=3.2 폭증"
+        ]
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0945,
+        "atr_pct": 0.0473,
+        "entry_price": 1181.3246,
+        "stop_price": 1069.6586,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.04726303894395579,
+        "zones": [
+          {
+            "center": 1439.988693529118,
+            "low": 1433.4079914691972,
+            "high": 1446.569395589039,
+            "weight": 1.25,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 1433.407991,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 1446.569396,
+                "weight": 0.6,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 1469.4062911691822,
+            "low": 1466.8094320490147,
+            "high": 1472.0031502893496,
+            "weight": 1.113,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 1466.809432,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 1472.00315,
+                "weight": 0.263,
+                "age_days": 128
+              }
+            ]
+          },
+          {
+            "center": 1521.9178512056924,
+            "low": 1521.9178512056924,
+            "high": 1521.9178512056924,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 1521.917851,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 1596.2842306376804,
+            "low": 1592.5684612753607,
+            "high": 1600.0,
+            "weight": 0.75,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 1592.568461,
+                "weight": 0.45,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $1,600",
+                "price": 1600.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 38.82917715038656,
+            "last_close": 1181.3245514158468,
+            "ma_50": 1521.9178512056924,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 41.83805826786673,
+            "last_close": 1181.3245514158468,
+            "ma_50": 1433.4079914691972,
+            "ma_200": 1466.8094320490147,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "LINK",
+      "name": "Chainlink",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "rwa",
+      "theme_short": "RWA",
+      "note": "오라클·CCIP, 모든 RWA 인프라",
+      "coingecko_id": "chainlink",
+      "scores": {
+        "short": 54.48983988365208,
+        "mid": 42.039429898663286,
+        "long": 42.5,
+        "composite": 45.33626043544517
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 9.23532396560297,
+        "rsi14": 41.38549860900329,
+        "ma50": 10.85637376469987,
+        "ma200": 10.053501687700944,
+        "vol_z20": 0.046273158264827946,
+        "ret_5d": 0.04810643713601048,
+        "ret_20d": -0.14661927892593773,
+        "ret_60d": -0.401856697221023
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0561,
+        "atr_pct": 0.0281,
+        "entry_price": 9.2353,
+        "stop_price": 8.7171,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 8.865231045403837,
+        "entry_low": 8.816973553839162,
+        "entry_high": 8.913488536968512,
+        "stop_loss": 8.42828994351126,
+        "stop_pct": 0.04928705181565554,
+        "targets": [
+          {
+            "price": 10.016153,
+            "rr": 2.63,
+            "label": "T1",
+            "weight": 2.1,
+            "count": 3
+          },
+          {
+            "price": 10.869098,
+            "rr": 4.59,
+            "label": "T2",
+            "weight": 1.011,
+            "count": 2
+          },
+          {
+            "price": 11.971531,
+            "rr": 7.11,
+            "label": "T3",
+            "weight": 1.143,
+            "count": 3
+          }
+        ],
+        "confidence": 78,
+        "rationale": "진입 zone에 2개 시그널 합류 — Anchored VWAP (저점 기준), Swing High. 현재가 대비 +4.0% 위치. T1 $10.02 (R:R 2.6), T2 $10.87 (R:R 4.6)",
+        "invalidation": "진입가 $8.865 아래 손절가 $8.428 일봉 종가 마감 시 plan 폐기.",
+        "actionable": false,
+        "atr_pct": 0.028057749554901472,
+        "zones": [
+          {
+            "center": 10.0161534109519,
+            "low": 9.994958545154756,
+            "high": 10.053501687700944,
+            "weight": 2.1,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 9.994959,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 10.053502,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $10",
+                "price": 10.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 11.971530614036595,
+            "low": 11.922240071751414,
+            "high": 12.0,
+            "weight": 1.143,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 11.92224,
+                "weight": 0.53,
+                "age_days": 60
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 11.992352,
+                "weight": 0.312,
+                "age_days": 98
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $12",
+                "price": 12.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 10.86909761477847,
+            "low": 10.85637376469987,
+            "high": 10.88182146485707,
+            "weight": 1.011,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 10.856374,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 10.881821,
+                "weight": 0.361,
+                "age_days": 73
+              }
+            ]
+          },
+          {
+            "center": 8.865231045403837,
+            "low": 8.816973553839162,
+            "high": 8.913488536968512,
+            "weight": 0.989,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (저점 기준)",
+                "price": 8.913489,
+                "weight": 0.72,
+                "age_days": 7
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 8.816974,
+                "weight": 0.269,
+                "age_days": 124
+              }
+            ]
+          },
+          {
+            "center": 8.030500795710488,
+            "low": 8.0,
+            "high": 8.061001591420974,
+            "weight": 0.578,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "round_number",
+                "label": "라운드 $8.00",
+                "price": 8.0,
+                "weight": 0.3,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 8.061002,
+                "weight": 0.278,
+                "age_days": 118
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 35.66255348451014,
+            "last_close": 9.23532396560297,
+            "ma_50": 9.994958545154756,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 41.38549860900329,
+            "last_close": 9.23532396560297,
+            "ma_50": 10.85637376469987,
+            "ma_200": 10.053501687700944,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AVAX",
+      "name": "Avalanche",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "RWA 서브넷 인프라",
+      "coingecko_id": "avalanche-2",
+      "scores": {
+        "short": 51.88735188668252,
+        "mid": 43.206944446791155,
+        "long": 42.5,
+        "composite": 45.094268528047536
+      },
+      "label": "HOLD",
+      "label_quant": "HOLD",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 6.59224244516589,
+        "rsi14": 23.37250728375706,
+        "ma50": 8.47343947435976,
+        "ma200": 7.909807152961293,
+        "vol_z20": -1.0003351618703522,
+        "ret_5d": -0.013156302848529422,
+        "ret_20d": -0.1981933188356405,
+        "ret_60d": -0.37850640625846566
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0668,
+        "atr_pct": 0.0334,
+        "entry_price": 6.5922,
+        "stop_price": 6.1519,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.03340099850988577,
+        "zones": [
+          {
+            "center": 8.769136225295515,
+            "low": 8.747984497599601,
+            "high": 8.790287952991429,
+            "weight": 1.4,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 8.790288,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 8.747984,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 7.954903576480646,
+            "low": 7.909807152961293,
+            "high": 8.0,
+            "weight": 1.15,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 7.909807,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $8.00",
+                "price": 8.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 8.07414891616517,
+            "low": 8.074022086214997,
+            "high": 8.074275746115342,
+            "weight": 0.944,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 8.074022,
+                "weight": 0.6,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 8.074276,
+                "weight": 0.344,
+                "age_days": 81
+              }
+            ]
+          },
+          {
+            "center": 9.002104787863606,
+            "low": 9.0,
+            "high": 9.004209575727213,
+            "weight": 0.855,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 9.00421,
+                "weight": 0.555,
+                "age_days": 52
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $9.00",
+                "price": 9.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 44.45317794216728,
+            "last_close": 6.59224244516589,
+            "ma_50": 8.790287952991429,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 23.37250728375706,
+            "last_close": 6.59224244516589,
+            "ma_50": 8.47343947435976,
+            "ma_200": 7.909807152961293,
+            "note": "혼조 · RSI 과매도"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ETH",
+      "name": "Ethereum",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "bitcoin_eth",
+      "theme_short": "비트·이더",
+      "note": "ETF 승인 + 스테이킹 + L2 매출",
+      "coingecko_id": "ethereum",
+      "scores": {
+        "short": 51.60279046412128,
+        "mid": 40.05328331050486,
+        "long": 42.5,
+        "composite": 43.91934677470702
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 1662.2655276902133,
+        "rsi14": 28.856157368780188,
+        "ma50": 2151.5326493933753,
+        "ma200": 2106.475774754551,
+        "vol_z20": -0.6528995075483129,
+        "ret_5d": -0.034474074247253794,
+        "ret_20d": -0.2569402329406414,
+        "ret_60d": -0.3815796289841915
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0549,
+        "atr_pct": 0.0274,
+        "entry_price": 1662.2655,
+        "stop_price": 1571.0473,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.027437914384360954,
+        "zones": [
+          {
+            "center": 2202.126909384907,
+            "low": 2200.0,
+            "high": 2204.2538187698137,
+            "weight": 1.25,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 2204.253819,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $2,200",
+                "price": 2200.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 2161.0605278024746,
+            "low": 2151.5326493933753,
+            "high": 2170.588406211574,
+            "weight": 1.1,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 2151.532649,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 2170.588406,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 2306.2170160741034,
+            "low": 2299.1646806921626,
+            "high": 2313.2693514560447,
+            "weight": 0.859,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 2299.164681,
+                "weight": 0.509,
+                "age_days": 67
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 2313.269351,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 2106.475774754551,
+            "low": 2106.475774754551,
+            "high": 2106.475774754551,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 2106.475775,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 19.33775511982583,
+            "last_close": 1662.2655276902133,
+            "ma_50": 2204.2538187698137,
+            "ma_200": null,
+            "note": "혼조 · RSI 과매도"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 28.856157368780188,
+            "last_close": 1662.2655276902133,
+            "ma_50": 2151.5326493933753,
+            "ma_200": 2106.475774754551,
+            "note": "혼조 · RSI 과매도"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SOL",
+      "name": "Solana",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "ETF 후보, 밈+DeFi 생태계 폭발",
+      "coingecko_id": "solana",
+      "scores": {
+        "short": 51.448190771952504,
+        "mid": 39.27880167634166,
+        "long": 42.5,
+        "composite": 43.60962827970771
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 71.64033818357679,
+        "rsi14": 38.7045650936165,
+        "ma50": 90.53712306811204,
+        "ma200": 87.76670254674177,
+        "vol_z20": -0.44675536791575754,
+        "ret_5d": 0.01463889143192798,
+        "ret_20d": -0.2013501519857558,
+        "ret_60d": -0.3970692616674555
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0584,
+        "atr_pct": 0.0292,
+        "entry_price": 71.6403,
+        "stop_price": 67.4565,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 70.2405740669453,
+        "entry_low": 70.0,
+        "entry_high": 70.4811481338906,
+        "stop_loss": 66.86209178822861,
+        "stop_pct": 0.04809872817236239,
+        "targets": [
+          {
+            "price": 87.766703,
+            "rr": 5.19,
+            "label": "T1",
+            "weight": 0.85,
+            "count": 1
+          },
+          {
+            "price": 90.609531,
+            "rr": 6.03,
+            "label": "T2",
+            "weight": 1.9,
+            "count": 3
+          },
+          {
+            "price": 97.250645,
+            "rr": 7.99,
+            "label": "T3",
+            "weight": 0.882,
+            "count": 2
+          }
+        ],
+        "confidence": 79,
+        "rationale": "진입 zone에 2개 시그널 합류 — Anchored VWAP (저점 기준), 라운드 $70. 현재가 대비 +2.0% 위치. T1 $87.77 (R:R 5.2), T2 $90.61 (R:R 6.0)",
+        "invalidation": "진입가 $70.24 아래 손절가 $66.86 일봉 종가 마감 시 plan 폐기.",
+        "actionable": false,
+        "atr_pct": 0.02920057136647012,
+        "zones": [
+          {
+            "center": 90.60953135985619,
+            "low": 90.0,
+            "high": 91.29147101145652,
+            "weight": 1.9,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 91.291471,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 90.537123,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $90",
+                "price": 90.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 70.2405740669453,
+            "low": 70.0,
+            "high": 70.4811481338906,
+            "weight": 1.02,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (저점 기준)",
+                "price": 70.481148,
+                "weight": 0.72,
+                "age_days": 7
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $70",
+                "price": 70.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 97.25064473773023,
+            "low": 96.87348479401192,
+            "high": 97.62780468144852,
+            "weight": 0.882,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 97.627805,
+                "weight": 0.521,
+                "age_days": 63
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 96.873485,
+                "weight": 0.361,
+                "age_days": 73
+              }
+            ]
+          },
+          {
+            "center": 87.76670254674177,
+            "low": 87.76670254674177,
+            "high": 87.76670254674177,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 87.766703,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 99.59924839925078,
+            "low": 99.19849679850157,
+            "high": 100.0,
+            "weight": 0.65,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 99.198497,
+                "weight": 0.35,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $100",
+                "price": 100.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 26.053587843586868,
+            "last_close": 71.64033818357679,
+            "ma_50": 91.29147101145652,
+            "ma_200": null,
+            "note": "혼조 · RSI 과매도"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 38.7045650936165,
+            "last_close": 71.64033818357679,
+            "ma_50": 90.53712306811204,
+            "ma_200": 87.76670254674177,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "TAO",
+      "name": "Bittensor",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "분산 AI 학습 네트워크, AI 코인 대장",
+      "coingecko_id": "bittensor",
+      "scores": {
+        "short": 50.6466742183889,
+        "mid": 39.45225803170263,
+        "long": 42.5,
+        "composite": 43.469958865693144
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 186.85150663432483,
+        "rsi14": 35.07807751781445,
+        "ma50": 231.67762023085078,
+        "ma200": 233.93325745855824,
+        "vol_z20": -0.6144904824404379,
+        "ret_5d": -0.020586152863749985,
+        "ret_20d": -0.16296072553694385,
+        "ret_60d": -0.39360013456023624
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0718,
+        "atr_pct": 0.0359,
+        "entry_price": 186.8515,
+        "stop_price": 173.4371,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.035895820744045334,
+        "zones": [
+          {
+            "center": 233.66080894301473,
+            "low": 231.67762023085078,
+            "high": 234.69084152455153,
+            "weight": 3.05,
+            "count": 4,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 234.690842,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 233.933257,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 231.67762,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 234.341517,
+                "weight": 0.6,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 267.95905615181783,
+            "low": 267.51374598222696,
+            "high": 268.4043663214087,
+            "weight": 0.762,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 268.404366,
+                "weight": 0.412,
+                "age_days": 50
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 267.513746,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 218.9252121157047,
+            "low": 217.85042423140942,
+            "high": 220.0,
+            "weight": 0.661,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 217.850424,
+                "weight": 0.361,
+                "age_days": 73
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $220",
+                "price": 220.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 239.79838716551296,
+            "low": 239.59677433102596,
+            "high": 240.0,
+            "weight": 0.453,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "round_number",
+                "label": "라운드 $240",
+                "price": 240.0,
+                "weight": 0.3,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 239.596774,
+                "weight": 0.153,
+                "age_days": 222
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 36.834365921764366,
+            "last_close": 186.85150663432483,
+            "ma_50": 234.69084152455153,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 35.07807751781445,
+            "last_close": 186.85150663432483,
+            "ma_50": 231.67762023085078,
+            "ma_200": 233.93325745855824,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "HNT",
+      "name": "Helium",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "모바일 DePIN, 실사용 트래픽 증가",
+      "coingecko_id": "helium",
+      "scores": {
+        "short": 52.01399503852481,
+        "mid": 38.0,
+        "long": 42.5,
+        "composite": 43.3034987596312
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.22640040046965226,
+        "rsi14": 42.24964292214994,
+        "ma50": 0.33006876262954726,
+        "ma200": 0.38055653542218254,
+        "vol_z20": -0.6900039855140132,
+        "ret_5d": 0.0216091133771934,
+        "ret_20d": -0.1926584252133945,
+        "ret_60d": -0.5281048853468576
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0715,
+        "atr_pct": 0.0358,
+        "entry_price": 0.2264,
+        "stop_price": 0.2102,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.20048544601318055,
+        "entry_low": 0.2,
+        "entry_high": 0.2009708920263611,
+        "stop_loss": 0.18785811617689688,
+        "stop_pct": 0.06298377307374976,
+        "targets": [
+          {
+            "price": 0.380557,
+            "rr": 14.26,
+            "label": "T1",
+            "weight": 0.85,
+            "count": 1
+          },
+          {
+            "price": 0.689567,
+            "rr": 38.73,
+            "label": "T2",
+            "weight": 0.95,
+            "count": 1
+          }
+        ],
+        "confidence": 50,
+        "rationale": "진입 zone에 2개 시그널 합류 — 라운드 $0.20, Swing High. 현재가 대비 +11.4% 위치. T1 $0.3806 (R:R 14.3), T2 $0.6896 (R:R 38.7)",
+        "invalidation": "진입가 $0.2005 아래 손절가 $0.1879 일봉 종가 마감 시 plan 폐기.",
+        "actionable": false,
+        "atr_pct": 0.03575342269099529,
+        "zones": [
+          {
+            "center": 0.6895666534891335,
+            "low": 0.6895666534891335,
+            "high": 0.6895666534891335,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.689567,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.38055653542218254,
+            "low": 0.38055653542218254,
+            "high": 0.38055653542218254,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.380557,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.20048544601318055,
+            "low": 0.2,
+            "high": 0.2009708920263611,
+            "weight": 0.588,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "round_number",
+                "label": "라운드 $0.20",
+                "price": 0.2,
+                "weight": 0.3,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 0.200971,
+                "weight": 0.288,
+                "age_days": 112
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 50.24285866880936,
+            "last_close": 0.22640040046965226,
+            "ma_50": 0.6895666534891335,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 42.24964292214994,
+            "last_close": 0.22640040046965226,
+            "ma_50": 0.33006876262954726,
+            "ma_200": 0.38055653542218254,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "SUI",
+      "name": "Sui",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "l1_ecosystem",
+      "theme_short": "L1",
+      "note": "Move 기반 신흥 L1, TVL 급증",
+      "coingecko_id": "sui",
+      "scores": {
+        "short": 51.501994091576634,
+        "mid": 37.877219430566136,
+        "long": 42.5,
+        "composite": 43.132525323592304
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.6709814480066139,
+        "rsi14": 31.335396932846976,
+        "ma50": 0.8683457908947727,
+        "ma200": 0.836003724644877,
+        "vol_z20": -0.9818144612562738,
+        "ret_5d": 0.02316949539561519,
+        "ret_20d": -0.21625922712816503,
+        "ret_60d": -0.42510090658296595
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0713,
+        "atr_pct": 0.0357,
+        "entry_price": 0.671,
+        "stop_price": 0.6231,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.035674594514072615,
+        "zones": [
+          {
+            "center": 0.9419671418350635,
+            "low": 0.9419671418350635,
+            "high": 0.9419671418350635,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.941967,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.836003724644877,
+            "low": 0.836003724644877,
+            "high": 0.836003724644877,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.836004,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.9976262935324409,
+            "low": 0.9952525870648818,
+            "high": 1.0,
+            "weight": 0.827,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 0.995253,
+                "weight": 0.527,
+                "age_days": 61
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $1.00",
+                "price": 1.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.9036129434885258,
+            "low": 0.9000000000000001,
+            "high": 0.9072258869770515,
+            "weight": 0.462,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "round_number",
+                "label": "라운드 $0.90",
+                "price": 0.9,
+                "weight": 0.3,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.907226,
+                "weight": 0.162,
+                "age_days": 212
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 44.66955385220521,
+            "last_close": 0.6709814480066139,
+            "ma_50": 0.9419671418350635,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 31.335396932846976,
+            "last_close": 0.6709814480066139,
+            "ma_50": 0.8683457908947727,
+            "ma_200": 0.836003724644877,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "TON",
+      "name": "TON",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "real_usage",
+      "theme_short": "실사용",
+      "note": "Telegram 9억 유저 결제·미니앱",
+      "coingecko_id": "the-open-network",
+      "scores": {
+        "short": 53.663656923344114,
+        "mid": 34.19526628231697,
+        "long": 42.5,
+        "composite": 42.384257429646965
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.976885073611562,
+        "rsi14": 35.095797285635044,
+        "ma50": 1.1776007357900626,
+        "ma200": 1.4658693923206665,
+        "vol_z20": -0.43667236604363535,
+        "ret_5d": 0.00027062871039151837,
+        "ret_20d": -0.08399498048701848,
+        "ret_60d": -0.3787399695479493
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0566,
+        "atr_pct": 0.0283,
+        "entry_price": 0.9769,
+        "stop_price": 0.9216,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.028281765472169245,
+        "zones": [
+          {
+            "center": 1.459770967338821,
+            "low": 1.4536725423569756,
+            "high": 1.4658693923206665,
+            "weight": 1.8,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 1.453673,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 1.465869,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 1.3077464420188616,
+            "low": 1.3,
+            "high": 1.3154928840377231,
+            "weight": 0.663,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 1.315493,
+                "weight": 0.363,
+                "age_days": 72
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $1.30",
+                "price": 1.3,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 28.398623059455517,
+            "last_close": 0.976885073611562,
+            "ma_50": 1.4536725423569756,
+            "ma_200": null,
+            "note": "혼조 · RSI 과매도"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 35.095797285635044,
+            "last_close": 0.976885073611562,
+            "ma_50": 1.1776007357900626,
+            "ma_200": 1.4658693923206665,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "XRP",
+      "name": "XRP",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "ETF 후보, 결제 인프라",
+      "coingecko_id": "ripple",
+      "scores": {
+        "short": 52.15595614308252,
+        "mid": 34.790755089411775,
+        "long": 42.5,
+        "composite": 42.21575331706475
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.9471309152143236,
+        "rsi14": 40.9774806538329,
+        "ma50": 1.1717381291837656,
+        "ma200": 1.2264101401361465,
+        "vol_z20": -0.28643941682019325,
+        "ret_5d": 0.02090309845984173,
+        "ret_20d": -0.1855679511963827,
+        "ret_60d": -0.3668301934060533
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0535,
+        "atr_pct": 0.0267,
+        "entry_price": 0.9471,
+        "stop_price": 0.8965,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.026736199613477712,
+        "zones": [
+          {
+            "center": 1.233353252576809,
+            "low": 1.2264101401361465,
+            "high": 1.2402963650174712,
+            "weight": 1.3,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 1.22641,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 1.240296,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 1.1669585536563742,
+            "low": 1.162178978128983,
+            "high": 1.1717381291837656,
+            "weight": 1.25,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 1.171738,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 1.162179,
+                "weight": 0.6,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 1.3480243350513224,
+            "low": 1.3480243350513224,
+            "high": 1.3480243350513224,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 1.348024,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 1.2939575668717211,
+            "low": 1.2926546552780154,
+            "high": 1.295260478465427,
+            "weight": 0.946,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 1.29526,
+                "weight": 0.512,
+                "age_days": 66
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 1.292655,
+                "weight": 0.434,
+                "age_days": 41
+              }
+            ]
+          },
+          {
+            "center": 0.9963536392466469,
+            "low": 0.9927072784932938,
+            "high": 1.0,
+            "weight": 0.603,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.992707,
+                "weight": 0.303,
+                "age_days": 103
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $1.00",
+                "price": 1.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 24.478116165287744,
+            "last_close": 0.9471309152143236,
+            "ma_50": 1.3480243350513224,
+            "ma_200": null,
+            "note": "혼조 · RSI 과매도"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 40.9774806538329,
+            "last_close": 0.9471309152143236,
+            "ma_50": 1.1717381291837656,
+            "ma_200": 1.2264101401361465,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "AAVE",
+      "name": "Aave",
+      "country": "CRYPTO",
+      "tier": "leader",
+      "theme": "defi_revenue",
+      "theme_short": "DeFi",
+      "note": "렌딩 1위, GHO 스테이블코인",
+      "coingecko_id": "aave",
+      "scores": {
+        "short": 39.61798258785363,
+        "mid": 43.5920608400837,
+        "long": 42.5,
+        "composite": 42.161716940992704
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 94.01426025775798,
+        "rsi14": 31.393456461107817,
+        "ma50": 129.09030850337805,
+        "ma200": 110.23362652560962,
+        "vol_z20": -0.829601557522949,
+        "ret_5d": -0.03997911788458541,
+        "ret_20d": -0.285322460716684,
+        "ret_60d": -0.37080407839261476
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0722,
+        "atr_pct": 0.0361,
+        "entry_price": 94.0143,
+        "stop_price": 87.2268,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.03609817390990765,
+        "zones": [
+          {
+            "center": 136.43139232928363,
+            "low": 135.44206133218077,
+            "high": 137.02597892035982,
+            "weight": 1.245,
+            "count": 3,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 135.442061,
+                "weight": 0.552,
+                "age_days": 53
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 137.025979,
+                "weight": 0.35,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 136.826137,
+                "weight": 0.342,
+                "age_days": 82
+              }
+            ]
+          },
+          {
+            "center": 110.11681326280481,
+            "low": 110.0,
+            "high": 110.23362652560962,
+            "weight": 1.15,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 110.233627,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $110",
+                "price": 110.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 113.43889752837677,
+            "low": 113.43889752837677,
+            "high": 113.43889752837677,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 113.438898,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 119.60073066678297,
+            "low": 119.20146133356593,
+            "high": 120.0,
+            "weight": 0.765,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 119.201461,
+                "weight": 0.465,
+                "age_days": 29
+              },
+              {
+                "kind": "round_number",
+                "label": "라운드 $120",
+                "price": 120.0,
+                "weight": 0.3,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 39.60835006586969,
+            "last_close": 94.01426025775798,
+            "ma_50": 113.43889752837677,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 31.393456461107817,
+            "last_close": 94.01426025775798,
+            "ma_50": 129.09030850337805,
+            "ma_200": 110.23362652560962,
+            "note": "혼조"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "ADA",
+      "name": "Cardano",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "ETF 후보, 학계 기반",
+      "coingecko_id": "cardano",
+      "scores": {
+        "short": 52.00670027417544,
+        "mid": 32.95622727595989,
+        "long": 42.5,
+        "composite": 41.536354615129824
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.1474437905136488,
+        "rsi14": 32.726769719726946,
+        "ma50": 0.18949185292176374,
+        "ma200": 0.19723027174320484,
+        "vol_z20": -0.7894440815248444,
+        "ret_5d": 0.01915232494069885,
+        "ret_20d": -0.18803663891438016,
+        "ret_60d": -0.403520749675091
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.059,
+        "atr_pct": 0.0295,
+        "entry_price": 0.1474,
+        "stop_price": 0.1387,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.029506979070719523,
+        "zones": [
+          {
+            "center": 0.19056258005919618,
+            "low": 0.18949185292176374,
+            "high": 0.1916333071966286,
+            "weight": 1.25,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 0.189492,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 0.191633,
+                "weight": 0.6,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.19629222396278795,
+            "low": 0.19535417618237103,
+            "high": 0.19723027174320484,
+            "weight": 1.211,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.19723,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.195354,
+                "weight": 0.361,
+                "age_days": 73
+              }
+            ]
+          },
+          {
+            "center": 0.20597081565524844,
+            "low": 0.2052667133408664,
+            "high": 0.20667491796963045,
+            "weight": 1.002,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 0.205267,
+                "weight": 0.552,
+                "age_days": 53
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 0.206675,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.23290953114854898,
+            "low": 0.23290953114854898,
+            "high": 0.23290953114854898,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.23291,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.22252061756953423,
+            "low": 0.2217165287426323,
+            "high": 0.22332470639643617,
+            "weight": 0.692,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 0.221717,
+                "weight": 0.35,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_high",
+                "label": "Swing High",
+                "price": 0.223325,
+                "weight": 0.342,
+                "age_days": 82
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 30.626040864357705,
+            "last_close": 0.1474437905136488,
+            "ma_50": 0.23290953114854898,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 32.726769719726946,
+            "last_close": 0.1474437905136488,
+            "ma_50": 0.18949185292176374,
+            "ma_200": 0.19723027174320484,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "OP",
+      "name": "Optimism",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "Superchain, Coinbase Base",
+      "coingecko_id": "optimism",
+      "scores": {
+        "short": 51.098954850792275,
+        "mid": 29.12995777338022,
+        "long": 42.5,
+        "composite": 39.97022393338115
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.0698281709386971,
+        "rsi14": 13.59429162874848,
+        "ma50": 0.10497909298919804,
+        "ma200": 0.10636170875006672,
+        "vol_z20": -0.33806489317899874,
+        "ret_5d": -0.014596837328378909,
+        "ret_20d": -0.3168481313115512,
+        "ret_60d": -0.4800461397266843
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0641,
+        "atr_pct": 0.0321,
+        "entry_price": 0.0698,
+        "stop_price": 0.0654,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.03205296862424089,
+        "zones": [
+          {
+            "center": 0.13476888870216291,
+            "low": 0.13476888870216291,
+            "high": 0.13476888870216291,
+            "weight": 0.95,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.134769,
+                "weight": 0.95,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.10636170875006672,
+            "low": 0.10636170875006672,
+            "high": 0.10636170875006672,
+            "weight": 0.85,
+            "count": 1,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.106362,
+                "weight": 0.85,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 40.77509132863867,
+            "last_close": 0.0698281709386971,
+            "ma_50": 0.13476888870216291,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 13.59429162874848,
+            "last_close": 0.0698281709386971,
+            "ma_50": 0.10497909298919804,
+            "ma_200": 0.10636170875006672,
+            "note": "가격이 50/200MA 아래 + 데드 크로스 · RSI 과매도"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "WLD",
+      "name": "Worldcoin",
+      "country": "CRYPTO",
+      "tier": "momentum",
+      "theme": "ai",
+      "theme_short": "AI",
+      "note": "Sam Altman 프로젝트, AI ID",
+      "coingecko_id": "worldcoin-wld",
+      "scores": {
+        "short": 50.57419216283931,
+        "mid": 29.0,
+        "long": 42.5,
+        "composite": 39.79354804070982
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.24446515429001509,
+        "rsi14": 31.58337466281573,
+        "ma50": 0.3826271256979188,
+        "ma200": 0.40036328627650547,
+        "vol_z20": -0.5390345205540036,
+        "ret_5d": 0.03180626721875557,
+        "ret_20d": -0.2706448479239386,
+        "ret_60d": -0.5023450603154695
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0803,
+        "atr_pct": 0.0402,
+        "entry_price": 0.2445,
+        "stop_price": 0.2248,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.04016807508273358,
+        "zones": [
+          {
+            "center": 0.3835979726450518,
+            "low": 0.3826271256979188,
+            "high": 0.3845688195921848,
+            "weight": 1.6,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.384569,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 0.382627,
+                "weight": 0.65,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.3993817906977134,
+            "low": 0.3984002951189213,
+            "high": 0.40036328627650547,
+            "weight": 1.45,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.400363,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 0.3984,
+                "weight": 0.6,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.44949427979212764,
+            "low": 0.447960527641004,
+            "high": 0.45102803194325125,
+            "weight": 0.996,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 0.447961,
+                "weight": 0.546,
+                "age_days": 55
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 0.451028,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.2997475170514542,
+            "low": 0.29949503410290834,
+            "high": 0.3,
+            "weight": 0.577,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "round_number",
+                "label": "라운드 $0.30",
+                "price": 0.3,
+                "weight": 0.3,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.299495,
+                "weight": 0.277,
+                "age_days": 119
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 34.77299476596913,
+            "last_close": 0.24446515429001509,
+            "ma_50": 0.3845688195921848,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 31.58337466281573,
+            "last_close": 0.24446515429001509,
+            "ma_50": 0.3826271256979188,
+            "ma_200": 0.40036328627650547,
+            "note": "가격이 50/200MA 아래 + 데드 크로스"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "FIL",
+      "name": "Filecoin",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "depin",
+      "theme_short": "DePIN",
+      "note": "분산 저장, AI 데이터 인프라",
+      "coingecko_id": "filecoin",
+      "scores": {
+        "short": 48.608348276888705,
+        "mid": 29.0,
+        "long": 42.5,
+        "composite": 39.302087069222175
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.5253875496505589,
+        "rsi14": 19.00925228079683,
+        "ma50": 0.8321870202407924,
+        "ma200": 0.8292281234101908,
+        "vol_z20": -1.0387621580074815,
+        "ret_5d": -0.011183951989808483,
+        "ret_20d": -0.33329816494483466,
+        "ret_60d": -0.505683589094031
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.081,
+        "atr_pct": 0.0405,
+        "entry_price": 0.5254,
+        "stop_price": 0.4828,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.04052245562228077,
+        "zones": [
+          {
+            "center": 0.911875195711244,
+            "low": 0.9106494124172569,
+            "high": 0.913100979005231,
+            "weight": 1.522,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.913101,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 0.910649,
+                "weight": 0.572,
+                "age_days": 47
+              }
+            ]
+          },
+          {
+            "center": 0.8307075718254916,
+            "low": 0.8292281234101908,
+            "high": 0.8321870202407924,
+            "weight": 1.5,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.829228,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 0.832187,
+                "weight": 0.65,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 41.96630805264572,
+            "last_close": 0.5253875496505589,
+            "ma_50": 0.913100979005231,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "neutral",
+            "rsi": 19.00925228079683,
+            "last_close": 0.5253875496505589,
+            "ma_50": 0.8321870202407924,
+            "ma_200": 0.8292281234101908,
+            "note": "혼조 · RSI 과매도"
+          }
+        ],
+        "bias_score": 0,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    },
+    {
+      "ticker": "LDO",
+      "name": "Lido",
+      "country": "CRYPTO",
+      "tier": "supporting",
+      "theme": "etf_candidates",
+      "theme_short": "ETF",
+      "note": "ETH 스테이킹 1위, ETF 간접",
+      "coingecko_id": "lido-dao",
+      "scores": {
+        "short": 45.349212112891685,
+        "mid": 29.761432046584446,
+        "long": 42.5,
+        "composite": 38.75380424452747
+      },
+      "label": "TRIM",
+      "label_quant": "TRIM",
+      "narrative": {
+        "summary": "",
+        "entry_guide": "",
+        "risks": "",
+        "next_trigger": ""
+      },
+      "metrics": {
+        "last_close": 0.23549929356282975,
+        "rsi14": 21.727057550821826,
+        "ma50": 0.33363059443221965,
+        "ma200": 0.33965094242774646,
+        "vol_z20": -0.030301294298370855,
+        "ret_5d": -0.008973913475340822,
+        "ret_20d": -0.27808368853365084,
+        "ret_60d": -0.4674166542625998
+      },
+      "overheat": {
+        "score": 0.0,
+        "level": "normal",
+        "emoji": "🟢",
+        "label": "정상",
+        "guidance": "진입 OK. 종합 점수가 좋다면 매수 검토.",
+        "flags": []
+      },
+      "guidance": {
+        "suggested_pct": 0.0,
+        "stop_pct": 0.0729,
+        "atr_pct": 0.0365,
+        "entry_price": 0.2355,
+        "stop_price": 0.2183,
+        "basis": "라벨/과열도 기준 신규 진입 비추천"
+      },
+      "trade_plan": {
+        "side": "LONG",
+        "entry": 0.0,
+        "entry_low": 0.0,
+        "entry_high": 0.0,
+        "stop_loss": 0.0,
+        "stop_pct": 0.0,
+        "targets": [],
+        "confidence": 0,
+        "rationale": "현재가 아래에 신뢰성 있는 지지 zone 없음 — setup 미완성.",
+        "invalidation": "setup 미완성, 관망",
+        "actionable": false,
+        "atr_pct": 0.03647206381502186,
+        "zones": [
+          {
+            "center": 0.36163573876140576,
+            "low": 0.36119235166406966,
+            "high": 0.3620791258587419,
+            "weight": 1.4,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_weekly",
+                "label": "주봉 50MA",
+                "price": 0.362079,
+                "weight": 0.95,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_5",
+                "label": "Fib 0.5",
+                "price": 0.361192,
+                "weight": 0.45,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.3317472608554429,
+            "low": 0.3298639272786662,
+            "high": 0.33363059443221965,
+            "weight": 1.25,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_50_daily",
+                "label": "일봉 50MA",
+                "price": 0.333631,
+                "weight": 0.65,
+                "age_days": 0
+              },
+              {
+                "kind": "fib_0_618",
+                "label": "Fib 0.618",
+                "price": 0.329864,
+                "weight": 0.6,
+                "age_days": 0
+              }
+            ]
+          },
+          {
+            "center": 0.3378380059370226,
+            "low": 0.3360250694462988,
+            "high": 0.33965094242774646,
+            "weight": 1.211,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "ma_200_daily",
+                "label": "일봉 200MA",
+                "price": 0.339651,
+                "weight": 0.85,
+                "age_days": 0
+              },
+              {
+                "kind": "swing_low",
+                "label": "Swing Low",
+                "price": 0.336025,
+                "weight": 0.361,
+                "age_days": 73
+              }
+            ]
+          },
+          {
+            "center": 0.39252070396970884,
+            "low": 0.3925206318899446,
+            "high": 0.3925207760494731,
+            "weight": 0.877,
+            "count": 2,
+            "signals": [
+              {
+                "kind": "anchored_vwap",
+                "label": "Anchored VWAP (고점 기준)",
+                "price": 0.392521,
+                "weight": 0.527,
+                "age_days": 61
+              },
+              {
+                "kind": "fib_0_382",
+                "label": "Fib 0.382",
+                "price": 0.392521,
+                "weight": 0.35,
+                "age_days": 0
+              }
+            ]
+          }
+        ]
+      },
+      "derivatives": null,
+      "multi_tf": {
+        "timeframes": [
+          {
+            "timeframe": "weekly",
+            "trend": "neutral",
+            "rsi": 31.010933309920148,
+            "last_close": 0.23549929356282975,
+            "ma_50": 0.3620791258587419,
+            "ma_200": null,
+            "note": "혼조"
+          },
+          {
+            "timeframe": "daily",
+            "trend": "down",
+            "rsi": 21.727057550821826,
+            "last_close": 0.23549929356282975,
+            "ma_50": 0.33363059443221965,
+            "ma_200": 0.33965094242774646,
+            "note": "가격이 50/200MA 아래 + 데드 크로스 · RSI 과매도"
+          }
+        ],
+        "bias_score": -1,
+        "bias": "mixed",
+        "note": "TF가 align 안 됨 — conviction 낮음, 보수적 사이징."
+      },
+      "in_focus": false
+    }
+  ],
+  "focus_tickers": [
+    "HYPE",
+    "IO",
+    "NEAR",
+    "FET",
+    "JUP"
+  ],
+  "top_news": [
+    {
+      "title": "China Import Logistics Fell 0.6% in January-October, Xinhua Says",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-28/china-import-logistics-fell-0-6-in-january-october-xinhua-says",
+      "summary": "China’s import logistics demand contracted further in the first 10 months of the year, extending a slowdown from 9.6% growth in January-February, Xinhua News Agency reported, citing figures from the China Federation of Logistics and Purchasing.",
+      "published": "Sat, 28 Nov 2026 03:01:44 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Jailed Brazil Beach Soccer Star Drawn Into Russia-US Spy Dispute",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-27/jailed-brazil-beach-soccer-star-drawn-into-russia-us-spy-dispute",
+      "summary": "A Brazilian beach soccer star has become an unlikely bargaining chip in a dispute over an alleged Russian spy who has been sought by both Moscow and Washington.",
+      "published": "Fri, 27 Nov 2026 22:29:56 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Managing $300B for Ultra Wealthy Families: Masters in Business with Holly MacDonald",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-27/masters-in-business-with-holly-macdonald-video",
+      "summary": "Barry speaks with Holly MacDonald, CEO of Bessemer Trust. They discuss her time working in Brazil and how investing in emerging markets shapes her investment philosophy. They also discuss the enduring strength of the US dollar, and how Bessemer evolved from a single family office to a $300 billion enterprise. They also discuss how they navigate building generational wealth and moderating family conflicts.  (Source: Bloomberg)",
+      "published": "Fri, 27 Nov 2026 22:14:41 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Emerging-Market Stocks Snag Best Week Since June on Tech Rebound",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-27/em-asia-stocks-set-for-weekly-gain-as-markets-regain-footing",
+      "summary": "Emerging-market stocks posted their biggest weekly gain since June as investors piled back into technology shares following a recent selloff, capping a volatile week across global markets.",
+      "published": "Fri, 27 Nov 2026 03:33:48 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Hungary Credit Outlook Lifted by S&P on Budget and Euro Ambition",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-27/hungary-credit-outlook-lifted-by-s-p-on-budget-and-euro-ambition",
+      "summary": "S&amp;P Global Ratings lifted the outlook on Hungary’s sovereign debt to stable from negative, citing planned steps by Prime Minister Peter Magyar’s cabinet to cut the budget deficit and eventually adopt the euro.",
+      "published": "Fri, 27 Nov 2026 21:19:31 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "Brazil’s Real Caps Best Week Since 2020 as Trabuco Lifts Mood",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-27/brazil-assets-rally-after-lula-names-banker-luiz-carlos-trabuco-cappi-finance-minister",
+      "summary": "Brazilian markets rallied after President Luiz Inácio Lula da Silva picked one of the nation’s most prominent bankers to be his finance minister, easing the worries about his economic policies that triggered a deep selloff after his surprise re-election last month.",
+      "published": "Fri, 27 Nov 2026 01:08:00 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "S&P 500 Has Best Week Since April 2025 on AI Rally: Markets Wrap",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-26/asian-stock-futures-signal-gains-oil-climbs-again-markets-wrap",
+      "summary": "Wall Street wrapped up a chaotic week with stocks climbing as a rebound in the artificial-intelligence trade gathered pace, reducing demand for Treasuries and haven currencies.",
+      "published": "Thu, 26 Nov 2026 21:59:57 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "China Spurs Biggest Stock Gain Since 2024 on Rare Midday Vow",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-27/china-s-cabinet-stresses-market-support-in-midday-release",
+      "summary": "Chinese authorities gave markets a boost with a rare midday statement pledging support, sending stocks to their best day in more than two years.",
+      "published": "Fri, 27 Nov 2026 05:00:23 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "How Saks Is Reclaiming Luxury as Exemplar Luxury Group",
+      "link": "https://www.bloomberg.com/news/videos/2026-11-25/how-saks-is-reclaiming-luxury-as-exemplar-luxury-group-video",
+      "summary": "Bloomberg’s Romaine Bostick reports on how Exemplar Luxury Group, formerly known as Saks Global, is reinventing itself for a fresh start in luxury since emerging from bankruptcy earlier this year. Exemplar Luxury Group CEO Geoffroy van Raemdonck, FIT Associate Professor Shawn Grain Carter, Telsey Advisory Group CEO Dana Telsey, and Exemplary Luxury Group President and CCO Darcy Penick share their thoughts. (Source: Bloomberg)",
+      "published": "Wed, 25 Nov 2026 23:18:01 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV",
+        "010120"
+      ],
+      "matched_names": [
+        "GE Vernova",
+        "LS ELECTRIC"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    },
+    {
+      "title": "‘Dollar Storm:’ Greenback on Track for Longest Winning Run Since 2024",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-26/-dollar-storm-greenback-on-track-for-longest-winning-run-since-2024",
+      "summary": "The dollar climbed toward its longest monthly winning streak in two years as a rupture in the artificial intelligence trade and rising interest rates spur demand for safe-haven assets.",
+      "published": "Thu, 26 Nov 2026 23:44:27 GMT",
+      "source": "Bloomberg Markets",
+      "matched_tickers": [
+        "GEV"
+      ],
+      "matched_names": [
+        "GE Vernova"
+      ],
+      "matched_themes": [
+        "power_grid"
+      ]
+    }
+  ],
+  "label_changes": [
+    {
+      "ticker": "BTC",
+      "name": "Bitcoin",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "TAO",
+      "name": "Bittensor",
+      "old_label": "HOLD",
+      "new_label": "TRIM"
+    },
+    {
+      "ticker": "RNDR",
+      "name": "Render",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "WLD",
+      "name": "Worldcoin",
+      "old_label": "HOLD",
+      "new_label": "TRIM"
+    },
+    {
+      "ticker": "ONDO",
+      "name": "Ondo",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "MKR",
+      "name": "MakerDAO (Sky)",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "AVAX",
+      "name": "Avalanche",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "XRP",
+      "name": "XRP",
+      "old_label": "HOLD",
+      "new_label": "TRIM"
+    },
+    {
+      "ticker": "ARB",
+      "name": "Arbitrum",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "TON",
+      "name": "TON",
+      "old_label": "HOLD",
+      "new_label": "TRIM"
+    },
+    {
+      "ticker": "AAVE",
+      "name": "Aave",
+      "old_label": "HOLD",
+      "new_label": "TRIM"
+    },
+    {
+      "ticker": "PENDLE",
+      "name": "Pendle",
+      "old_label": "TRIM",
+      "new_label": "HOLD"
+    },
+    {
+      "ticker": "HNT",
+      "name": "Helium",
+      "old_label": "HOLD",
+      "new_label": "TRIM"
+    }
+  ],
+  "upcoming_events": [
+    {
+      "date": "2026-12-04",
+      "name": "고용보고서 (11월)",
+      "kind": "macro",
+      "impact": "high",
+      "ticker": "",
+      "note": ""
+    },
+    {
+      "date": "2026-12-10",
+      "name": "CPI (11월)",
+      "kind": "macro",
+      "impact": "high",
+      "ticker": "",
+      "note": ""
+    }
+  ],
+  "social": {
+    "trending": [
+      {
+        "ticker": "BTC.X",
+        "name": "Bitcoin",
+        "rank": 1,
+        "rank_24h_ago": 1,
+        "mentions": 133,
+        "mentions_24h_ago": 102,
+        "delta_pct": 30.392156862745097,
+        "is_rising": false
+      },
+      {
+        "ticker": "ETH.X",
+        "name": "Ethereum",
+        "rank": 2,
+        "rank_24h_ago": 2,
+        "mentions": 33,
+        "mentions_24h_ago": 24,
+        "delta_pct": 37.5,
+        "is_rising": false
+      },
+      {
+        "ticker": "GPT.X",
+        "name": "GoPower",
+        "rank": 3,
+        "rank_24h_ago": 89,
+        "mentions": 4,
+        "mentions_24h_ago": 1,
+        "delta_pct": 300.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "NVDA.X",
+        "name": "NVIDIA tokenized stock FTX",
+        "rank": 4,
+        "rank_24h_ago": 121,
+        "mentions": 4,
+        "mentions_24h_ago": 1,
+        "delta_pct": 300.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "XMR.X",
+        "name": "Monero",
+        "rank": 5,
+        "rank_24h_ago": 19,
+        "mentions": 3,
+        "mentions_24h_ago": 0,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "SHA.X",
+        "name": "Safe Haven",
+        "rank": 6,
+        "rank_24h_ago": 57,
+        "mentions": 3,
+        "mentions_24h_ago": 1,
+        "delta_pct": 200.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "FTX.X",
+        "name": "FintruX Network",
+        "rank": 7,
+        "rank_24h_ago": 80,
+        "mentions": 3,
+        "mentions_24h_ago": 1,
+        "delta_pct": 200.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "USDT.X",
+        "name": "Tether",
+        "rank": 8,
+        "rank_24h_ago": 11,
+        "mentions": 2,
+        "mentions_24h_ago": 1,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "ECC.X",
+        "name": "ECC",
+        "rank": 9,
+        "rank_24h_ago": 51,
+        "mentions": 2,
+        "mentions_24h_ago": 1,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "UCA.X",
+        "name": "UCA Coin",
+        "rank": 10,
+        "rank_24h_ago": 0,
+        "mentions": 2,
+        "mentions_24h_ago": 0,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "YOU.X",
+        "name": "YOU COIN",
+        "rank": 11,
+        "rank_24h_ago": 67,
+        "mentions": 2,
+        "mentions_24h_ago": 1,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "XRP.X",
+        "name": "XRP",
+        "rank": 12,
+        "rank_24h_ago": 12,
+        "mentions": 1,
+        "mentions_24h_ago": 0,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "LTC.X",
+        "name": "Litecoin",
+        "rank": 13,
+        "rank_24h_ago": 13,
+        "mentions": 1,
+        "mentions_24h_ago": 0,
+        "delta_pct": 100.0,
+        "is_rising": true
+      },
+      {
+        "ticker": "DOT.X",
+        "name": "Polkadot",
+        "rank": 14,
+        "rank_24h_ago": 14,
+        "mentions": 1,
+        "mentions_24h_ago": 1,
+        "delta_pct": 0.0,
+        "is_rising": false
+      },
+      {
+        "ticker": "BCH.X",
+        "name": "Bitcoin Cash",
+        "rank": 15,
+        "rank_24h_ago": 5,
+        "mentions": 1,
+        "mentions_24h_ago": 1,
+        "delta_pct": 0.0,
+        "is_rising": false
+      }
+    ],
+    "influencer_count": 29,
+    "influencer_categories": {
+      "memecoin_alpha": [
+        {
+          "handle": "blknoiz06",
+          "name": "Ansem",
+          "category": "memecoin_alpha",
+          "weight": 10,
+          "note": "솔라나 밈코인 대장. 매수가 트렌드를 만듦"
+        },
+        {
+          "handle": "MustStopMurad",
+          "name": "Murad",
+          "category": "memecoin_alpha",
+          "weight": 9,
+          "note": "Memecoin 슈퍼사이클 thesis. 밈코인 비중 50% 추천"
+        },
+        {
+          "handle": "LucaNetz",
+          "name": "Luca Netz",
+          "category": "memecoin_alpha",
+          "weight": 8,
+          "note": "Pudgy Penguins CEO. 밈·NFT 컬처 핵심"
+        },
+        {
+          "handle": "IcoBeast",
+          "name": "IcoBeast",
+          "category": "memecoin_alpha",
+          "weight": 8,
+          "note": "온체인 알파 추적 + 밈코인 신속 콜"
+        },
+        {
+          "handle": "0xRamonos",
+          "name": "Ramonos",
+          "category": "memecoin_alpha",
+          "weight": 7,
+          "note": "솔라나 PumpFun 메타 1차 발견"
+        },
+        {
+          "handle": "gainzy222",
+          "name": "Gainzy",
+          "category": "memecoin_alpha",
+          "weight": 7,
+          "note": "밈코인 빠른 회전 트레이더"
+        }
+      ],
+      "trader": [
+        {
+          "handle": "cobie",
+          "name": "Cobie",
+          "category": "trader",
+          "weight": 10,
+          "note": "680K. UpOnly 팟캐스트, 시장 구조 전문"
+        },
+        {
+          "handle": "HsakaTrades",
+          "name": "Hsaka",
+          "category": "trader",
+          "weight": 9,
+          "note": "차트 + 시장 심리 분석 정확도 높음"
+        },
+        {
+          "handle": "Pentosh1",
+          "name": "Pentoshi",
+          "category": "trader",
+          "weight": 9,
+          "note": "480K. 데이터 기반 매크로·알트장"
+        },
+        {
+          "handle": "CryptoCobain",
+          "name": "CryptoCobain",
+          "category": "trader",
+          "weight": 8,
+          "note": "베테랑, 시장 분위기 캐치 빠름"
+        },
+        {
+          "handle": "Rewkang",
+          "name": "Andrew Kang",
+          "category": "trader",
+          "weight": 8,
+          "note": "Mechanism Capital, OG 트레이더"
+        },
+        {
+          "handle": "KookCapitalLLC",
+          "name": "Kook",
+          "category": "trader",
+          "weight": 7,
+          "note": "솔라나 메타·차트"
+        },
+        {
+          "handle": "zhusu",
+          "name": "Zhu Su",
+          "category": "trader",
+          "weight": 6,
+          "note": "전 3AC, 컨트로버셜하지만 큰손"
+        }
+      ],
+      "analyst": [
+        {
+          "handle": "DefiIgnas",
+          "name": "DeFi Ignas",
+          "category": "analyst",
+          "weight": 8,
+          "note": "DeFi 매출·TVL 깊이 분석"
+        },
+        {
+          "handle": "tayvano_",
+          "name": "tayvano",
+          "category": "analyst",
+          "weight": 8,
+          "note": "보안·온체인 추적, 사기 코인 적발"
+        },
+        {
+          "handle": "Cryptopathic",
+          "name": "Cryptopathic",
+          "category": "analyst",
+          "weight": 7,
+          "note": "구조적 시장 분석"
+        },
+        {
+          "handle": "thiccyttv",
+          "name": "Thiccy",
+          "category": "analyst",
+          "weight": 7,
+          "note": "옵션·유동성 데이터 분석"
+        },
+        {
+          "handle": "hyblockcapital",
+          "name": "Hyblock",
+          "category": "analyst",
+          "weight": 7,
+          "note": "선물·청산 데이터"
+        },
+        {
+          "handle": "punk9059",
+          "name": "punk9059",
+          "category": "analyst",
+          "weight": 6,
+          "note": "온체인·DeFi 지표"
+        }
+      ],
+      "founder": [
+        {
+          "handle": "VitalikButerin",
+          "name": "Vitalik Buterin",
+          "category": "founder",
+          "weight": 10,
+          "note": "이더리움 창립자, 직접 발언이 시장 움직임"
+        },
+        {
+          "handle": "0xMert_",
+          "name": "Mert",
+          "category": "founder",
+          "weight": 9,
+          "note": "Helius CEO, 솔라나 최전선 정보"
+        },
+        {
+          "handle": "aeyakovenko",
+          "name": "Anatoly Yakovenko",
+          "category": "founder",
+          "weight": 9,
+          "note": "Solana 공동창립자, 로드맵 1차"
+        },
+        {
+          "handle": "tier10k",
+          "name": "tier10k",
+          "category": "founder",
+          "weight": 8,
+          "note": "발표·뉴스 1차 큐레이션 빠름"
+        },
+        {
+          "handle": "chamath",
+          "name": "Chamath",
+          "category": "founder",
+          "weight": 7,
+          "note": "VC 대표, 거시 + 코인"
+        }
+      ],
+      "narrative": [
+        {
+          "handle": "WClementeIII",
+          "name": "Will Clemente",
+          "category": "narrative",
+          "weight": 8,
+          "note": "BTC 온체인 데이터 + 매크로"
+        },
+        {
+          "handle": "DonAlt",
+          "name": "DonAlt",
+          "category": "narrative",
+          "weight": 8,
+          "note": "차트 + 내러티브 결합 분석"
+        },
+        {
+          "handle": "TheRealLoganJ",
+          "name": "Logan",
+          "category": "narrative",
+          "weight": 7,
+          "note": "트렌드·내러티브 빠른 캐치"
+        },
+        {
+          "handle": "WaleSwoosh",
+          "name": "Wale Swoosh",
+          "category": "narrative",
+          "weight": 7,
+          "note": "시장 심리·트렌드 스토리텔러"
+        },
+        {
+          "handle": "KaitoAI",
+          "name": "Kaito AI",
+          "category": "narrative",
+          "weight": 6,
+          "note": "AI가 종합한 크립토 트위터 트렌드"
+        }
+      ]
+    },
+    "tweet_samples": [],
+    "source_status": {
+      "sorsa": "disabled",
+      "apewisdom": "ok",
+      "twitter_rss": "disabled"
+    }
+  }
+}
